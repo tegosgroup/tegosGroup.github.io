@@ -24,11 +24,12 @@
       "version": ""
     },
     {
-      "type": "Resource",
-      "source_relative_path": "LICENSE",
+      "type": "Conceptual",
+      "source_relative_path": "LICENSE.md",
       "output": {
-        "resource": {
-          "relative_path": "LICENSE"
+        ".html": {
+          "relative_path": "LICENSE.html",
+          "hash": "e7xDc2WNtexZ/wVYnzMXwQ=="
         }
       },
       "is_incremental": false,
@@ -36,10 +37,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "README.md",
+      "source_relative_path": "LICENSE.md",
       "output": {
         "resource": {
-          "relative_path": "README.md"
+          "relative_path": "LICENSE.md"
         }
       },
       "is_incremental": false,
@@ -51,7 +52,18 @@
       "output": {
         ".html": {
           "relative_path": "README.html",
-          "hash": "bQAMYXNFlI/O988mCuJp3A=="
+          "hash": "hqdZ0apqVVyDUxVT0d9Vqw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "README.md",
+      "output": {
+        "resource": {
+          "relative_path": "README.md"
         }
       },
       "is_incremental": false,
@@ -9932,7 +9944,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 91,
+          "total_file_count": 92,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
