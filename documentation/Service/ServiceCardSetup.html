@@ -81,7 +81,7 @@
 <h1 id="service--setup">Service – Setup</h1>
 
 <h2 id="general-information">General Information</h2>
-<p>Services are the core of the commercial aspects of enwis):</p>
+<p>Services are the core of the commercial aspects of enwis:</p>
 <ul>
 <li><p>In principle, it is always services that are bought and sold</p>
 </li>
@@ -90,7 +90,7 @@
 <li><p>Prices can only be saved for services</p>
 </li>
 </ul>
-<p>This makes services indispensable for depicting the commercial processes of waste management and recycling companies. Therefore, services are the enwis) version of the default items in MS Dynamics NAV.</p>
+<p>This makes services indispensable for depicting the commercial processes of waste management and recycling companies. Therefore, services are the enwis version of the default items in MS Business Central.</p>
 <p>On the other hand, services can also be linked with all other operating resources and procedures associated with service performance.</p>
 <ul>
 <li><p>Services can be entered with waste materials</p>
@@ -123,16 +123,16 @@
 <p>register are as follows:</p>
 <p><img src="../../images/image1.png" alt="Wor1E3A"></p>
 <p>Each service has a unique identifying number that is entered into the &quot;Number&quot; field; this is how the service is addressed in the document line.</p>
-<p>When numbering services, keep in mind that a service catalog is frequently quite comprehensive and can easily contain several hundred or several thousand entries. The service number can help give the service catalog some structure. It might therefore make sense not to set up enwis) to fully automatically assign service numbers, but rather than do this manually and systematically so that users can more easily identify them.</p>
+<p>When numbering services, keep in mind that a service catalog is frequently quite comprehensive and can easily contain several hundred or several thousand entries. The service number can help give the service catalog some structure. It might therefore make sense not to set up enwis to fully automatically assign service numbers, but rather than do this manually and systematically so that users can more easily identify them.</p>
 <p><strong><u>Example:</u></strong></p>
 <p><strong>The numbering for all waste management services could start from 100010, while all equipment services start from 200010.</strong></p>
 <p><strong>When entering the service card in this example, then the user only needs to decide whether the service involves waste management or equipment, and then corresponding number is assigned automatically.</strong></p>
 <p>Freely chosen text can be entered into the <em>Description</em> and <em>Description 2</em> fields to describe the content of each service.</p>
 <p>The unit of measure used internally for recording the service is stored in the <em>Base Unit of Measure Code</em> field, e.g. the unit &quot;ton&quot; for waste management services or the unit &quot;hour&quot; for transport services, etc.</p>
-<p>enwis) automatically copies the value entered into <em>Base Unit of Measure Code</em> in the service card to the <em>Sales Unit of Measure Code</em> and <em>Purch. Unit of Measure Code</em> fields under the</p>
+<p>enwis automatically copies the value entered into <em>Base Unit of Measure Code</em> in the service card to the <em>Sales Unit of Measure Code</em> and <em>Purch. Unit of Measure Code</em> fields under the</p>
 <p><span class="smallcaps">Invoicing</span></p>
 <p>tab.</p>
-<p>enwis) thereby offers the option to use different units of measure for the same service, so that internal operating procedures can employ different units of measure for invoicing customers and suppliers.</p>
+<p>enwis thereby offers the option to use different units of measure for the same service, so that internal operating procedures can employ different units of measure for invoicing customers and suppliers.</p>
 <p><strong><u>Example:</u></strong></p>
 <p>**Waste management services are recorded internally in tons but billed to the customer in m</p>
 <p><sup>3</sup></p>
@@ -144,7 +144,7 @@
 <p>Assigning different delivery codes to a service has to be done manually on the document line, because the service itself will only copy one delivery code, assuming any have been assigned to it. The one saved in the service as the base delivery code will be copied over to the order line, but there it can be manually overwritten if needed.</p>
 <p>The value entered in the Posting Type field, be it empty, &quot;Purchasing&quot;, or &quot;Sales&quot;, will control the field with the same name on the document line. This will define whether the service involved is for customers or vendors.</p>
 <p>If the <em>Posting Type</em> field here is left empty, the content in the <em>Posting Type</em> field on the document line will be controlled by the document header. If there is a customer in the header of the sales order, then all order lines recording services with an empty <em>Posting Type</em> field will automatically be set to the posting type &quot;Sales&quot;.</p>
-<p>The <em>Bill of Resources</em> field cannot be edited directly. enwis) will automatically enter the value &quot;Yes&quot; in this field when users establish a link between the service and a bill of resources by going to</p>
+<p>The <em>Bill of Resources</em> field cannot be edited directly. enwis will automatically enter the value &quot;Yes&quot; in this field when users establish a link between the service and a bill of resources by going to</p>
 <p><em><span class="smallcaps">Associated Information</span></em></p>
 <p><em><span class="smallcaps">Service</span></em></p>
 <p><em><span class="smallcaps">Bill of
@@ -166,10 +166,10 @@ Resources</span></em></p>
 <p>This field is critical for generating automated rental invoices.</p>
 <p>The optional <em>Service Type</em> field mainly controls the relationship between operating quantities and invoice quantities and therefore has an indirect influence on the generation of service entries for a document line.</p>
 <p><strong><u>Example:</u></strong></p>
-<p><strong>If the service type &quot;Waste Management&quot; is assigned to the service &quot;Construction Waste Management&quot;, then enwis) interprets entries in the <em>Operational Qty.</em> field in the <em>order line</em> as waste quantity and copies this value to the <em>Qty. to Dispose</em> field in the order line.</strong></p>
-<p><strong>Then enwis) uses the service type to decide what kind of operational quantity is involved and, for example, automatically creates a waste management entry for a waste management line without the user having to switch to the <em>Qty. to Dispose</em> field or the entry.</strong></p>
+<p><strong>If the service type &quot;Waste Management&quot; is assigned to the service &quot;Construction Waste Management&quot;, then enwis interprets entries in the <em>Operational Qty.</em> field in the <em>order line</em> as waste quantity and copies this value to the <em>Qty. to Dispose</em> field in the order line.</strong></p>
+<p><strong>Then enwis uses the service type to decide what kind of operational quantity is involved and, for example, automatically creates a waste management entry for a waste management line without the user having to switch to the <em>Qty. to Dispose</em> field or the entry.</strong></p>
 <p>In principle, the service type should be based on the billable core of the service, i.e. an equipment service should sensibly contain the service type &quot;Equipment&quot; because this is critical for its operational processing and also for the equipment entry in the invoice. For more information on this, see the &quot;Line Entries&quot; documentation.</p>
-<p>Users can assign a dispatching code to each service in the <em>Dispatching Code</em> field. The disposition code controls the appearance and design of the enwis) <strong><em>QuickDoc</em></strong> sales order form. It also determines how much employees are authorized to change the contracts when creating sales orders in enwis) QuickDoc. For more information on this, see the &quot;Dispatching Code&quot; documentation.</p>
+<p>Users can assign a dispatching code to each service in the <em>Dispatching Code</em> field. The disposition code controls the appearance and design of the enwis <strong><em>QuickDoc</em></strong> sales order form. It also determines how much employees are authorized to change the contracts when creating sales orders in enwis QuickDoc. For more information on this, see the &quot;Dispatching Code&quot; documentation.</p>
 <p>Users can assign a waste material to the service in the <em>Waste Material Code</em> field. The waste material of the service is automatically copied to the document lines where the service is validated. Naturally, this is mainly useful for waste management services.</p>
 <p>The code for the associated equipment is saved in the <em>Equipment No.</em> field.</p>
 <p>Here it is important to understand that this does not refer to the individual number of the actual piece of equipment, but rather to a group of identical equipment. For example, the equipment number ARC700 might refer to all roller containers with a volume of seven cubic meters.</p>
@@ -190,8 +190,8 @@ Resources</span></em></p>
 <p>Checking the <em>Do Not Invoice</em> box will prevent the order lines from being included in combine invoicing. This is useful for services that are shown on the customer's invoice, such as the use of certain special vehicles, equipment or employees, but that are not billed separately.</p>
 <p>When services whose <em>Do Not Invoice</em> box is checked are validated in document lines, the document <em>Invoice</em> field is set to &quot;No&quot;.</p>
 <p>Up to 3 characters can normally be entered into the <em>On Hold</em> field of a service, e.g. the initials of the employee, in order to temporarily prevent newly created order lines with this service. The service can still be used for operational purposes, but order lines with this service will be ignored when combine invoicing. This makes it possible to temporarily block services from invoicing and, when needed, release them for invoicing again.</p>
-<p>The <em>Gen. Prod. Posting Group</em> and <em>VAT Class</em> fields are used to manage the posting of sales and purchase prices and the associated VAT to the corresponding general ledger accounts. See the standard training materials from MS Dynamics NAV to find out the significance of and how to set up these posting groups.</p>
-<p>In regard to enwis) it is only important that the posting groups in the service card represent real posting groups that actually manage the posting of revenues and costs in the G/L accounts. Unlike a lot of the master data in enwis) (e.g. equipment), where the system routinely prompts the users to enter the posting groups, the posting groups on the services card are the central element that links the operating business to the general ledger accounts.</p>
+<p>The <em>Gen. Prod. Posting Group</em> and <em>VAT Class</em> fields are used to manage the posting of sales and purchase prices and the associated VAT to the corresponding general ledger accounts. See the standard training materials from MS Business Central to find out the significance of and how to set up these posting groups.</p>
+<p>In regard to enwis it is only important that the posting groups in the service card represent real posting groups that actually manage the posting of revenues and costs in the G/L accounts. Unlike a lot of the master data in enwis (e.g. equipment), where the system routinely prompts the users to enter the posting groups, the posting groups on the services card are the central element that links the operating business to the general ledger accounts.</p>
 <p>There are no restrictions on the codes entered in the <em>Sales Delivery Code</em> and <em>Purch. Delivery Code</em> fields. It is up to the users whether and how delivery codes are used in the daily business of creating and processing sales orders.</p>
 <p>Note, however, that delivery codes may be used as a pricing criterion. It is sufficient to record the corresponding delivery code in the order line and then save a price in the Service Prices table for both combinations.</p>
 <p>It only makes sense to save these in the service card if specific services are constantly being linked to specific delivery codes in the real business processes.</p>
@@ -202,8 +202,8 @@ Resources</span></em></p>
 <p>It makes sense to use &quot;Day&quot; as the base unit of measure for rental invoices, though leased equipment might be invoiced in hours, days, weeks, or months.</p>
 <p>These various time units can be saved in a rental service just like the conversion code, which sets the conversion between the invoicing unit of measurement and the base unit of measurement.</p>
 <p>The <em>Cycle Code</em> field can be used for cyclical document creation. Cyclical document creation allows recurring sales orders to be automatically created from contracts. If there is a set relationship between a service and its regular performance, it makes sense to save a cycle code directly in the service so that it can be copied over automatically when the service is validated in the contract lines. For more information on this, see the &quot;Cyclical Document Creation Setup&quot; documentation.</p>
-<p>In the Concept No. field, a service can be linked with a concept, so that the concept is copied over when the service is validated in the documents. When business transactions involve multiple business partners, concepts in enwis) serve to allocate the service quantities, costs, and revenues among the partners involved. For more information on this, see the &quot;Concepts&quot; documentation.</p>
-<p>The <em>Cost Center Code</em> and <em>Cost Object Code</em> fields can be used to associate the service with cost centers and cost objects that will be copied when the services are validated in the documents. Cost centers and cost objects are dimensions in MS Dynamics NAV and there setup is described in the corresponding standard training documentation.</p>
+<p>In the Concept No. field, a service can be linked with a concept, so that the concept is copied over when the service is validated in the documents. When business transactions involve multiple business partners, concepts in enwis serve to allocate the service quantities, costs, and revenues among the partners involved. For more information on this, see the &quot;Concepts&quot; documentation.</p>
+<p>The <em>Cost Center Code</em> and <em>Cost Object Code</em> fields can be used to associate the service with cost centers and cost objects that will be copied when the services are validated in the documents. Cost centers and cost objects are dimensions in MS Business Central and there setup is described in the corresponding standard training documentation.</p>
 <h2 id="register-handling">Register Handling</h2>
 <p>The main fields under the</p>
 <p><span class="smallcaps">Handling</span></p>
@@ -236,8 +236,8 @@ Resources</span></em></p>
 <p><span class="smallcaps">Export</span></p>
 <p>register are shown below:</p>
 <p><img src="../../images/image7.png" alt="Wor82B5"></p>
-<p>The <em>Tariff No.</em>, <em>Country of Origin Code</em>, and <em>Net Weight</em> fields on the service card were copied by enwis) from the default item card in MS Dynamics NAV.</p>
-<p>These fields are relevant for customs declarations in the Export department. See the corresponding training documentation from MS Dynamics NAV for more information about their use.</p>
+<p>The <em>Tariff No.</em>, <em>Country of Origin Code</em>, and <em>Net Weight</em> fields on the service card were copied by enwis from the default item card in MS Business Central.</p>
+<p>These fields are relevant for customs declarations in the Export department. See the corresponding training documentation from MS Business Central for more information about their use.</p>
 <h2 id="register-indexing">Register Indexing</h2>
 <p>The main fields under the</p>
 <p><span class="smallcaps">Keywords</span></p>

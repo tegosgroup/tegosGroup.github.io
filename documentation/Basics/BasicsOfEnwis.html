@@ -78,10 +78,10 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="BasicsOfEnwis">
-<h1 id="basics-of-enwis">Basics of enwis)</h1>
+<h1 id="basics-of-enwis">Basics of enwis</h1>
 
 <h2 id="overview">Overview</h2>
-<p>In enwis), the difference between master data and transaction data is critical. Master data is necessary to record relatively constant information, such as customers, services, etc.</p>
+<p>In enwis, the difference between master data and transaction data is critical. Master data is necessary to record relatively constant information, such as customers, services, etc.</p>
 <p>Where possible, this data should only be entered into the system once and stored as master data. The more information users can enter into the master data, the less they need to enter during their day-to-day operations and the more automated and effectively the data can be handled.</p>
 <p>Master data is recorded in card format.</p>
 <p><img src="../../images/image1.png" alt="Wor6729"></p>
@@ -107,8 +107,8 @@
 </li>
 </ul>
 <p><img src="../../images/image2.png" alt="Wor373E"></p>
-<p>will either be maintained in the master data or automatically determined by enwis) (such as the posting matrix).</p>
-<p>enwis) provides two forms for depicting the operating business: the contract and the sales order. The contract is used to document a longer term agreement with a customer or supplier. In contrast, the sales order records a single service rendered.</p>
+<p>will either be maintained in the master data or automatically determined by enwis (such as the posting matrix).</p>
+<p>enwis provides two forms for depicting the operating business: the contract and the sales order. The contract is used to document a longer term agreement with a customer or supplier. In contrast, the sales order records a single service rendered.</p>
 <p>The contract can be viewed as a kind of template for sales orders, because a sales order can be created out of a contract with the &quot;touch of a button&quot;. For this reason, contracts and sales orders basically have a parallel structure and the main difference between the two is the length of time they remain in the system.</p>
 <p>Invoices and credit notes can only be created out of a sales order. Therefore, it is vital to create sales orders to be able to account for billable services with a customer or supplier.</p>
 <p><strong><u>Note:</u></strong></p>
@@ -129,11 +129,11 @@
 <p>The line entries have no effect on the invoice calculations. The information in these entries is recorded for the purposes of stock accounting and statistics. The Equipment Entries are the exception to this, because they form the basis for billing for containers.</p>
 <p>The separation of the billable order lines and the line entries makes it possible to also separate the invoice quantities from the so-called operating quantities. Commercially relevant information and information required by waste legislation can be recorded and posted in the same sales order.</p>
 <p>This allows users to record and compare costs and revenues in the same sales order and thereby determine the sales order's contribution margin.</p>
-<p>One special feature of enwis) is the option to depict customer-specific and supplier-specific business cases in one sales order. Any number of business cases with any number of customers and vendors, sites and order addresses can be combined into one sales order. Because of this special feature, enwis) allows users to generate line-dependent invoices (combine invoices). Combine invoices break down the recorded sales orders into billable components and group these sales order lines into individual customers and vendors.</p>
+<p>One special feature of enwis is the option to depict customer-specific and supplier-specific business cases in one sales order. Any number of business cases with any number of customers and vendors, sites and order addresses can be combined into one sales order. Because of this special feature, enwis allows users to generate line-dependent invoices (combine invoices). Combine invoices break down the recorded sales orders into billable components and group these sales order lines into individual customers and vendors.</p>
 <p>They receive an invoice summarizing all sales order entries that apply to them, even though these may spread across entirely different sales orders.</p>
 <p>Customers receive an invoice custom-designed to meet their expectations and summarizing all of the sales order entries that apply to them, though they might be spread across entirely different sales orders.</p>
 <h2 id="data-management-and-data-flow">Data Management and Data Flow</h2>
-<p>The central data storage elements in enwis) are the documents. enwis) distinguishes between the following document types:</p>
+<p>The central data storage elements in enwis are the documents. enwis distinguishes between the following document types:</p>
 <ul>
 <li><p>Sales Quotes</p>
 </li>
@@ -188,11 +188,11 @@
 <p>The combine invoice process breaks the sales order down into its components and combines these into invoices and credit notes.</p>
 <p>Lines from entirely different sales orders can be brought together to make up one invoice or credit note and the lines of one order can be distributed to different invoices and credit notes.</p>
 <p>The sales order lines are linked together with one order job number. The order job number is automatically allotted when the sales order is set up or it can be manually assigned. The order job number allows users to trace the various invoice lines and entries emerging from one sales order.</p>
-<p>When an invoice or credit note is posted, Dynamics NAV creates a default sales invoice and records the information important to the waste management industry in so-called invoice ledger entries.</p>
+<p>When an invoice or credit note is posted, Business Central creates a default sales invoice and records the information important to the waste management industry in so-called invoice ledger entries.</p>
 <p><strong><u>Note:</u></strong></p>
-<p><strong>This is why enwis) works with its own cancelation function. When a value is canceled, enwis) does not go back to the posted document but to the archived, unposted document. Unlike the posted sales invoice, the unposted document still contains all of the information.</strong></p>
-<p>It is strongly recommended that the enwis) Waste Management Setup be set so that unposted invoices and credit memos are always archived.</p>
-<p>To work with enwis), it is necessary to have an understanding of documents, posting routines, and cancelation functions:</p>
+<p><strong>This is why enwis works with its own cancelation function. When a value is canceled, enwis does not go back to the posted document but to the archived, unposted document. Unlike the posted sales invoice, the unposted document still contains all of the information.</strong></p>
+<p>It is strongly recommended that the enwis Waste Management Setup be set so that unposted invoices and credit memos are always archived.</p>
+<p>To work with enwis, it is necessary to have an understanding of documents, posting routines, and cancelation functions:</p>
 <ul>
 <li><p>Contracts document longer term agreements with customers and suppliers</p>
 </li>

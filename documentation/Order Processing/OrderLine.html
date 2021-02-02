@@ -96,7 +96,7 @@
 <p>The standard option in the field <em>Art</em> is &quot;Service&quot;. For the option &quot;Service&quot; the user is guided into the service overview, meaning the service catalog of the company, in the field <em>Nr</em>. and can select from the services defined here.</p>
 <p>Numerous data consigned to the services are transferred automatically into the order line on input of the service number in the field <em>Nr</em>. The service descriptions are transferred into the fields <em>Description</em> or where appropriate <em>Description 2</em> of the order line.</p>
 <p><img src="../../images/image1.png" alt=""></p>
-<p>The fields <em>Gen. Bus. Posting Group, VAT Bus. Posting Group</em>, <em>Gen. Prod. Posting Group</em> und <em>VAT Prod. Posting Group</em> are extracted from the data consigned to the customer or service by enwis) as standard. The costs and proceeds from the operational area are entered in the accounts of the general ledger via these posting groups on invoicing the orders. These fields are normally filled automatically by the master data consigned for the customer or service.</p>
+<p>The fields <em>Gen. Bus. Posting Group, VAT Bus. Posting Group</em>, <em>Gen. Prod. Posting Group</em> und <em>VAT Prod. Posting Group</em> are extracted from the data consigned to the customer or service by enwis as standard. The costs and proceeds from the operational area are entered in the accounts of the general ledger via these posting groups on invoicing the orders. These fields are normally filled automatically by the master data consigned for the customer or service.</p>
 <p><img src="../../images/image2.png" alt=""></p>
 <p><strong><u>Note:</u></strong></p>
 <p><strong>If necessary these fields can be overwritten on the basis of the corresponding set up. This is however not advised. The case workers in the order logging should as a rule not concern themselves with the posting of proceeds on general ledger accounts. Posting groups should be maintained exclusively in the master data by the entitled persons.</strong></p>
@@ -111,10 +111,10 @@
 <p><u>invoice address</u></p>
 <p>consigned to the customer or vendor which is different to their main address is allocated. This invoice address must have been consigned to the customer/vendor previously on the customer/vendor card.</p>
 <p><img src="../../images/image3.png" alt=""></p>
-<p>The waste material or recyclable material is classified for waste management or transport orders via the fields <em>Waste Material Code</em> and <em>EWC Code</em>. These data are consigned in the master data of the service by many enwis) customers so that both fields are automatically filled by these defaults.</p>
+<p>The waste material or recyclable material is classified for waste management or transport orders via the fields <em>Waste Material Code</em> and <em>EWC Code</em>. These data are consigned in the master data of the service by many enwis customers so that both fields are automatically filled by these defaults.</p>
 <p>The field <em>Waste Material Code</em> refers to the waste material catalog defined by the company itself which is the basis of the inventory valuation for example while the field <strong><em>EWC Code</em></strong> refers to the official EWC catalog.</p>
 <p><strong><u>Note</u></strong></p>
-<p>**The field designations <em>Waste Material Code</em> and EWC Code are not permanently present in the system. Instead they can be set up in enwis) as follows:</p>
+<p>**The field designations <em>Waste Material Code</em> and EWC Code are not permanently present in the system. Instead they can be set up in enwis as follows:</p>
 <p><em><span class="smallcaps">enwis Services</span></em></p>
 <p><em><span class="smallcaps">Waste Material Administration Material Catalogs
 Setup</span></em>**</p>
@@ -141,7 +141,7 @@ Setup</span></em>**</p>
 <p>The difference between storage (positive movement) and waste management (negative movement) on the one hand and inflow (also positive movement) and outflow (also negative movement) on the other is found in the fact that storage and waste management represent movement quantities with an external effect while inflow and outflow only have an internal effect.</p>
 <p>The entry type &quot;Drop Shipment&quot; can be used to enter and sustain business by inventory which is not processed by the company's own storage locations but goes directly from one business partner to the other.</p>
 <p>The entry type &quot;Transfer&quot; allows internally effective movements between two of the company's own storage locations to be posted.</p>
-<p>The fields <em>Location Code</em> and <em>Bin Code</em> are of central importance for the warehouse administration. In enwis) it is possible to set up any number of storage locations and - as a subdivision of them - any number of storage bins.</p>
+<p>The fields <em>Location Code</em> and <em>Bin Code</em> are of central importance for the warehouse administration. In enwis it is possible to set up any number of storage locations and - as a subdivision of them - any number of storage bins.</p>
 <p>The available storage locations and bins can be accessed from the order line. If order lines are entered with storage location and/or bin, the waste and recyclable materials going in and out are entered directly on or from these storage locations or bins. This means that there is a control of the current inventories at any time.</p>
 <p>In the field <em>Equipment No</em>. the equipment type (e.g. the 5 cbm skip) is stipulated. In addition a concrete individual item of equipment can be assigned to each order line and each equipment entry via the field <em>ID-Code</em> such as the 5 cbm skip with the identification number 4711 for example.</p>
 <p>The option field <em>Equipment Entry Type</em> refers to equipment entries. It contains the following options:</p>
@@ -199,14 +199,14 @@ Setup</span></em>**</p>
 <p><img src="../../images/image5.png" alt=""></p>
 <p>The field <em>Quality Code</em> can be filled automatically from the master data of the service or it is maintained manually in the order line.</p>
 <p>Quality codes can be defined completely free depending on the requirements of the company. In the area of waste management, additions of foreign materials, the purity of materials, the heating value and similar material properties can be shown.</p>
-<p>From a functional point of view quality codes are an important, price forming criterion which is taken into consideration by enwis) for pricing.</p>
+<p>From a functional point of view quality codes are an important, price forming criterion which is taken into consideration by enwis for pricing.</p>
 <p>The field <em>Delivery Code</em> has an analogous functionality. Delivery codes as well can be defined completely freely in line with the requirements of the respective company. Transport distances or freight costs for example can be shown via the delivery codes. Delivery codes are also a price forming criterion.</p>
-<p>Via the field <em>Job No.</em> the order line can be allocated to a particular waste management project. Projects are particular framework agreements in enwis) - e.g. the complete waste management of a large building site</p>
+<p>Via the field <em>Job No.</em> the order line can be allocated to a particular waste management project. Projects are particular framework agreements in enwis - e.g. the complete waste management of a large building site</p>
 <ul>
 <li>for which special price agreements were made if necessary. Projects are therefore also a possible price forming criterion. Projects can also be used as a filtering criterion during invoice sorting for example.</li>
 </ul>
 <p>The field <em>Order Code</em> provides the possibility of setting up internal sorting or filtering criteria by order codes via which batch processing e.g. the combine invoices can be controlled.</p>
-<p>In the field <em>Concept No</em>. a concept can be allocated to the order line. In enwis) concepts serve to distribute service quantities, costs and proceeds to the participants (e.g. Interseroh) for business in which several partners are involved.</p>
+<p>In the field <em>Concept No</em>. a concept can be allocated to the order line. In enwis concepts serve to distribute service quantities, costs and proceeds to the participants (e.g. Interseroh) for business in which several partners are involved.</p>
 <p>Concept numbers captured in the order lines are written on the invoice entries so that it remains clear which concepts have triggered the distribution of costs and proceeds of a business transaction.</p>
 <p>In the field <em>Commitments No</em>. business obligations and their gradual processing which are frequently encountered in the waste industry can be recorded (e.g. Interseroh, DSD).</p>
 <p><strong><u>Example:</u></strong></p>
@@ -220,7 +220,7 @@ Setup</span></em>**</p>
 <p>in the field <em>Auto-Transfer Weighbr. Result</em>, the weighing data are transferred into the order line connected to the weighbridge ticket automatically during the weighing process. No more work is involved here in the order processing.</p>
 <p><img src="../../images/image6.png" alt=""></p>
 <p>The date of the service provision is captured in the field Task date. The dispatch date is set to the work date in the order header and the order lines by the system as standard. As a rule it must however be set to the dispatch date desired by the customer manually by the user on logging the order.</p>
-<p>If a dispatch date was already set in the contract, this is accepted in the order if an order is created from the contract. The way in which enwis) transfers the dispatch date from the contract to the order can be controlled in the <strong><em>Waste Management Setup</em></strong>, Register</p>
+<p>If a dispatch date was already set in the contract, this is accepted in the order if an order is created from the contract. The way in which enwis transfers the dispatch date from the contract to the order can be controlled in the <strong><em>Waste Management Setup</em></strong>, Register</p>
 <p><span class="smallcaps">contract</span></p>
 <p>via the field <em>Contract Task Date (Default)</em> .</p>
 <p><img src="../../images/image7.png" alt=""></p>
@@ -240,7 +240,7 @@ Setup</span></em>**</p>
 <p>For the option &quot;Create when blank&quot; the current work date is taken if none was set in the contract.</p>
 <p>For the option &quot;Blank&quot; no dispatch date is automatically issued on application of the order from the contract. The user must do this manually.</p>
 <p>Via the two fields <em>Cost Center</em> and <em>Cost Object</em> each order line can be allocated to a cost center and/or cost object. The two fields are as a rule extracted from the master data consigned from the service.</p>
-<p>The field <em>Invoice</em> is in principle set to &quot;Yes&quot; by enwis). If individual order lines are <em>not</em> invoiced for any reason, the tick placed in the field <em>Fakturieren</em> as standard must be removed manually. These lines are not taken into consideration in the combine invoice.</p>
+<p>The field <em>Invoice</em> is in principle set to &quot;Yes&quot; by enwis. If individual order lines are <em>not</em> invoiced for any reason, the tick placed in the field <em>Fakturieren</em> as standard must be removed manually. These lines are not taken into consideration in the combine invoice.</p>
 <p>Via non billable order lines it is on the one hand possible to record services for customers which cannot or should not be invoiced (e.g. service errors) and on the other hand all internal company services.</p>
 <p>By placing a tick in the field <em>Qty. Consolidation</em> those order lines should be marked which are in principle to be calculated with quantity compressed in the combine invoice. Quantity compressed invoice means that similar invoice quantities from various orders and order entries which have occurred for a customer in an invoicing period are brought together as an invoice entry.</p>
 <p>The field can be set to &quot;Yes&quot; in the contract and thus transferred automatically to the order or only set to &quot;Yes&quot; in the order. Each order line to be invoiced can be controlled individually via the field <em>Qty. Consolidation.</em></p>

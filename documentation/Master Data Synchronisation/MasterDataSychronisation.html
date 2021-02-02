@@ -273,7 +273,7 @@ Field Filter  |
 </tr>
 </tbody>
 </table>
-<p>You have to configure the Microsoft Dynamics NAV server for OData so that it is actually available for the Web service. For more information about configuring the server, see the Online Help.</p>
+<p>You have to configure the Microsoft Business Central server for OData so that it is actually available for the Web service. For more information about configuring the server, see the Online Help.</p>
 <h1 id="data-synch-job">Data Synch. Job</h1>
 <p>You define a data synch. job in the client companies. This creates a connection to a <strong><em>Data Synch. Set</em></strong> in the master company. You can set up multiple data synch. jobs in a client company with a connection to different data synch sets in different master companies.</p>
 <p>The synchronisation takes place, with time controls, using an OData web service that must be offered by the master company. For further information on the OData Web service, see Chapter 3 OData Web Service.</p>
@@ -376,13 +376,13 @@ Field Filter  |
 </tbody>
 </table>
 <h2 id="set-up-job-queue">Set up Job Queue</h2>
-<p>You may use the job queue by Microsoft Dynamics NAV for automatic synchronisation. The job queue allows you to plan data synchronisation in detail.</p>
+<p>You may use the job queue by Microsoft Business Central for automatic synchronisation. The job queue allows you to plan data synchronisation in detail.</p>
 <p>Departments/ Administration/ Application Setup/ Job queue/ Job Queue Entries</p>
 <p><img src="../../images/image10.png" alt=""></p>
 <p>Set up a new <strong><em>Job Queue Entry</em></strong> for synchronisation. <strong><em>CodeUnit 5228782, Data Synch. via Job Queue</em></strong> must be entered as the object to be executed. If you wish to have the job repeated, tick the <em>Recurring Job</em> box.</p>
 <h2 id="set-up-nas-service">Set up NAS Service</h2>
 <p>You can initiate synchronisation directly using an NAS service. Executing synchronisation via an NAS service allows you to configure the synchronisation in second intervals.</p>
-<p>You configure the NAS service using the Microsoft Dynamics NAV snap-in for the Microsoft Management Console (mmc.exe).</p>
+<p>You configure the NAS service using the Microsoft Business Central snap-in for the Microsoft Management Console (mmc.exe).</p>
 <p><img src="../../images/image11.png" alt=""></p>
 <p>As Startup Codeunit enter the ID &quot;5228780&quot; for <strong><em>Data Synch. Mgt.</em></strong> You must enter &quot;StartSynch&quot; as the <em>Startup Method</em>.</p>
 <h1 id="record-mapping">Record Mapping</h1>
@@ -437,7 +437,7 @@ Field Filter  |
 </tbody>
 </table>
 <h2 id="notification-by-e-mail">Notification by e-mail</h2>
-<p>The SMTP mail function in Microsoft Dynamics NAV must be set up before you can receive e-mail messages.</p>
+<p>The SMTP mail function in Microsoft Business Central must be set up before you can receive e-mail messages.</p>
 <p>Tick the E-Mail Notification box in the <strong><em>Data Synch. Setup</em></strong> table to use this communication channel. In addition, you will have to fill out the <em>Sender's E-Mail Address</em> and</p>
 <p><em><span class="smallcaps">Recipient's
 E-Mail Address</span></em></p>
@@ -461,7 +461,7 @@ E-Mail Address</span></em></p>
 </tbody>
 </table>
 <h2 id="notification-by-internal-notification-feature">Notification by internal notification feature</h2>
-<p>To use the Microsoft Dynamics NAV internal notification feature, tick the Internal Messaging box in the Data Synch. Setup table. In addition, you will have to fill out the User ID and the Dynamics NAV Service Host fields.</p>
+<p>To use the Microsoft Business Central internal notification feature, tick the Internal Messaging box in the Data Synch. Setup table. In addition, you will have to fill out the User ID and the Business Central Service Host fields.</p>
 <table>
 <thead>
 <tr>
@@ -473,10 +473,10 @@ E-Mail Address</span></em></p>
 <td>Enter the user ID of the user here who should receive the messages. The users will see the messages in their RoleCenter under <strong><em>My Notifications</em></strong>.</td>
 </tr>
 <tr>
-<td>Dynamics NAV Service Host</td>
+<td>Business Central Service Host</td>
 </tr>
 <tr>
-<td>Enter the connection to your Microsoft Dynamics NAV service tier here. This setting is used for the hyperlink in the messages. For further information on setting up the server, see Chapter 4.1 Data Synch. Server.</td>
+<td>Enter the connection to your Microsoft Business Central service tier here. This setting is used for the hyperlink in the messages. For further information on setting up the server, see Chapter 4.1 Data Synch. Server.</td>
 </tr>
 </tbody>
 </table>

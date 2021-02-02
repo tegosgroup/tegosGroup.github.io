@@ -82,7 +82,7 @@
 
 <h2 id="general">General</h2>
 <p>Invoice methods are set up and maintained in the menu Equipment via the menu path</p>
-<p><em><span class="smallcaps">enwis)
+<p><em><span class="smallcaps">enwis
 Services/Equipment/administration/equipment rentals/rental
 invoice/invoice method</span></em></p>
 <p>among other places. As an example an invoice method TAG is set up, meaning that the invoice should occur by the day. The following fields can or must be filled in.</p>
@@ -100,7 +100,7 @@ invoice/invoice method</span></em></p>
 </li>
 </ul>
 <p><strong><u>Example:</u></strong></p>
-<p><strong>If the business partner is not invoiced for the first three days of the first rental period for example, a 3 can be entered in this field. If an equipment item is supplied on 01.01 and collected on 10.01, this would result in 10 days, three of which are uniquely not to be calculated. enwis) does in this case thus only calculate 7 days.</strong></p>
+<p><strong>If the business partner is not invoiced for the first three days of the first rental period for example, a 3 can be entered in this field. If an equipment item is supplied on 01.01 and collected on 10.01, this would result in 10 days, three of which are uniquely not to be calculated. enwis does in this case thus only calculate 7 days.</strong></p>
 <ul>
 <li><em>Free of Charge Period (always):</em> Input of a constant invoice free period in days</li>
 </ul>
@@ -108,13 +108,13 @@ invoice/invoice method</span></em></p>
 <p><strong><u>Example:</u></strong></p>
 <p><strong>If the first three days of each rental period are not invoiced to the business partner, the field <em>Free of Charge Period (always)</em> can have a 3 inserted.</strong></p>
 <p><strong>An equipment item is provided on 01.01 and collected on 10.02. For an invoice interval (see below) of a month there would be two invoice periods, namely from 01.01 to 31.01 and from 01.02 to 10.02.</strong></p>
-<p><strong>enwis) would in this case only calculate 28 days for the first period rather than 28 and only 7 days for the second period rather than 10 days.</strong></p>
+<p><strong>enwis would in this case only calculate 28 days for the first period rather than 28 and only 7 days for the second period rather than 10 days.</strong></p>
 <ul>
 <li><p><em>Invoice Submission Day:</em> Definition of whether the invoice day is to be invoiced. Values between 0 and 2 are possible.</p>
 </li>
 <li><p><em>Invoice Pick-up Day</em>: Definition of whether the collection day is to be invoiced. Values between 0 and 2 are possible.</p>
 </li>
-<li><p><em>Invoice Zero Quantities</em> (invoice zero amounts): Definition of whether an invoice line is to be created by the rental invoice if the rental time period is actually 0. A tick should always be placed in the field <em>Invoice Zero Quantities</em> as the user can on the one hand recognise that enwis) has calculated a rent but that this has a value of 0 due to the invoice free period for example. On the other it is recorded with regard to the business partner that a rental payment would be due but that this is not calculated.</p>
+<li><p><em>Invoice Zero Quantities</em> (invoice zero amounts): Definition of whether an invoice line is to be created by the rental invoice if the rental time period is actually 0. A tick should always be placed in the field <em>Invoice Zero Quantities</em> as the user can on the one hand recognise that enwis has calculated a rent but that this has a value of 0 due to the invoice free period for example. On the other it is recorded with regard to the business partner that a rental payment would be due but that this is not calculated.</p>
 </li>
 </ul>
 <p><strong><u>Example:</u></strong></p>
@@ -183,7 +183,7 @@ invoice/invoice method</span></em></p>
 </li>
 </ul>
 <p><strong><u>Example:</u></strong></p>
-<p><strong>Let us use the above case as a starting point. The rental up to 31.01.2013 was calculated and already posted completely. A following calculation is possible on the basis of the invoice interval of 1M on 28.02.2013. A maximum invoice period was also set at 1M so that a rental can only be calculated up to 28.02.2013 as a maximum. Now it is possible that the equipment was collected on 04.03.2013. For our example this means that two rental calculations would occur. Namely from 01.02.2013 to 28.02.2013 and from 01.03.2013 to 04.03.2013. If a rental calculation is now initiated on 03.03, enwis) already knows that the equipment has already been collected. If the field MAX. PERIODE UNG. N. ABHOLUNG has a tick placed in it, enwis) ignores the maximum invoice period and calculates continuously up to 04.03.2013.</strong></p>
+<p><strong>Let us use the above case as a starting point. The rental up to 31.01.2013 was calculated and already posted completely. A following calculation is possible on the basis of the invoice interval of 1M on 28.02.2013. A maximum invoice period was also set at 1M so that a rental can only be calculated up to 28.02.2013 as a maximum. Now it is possible that the equipment was collected on 04.03.2013. For our example this means that two rental calculations would occur. Namely from 01.02.2013 to 28.02.2013 and from 01.03.2013 to 04.03.2013. If a rental calculation is now initiated on 03.03, enwis already knows that the equipment has already been collected. If the field MAX. PERIODE UNG. N. ABHOLUNG has a tick placed in it, enwis ignores the maximum invoice period and calculates continuously up to 04.03.2013.</strong></p>
 <ul>
 <li><p>_<span class="smallcaps">invoice immediately after</span></p>
 <p>:_ Here it is possible to specify that an item of equipment can be invoiced immediately after collection (= Option <em>Pick-Up</em>) although the date of the next possible invoice has not yet been reached. With the option &quot;Part-Pick-Up&quot; it is possible to specify that an item of equipment which has been provided once can be invoiced immediately after its collection although the date of the next possible invoice has not been reached. All other quantities which have not been collected can continue to be invoiced as usual.</p>
@@ -203,7 +203,7 @@ invoice/invoice method</span></em></p>
 <p><span class="smallcaps">:</span>_</p>
 <p>In this option the invoice behaves asynchronously to the inventory, meaning that the exchange is divided into a provision and a collection in order to be able to track which equipment item is actually at the customer's premises. This is however ignored in the invoice. The rental period of the exchanged equipment item is continued as if this was not exchanged. The customer receives an invoice.</p>
 </li>
-<li><p><em>renew</em>: The invoice is only extended if an equipment item is exchanged for the same item of equipment (=same equipment number). If an item of equipment is exchanged for another one (e.g. a 10 cubic metre skip for a 7 cubic metre skip) then enwis) automatically switches into the mode &quot;Replace&quot; for this process.</p>
+<li><p><em>renew</em>: The invoice is only extended if an equipment item is exchanged for the same item of equipment (=same equipment number). If an item of equipment is exchanged for another one (e.g. a 10 cubic metre skip for a 7 cubic metre skip) then enwis automatically switches into the mode &quot;Replace&quot; for this process.</p>
 </li>
 <li><p><em>Keep:</em> The invoice is extended and regardless of the type of the equipment items exchanged in each case. Here the invoice is also extended if the equipment item is exchanged for a completely different one (=different equipment number).</p>
 </li>
@@ -236,7 +236,7 @@ invoice/invoice method</span></em></p>
 </li>
 <li><p><em>Ledger Entry</em>: If this option is chosen then the service from the equipment ledger entries is used in the creation of the rental invoice line. If a provision is created via an order rather than an equipment journal, the service of the order line behind which the equipment ledger entry is hidden is also written into the equipment ledger entry.</p>
 </li>
-<li><p><em>Hierarchic:</em> If this option is selected then enwis) establishes the invoice service in line with the following sequence:</p>
+<li><p><em>Hierarchic:</em> If this option is selected then enwis establishes the invoice service in line with the following sequence:</p>
 </li>
 </ul>
 <!--  -->

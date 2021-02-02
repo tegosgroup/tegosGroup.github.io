@@ -81,7 +81,7 @@
 <h1 id="fundamentals-for-working-with-quotes-contracts-and-orders">Fundamentals for working with quotes, contracts and orders</h1>
 
 <h2 id="general">General</h2>
-<p>One of the essential properties of enwis) is the continuous data flow
+<p>One of the essential properties of enwis is the continuous data flow
 which makes the multiple input of data superfluous. All documents build
 on one another or pass their data onto the relevant downstream stage of
 the business process. A continuous passing on of data occurs between
@@ -91,7 +91,7 @@ in the course of order processing.</p>
 <p>The central data container is never the form header - thus not the
 header of quotes, contracts or orders - but in principle the apparently
 downstream line. The various lines of a form are completely autonomous
-of the header and one another and they contain all data which enwis)
+of the header and one another and they contain all data which enwis
 requires for the data processing. The form header is essentially only a
 user friendly screen which structures the otherwise very unclear and
 apparent chaos of the order lines.</p>
@@ -105,20 +105,20 @@ together with the vendor related transfer to the disposal site.</strong></p>
 customer task sites and vendor task sites of the most varied vendors and
 customers in a contract or an order.</p>
 <p>Quotes, contracts and orders form the basis of the operational business
-in enwis). All three forms have a largely analogous structure but very
+in enwis. All three forms have a largely analogous structure but very
 different functions. They do in principle consist of a header and any
 number of lines.</p>
 <p>The data of the customer or vendor are consigned in the header. The
 lines represent the individual quote, contract or order entries. The
 functionalities in the operative business in the customer and vendor
-area are largely analogous functionally as they are generally in enwis).
+area are largely analogous functionally as they are generally in enwis.
 Therefore subsequent reference is made only to customers which can as a
 rule be interpreted as &quot;customers and vendors&quot;.</p>
 <p>Both billable and non billable services can be defined in the order.
 Company internal processes can be shown for example for which nobody is
 billed but for which the cost in terms of personnel, material and
 machines is to be recorded for cost accounting purposes.</p>
-<p>In enwis) orders are not just for the depiction of the external and
+<p>In enwis orders are not just for the depiction of the external and
 accounting relevant exchange processes with customer or suppliers but
 also for the capture of operationally induced services which are either
 not invoiced at all or not invoiced in this form.</p>
@@ -154,16 +154,16 @@ the field <em>Del. Compl. Orders on Posting.</em></p>
 for example be referred back to for the creation of a new order. It
 therefore makes sense to make the setting for routine deletion of
 completed orders or the archiving of the order when posting.</p>
-<p>Orders are the most important document type in enwis). The application
-of quotes and contracts is not absolutely necessary in enwis). Orders
+<p>Orders are the most important document type in enwis. The application
+of quotes and contracts is not absolutely necessary in enwis. Orders
 must be applied in order to be able to show the business processes in
-enwis).</p>
+enwis.</p>
 <p>A work flow with a recommended business process is described below.</p>
 <h2 id="work-flow-document-flow">Work flow document flow</h2>
 <p>The recommended work flow could look as follows:</p>
 <ul>
 <li><p>Creation of a contact in the menu <em><span class="smallcaps">sales und
-Marketing</span></em> from MS Dynamics NAV for the purpose of creating a
+Marketing</span></em> from MS Business Central for the purpose of creating a
 quote for potential new customers. This makes sense as only a few
 data have to be entered for a contact and the customer list is not
 unnecessarily bloated by a number of data sets which may never
@@ -171,7 +171,7 @@ result in a business relationship.</p>
 </li>
 <li><p>Creation of a quote for this contact if it involves a potential new
 customer or for a customer if he is already listed in the system.
-Quotes can be applied under the <span class="smallcaps">enwis) Order
+Quotes can be applied under the <span class="smallcaps">enwis Order
 Processing <em>waste Producer Processes</em> <em>quotes</em></span>. If a business
 relationship comes about via a quote, a customer can be created from
 the contact through the push of a button and a contract or an order
@@ -180,7 +180,7 @@ can be created from the quote.</p>
 <li><p>Orders or contracts can only be created for customers. If a longer
 term agreement with the business partner is involved, a contract
 should be created from the quote. Contracts can be applied under the
-menu <span class="smallcaps">enwis) Order Processing <em>waste Producer
+menu <span class="smallcaps">enwis Order Processing <em>waste Producer
 Processes</em> <em>contracts.</em></span> The conversion of a quote into a
 contract can largely occur automatically. Contracts can of course
 also be applied directly without the presence of a quote. The
@@ -196,7 +196,7 @@ essential data from the basic quote or contract.</p>
 </li>
 </ul>
 <p>Orders can of course be applied directly without prior creation of a
-quote or contract. Orders can be applied under the menu <span class="smallcaps">enwis) Order Processing <em>waste Producer Processes</em>
+quote or contract. Orders can be applied under the menu <span class="smallcaps">enwis Order Processing <em>waste Producer Processes</em>
 <em>orders</em></span>.</p>
 <p>It is recommended to work on the basis of contracts in principle as the
 system is thereby maintained continuously and it is always possible to
@@ -249,7 +249,7 @@ cancelled before it is corrected and entered once again.</strong></p>
 <ul>
 <li>Invoices are generated automatically from all completed orders
 through the combine invoicing carried out monthly for example. The
-combine invoicing can be called and carried out in the <em><span class="smallcaps">menu enwis) invoicing combing invoicing combing
+combine invoicing can be called and carried out in the <em><span class="smallcaps">menu enwis invoicing combing invoicing combing
 invoicing</span></em>.</li>
 </ul>
 <p>These invoices are not compulsorily entered first of all and can instead

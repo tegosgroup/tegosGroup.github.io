@@ -98,7 +98,7 @@
 <p>The graphic layout of the invoice can be specified via the field <em>Report Type Code.</em> The data flow of the combine invoice is controlled via the invoice layout as the sorting of the individual invoice entries, the addition of the texts before and after, page breaks,...</p>
 <p>The actual graphic layout of the invoices or credit memos to be created must however be determined with a special report and it can where appropriate be designed individually for individual customers / customer groups. The reports developed for this purpose can be selected via the field <em>Berichtsartencode</em>.</p>
 <p>Report codes can be defined in the menu</p>
-<p>_<span class="smallcaps">enwis)
+<p>_<span class="smallcaps">enwis
 invoicing</span></p>
 <p><span class="smallcaps">Administration</span></p>
 <p><span class="smallcaps">Report Selections</span></p>
@@ -118,7 +118,7 @@ Selections</span>_</p>
 <p>The set up for the creation of invoices which have not been posted could look as follows:</p>
 <p><img src="../../images/image1.png" alt=""></p>
 <p><img src="../../images/image2.png" alt=""></p>
-<p>The fields <em>Customer Posting Group</em> und <em>Vendor Posting Group</em> are standard functions of MSDynamics NAV integrated into enwis). The current accounting is shown via these posting groups. This means that the receivables accounts, the cash discount accounts, the billing and compensation accounts, the interest and charge accounts are consigned in a differentiated way for different groups of customers and vendors.</p>
+<p>The fields <em>Customer Posting Group</em> und <em>Vendor Posting Group</em> are standard functions of MSBusiness Central integrated into enwis. The current accounting is shown via these posting groups. This means that the receivables accounts, the cash discount accounts, the billing and compensation accounts, the interest and charge accounts are consigned in a differentiated way for different groups of customers and vendors.</p>
 <p>A posting group must be allocated to each customer or vendor via the customer or vendor card so that invoices and credit memos can be entered correctly.</p>
 <p>A customer and vendor posting group can also be consigned in the invoice layout. The posting groups from the invoice layout established for the customer or vendor override the values consigned in the customer or vendor card.</p>
 <p>Counting forms can be allocated to customers and vendors. These are used in order to determine how an invoice is paid (e.g. transfer, cash,..). The payment forms can be consigned on the customer or vendor card on the register</p>
@@ -153,7 +153,7 @@ Selections</span>_</p>
 </ul>
 <p>In total there are more than 20 different functions available in the field <em>Invoice Sorting by</em>.</p>
 <p><img src="../../images/image3.png" alt=""></p>
-<p>In the option fields <em>Break on Sort Change (1) – (6)</em> it is determined how enwis) should behave if it meets a new sorting criterion. An example of a change of type would be the change from the Rathausstraße customer task site to the Hauptstraße customer task site if the customer task sites were specified as a criterion for the invoice sorting.</p>
+<p>In the option fields <em>Break on Sort Change (1) – (6)</em> it is determined how enwis should behave if it meets a new sorting criterion. An example of a change of type would be the change from the Rathausstraße customer task site to the Hauptstraße customer task site if the customer task sites were specified as a criterion for the invoice sorting.</p>
 <p>If the field <em>Info on Sort Change (1) – (6)</em> also has the option &quot;Full Text&quot; selected, the complete address is added to the customer task sites.</p>
 <p>For the option &quot;Full Text&quot; a multi-line information text is issued. This option is not available for all sorting criteria. If it is not available, it is replaced automatically by the option &quot;Info Line&quot;. The option &quot;Full Text&quot; is available for the following sorting criteria and it has the effects described below:</p>
 <table>
@@ -230,7 +230,7 @@ Selections</span>_</p>
 <p>Via the field <em>On Rental Inv. Sort. Change</em> it is possible to set whether a new invoice is to be created or an info line inserted for a type change. A tick in the field <em>Info. Line on R. Inv. Sub-Sort.</em> ensures that the second sorting level is generated on a type change. This means that the rental invoice can be controlled through the invoice layout completely analogous to the &quot;normal&quot; order statement even if a somewhat limited number of options is offered in comparison.</p>
 <p>Unlike the &quot;normal&quot; invoice layout the rental time period can also be issued in an additional info line in the rental invoice. A tick must be placed in the field <em>Show Rental Period</em> for this purpose.</p>
 <p>The field <em>Invoice Transfer into</em> can be used to control whether completed order lines _(_Invoice Transfer into = completed orders) or direct unposted invoices (Invoice Transfer into = unposted invoices) are to be created by the combine invoice first of all.</p>
-<p>Unlike in the &quot;normal&quot; order creation and statement there are first of all no direct rental relevant order lines in enwis). In the rental transaction orders only trigger the provision, exchange, emptying and collection of equipment. The number and type of equipment, a service type, the data of the provision or collection and the customer are all located in rental orders or in the equipment entries of the order lines. Possible price forming criteria may be present but a direct price for the rental invoice does not have to be taken from the order. Significant information for the rental price calculation is missing which enwis) takes from the order lines for the invoicing of other orders. The rental price calculation always and exclusively occurs via the rental invoice matrix. The invoice method and the rental price are calculated from this matrix and via the codes consigned there for the invoice sequence for the rental invoice. This information can be written in either completed order lines or invoices which have not been posted.</p>
+<p>Unlike in the &quot;normal&quot; order creation and statement there are first of all no direct rental relevant order lines in enwis. In the rental transaction orders only trigger the provision, exchange, emptying and collection of equipment. The number and type of equipment, a service type, the data of the provision or collection and the customer are all located in rental orders or in the equipment entries of the order lines. Possible price forming criteria may be present but a direct price for the rental invoice does not have to be taken from the order. Significant information for the rental price calculation is missing which enwis takes from the order lines for the invoicing of other orders. The rental price calculation always and exclusively occurs via the rental invoice matrix. The invoice method and the rental price are calculated from this matrix and via the codes consigned there for the invoice sequence for the rental invoice. This information can be written in either completed order lines or invoices which have not been posted.</p>
 <h2 id="register-qty-consolidation">Register Qty. Consolidation</h2>
 <p>Via the field Automat. Textbaustein it is possible to insert the standard text component of this service into the invoice in addition to the service. Text components can be assigned to a service in two ways.</p>
 <ul>
@@ -272,9 +272,9 @@ Description</span></em></p>
 <p>In the field <em>Sub-Total Type</em> it is possible to choose between the options &quot;Blank&quot;<em>, &quot;Amount&quot;, &quot;Quantity&quot; and &quot;Both&quot;)</em>. Subtotals can be formed for each primary sorting criterion. This means that if the criterion &quot;Customer task site&quot; is selected in the field <em>Invoice Sorting by</em> for example and a subtotal was determined, a subtotal is formed for each customer task site through the invoice layout and the report used for the combine invoice.</p>
 <p>On issue of the subtotals in the report a line with a descriptive text and the corresponding subtotal is generated in the field <em>Quantity and/or Amount.</em></p>
 <p>It is possible that a subtotal for quantities is not printed although this was set by the user. Subtotals for quantities are only meaningful and calculated correctly if sorting occurs according to quantity relevant criteria and the unit code is not changed. Otherwise subtotals with a misleading content would be issued.</p>
-<p>enwis) therefore checks whether the main sorting criterion is a service, an article or a waste material and whether all quantities refer to the same unit code. If this is not the case, no subtotal for the quantity is issued.</p>
+<p>enwis therefore checks whether the main sorting criterion is a service, an article or a waste material and whether all quantities refer to the same unit code. If this is not the case, no subtotal for the quantity is issued.</p>
 <p><strong><u>Note:</u></strong></p>
-<p><strong>As subtotals are established dynamically, this can only occur via reports which support this functionality. In enwis) there are the following standard reports:</strong></p>
+<p><strong>As subtotals are established dynamically, this can only occur via reports which support this functionality. In enwis there are the following standard reports:</strong></p>
 <ul>
 <li><p><strong>5030453 Waste Mgt. - Sales Invoice</strong></p>
 </li>

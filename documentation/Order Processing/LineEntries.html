@@ -94,7 +94,7 @@
 </ul>
 <p>The entries associated with a line can be opened by clicking on the corresponding icons in the sales order.</p>
 <p><img src="../../images/image1.png" alt=""></p>
-<p>The sales order is organized into three logical hierarchies in enwis):</p>
+<p>The sales order is organized into three logical hierarchies in enwis:</p>
 <ul>
 <li><p>Any number of order lines can be set up for each sales order.</p>
 </li>
@@ -104,13 +104,13 @@
 <p>The &quot;<em>Qty. to</em>&quot; fields or the <em>Operational Qty.</em> field and the corresponding line entries are generally used to record</p>
 <p><u>non</u></p>
 <p>-billable operational services.</p>
-<p>The four &quot;<em>Qty. to</em>&quot; fields are automatically filled by enwis) when the service on the <strong><em>service card</em></strong> is assigned to a specific service type and a value has been entered into the <em>Operational Qty.</em> field on the order line. Then the value in the <em>Operational Qty.</em> field is transferred to the corresponding &quot;<em>Qty. to</em>&quot; field.</p>
+<p>The four &quot;<em>Qty. to</em>&quot; fields are automatically filled by enwis when the service on the <strong><em>service card</em></strong> is assigned to a specific service type and a value has been entered into the <em>Operational Qty.</em> field on the order line. Then the value in the <em>Operational Qty.</em> field is transferred to the corresponding &quot;<em>Qty. to</em>&quot; field.</p>
 <p>This makes these &quot;<em>Qty. to</em>&quot; fields intermediate stations between the <em>Operational Qty.</em> field and the line entries.</p>
 <p>Example:</p>
 <p>The service type Disposal, combined with an entry into the <em>Operational Qty.</em> field creates an entry in the <em>Qty. to Dispose</em> field and the resulting waste entry. It works the same for the other three &quot;<em>Qty. to</em>&quot; fields, which will be filled automatically when a value in the <em>Operational Qty.</em> field is entered in the master data.</p>
 <p><img src="../../images/image2.png" alt=""></p>
 <p>The following principle applies: All billable services must be on the order line, because line entries are generally not relevant to the invoice.</p>
-<p>One of the core functions of enwis) is to distinguish between billable services and all other services, e.g. those recorded for inventory management and analysis.</p>
+<p>One of the core functions of enwis is to distinguish between billable services and all other services, e.g. those recorded for inventory management and analysis.</p>
 <p>The invoice quantity will be recorded in the <em>Quantity</em> field on the order line; all other quantities, e.g. quantities to dispose, go in the line entries, and this basic data can be copied to the &quot;<em>Qty. to</em>&quot; fields.</p>
 <p>The line entries are posted to their own entries for internal analysis when the sales order is released, and they might need to be reversed like accounting entries if they have been posted incorrectly.</p>
 <h2 id="setup">Setup</h2>
@@ -139,7 +139,7 @@
 <p>The direction of data flow must be considered when working with line entries. Data flows back and forth between the &quot;<em>Qty. to</em>&quot; fields and the <em>Operational Qty.</em> field. Between the order line and the line entry, however, it only flows in one direction, from the line to the entry.</p>
 <p><strong><u>Note:</u></strong></p>
 <p><strong>Changes to the &quot;<em>Qty. to</em>&quot; fields are copied to the <em>Operational Qty.</em> field.</strong></p>
-<p>The flow of data or the order of entry in enwis) from the master data on the service card to the order line and finally to the entries created from the order line can be depicted as follows:</p>
+<p>The flow of data or the order of entry in enwis from the master data on the service card to the order line and finally to the entries created from the order line can be depicted as follows:</p>
 <ul>
 <li><p>Service type Disposal Operational Qty. Qty. to Dispose Waste Entry</p>
 <blockquote>
@@ -160,9 +160,9 @@
 </ul>
 <p>The &quot;<em>Qty. to</em>&quot; fields and the <em>Operational Qty.</em> field are helpful for entering data into the line entries without having to switch from the order line to the entries by clicking on the corresponding <em>Line</em> icon.</p>
 <p><strong><u>Note:</u></strong></p>
-<p><strong>Changes to the entry are not transferred back to the order line! Whatever is in the line entries is the critical information for data management in enwis). Information in the line entry generally takes priority over information in the order line.</strong></p>
+<p><strong>Changes to the entry are not transferred back to the order line! Whatever is in the line entries is the critical information for data management in enwis. Information in the line entry generally takes priority over information in the order line.</strong></p>
 <h2 id="qty-to-dispose-field"><em>Qty. to Dispose</em> Field</h2>
-<p>In terms of content, the <em>Qty. to Dispose</em> field and the corresponding waste entries represent stock movements. For this purpose, enwis) creates the aforementioned waste entries in the background, which are posted as either inbound stock or outbound stock.</p>
+<p>In terms of content, the <em>Qty. to Dispose</em> field and the corresponding waste entries represent stock movements. For this purpose, enwis creates the aforementioned waste entries in the background, which are posted as either inbound stock or outbound stock.</p>
 <p>The waste ledger entries represent material flows in waste management and recycling companies. This makes them the basis for inventory management and for creating waste accounts.</p>
 <p>However, it is not possible to enter negative values into the <em>Qty. to Dispose</em> field. The two fields, <em>Waste Entry Type</em> and <em>Route Type</em> on the order line define whether the content of the <em>Qty. to Dispose</em> field represents inbound or outbound stock.</p>
 <p><img src="../../images/image4.png" alt=""></p>
@@ -171,7 +171,7 @@
 <p>Using the <em>Qty. to Drive</em> field, transport services are represented, the corresponding transport entries are created, and finally posted as transport ledger entries with their unit cost.</p>
 <p><img src="../../images/image5.png" alt=""></p>
 <p>Transport entries are therefore the basis for dispatching. At the moment when a transport entry is set up, it is available as a task for dispatching in the</p>
-<p><em><span class="smallcaps">enwis) Dispatching</span></em></p>
+<p><em><span class="smallcaps">enwis Dispatching</span></em></p>
 <p>menu.</p>
 <p>The unit to be used--&quot;deployments&quot; and &quot;hours&quot; are available for transport--will depend on the base unit of transport and must be entered manually in the transport entry.</p>
 <p>Only numerical values can be entered in the <em>Qty. to Drive</em> field; the actual meaning in understood when combined with the unit in the transport entry.</p>
@@ -181,17 +181,17 @@
 <p>Only numerical values can be entered in the <em>Qty. to Work</em> field as the base for employee deployments.</p>
 <p>Whether this refers to minutes, hours, or days will be saved in the employee group or users will have to enter it manually in the personnel entry.</p>
 <h2 id="qty-to-handle-field"><em>Qty. to Handle</em> Field</h2>
-<p>The equipment number for the order line and for the equipment entry will be recorded in the <em>Qty. to Handle</em> field. Together with other information, this constitutes the basis for automated rental invoice creation in enwis).</p>
+<p>The equipment number for the order line and for the equipment entry will be recorded in the <em>Qty. to Handle</em> field. Together with other information, this constitutes the basis for automated rental invoice creation in enwis.</p>
 <p><img src="../../images/image7.png" alt=""></p>
 <p>Because rental invoices are mostly automated, there is no information in the <em>Qty. to Handle</em> field regarding the duration of the equipment rental, just the number of the equipment rented out. The rental duration is calculated automatically by the system.</p>
-<p>When setting up rental orders, it is important to understand the principle of rental invoicing in enwis).</p>
+<p>When setting up rental orders, it is important to understand the principle of rental invoicing in enwis.</p>
 <p>When an equipment order is created, an order line or an equipment entry with the type &quot;Drop Off&quot; will be set up. This represents the start of the rental duration for the equipment rental invoice.</p>
-<p>When the equipment is physically and factually dropped off with the customer, the sales order will be released and, in contrast to the other entry types, enwis) will automatically create two types of ledger entry from the equipment entry: an equipment ledger entry and a rental value entry.</p>
+<p>When the equipment is physically and factually dropped off with the customer, the sales order will be released and, in contrast to the other entry types, enwis will automatically create two types of ledger entry from the equipment entry: an equipment ledger entry and a rental value entry.</p>
 <p>The equipment ledger entry represents the actual quantity movement of equipment, while the rental value entry forms the basis for invoicing the rental.</p>
 <p>These two types of ledger entry allow the inventory movement and the invoicing to be cleanly separated, because the actual equipment inventory with the customer and the equipment rental billed to the customer are not usually the same; they tend to differ in terms of content and/or time.</p>
 <p>When the rented equipment is picked up from the customer, a new sales order is created with an equipment entry of the type &quot;Pick Up&quot;. When released, a second equipment ledger entry is created that offsets the rental value entry. Therefore, rental value entries represent the open, billable equipment still in the possession of the customer. An equipment ledger entry is &quot;opened&quot; when the equipment is dropped off and &quot;closed&quot; when the equipment is picked up.</p>
 <h2 id="posting-line-entries">Posting Line Entries</h2>
-<p>When working with enwis), the time when the various entries are posted, i.e., the time when the corresponding ledger entries are created, is very important.</p>
+<p>When working with enwis, the time when the various entries are posted, i.e., the time when the corresponding ledger entries are created, is very important.</p>
 <p>In principle, this occurs when the sales order is released, meaning it is not dependent on when it is invoiced or posted in accounting. The moment when the sales order is flagged as completed, and thus released for invoicing, the line entries associated with the sales order will be posted.</p>
 <p>However, for ledger entries to be posted, there must be an internal waste code for waste entries, a vehicle number for transport entries, an employee number for personnel entries, and an equipment number for equipment entries. Furthermore, the quantity cannot equal 0; otherwise, there will be nothing to post.</p>
 </article>

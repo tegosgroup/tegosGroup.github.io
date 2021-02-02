@@ -80,7 +80,7 @@
             <article class="content wrap" id="_content" data-uid="StockValue">
 
 
-<p><strong>Stock Value in enwis)</strong></p>
+<p><strong>Stock Value in enwis</strong></p>
 <h1 id="contents">Contents</h1>
 <p><a href="#preface">1 Preface 2</a></p>
 <p><a href="#impacts-of-stock-value-management">1.1 Impacts of Stock value management 2</a></p>
@@ -114,7 +114,7 @@
 <p><strong>green are the not yet existing chapters</strong></p>
 <h1 id="preface">Preface</h1>
 <h2 id="impacts-of-stock-value-management">Impacts of Stock value management</h2>
-<p>If materials are managed as items in enwis) it's possible beside to manage accurate values for these items beside the pure management of quantities. The maintenance of data and structures like the contracts need additional attention. This increases the time needed for consultancy and training but as well for the users during daily work. Only based on very accurate data maintenance the resulting stock values can be somehow reliable. Everyone should be aware about this limitation when making the decision to work with stock values.</p>
+<p>If materials are managed as items in enwis it's possible beside to manage accurate values for these items beside the pure management of quantities. The maintenance of data and structures like the contracts need additional attention. This increases the time needed for consultancy and training but as well for the users during daily work. Only based on very accurate data maintenance the resulting stock values can be somehow reliable. Everyone should be aware about this limitation when making the decision to work with stock values.</p>
 <p>There is an ongoing debate if the kind of &quot;negative stock value&quot; which result from the fact that we sell the service of receiving/collecting the materials and from the need to deal with internal – own treatment plant – or external costs – for (external) disposal – should be managed as a stock value. From the perspective of legal requirements for finance these are often defined as accruals not as a negative stock value. But from a controlling perspective it makes a lot of sense to apply the same logic as for positive stock values:</p>
 <ul>
 <li><p>Buying a raw material just increases the stock value and won't create any profit.</p>
@@ -132,7 +132,7 @@
 </li>
 </ul>
 <h2 id="content">Content</h2>
-<p>This document provides a rough overview for the Stock value management in enwis):</p>
+<p>This document provides a rough overview for the Stock value management in enwis:</p>
 <ul>
 <li><p>The necessary setups (see chapter 2) and</p>
 </li>
@@ -165,13 +165,13 @@
 <p>For the stock value management the following special setups in the inventory setup are mandatory:</p>
 <p><img src="../../images/image1.png" alt=""></p>
 <ol>
-<li><p>The management of the propper unit costs is technically only guaranteed if you prevent a negative stock quantity. This setting is clearly mandatory for enwis) working with item and their values.</p>
+<li><p>The management of the propper unit costs is technically only guaranteed if you prevent a negative stock quantity. This setting is clearly mandatory for enwis working with item and their values.</p>
 </li>
 <li><p>In the waste management industry it happens quite often that you get payed for collecting materials. The setting of &quot;Allow Negative Inbound Cost Amount&quot; allows the sales amount for an order line stocking material to be posted as (negative) costs for the item which leads to a negative stock value. It depends on legal requirements for finance in each country if this setting should be set. But posting this negative costs is the only technical way to calculate proper gross margins for the outbound item entries.</p>
 </li>
 </ol>
 <h2 id="setup-of-materials">Setup of materials</h2>
-<p>The usual setup for an item used in enwis) should look like this:<img src="../../images/image2.png" alt=""></p>
+<p>The usual setup for an item used in enwis should look like this:<img src="../../images/image2.png" alt=""></p>
 <ol>
 <li><p>The item No is mandatory of course.</p>
 </li>
@@ -189,11 +189,11 @@
 </li>
 <li><p>The Item Charge Assignment fields defines how the charge for this service gets added to the material lines in the order:</p>
 </li>
-<li><p>Manually: The user has to put in the split manually. This usually makes no sense in the enwis) process.</p>
+<li><p>Manually: The user has to put in the split manually. This usually makes no sense in the enwis process.</p>
 </li>
-<li><p>Equally: The charge gets split by the quantity of the material lines. (<em>Buggy right now</em>) This will be the most appropriate setting in most enwis) cases.</p>
+<li><p>Equally: The charge gets split by the quantity of the material lines. (<em>Buggy right now</em>) This will be the most appropriate setting in most enwis cases.</p>
 </li>
-<li><p>Amount: The charge gets split by the amounts of the material lines. This can be a setting in some enwis) cases.</p>
+<li><p>Amount: The charge gets split by the amounts of the material lines. This can be a setting in some enwis cases.</p>
 </li>
 </ol>
 <h1 id="process-examples">Process examples</h1>
@@ -206,7 +206,7 @@
 <li><p>E is a typical waste where you get payed to collect it.</p>
 </li>
 </ol>
-<p>Of course sometimes materials in the recycling industry are somewhere in between valuable and &quot;waste&quot; and depending on periods with moving market prices, quantities and purity of loads the material might be sometimes valuable and sometimes you need to pay for getting rid of it. The examples should just be seen as a starting point to understand the value management in enwis).</p>
+<p>Of course sometimes materials in the recycling industry are somewhere in between valuable and &quot;waste&quot; and depending on periods with moving market prices, quantities and purity of loads the material might be sometimes valuable and sometimes you need to pay for getting rid of it. The examples should just be seen as a starting point to understand the value management in enwis.</p>
 <ol>
 <li><p>F is used to demonstrate how the values get passed over via production.</p>
 </li>
@@ -218,7 +218,7 @@
 <h2 id="pure-inbound-and-outbound-processes">Pure Inbound and Outbound processes</h2>
 <h3 id="purchase-and-sale-of-valuable-material">Purchase and sale of valuable material</h3>
 <p>The first example is the simple case known from all the other industries where you buy (raw) material from a vendor to sell it to a customer later on. This happens in areas like metal and paper trading.</p>
-<p>The collection of small loads and/or pure quality of these kind of materials might lead into areas where you get payed for the collection, which is basically due to the logistical effort, outdating the value of the collected materials. In this case the sum of the order line amounts will positive – seen from the sales perspective -. In this case the material is from the enwis) perspective now what is named a non-valuable material in this document. So check out chapter 3.3 for those processes.</p>
+<p>The collection of small loads and/or pure quality of these kind of materials might lead into areas where you get payed for the collection, which is basically due to the logistical effort, outdating the value of the collected materials. In this case the sum of the order line amounts will positive – seen from the sales perspective -. In this case the material is from the enwis perspective now what is named a non-valuable material in this document. So check out chapter 3.3 for those processes.</p>
 <h4 id="first-purchase-of-material">First Purchase of material</h4>
 <p>The purchase process starts with a contract lines like this:</p>
 <p><img src="../../images/image6.png" alt=""></p>
@@ -461,13 +461,13 @@ with values to withdraw the values in the expected fields and moving them to the
 <h2 id="throughput-processes">Throughput Processes</h2>
 <h3 id="stock-value-in-separations">Stock value in separations</h3>
 <p>The separation is the other operational process for the materials which is describing the process in our own yard/warehouse. The third process is the relocation (see xx).</p>
-<p>A separation can be the enwis) representation of the following &quot;real world&quot; processes:</p>
+<p>A separation can be the enwis representation of the following &quot;real world&quot; processes:</p>
 <ol>
 <li><p>Materials that are distinguished for the inbound process may be for legal reasons – different EWC (European Waste Codes – or financial reasons get put together in one bin in our location. This happens in tanks and in many cases for bulky materials due to limited number of bins. It occurs if from the internal perspective of further treatment and purchase the materials are seen as so similar that this mixing has no impact on processes, quality control ... This approach might be named &quot;mixing locations&quot;.</p>
 </li>
 <li><p>Materials are sorted in different materials. Sometimes one of the resulting materials is the &quot;cleaned&quot; version of the input material. In this case for the sake of a proper stock value management it's necessary to either define the &quot;cleaned&quot; material as another item or use two different locations. Otherwise you would run into kind of endless recursive calculation processes.</p>
 </li>
-<li><p>But there are as well cases where nothing happens &quot;physically&quot; but it's just a reclassification of the materials. However, for enwis) this needs to be managed as a separation.</p>
+<li><p>But there are as well cases where nothing happens &quot;physically&quot; but it's just a reclassification of the materials. However, for enwis this needs to be managed as a separation.</p>
 </li>
 <li><p>The last real world process is the automated outbound separation in one of the 2 following scenarios where in distinction from process 1 and 2 no measurement/weighing is performed around the separation process:</p>
 </li>
@@ -1082,7 +1082,7 @@ with the following prompt from the system:<br>
 <img src="../../images/image153.png" alt=""></p>
 <p>With the option &quot;Amount&quot; the charge get simply splitted in slices weighted by amount:<br>
 <img src="../../images/image154.png" alt=""></p>
-<p>This basic split options got inherited from the standard NAV functionality and seem not to be sufficient for the typical enwis) business cases where a split weighted by quantities seems to be more appropriate in most cases (see chapter 3.5.5.2).</p>
+<p>This basic split options got inherited from the standard NAV functionality and seem not to be sufficient for the typical enwis business cases where a split weighted by quantities seems to be more appropriate in most cases (see chapter 3.5.5.2).</p>
 <p>As the management of those splitted charge amounts is buggy at the current status of development, the results from posting don't get displayed and described here.</p>
 <h3 id="surcharges-from-the-outbound-process">Surcharges from the outbound process</h3>
 <h4 id="starting-data-4">Starting Data</h4>
@@ -1268,14 +1268,14 @@ with the following prompt from the system:<br>
 <p>Eliminating this limitation in a test database showed, that the functionality is working fine in this case.</p>
 <h4 id="posting-drop-shipment-with-wrong-sign">Posting drop shipment with wrong sign</h4>
 <h5 id="contract-setup-for-drop-shipment">Contract setup for drop shipment</h5>
-<p>The usual setup for a drop shipment contract in enwis) for a valuable good looks like this:<img src="../../images/image180.png" alt=""></p>
+<p>The usual setup for a drop shipment contract in enwis for a valuable good looks like this:<img src="../../images/image180.png" alt=""></p>
 <p>The line for the collection of the material from the source needs the following characteristic fields to be populated:</p>
 <ol>
 <li><p>Posting Type Purchase as it's a valuable material.</p>
 </li>
 <li><p>Waste Entry Type needs to be Drop Shipment</p>
 </li>
-<li><p>The Drop Schipment Type needs to be &quot;Negative Adjustment&quot; which means its decreased from the source stock. Most users get initially confused by this definition. But it's the how enwis) works.</p>
+<li><p>The Drop Schipment Type needs to be &quot;Negative Adjustment&quot; which means its decreased from the source stock. Most users get initially confused by this definition. But it's the how enwis works.</p>
 </li>
 </ol>
 <p>And the line for the drop at the destination:</p>

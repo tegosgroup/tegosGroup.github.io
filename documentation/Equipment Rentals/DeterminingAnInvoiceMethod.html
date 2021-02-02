@@ -81,14 +81,14 @@
 <h1 id="determining-an-invoice-method">Determining an invoice method</h1>
 
 <h2 id="general">General</h2>
-<p>In enwis) it is possible to establish rentals on the basis of different calculation methods. These different calculation methods are known as Invoice method in enwis).</p>
+<p>In enwis it is possible to establish rentals on the basis of different calculation methods. These different calculation methods are known as Invoice method in enwis.</p>
 <p>With the help of the invoice method the parameters with which the rental time period is to be established are determined. These parameters include e.g. the number of days which are actually to run into the rental time period, the information regarding whether a daily or monthly rental is to be calculated etc. The set up of an invoice method is described in detail in a separate document.</p>
 <p>First of all it is necessary to clarify how the suitable invoice method is established.</p>
 <p>The establishment of an invoice method occurs analogously to the establishment of an inventory account via a matrix, namely the rental invoice matrix. The combination of different criteria in the rental invoice matrix leads to the desired invoice method.</p>
 <h2 id="rental-invoice-groups">Rental Invoice Groups</h2>
 <p>The rental invoice group code is a central criterion in the rental invoice matrix. This can be issued by customer, vendor, customer task site, vendor task site or project.</p>
 <p>The rental invoice groups can be set up via the following menu path</p>
-<p><em><span class="smallcaps">enwis)
+<p><em><span class="smallcaps">enwis
 services/equipment/Administration/Equipment Rentals/Rental
 invoicing/rental invoice groups</span></em></p>
 <p><img src="../../images/image1.png" alt=""></p>
@@ -101,10 +101,10 @@ invoicing/rental invoice groups</span></em></p>
 <p>. On the project card this allocation occurs on the register</p>
 <p><span class="smallcaps">general</span></p>
 <p>.</p>
-<p>In the selection of the correct rental invoice group, enwis) proceeds in line with the following hierarchy: Project in front of customer/vendor task site in front of customer/vendor.</p>
+<p>In the selection of the correct rental invoice group, enwis proceeds in line with the following hierarchy: Project in front of customer/vendor task site in front of customer/vendor.</p>
 <h2 id="equipment-group">Equipment Group)</h2>
 <p>The equipment group code is an additional criterion for establishment of the invoice method via the rental invoice matrix. Equipment groups can be set up via the menu path</p>
-<p><em><span class="smallcaps">enwis)
+<p><em><span class="smallcaps">enwis
 Services/Equipment/Administration/setup/groups &amp; matrices/equipment
 group</span></em></p>
 <p><img src="../../images/image3.png" alt=""></p>
@@ -113,9 +113,9 @@ group</span></em></p>
 <p>of the equipment card.</p>
 <p><img src="../../images/image4.png" alt=""></p>
 <h2 id="rental-invoice-matrix">Rental Invoice Matrix</h2>
-<p>In the rental invoice matrix the various criteria can now be used to consign combinations from which enwis) establishes an invoice method automatically.</p>
+<p>In the rental invoice matrix the various criteria can now be used to consign combinations from which enwis establishes an invoice method automatically.</p>
 <p>The rental invoice matrix can be called up under</p>
-<p><em><span class="smallcaps">enwis) services/equipment/Administration/Equipment
+<p><em><span class="smallcaps">enwis services/equipment/Administration/Equipment
 Rentals/Rental invoicing/rental invoice matrix</span></em></p>
 <p>but also from the customer/vendor card, the customer/vendor task site card and from the project card.</p>
 <p>In addition to the criteria rental invoice group and equipment group already named, the matrix can also have the posting type, the equipment number (of a concrete equipment item rather than just the equipment group), the service group code and the start date consigned as relevant criteria to the invoice method fixing.</p>
@@ -124,7 +124,7 @@ Rentals/Rental invoicing/rental invoice matrix</span></em></p>
 <p><strong><u>Note:</u></strong></p>
 <p><strong>If all customers are to receive the same invoice method for all containers, it is sufficient to apply a single data record which has an entry in the field <em>Invoice Method Code</em> and for which all other fields otherwise remain empty.</strong></p>
 <h2 id="number-of-rental-invoice-and-equipment-groups">Number of rental invoice and equipment groups</h2>
-<p>A question in the implementation of enwis) is how many equipment group codes or rental invoice group codes there should be. The response depends on what the establishment of the invoice method is primarily based on.</p>
+<p>A question in the implementation of enwis is how many equipment group codes or rental invoice group codes there should be. The response depends on what the establishment of the invoice method is primarily based on.</p>
 <p>For the simplification of just two invoice methods let us assume an invoice according to daily rental (DAILY) and an invoice according to monthly rental (MONTHLY). In practice there could be the following scenarios:</p>
 <ul>
 <li>The establishment of whether a daily or monthly rental is calculated depends on the customer/vendor (or additionally on the customer/vendor task site or on the project). In this case it would make sense to apply two rental invoice group codes (DAILY and MONTHLY) and only one equipment group code or none at all. Of course it is also possible to set up several equipment groups in order to make distinctions at another point in the operational business but not to apply rental invoice matrix lines for these and instead to leave the corresponding field empty.</li>

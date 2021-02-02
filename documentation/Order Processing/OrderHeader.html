@@ -81,24 +81,24 @@
 <h1 id="order-header">Order header</h1>
 
 <h2 id="general">General</h2>
-<p>As contracts and orders are largely structured analogously, i.e. they have the same fields with a largely identical function, the structure of order headers is presented in detail below. In everyday business, orders are the instrument used most frequently by enwis) and they do as a rule have the greatest information content.</p>
+<p>As contracts and orders are largely structured analogously, i.e. they have the same fields with a largely identical function, the structure of order headers is presented in detail below. In everyday business, orders are the instrument used most frequently by enwis and they do as a rule have the greatest information content.</p>
 <h2 id="general-register">General register</h2>
 <p>New orders are in principle applied with <strong>Ctrl + N.</strong> On the register</p>
 <p><span class="smallcaps">General</span></p>
-<p>the obligatory fields to fill in are the fields <em>Nr</em>. and <em>Geschäft mit Nr.</em> All other fields in the order header are optional. The field <em>Geschäft mit Nr.</em> is filled semi-manually by the selection of a customer, the field <em>Nr</em>. by contrast is filled automatically by enwis).</p>
+<p>the obligatory fields to fill in are the fields <em>Nr</em>. and <em>Geschäft mit Nr.</em> All other fields in the order header are optional. The field <em>Geschäft mit Nr.</em> is filled semi-manually by the selection of a customer, the field <em>Nr</em>. by contrast is filled automatically by enwis.</p>
 <p><img src="../../images/image1.png" alt=""></p>
 <p>The field <em>No</em>. is filled automatically with a number from the number series consigned for this following activation of the return key.</p>
 <p>The customer for whom the order is created is stipulated via the field <em>Business-with No.</em> If the function</p>
 <p><em><span class="smallcaps">orders</span></em></p>
 <p>is called up in the menu</p>
 <p><em><span class="smallcaps">Waste Producer Processes</span></em></p>
-<p>, enwis) branches off automatically into the list of customers. The application of a vendor order is not possible from this position.</p>
+<p>, enwis branches off automatically into the list of customers. The application of a vendor order is not possible from this position.</p>
 <p>In principle the trigger or customer for this order should be named via <em>Business with No**</em>.<em>* It is possible to combine various vendor and customer components in an order via the various order lines but each order line also carries the identified customer via the field</em> Post-with No.*</p>
 <p>In the field <em>Business-with Contact No.</em> the customer's contact person responsible for this order can be selected. This contact must be applied in the menu</p>
 <p><em><span class="smallcaps">sales &amp; Marketing</span></em></p>
 <p>beforehand.</p>
-<p>The fields <em>Business-with Name</em> to <em>Business-with Contact</em> are filled automatically by enwis) by the previously input numbers and on the basis of the data consigned there. The entries made by enwis) can in principle also be overwritten manually. The correction of the master data is however as a rule more sensible at least when long term data changes such as e.g. changes of address for the customer are involved.</p>
-<p>The field <em>Order Date</em> is filled automatically by enwis) with the work date. The content of the field refers to the date of application of the order. If necessary the setting made by enwis) can be overwritten manually.</p>
+<p>The fields <em>Business-with Name</em> to <em>Business-with Contact</em> are filled automatically by enwis by the previously input numbers and on the basis of the data consigned there. The entries made by enwis can in principle also be overwritten manually. The correction of the master data is however as a rule more sensible at least when long term data changes such as e.g. changes of address for the customer are involved.</p>
+<p>The field <em>Order Date</em> is filled automatically by enwis with the work date. The content of the field refers to the date of application of the order. If necessary the setting made by enwis can be overwritten manually.</p>
 <p>The field <em>Task Date</em> refers to the intended date for completing the order.</p>
 <p>The field <em>Task Date</em> is primarily important as input assistance for the entries belonging to the line. The current work date is input by the system as standard here. Any other date can however also be entered manually here. The dispatching date is transferred from the line to the entries belonging to the line. The dispatching date of e.g. waste entries becomes the posting date of waste ledger entries and is thus decisive for the time determination of the stock inflow.</p>
 <p>The field <em>Order Code</em> provides the possibility of setting up internal sorting or filtering criteria via which batch processing e.g. the combine invoices can be controlled. Orders can be classified and invoiced jointly via order types. In this way it is for example possible to capture all rental orders in an invoice run via an order type code &quot;Rental&quot;.</p>
@@ -113,8 +113,8 @@
 <p>The fields are filled from the fields of the same name of the customer or the task site on application of the order. If the distance and travelling time to a particular customer task site are consigned then this is also transferred into the order.</p>
 <h2 id="posting-register">Posting register</h2>
 <p><img src="../../images/image4.png" alt=""></p>
-<p>The fields <em>Currency Code</em> and <em>Language Code</em> are Dynamics NAV standard functions. Foreign currencies and foreign languages are input here where appropriate. For customers for whom invoicing takes place in € and with whom communication occurs in German, these fields remain empty.</p>
-<p>The field <em>Posting Date</em> can be filled automatically by enwis) or manually by the user.</p>
+<p>The fields <em>Currency Code</em> and <em>Language Code</em> are Business Central standard functions. Foreign currencies and foreign languages are input here where appropriate. For customers for whom invoicing takes place in € and with whom communication occurs in German, these fields remain empty.</p>
+<p>The field <em>Posting Date</em> can be filled automatically by enwis or manually by the user.</p>
 <p>In the</p>
 <p>_<span class="smallcaps">Waste Management setup/Register
 contract/</span></p>
@@ -150,7 +150,7 @@ contract/</span></p>
 <p><span class="smallcaps">Status</span></p>
 <p>of the waste management set up can above all be used to set certain actions such as entry creation, automatic counter entry or customer-vendor jumping which are triggered by a change in status.</p>
 <p>The way of otherwise filling in the various stati can however be freely defined by the user in terms of content and it must where appropriate be integrated into the work flow via corresponding individual programmes which are called on a particular change of status.</p>
-<p>In the field <em>Job No</em>. the order can be assigned to certain projects. Waste management projects are an important, price forming criterion in enwis). The allocation of contracts to projects is what primarily makes sense. It is also possible to apply each order automatically as a project so that valid prices can only be defined for this contract.</p>
+<p>In the field <em>Job No</em>. the order can be assigned to certain projects. Waste management projects are an important, price forming criterion in enwis. The allocation of contracts to projects is what primarily makes sense. It is also possible to apply each order automatically as a project so that valid prices can only be defined for this contract.</p>
 <p>In the field <em>External Document No.</em> default purchase order or order numbers or similar can be consigned by the customer. This is particularly useful if these have to appear on the invoices. The consignment does as a rule occur at the contract stage and it is copied into the relevant orders.</p>
 <p>In the two fields <em>External Contract No.</em> and <em>External Call No.</em> it is possible to enter contract, purchase order and order numbers of the customer. This information is as a rule compulsory for large companies and business with public facilities in particular so that the later invoicing can refer to it. These fields are only present in the order header and</p>
 <p><u>not</u></p>
