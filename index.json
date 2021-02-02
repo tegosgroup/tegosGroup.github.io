@@ -448,5 +448,10 @@
     "href": "index.html",
     "title": "Welcome to the tegos Documentation page | tegos Documentation",
     "keywords": "Welcome to the tegos Documentation page Important As the documentation is currently being updated this does not represent the current state of our products."
+  },
+  "README.html": {
+    "href": "README.html",
+    "title": "tegos Group Docs | tegos Documentation",
+    "keywords": "tegos Group Docs This repository contains the documentation files of the tegos Group . License See LICENSE ."
   }
 }
