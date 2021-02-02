@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Waste Material-EWC Instructions for set up | tegos Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Waste Material-EWC Instructions for set up | tegos Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../images/logos/tegos_favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/logos/logo-tegos-white.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="WasteMaterialEWCInstructionsForSetUp">
+<h1 id="waste-material---ewc---instructions-for-set-up">Waste Material - EWC - Instructions for set up</h1>
+
+<h2 id="general">General</h2>
+<p>External waste materials result from guidelines of the legislator; therefore the European Waste List is decisive in accordance with the Waste List Directive (AVV).</p>
+<p>Internal waste materials can be freely defined and can be placed in any relationship to EWC numbers. Internal waste materials can refer to several EWC numbers; conversely an EWC number can be assigned to any number of internal waste materials.</p>
+<p>A materials catalog can be defined via internal waste materials which depicts the business activity of the respective disposal and recycling operation.</p>
+<p>The set up of an internal materials catalog is absolutely necessary in enwis) in order to be able to form waste ledger entries.</p>
+<p>Waste ledger entries are formed exclusively on the basis of internal waste materials.</p>
+<p>Even where there is a 1:1 relationship between EWC numbers and internal waste materials, the latter must be defined in order to be able to enter the former in the form of waste ledger entries.</p>
+<p>The reason for this is found in the practice of most waste management companies for which the internal freely defined waste materials catalog has considerably more relevance than the official EWC catalog. This means that the depiction of all material flows and the waste balances occurs on the basis of the internal waste materials or to put it more precisely on the basis of waste ledger entries which can only be formed by means of internal waste materials.</p>
+<p>The EWC catalog is made available to customers of tegos gmbh in the form of a text file which can easily be imported into the database. The EWC catalog corresponds to the version valid at the time.</p>
+<p>Subsequently the internal waste materials must be defined whereby relationships between internal waste materials and EWC numbers are set up.</p>
+<p>There is an N to N relationship between internal waste materials and EWC numbers via the so-called waste material EWC references. This means that each internal waste material can be linked to any number of EWC numbers and conversely any number of internal waste types can be allocated to each EWC number.</p>
+<p>Both types of linking can be displayed as follows in diagram form:</p>
+<p><img src="../../images/image1.png" alt="Wor3C9"></p>
+<p>The relationships between EWC codes and internal waste materials can also run &quot;crosswise&quot; so that several waste materials are each linked with several EWC numbers and the EWC numbers also with several waste materials.</p>
+<p>It is also possible to link each internal waste material with a single EWC number in a fixed manner;</p>
+<p>then the EWC number is also transferred automatically on validation of the waste material in the order line.</p>
+<p>If several EWC numbers are connected with a waste material, the user must make a manual selection from these on the order line.</p>
+<p>Internal waste materials can of course also be formed completely detached from every EWC reference.</p>
+<p>The internal waste materials are thus also a type of link between the invoice relevant services and the EWC numbers which serve exclusively for legal material classification.</p>
+<p>Waste materials cannot be sold directly; the waste material can thus not be compared with the article in MS Dynamics NAV. Instead a waste material is a compulsory component of a service in enwis). Waste materials can only be bought and sold in the form of services. This means that prices can only be assigned to services while this is not possible for waste materials.</p>
+<p>Waste materials are however a criterion for price formation unlike EWC numbers. This means that the service price can be differentiated depending on the waste material but not depending on the EWC number.</p>
+<p>It is recommended that the method of transfer of the internal waste material types to the operational area i.e. the order line is taken into consideration during the set up. The relationship of a billable service and the price forming waste material among other things must be designed here in particular.</p>
+<p>In practice the method of setting up an individual service for each internal waste material has been proven. The data flow can look as follows diagrammatically whereby the variants of the relationship of EWC number to internal waste material shown above are taken into account:</p>
+<p><img src="../../images/image2.png" alt="WorDFB1"></p>
+<p>During the recording of orders the service must be entered on the order line, this comes with the waste material and the waste material in turn is linked with several EWC numbers (variant 1) or just with one EWC number (variant 2).</p>
+<p>If only one EWC number was assigned to the waste material, this is transferred automatically onto the line; if several numbers were consigned to the waste material, the user must make a selection from these manually.</p>
+<p>The alternative to this process would be to set up just a single service &quot;waste management&quot; or to set up a manageable number of waste management services and to add to these waste management services with the relevant waste material on the order line.</p>
+<p>The advantage of this process is that the service catalog can be made very clear; the disadvantage however is that the user cannot avoid having to make a selection from a comprehensive catalog. Either from a differentiated service catalog (for the first process) or from a differentiated waste materials catalog (for the second process).</p>
+<p>The benefit of a differentiated service catalog is that many functions are only available on the service card and not however on the waste materials catalog.</p>
+<p>This means that it is for example possible to manage different warehouse and invoice units for services but not for waste materials. It is also only possible for services to consign texts which are automatically accepted into the order automatically or by function. Thus many waste material specific differentiations can only be depicted via services in enwis).</p>
+<p>In terms of evaluations it is also recommended to work with a differentiated service catalog. The service chart of accounts makes it possible to easily make statements concerning which turnover was attained with which waste materials if an individual service is defined for each waste material.</p>
+<p>An account is assigned to each service in the service chart of accounts on which the sales and purchase quantities and the associated proceeds and costs are listed. The more global the definitions of the services, the less differentiated the statements which can be made here.</p>
+<p><img src="../../images/image3.png" alt="WorBB5F"></p>
+<p>Analytical tools similar to the service chart of accounts are available in the field of waste materials in the form of the waste material chart of accounts and the EWC chart of accounts. These plans do however only provide information about the quantity movements and not about the turnovers which were generated with individual waste materials.</p>
+<p><img src="../../images/image4.png" alt="WorA82C"></p>
+<p>Waste materials are the basis for the depiction of flows of quantities in the form of waste entries and waste ledger entries. When posting the waste entry, the same posting routines apply as for the entering of order lines in MS Dynamics NAV and in enwis).</p>
+<p>Therefore the general product and VAT posting groups are requested as standard here. This is superfluous where content is concerned as no movements on the accounts of the general ledger are linked with this posting of the material movements. Therefore it is not required from an accounting perspective however it is necessary for technical database reasons to assign those posting groups to the waste materials which only serve to link the operational actions with the general ledger.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Einfach. Mehr. Wert.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

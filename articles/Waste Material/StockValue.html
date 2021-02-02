@@ -1,0 +1,1435 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Stock_Value | tegos Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Stock_Value | tegos Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../images/logos/tegos_favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/logos/logo-tegos-white.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="StockValue">
+
+
+<p><strong>Stock Value in enwis)</strong></p>
+<h1 id="contents">Contents</h1>
+<p><a href="#preface">1 Preface 2</a></p>
+<p><a href="#impacts-of-stock-value-management">1.1 Impacts of Stock value management 2</a></p>
+<p><a href="#content">1.2 Content 3</a></p>
+<p><a href="#setups">2 Setups 3</a></p>
+<p><a href="#general-setup">2.1 General Setup 3</a></p>
+<p><a href="#setup-of-materials">2.2 Setup of materials 4</a></p>
+<p><a href="#setup-for-item-charges">2.3 Setup for item charges 5</a></p>
+<p><a href="#process-examples">3 Process examples 5</a></p>
+<p><a href="#example-data">3.1 Example data 5</a></p>
+<p><a href="#pure-inbound-and-outbound-processes">3.2 Pure Inbound and Outbound processes 6</a></p>
+<p><a href="#purchase-and-sale-of-valuable-material">3.2.1 Purchase and sale of valuable material 6</a></p>
+<p><a href="#non-valuable-goods-waste">3.2.2 Non valuable goods („Waste&quot;) 15</a></p>
+<p><a href="#throughput-processes">3.3 Throughput Processes 20</a></p>
+<p><a href="#stock-value-in-separations">3.3.1 Stock value in separations 20</a></p>
+<p><a href="#relocation-of-materials">3.3.2 Relocation of materials 30</a></p>
+<p><a href="#additional-costs-revenues">3.4 Additional costs / revenues 30</a></p>
+<p><a href="#surcharges-for-valuable-good">3.4.1 Surcharges for valuable good 30</a></p>
+<p><a href="#assigning-charges-to-several-material-lines">3.4.2 Assigning charges to several material lines 34</a></p>
+<p><a href="#surcharges-from-the-outbound-process">3.4.3 Surcharges from the outbound process 35</a></p>
+<p><a href="#surcharges-for-waste">3.4.4 Surcharges for waste 35</a></p>
+<p><a href="#surcharges-and-adjust-cost-item-entry">3.4.5 Surcharges and Adjust Cost – Item Entry 38</a></p>
+<p><a href="#production-costs">3.4.6 Production costs 39</a></p>
+<p><a href="#current-limitations">3.4.7 Current limitations 40</a></p>
+<p><a href="#remaining-issues-cases">4 Remaining issues / cases 46</a></p>
+<p><a href="#item-charges">4.1 Item Charges 46</a></p>
+<p><a href="#item-charges-for-material-lines-of-entry-type-drop-shipment">4.1.1 Item Charges for material lines of entry type drop shipment 46</a></p>
+<p><a href="#equipment-services-as-item-charges">4.1.2 Equipment services as item charges 46</a></p>
+<p><a href="#mixt-amounts-of-materials-and-item-charges">4.1.3 Mixt amounts of materials and item charges: 46</a></p>
+<p><a href="#other-issues">4.1.4 Other issues 46</a></p>
+<p><strong>green are the not yet existing chapters</strong></p>
+<h1 id="preface">Preface</h1>
+<h2 id="impacts-of-stock-value-management">Impacts of Stock value management</h2>
+<p>If materials are managed as items in enwis) it's possible beside to manage accurate values for these items beside the pure management of quantities. The maintenance of data and structures like the contracts need additional attention. This increases the time needed for consultancy and training but as well for the users during daily work. Only based on very accurate data maintenance the resulting stock values can be somehow reliable. Everyone should be aware about this limitation when making the decision to work with stock values.</p>
+<p>There is an ongoing debate if the kind of &quot;negative stock value&quot; which result from the fact that we sell the service of receiving/collecting the materials and from the need to deal with internal – own treatment plant – or external costs – for (external) disposal – should be managed as a stock value. From the perspective of legal requirements for finance these are often defined as accruals not as a negative stock value. But from a controlling perspective it makes a lot of sense to apply the same logic as for positive stock values:</p>
+<ul>
+<li><p>Buying a raw material just increases the stock value and won't create any profit.</p>
+</li>
+<li><p>Production costs can be handled similar to the purchase costs as a surcharge increasing the stock value.</p>
+</li>
+<li><p>By later on selling the material the stock value get reduced and the sales amount deducted by this cost of stock value increase make up the raw margin.</p>
+</li>
+</ul>
+<p>If the raw material starts with a negative value due to the sales amount for the receiving process instead of the positive value in a &quot;usual&quot; purchase process doesn't make a real difference from the controlling perspective. If the process ends with a purchase it makes as well no difference for the basic methodology. NAV item management is supporting this approach with some limitations to be kept in mind:</p>
+<ul>
+<li><p>Negative Stock quantities are very common in the waste and recycling industry with its wet bulk materials and with its liquids. The stock quantity in NAV is simply the sum of all posted transactions. Weighing the inbound and outbound transactions is usually manageable. But differences in the mass balance due to &quot;drying&quot;, internal movements without accurate &quot;weighing&quot; and reclassification of materials without accurate mass balances due to limited weighings are common. So frequent stock takings are necessary. But between those adjustments the all transactions might sum up to a negative value. As this exceeds the functional scope of the NAV value management this needs to be blocked. Together with delayed posting of inbound transactions but most of all for internal processes resulting in stock quantity adjustments for the materials this situations might occur frequently. In this case special precautions are necessary to handle this situations without slowing down the processes too much.</p>
+</li>
+<li><p>Sales amounts get posted as negative costs as soon as the sales invoice get posted. The analogous purchase amounts get immediately posted as expected costs. This &quot;delay&quot; might be important for some business processes.</p>
+</li>
+</ul>
+<h2 id="content">Content</h2>
+<p>This document provides a rough overview for the Stock value management in enwis):</p>
+<ul>
+<li><p>The necessary setups (see chapter 2) and</p>
+</li>
+<li><p>The basic business processes being involved:</p>
+<ul>
+<li><p>Inbound / Outbound for</p>
+<ul>
+<li><p>Valuable goods (= recycling) (3.2)</p>
+</li>
+<li><p>Non valuable goods (= &quot;waste&quot;) (3.3)</p>
+</li>
+</ul>
+</li>
+<li><p>Separation (3.4) for</p>
+<ul>
+<li><p>Valuable goods (= recycling) (3.4.2-3.4.4)</p>
+</li>
+<li><p>Non valuable goods (= &quot;waste&quot;) (3.4.5-3.4.7)</p>
+</li>
+</ul>
+</li>
+<li><p>Surcharges and Deductions due to by-services in the inbound, outbound and separation process (3.5)</p>
+</li>
+</ul>
+</li>
+</ul>
+<p>The intention is to give somebody knowing the processes in the industry a basic guideline how to set up a (testing) scenario. This document is not intended to be a full blown manual for the mentioned topics.</p>
+<h1 id="setups">Setups</h1>
+<h2 id="general-setup">General Setup</h2>
+<p>For the stock value management the following special setups in the inventory setup are mandatory:</p>
+<p><img src="../../images/image1.png" alt=""></p>
+<ol>
+<li><p>The management of the propper unit costs is technically only guaranteed if you prevent a negative stock quantity. This setting is clearly mandatory for enwis) working with item and their values.</p>
+</li>
+<li><p>In the waste management industry it happens quite often that you get payed for collecting materials. The setting of &quot;Allow Negative Inbound Cost Amount&quot; allows the sales amount for an order line stocking material to be posted as (negative) costs for the item which leads to a negative stock value. It depends on legal requirements for finance in each country if this setting should be set. But posting this negative costs is the only technical way to calculate proper gross margins for the outbound item entries.</p>
+</li>
+</ol>
+<h2 id="setup-of-materials">Setup of materials</h2>
+<p>The usual setup for an item used in enwis) should look like this:<img src="../../images/image2.png" alt=""></p>
+<ol>
+<li><p>The item No is mandatory of course.</p>
+</li>
+<li><p>A description is useful</p>
+</li>
+<li><p>The base unit should usually be tonnes (to or MG)</p>
+</li>
+</ol>
+<p><strong>Internal information</strong></p>
+<p>To avoid rounding issues during separations the rounding precision should be set to a small enough value. At most something like kg as in this example:<img src="../../images/image3.png" alt=""></p>
+<h2 id="setup-for-item-charges">Setup for item charges</h2>
+<p>A service gets defined as Item Charge with the following settings:<img src="../../images/image4.png" alt=""></p>
+<ol>
+<li><p>The service needs to be marked as Item Charge.</p>
+</li>
+<li><p>The Item Charge Assignment fields defines how the charge for this service gets added to the material lines in the order:</p>
+</li>
+<li><p>Manually: The user has to put in the split manually. This usually makes no sense in the enwis) process.</p>
+</li>
+<li><p>Equally: The charge gets split by the quantity of the material lines. (<em>Buggy right now</em>) This will be the most appropriate setting in most enwis) cases.</p>
+</li>
+<li><p>Amount: The charge gets split by the amounts of the material lines. This can be a setting in some enwis) cases.</p>
+</li>
+</ol>
+<h1 id="process-examples">Process examples</h1>
+<h2 id="example-data">Example data</h2>
+<p>These are the materials being setup for the following examples:</p>
+<p><img src="../../images/image5.png" alt=""></p>
+<ol>
+<li><p>D is a material which get payed to receive it. A valuable good like metal scrap.</p>
+</li>
+<li><p>E is a typical waste where you get payed to collect it.</p>
+</li>
+</ol>
+<p>Of course sometimes materials in the recycling industry are somewhere in between valuable and &quot;waste&quot; and depending on periods with moving market prices, quantities and purity of loads the material might be sometimes valuable and sometimes you need to pay for getting rid of it. The examples should just be seen as a starting point to understand the value management in enwis).</p>
+<ol>
+<li><p>F is used to demonstrate how the values get passed over via production.</p>
+</li>
+<li><p>So does G</p>
+</li>
+<li><p>H is a by-product of a production in the meaning that it's a waste material like E where we will need to pay to get rid of it later, whereas F and G are valuable materials like D.</p>
+</li>
+</ol>
+<h2 id="pure-inbound-and-outbound-processes">Pure Inbound and Outbound processes</h2>
+<h3 id="purchase-and-sale-of-valuable-material">Purchase and sale of valuable material</h3>
+<p>The first example is the simple case known from all the other industries where you buy (raw) material from a vendor to sell it to a customer later on. This happens in areas like metal and paper trading.</p>
+<p>The collection of small loads and/or pure quality of these kind of materials might lead into areas where you get payed for the collection, which is basically due to the logistical effort, outdating the value of the collected materials. In this case the sum of the order line amounts will positive – seen from the sales perspective -. In this case the material is from the enwis) perspective now what is named a non-valuable material in this document. So check out chapter 3.3 for those processes.</p>
+<h4 id="first-purchase-of-material">First Purchase of material</h4>
+<p>The purchase process starts with a contract lines like this:</p>
+<p><img src="../../images/image6.png" alt=""></p>
+<ol>
+<li><p>The posting type is purchase. A sales line with a negative price would end with a similar result</p>
+</li>
+<li><p>Via the debitorisch-kreditorische springen it ends up as a purchase line in which case the result is exactly the same.</p>
+</li>
+<li><p>If it get's posted as a sales credit memo - which in most countries and situation is not allowed due to tax legislation – the result would be slightly different.</p>
+</li>
+<li><p>The line needs a unit price.</p>
+</li>
+<li><p>The Material Reference Type needs to be Item</p>
+</li>
+<li><p>Our example Material for valuable goods.</p>
+</li>
+<li><p>It need to be a stocking = Inbound load</p>
+</li>
+</ol>
+<p>The order created from this contracts brings the following additional data:<img src="../../images/image7.png" alt=""></p>
+<ol>
+<li><p>Quantity of material (usually in tonnes).</p>
+</li>
+<li><p>The task date for the receiving of the load in our location which becomes the posting date for the stock entry.</p>
+</li>
+<li><p>A Location would usually be used but was left empty to keep the example as simple as possible.</p>
+</li>
+</ol>
+<p>The order gets posted either as a release of the order or as a pure posting of stock:</p>
+<p><img src="../../images/image8.png" alt=""></p>
+<p>This is the result in the item chart of accounts:<img src="../../images/image9.png" alt=""></p>
+<p>The 3 tons are seen on stock and as a quantity of stocking processes.</p>
+<p>The item ledger entry resulting from the posting is:<img src="../../images/image10.png" alt=""></p>
+<ul>
+<li><p>Quantity is 3 tons. In this case this would show the quantity measured in tons due to a unit conversion routine if the order would have used a unit like cubic meter.</p>
+</li>
+<li><p>This quantity is of course fully remaining on stock</p>
+</li>
+<li><p>And the expected Purchase amount is 30. It's still an &quot;expected&quot; value as the purchase invoice wasn't posted yet – actually it's not even created yet.</p>
+</li>
+</ul>
+<p>The creation of the purchase invoice – via combine invoicing – is the next step in the process:</p>
+<p>In the invoice, due to a price change occurring in the meanwhile, the price might have changed:<img src="../../images/image11.png" alt=""></p>
+<ol>
+<li>In this example, the contract price of 10 got now adjusted to 12 in the (unposted) invoice.</li>
+</ol>
+<p>Posting this invoice now results in this modified item ledger entry data:<img src="../../images/image12.png" alt=""></p>
+<ul>
+<li><p>The invoiced quantity is now 3 instead of 0.</p>
+</li>
+<li><p>The expected purchase amount is now 0 instead of 30,</p>
+</li>
+<li><p>As the actual purchase amount is now the 36 due to the new pricing.</p>
+</li>
+<li><p>But most of all the Cost Amount (actual) is now 36.</p>
+</li>
+</ul>
+<p>The details can be seen in the value entries for this item ledger entry:<img src="../../images/image13.png" alt=""></p>
+<ul>
+<li><p>A new value entry was created with the updating data:</p>
+<ul>
+<li><p>Document Type is purchase invoice with the invoice number as document number.</p>
+</li>
+<li><p>The withdraw of the expected cost and the posting of the actual cost instead of this</p>
+</li>
+<li><p>The new cost per unit</p>
+</li>
+<li><p>The item ledger entry quantity was not touched but the valued quantity got touched.</p>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="sale-of-valuable-material">Sale of valuable Material</h4>
+<p>The sales process starts with a contract line of posting type sales:<img src="../../images/image14.png" alt=""></p>
+<ol>
+<li><p>Posting Type is Sales,</p>
+</li>
+<li><p>The Post with No is another business partner then the one in the purchase line.</p>
+</li>
+<li><p>The line has his own price which hopefully leaves room for a gross margin.</p>
+</li>
+<li><p>But most of all the Waste Entry Type is disposal – or drop shipment with pos. adjustment as drop shipment type - for this process.</p>
+</li>
+</ol>
+<p>The order created from this contract line takes the following additional data:<img src="../../images/image15.png" alt=""></p>
+<ol>
+<li><p>The quantity of the material – usually tons –</p>
+</li>
+<li><p>And the task date for this delivery or pick-up from our yard.</p>
+</li>
+</ol>
+<p>Posting this order results in the following data in the item chart of account:<img src="../../images/image16.png" alt=""></p>
+<p>The stock quantity is now decreased to 2 which is the sum of the two entries of +3 and -1:<img src="../../images/image17.png" alt=""></p>
+<p>The newly created &quot;sales&quot; entry shows the relevant data:</p>
+<ul>
+<li><p>Order number as document no.</p>
+</li>
+<li><p>The Quantity of -1</p>
+</li>
+<li><p>The sales amount of 15.</p>
+</li>
+<li><p>But <strong>no cost amount</strong> at this stage of the process!</p>
+</li>
+</ul>
+<p>In the G/L this is seen in the following way:<img src="../../images/image18.png" alt=""></p>
+<p>The stock value is still shown as 36 for the initially stocked 3 tons with 12/ton.</p>
+<p>To adjust this is the job of the Adjust Cost – Item Entries feature in NAV:<img src="../../images/image19.png" alt=""></p>
+<p><img src="../../images/image20.png" alt=""></p>
+<p>... which adjusts the <strong>outbound</strong> item ledger entry:<img src="../../images/image21.png" alt=""></p>
+<p>By showing the expected costs for the outbound load. Which can be seen in detail in the value entry which got newly created by this function:<img src="../../images/image22.png" alt=""></p>
+<p>Now this sell needs to finalized by posting the invoice. The following invoice gets posted:<img src="../../images/image23.png" alt=""></p>
+<p>... which updates the item ledger once again:<img src="../../images/image24.png" alt=""></p>
+<p>By moving the – in this case unchanged – numbers from the expected to the actual fields. The details are seen in the value entries in a newly created entry:<img src="../../images/image25.png" alt=""><br>
+with values to withdraw the values in the expected fields and moving them to the actual fields.</p>
+<p>But even more important these actual costs and revenues got no posted in the G/L:<img src="../../images/image26.png" alt=""></p>
+<ul>
+<li><p>The stock value got now decreased to 24 for the remaining 2 tons of 12.</p>
+</li>
+<li><p>The sales amount is now 15 which is the sales amount from this invoice.</p>
+</li>
+<li><p>And the AR is 18.75 including the applicable VAT.</p>
+</li>
+</ul>
+<h4 id="second-purchase-order">Second purchase order</h4>
+<p>To show the impact of several purchase orders with different purchase prices for the stock value the following order was created:<img src="../../images/image27.png" alt=""></p>
+<ol>
+<li><p>With the same tonnage as the first order.</p>
+</li>
+<li><p>But a different price 14 instead of 12</p>
+</li>
+<li><p>And being a Stocking like the first order.</p>
+</li>
+</ol>
+<p>In this case we step directly into the purchase invoice including the background posting of the item:<img src="../../images/image28.png" alt=""></p>
+<p>After posting this invoice the item ledger entries are:<img src="../../images/image29.png" alt=""></p>
+<p>The newly created item ledger entry for the 2</p>
+<p><sup>nd</sup></p>
+<p>order with a quantity of 3 and a purchase and cost amount of 42. But the cost amount for the first sales order remains untouched with a cost of 12.</p>
+<h5 id="adjust-cost--item-entry-functionality">Adjust Cost – Item Entry functionality</h5>
+<p>Once again the Adjust Cost –Item Entry functionality fixes this situation.</p>
+<p>After performing the function the outbound item ledger entry got adjusted:<img src="../../images/image30.png" alt=""></p>
+<p>By correcting the cost amount to the average purchase price of 13 from the two loads of 3 tons each with their price of 12 and 14.</p>
+<p>The data are managed in a new value entry:<img src="../../images/image31.png" alt=""></p>
+<p>Which updated the G/L as well:<img src="../../images/image32.png" alt=""></p>
+<p>The remaining stock value = Inventory is now 65 which is the remaining tonnage of 5 times the average price of 13.</p>
+<h4 id="second-sales-order">Second Sales order</h4>
+<p>A second sales order is using:<img src="../../images/image33.png" alt=""></p>
+<ol>
+<li><p>The same tonnage as the first sales order.</p>
+</li>
+<li><p>But a different sales price</p>
+</li>
+</ol>
+<p>Posting this order updates the item chart of account:<img src="../../images/image34.png" alt=""></p>
+<p>In this case the new item ledger entry is using the new average unit cost without Adjust Cost-Item Ledger as the average price of 13 is still applicable:<img src="../../images/image35.png" alt=""></p>
+<h3 id="non-valuable-goods-waste">Non valuable goods („Waste&quot;)</h3>
+<p>The following example is following the same material flow as the example in chapter 3.2 for the valuable materials. The only difference is that from the financial perspective the inbound of the materials is a sales and the outbound is a purchase for this case of &quot;non valuable materials&quot;.</p>
+<h4 id="starting-point-for-the-example">Starting point for the example</h4>
+<p>In the G/L area we start from an empty chart due to limiting the monitored period:</p>
+<p><img src="../../images/image36.png" alt=""></p>
+<p>Concerning the stock we start from the situation resulting from the first example but we focus on material &quot;E&quot; which wasn't used up to know:<img src="../../images/image37.png" alt=""></p>
+<p>In the contract lines only those data get highlighted with specific data for this process whereas the other data are similar as in the first example:<img src="../../images/image38.png" alt=""></p>
+<ol>
+<li><p>and 4. Service and description might differ.</p>
+</li>
+<li><p>and 5. The posting type is just the opposite of those in the first example:</p>
+</li>
+<li><p>The stocking of material is a sales and</p>
+</li>
+<li><p>The disposal of material is a purchase</p>
+</li>
+<li><p>and 6. whereas the waste entry type is the same as in the first example</p>
+</li>
+</ol>
+<h4 id="first-sales-order">First sales order</h4>
+<p>The first order created from the first contract line adds the following order specific data:<img src="../../images/image39.png" alt=""></p>
+<ol>
+<li><p>The tonnage of 4.</p>
+</li>
+<li><p>The task date which will be the posting date for the item ledger entry.</p>
+</li>
+</ol>
+<p>After the posting of this order the results for the stock are:<img src="../../images/image40.png" alt=""></p>
+<p>The stock was increased by 4. The stocking quantity should have been increased by 4 as well. That's a kind of bug which will get fixed.</p>
+<p>The newly created item ledger entry looks very similar to the one in the first example:<img src="../../images/image41.png" alt=""></p>
+<ul>
+<li><p>The amount is seen in the expected sales amount instead of in the expected purchase amount in the first example.</p>
+</li>
+<li><p>And the expected cost amount is now showing a negative sign which is perfect.</p>
+</li>
+</ul>
+<p>The <strong>sales</strong> invoice gets now posted with a modified pricing which is the analogous process to the one applied in the first example for the valuable material:<img src="../../images/image42.png" alt=""></p>
+<p>Price got increased from 6 to 7 per ton.</p>
+<p>After posting the item ledger entry got updated:<img src="../../images/image43.png" alt=""></p>
+<p>Sales and Cost Amount are both now &quot;actual&quot; instead of &quot;expected&quot; and the amounts got adjusted due to the new price.</p>
+<p>A new value entry consists of the necessary data to make up the difference:<img src="../../images/image44.png" alt=""></p>
+<p>As the Posting date of the invoice was out of scope for the filter for the chart of accounts, the turn-over is not displayed in this filtered G/L chart of account. But at least the stock value got posted correctly :</p>
+<p><img src="../../images/image45.png" alt=""></p>
+<h4 id="purchase-order-for-disposal">Purchase order for disposal</h4>
+<p>The next step is to create a purchase order for the disposal:<img src="../../images/image46.png" alt=""></p>
+<ol>
+<li><p>With the tonnage of 2</p>
+</li>
+<li><p>And the disposal date</p>
+</li>
+</ol>
+<p>Posting this order results in the following updated Item Chart of accounts:<img src="../../images/image47.png" alt=""></p>
+<ul>
+<li><p>The Stock quantity got decreased correctly.</p>
+</li>
+<li><p>The Stocking quantity is displaying the result from this purchase order which needs to be fixed similar to the result from the sales order.</p>
+</li>
+</ul>
+<p>If we take a look at the item ledger entry:<img src="../../images/image48.png" alt=""></p>
+<p>We see, that the cost amount is initially not being posted, just the expected purchase amount.</p>
+<p>This differs from the situation for the valuable goods which looked like this:</p>
+<p>The „Adjust Cost Item Entries&quot; functions results in a corrected version of the item ledger entry:<img src="../../images/image49.png" alt=""></p>
+<p>Due to an additional value entry:<img src="../../images/image50.png" alt=""></p>
+<ul>
+<li><p>Being marked as Adjustment</p>
+</li>
+<li><p>With the corrected <strong>expected</strong> cost amounts.</p>
+</li>
+</ul>
+<p>Posting the outbound order as a <strong>purchase</strong> invoice:<img src="../../images/image51.png" alt=""></p>
+<p>...results in a second item ledger entry:<img src="../../images/image52.png" alt=""></p>
+<ul>
+<li><p>The Purchase amount is posted as expected but</p>
+</li>
+<li><p>Cost Amount expected is not yet posted.</p>
+</li>
+</ul>
+<p>The Adjust Cost-Item Ledger function fixes these values as this function is exactly made to fix outbound item ledger entries:<img src="../../images/image53.png" alt=""></p>
+<p>In the additional value entreise the values from the intial posting got corrected.</p>
+<p>The resulting item ledger entry is now showing the expected values:</p>
+<p><img src="../../images/image54.png" alt=""></p>
+<p>The result for the G/L is showing the reduced stock value as the quantity on stock is now 2 tons of 7 each:</p>
+<p><img src="../../images/image55.png" alt=""></p>
+<p>The AP are showing the values from the purchase invoice.</p>
+<h2 id="throughput-processes">Throughput Processes</h2>
+<h3 id="stock-value-in-separations">Stock value in separations</h3>
+<p>The separation is the other operational process for the materials which is describing the process in our own yard/warehouse. The third process is the relocation (see xx).</p>
+<p>A separation can be the enwis) representation of the following &quot;real world&quot; processes:</p>
+<ol>
+<li><p>Materials that are distinguished for the inbound process may be for legal reasons – different EWC (European Waste Codes – or financial reasons get put together in one bin in our location. This happens in tanks and in many cases for bulky materials due to limited number of bins. It occurs if from the internal perspective of further treatment and purchase the materials are seen as so similar that this mixing has no impact on processes, quality control ... This approach might be named &quot;mixing locations&quot;.</p>
+</li>
+<li><p>Materials are sorted in different materials. Sometimes one of the resulting materials is the &quot;cleaned&quot; version of the input material. In this case for the sake of a proper stock value management it's necessary to either define the &quot;cleaned&quot; material as another item or use two different locations. Otherwise you would run into kind of endless recursive calculation processes.</p>
+</li>
+<li><p>But there are as well cases where nothing happens &quot;physically&quot; but it's just a reclassification of the materials. However, for enwis) this needs to be managed as a separation.</p>
+</li>
+<li><p>The last real world process is the automated outbound separation in one of the 2 following scenarios where in distinction from process 1 and 2 no measurement/weighing is performed around the separation process:</p>
+</li>
+<li><p>In a sorting plant you might only care about inbound and outbound to avoid the extra effort and the limitations/ambiguity for measuring the throughput. In this case an automated separation &quot;producing&quot; the sorted outbound materials from the input material during the posting of the outbound material allows at least to monitor the estimated remaining stock on site without knowing how far it's already separated. And it allows for some controlling of the realized sorting percentages with limited accuracy for periods.</p>
+</li>
+<li><p>Some customers are mixing the outbound material from the materials on stock following a kind of recipe. In this case the posting of the outbound might trigger this production independent from the time this mixture takes place in the real world.</p>
+</li>
+</ol>
+<h4 id="seperation-of-valuable-materials">Seperation of valuable materials</h4>
+<h5 id="starting-data">Starting Data</h5>
+<p>The example starts with the stock resulting from the first example with an available stock of 4 tons of material D and an empty stock for the output materials F and G which we'll generate in the following example:</p>
+<p><img src="../../images/image56.png" alt=""></p>
+<p>With the following item ledger entries for the material D which is the input for the seperation:<img src="../../images/image57.png" alt=""></p>
+<p>And the inventory Value in the G/L:</p>
+<p><img src="../../images/image58.png" alt=""></p>
+<h5 id="seperation-template-and-production-bom">Seperation template and production BOM</h5>
+<p>A seperation template needs to be setup. The separation template defines:</p>
+<ul>
+<li><p>The steps for a separation if for example the output of a first step is used as an input for a second step for this separation. The following examples only describe the simple case of 1 step seperations.</p>
+</li>
+<li><p>Behind the steps the input materials being utilized get defined by assigning a Bill of Materials (BOM)</p>
+</li>
+<li><p>The output fractions get defined.</p>
+</li>
+<li><p>Costs / resource utilization get assigned indirectly by the &quot;Routing&quot;.</p>
+</li>
+</ul>
+<p>The special fields important for this example are:</p>
+<p><img src="../../images/image59.png" alt=""></p>
+<p>1. At least one step line is necessary</p>
+<p>2. D (see 7) gets split in two new materials - both valuable in this example -. First of them is F</p>
+<p>3. ... with an (expected) percentage of 70% of the input quantity</p>
+<p>4. The other is G</p>
+<p>5. ... with 30% of the input quantity</p>
+<p>6. Cost Allocation Type &quot;Equal&quot; is the most simple type - more advanced types will get inspected later - splitting the costs by mass percentage of the output.</p>
+<p>7. The components = input material result from the BOM with the following important data:</p>
+<blockquote>
+<p><img src="../../images/image60.png" alt=""></p>
+</blockquote>
+<blockquote>
+<p>1. Mandatory UOM</p>
+</blockquote>
+<blockquote>
+<p>2. Input Material</p>
+</blockquote>
+<p>8. The routing (see 3.4.1.3) is managing the resources and related costs for the production.</p>
+<h5 id="routing-and-work-center">Routing and Work Center</h5>
+<p>The routing is managing the resources and their costs for the production.</p>
+<p>The route defines the utilization of work centers: <img src="../../images/image61.png" alt=""></p>
+<p>In the work center data entity the costs get specified. In the following setups for the work center the costs were set to 0 to simplify the example:</p>
+<ol>
+<li><p>The costs of production are kept out of scope for the moment by putting them to zero.</p>
+</li>
+<li><p>The flushing method is set to manual to allow a pure manual input of the production journal.</p>
+</li>
+</ol>
+<p>The workcenter gets inherited to the routing:<br>
+<img src="../../images/image62.png" alt=""></p>
+<h5 id="seperation-order">Seperation Order</h5>
+<p>The separation order gets created from the separation template:<img src="../../images/image63.png" alt=""></p>
+<ol>
+<li><p>Choosing a template</p>
+</li>
+<li><p>Enter the quantity.</p>
+</li>
+</ol>
+<p>And by triggering the &quot;Refreshing Seperation&quot; function the following data – important for this stock value tracking get populated:</p>
+<ul>
+<li><p>The materials – D, F and G –</p>
+</li>
+<li><p>With their (expected) quantities</p>
+</li>
+<li><p>The Unit Cost and the Cost Amount</p>
+</li>
+</ul>
+<p>In the production journal the quantities can be edited which wasn't done in this example:</p>
+<p><img src="../../images/image64.png" alt=""></p>
+<p>As a result of posting the journal the separation order got updated:<img src="../../images/image65.png" alt=""></p>
+<ul>
+<li><p>Quantities are now found as „Actual Consumption&quot; or as „Finished Quantity&quot;.</p>
+</li>
+<li><p>But most of all the Unit costs and the cost amounts for the output materials got calculated.</p>
+</li>
+</ul>
+<h5 id="posting-results">Posting results</h5>
+<p>The posting results are visible in the item chart of accounts in means of quantities:<img src="../../images/image66.png" alt=""></p>
+<p>The item ledger entries show <strong>expected</strong> costs for the output – as the separation order is still not finished – and as actual cost amount for the consumed input:<img src="../../images/image67.png" alt=""></p>
+<p>After finishing the separation order:</p>
+<blockquote>
+<p><img src="../../images/image68.png" alt=""></p>
+</blockquote>
+<blockquote>
+<p>and</p>
+</blockquote>
+<blockquote>
+<p><img src="../../images/image69.png" alt=""></p>
+</blockquote>
+<p>... the outputs are now posted as <strong>actual</strong> cost amounts:</p>
+<p><img src="../../images/image70.png" alt=""></p>
+<p>But the stock value has <strong>not</strong> changed which is a crucial requirement for a proper stock value management:</p>
+<p><img src="../../images/image71.png" alt=""></p>
+<p>The production cost – which we setup as zero to simplify the example – could have been posted as increase of the stock value but except of this, the all over all stock value should never ever change when you just separate materials. This is technically a challenge, but as we could see it's proper managed in this feature together with basic NAV functionalities.</p>
+<h5 id="new-purchase-resulting-in-revaluating-the-stock">New purchase resulting in revaluating the stock</h5>
+<p>Similar to the simple buy and sell case (see 3.2) a new purchase of materials with another price then the current average unit cost for the input material will modify the average unit cost for the input material. Given this input was posted for a posting date prior to the separation this needs to adjust the cost amount for the separation and consequently the cost amounts for the output materials.</p>
+<p>After a purchase of additional 4 tons of D, the item chart of account looks like this:<img src="../../images/image72.png" alt=""></p>
+<p>The new item ledger entry shows a purchase amount of 44 = 11 / to:<img src="../../images/image73.png" alt=""></p>
+<p>After performing the &quot;Adjustment Cost Item Entries&quot; all Sales and Consumptions with a posting date later then the new purchase – being posted for 8/17/2017 – got adjusted with a new unit cost of 12.20 instead of the former 13 including the consumption entry for separation SO-000024:<img src="../../images/image74.png" alt=""></p>
+<p>For the consumption from the separation above (see 3.4.2.3 and 3.4.2.4) a new adjusting value entry was created like this:<img src="../../images/image75.png" alt=""></p>
+<p>And the other item ledger entries from the separation got adjusted as well to make sure, that the sum of Cost amounts for the separation order remains to be 0 as the stock value should never change due to a separation (see above):<img src="../../images/image76.png" alt=""></p>
+<p>These are the value entries for one of the output entries as an example how this is managed in the system:</p>
+<p><img src="../../images/image77.png" alt=""></p>
+<p>The results in the G/L need a deeper look:</p>
+<p>The stock value has changed:</p>
+<p><img src="../../images/image78.png" alt=""></p>
+<ul>
+<li><p>Former 38 plus</p>
+</li>
+<li><p>Purchase of 44</p>
+</li>
+</ul>
+<p>Should sum up to 82 instead of 83.60. But this is NOT a bug but a feature if we drill into the details. The reason is, that we need to take the &quot;Cost of Retail Sold&quot; in account.</p>
+<p>The G/L entries resulting from the separation, the new purchase and the later &quot;Adjustment Cost Item Entries&quot; are:</p>
+<ul>
+<li><p>The initial separation summing up to 0 purely in the stock account (2130).</p>
+</li>
+<li><p>The purchase itself increasing the stock. (<em>The opposite accounts are excluded from this filter</em>)</p>
+</li>
+<li><p>The &quot;Adjustment&quot; on the sales being posted in the past but with material, which needs to be adjusted. This is partly &quot;withdrawing&quot; the initial move from stock value (2130) to the cost of retail sold (7190) as the stock value &quot;consumed&quot; for those sales was lower than initially posted.</p>
+</li>
+<li><p>The adjustment of the separation as expected summing up to 0 purely in the stock account (2130).</p>
+</li>
+</ul>
+<p><img src="../../images/image79.png" alt=""></p>
+<h4 id="seperation-with-by-products">Seperation with by-products</h4>
+<p>In the laste example the valuable material got splitted in two new valuable products. But of course in the waste management industry you will quite often run into a case, where the valuable product, for the case with the non-valuable product see chapter 3.3.1.3, get sorted into some pure waste and a &quot;cleaned&quot; material with a higher value per ton.</p>
+<p>The starting point is the existing stock of 10 tons of the material I:<img src="../../images/image80.png" alt=""></p>
+<p>With a cost of 25 per ton:<img src="../../images/image81.png" alt=""></p>
+<h5 id="seperation-template-and-order">Seperation Template and Order</h5>
+<p>The separation template for this example is very similar with the one from chapter 3.3.1.1:<img src="../../images/image82.png" alt=""></p>
+<ol>
+<li><p>The input gets defined in a production Bill of Materials which was shown in chapter 3.3.1.1.2.</p>
+</li>
+<li><p>The first output material is the cleaned up material</p>
+</li>
+<li><p>Which is expected to be 70% of the input quantity</p>
+</li>
+<li><p>The Unit Cost Allocation Type of Percent together</p>
+</li>
+<li><p>With the Unit Cost Allocation Percent makes sure that all the costs from the input decreased by the cost from the second line (see 6 to 9)</p>
+</li>
+<li><p>The second output is a &quot;waste&quot; = non-valuable material</p>
+</li>
+<li><p>Which an expected share of 30% of the tonnage of the input.</p>
+</li>
+<li><p>The Unit Cost Allocation of &quot;Fixed&quot; together</p>
+</li>
+<li><p>With the Unit Cost Allocation of <strong>minus</strong> 2 will result in a fixed cost per to for this material.</p>
+</li>
+</ol>
+<p>The separation order:<img src="../../images/image83.png" alt=""></p>
+<ol>
+<li><p>Simply applies the separation template as seen before.</p>
+</li>
+<li><p>With the tonnage of the input being entered as well.</p>
+</li>
+</ol>
+<p>Reapplying this input populates the lines with the yellow marked fields for the quantities and the expected costs for the output which got calculated correctly:</p>
+<ul>
+<li><p>The costs of the input are 1 to of 25 making it 25.</p>
+</li>
+<li><p>The costs for the waste material H are 0.3 of -2 per to making it -0.6.</p>
+</li>
+<li><p>The resulting valuable product needs to balance these costs and therefore ends with 25.60 as cost amount which is 36.57 due to the tonnage of 0.7.</p>
+</li>
+</ul>
+<p>Posting the production order without any change of the data:<img src="../../images/image84.png" alt=""></p>
+<p>And finalizing the separation order with a status change:<img src="../../images/image85.png" alt=""></p>
+<p>Post the numbers as Actual Consumption and Finished Quantities.</p>
+<h5 id="results">Results</h5>
+<p>The resulting quantities are visible in the item chart of accounts as expected:</p>
+<p><img src="../../images/image86.png" alt=""></p>
+<p>The item ledger entries for the separation order are showing the expected numbers:<img src="../../images/image87.png" alt=""></p>
+<h5 id="second-production-with-other-split-of-materials">Second production with other split of materials</h5>
+<p>In a second production order the material splits into the same materials but with a quite different percentage:</p>
+<p><img src="../../images/image88.png" alt=""></p>
+<ol>
+<li><p>New order ...25</p>
+</li>
+<li><p>With quite less valuable product</p>
+</li>
+<li><p>And a higher &quot;scrap&quot; percentage of 35%</p>
+</li>
+</ol>
+<p>The result in this separation order shows the impact on quantities and costs:<img src="../../images/image89.png" alt=""></p>
+<p>The posted values can be checked in the item chart of accounts:<img src="../../images/image90.png" alt=""></p>
+<p>And the item ledger are showing the values as expected:<img src="../../images/image91.png" alt=""></p>
+<ul>
+<li><p>The cost for the input is once again 25.</p>
+</li>
+<li><p>But this time it get increased by the negative value of 0.70 for the waste material H.</p>
+</li>
+<li><p>This results in a value of 25.70 for the valuable output and a much higher cost per to for the 0.65 tons of this product.</p>
+</li>
+</ul>
+<h5 id="adjustment-of-separation-results">Adjustment of separation results</h5>
+<p>All these number should be updated when the costs for the input material gets adjusted due to newly posted purchases for posting dates up to the production date.</p>
+<p>The process starts with a second purchase of material which gets posted after the productions got posted but which is for a posting date prior to the production:<img src="../../images/image92.png" alt=""></p>
+<p>The second load of the input material I costs 35 per to compared with the 25 per ton for the first load. The tonnage for both is 10.</p>
+<p>The Adjust Cost – Item Entries function gets called for all the materials involved:<img src="../../images/image93.png" alt=""></p>
+<p>Which updates the item ledger entries from the above example (see chapter 3.3.1.2.3):<img src="../../images/image94.png" alt=""></p>
+<ul>
+<li><p>The costs for the 2 consumptions got adjusted from 25 to 30 for both separation orders of 1 ton each.</p>
+</li>
+<li><p>The fix costs for the waste material H don't get touched as they are fixed.</p>
+</li>
+<li><p>As the result the costs for the valuable material F get updated from 25.60 to 30.60 and from 25.70 to 30.70.</p>
+</li>
+</ul>
+<h4 id="seperation-of-waste-with-partly-valuable-output">Seperation of waste with partly valuable output</h4>
+<p>The same process and comparable value flows can be expected for waste materials being separated. In the following example the more complex process of a valuable and a non-valuable output gets presented.</p>
+<p>A typical daily business case is all kind of cherry picking like stripping of metal scrap from mixed waste to sell this scrap and leaving the rest of the waste for the usual treatment.</p>
+<h5 id="starting-data-1">Starting Data</h5>
+<p>The waste material to be sorted is material K with a current stock quantity of 10 which should get sorted into F and H without any stock yet:<img src="../../images/image95.png" alt=""></p>
+<p>The value of the K material can be seen in the item ledger entry:<img src="../../images/image96.png" alt=""></p>
+<p>It's a minus 200 or -20/ton.</p>
+<h5 id="seperation-template-and-order-1">Seperation template and order</h5>
+<p>The production BOM is very similar to the example for the valuable material (see chapter 3.3.1.1.2 and 3.3.1.2.1):<img src="../../images/image97.png" alt=""></p>
+<p>The separation template is as well basically the same as in the other examples:<img src="../../images/image98.png" alt=""></p>
+<ol>
+<li><p>The step defines the input</p>
+</li>
+<li><p>With the Routing and Work center and</p>
+</li>
+<li><p>The input material defined in the production Bill of Materials</p>
+</li>
+<li><p>The first output material is the valuable material F</p>
+</li>
+<li><p>with an expected yield of 15%</p>
+</li>
+<li><p>and 7. Taking a percentage of 100% of the negative value of the input decreased by the costs which are taken by line 2:</p>
+</li>
+</ol>
+<!--  -->
+<ol>
+<li>The 2</li>
+</ol>
+<p><sup>nd</sup></p>
+<p>output material is a waste material H</p>
+<ol start="2">
+<li><p>With an expected yield of 85%</p>
+</li>
+<li><p>And a fixed negative cost</p>
+</li>
+<li><p>of 25/ton.</p>
+</li>
+</ol>
+<p>The Separation order applying this template looks like this:<img src="../../images/image99.png" alt=""></p>
+<ul>
+<li><p>The quantities get populated as expected</p>
+</li>
+<li><p>But the costs for the input</p>
+</li>
+<li><p>And for the output material are only based on the positive costs – as seen in 3.3.1.2 – and which isn't applicable in this example.</p>
+</li>
+</ul>
+<p>A first production gets posted from the production journal with the defaulted split:<img src="../../images/image100.png" alt=""></p>
+<p>The result for the separation order are purely the updated quantities which are now &quot;actual&quot; and &quot;finished&quot;:</p>
+<p><img src="../../images/image101.png" alt=""></p>
+<h5 id="result">Result</h5>
+<p>After finalizing the separation order including the unit cost adjustment and posting:<img src="../../images/image102.png" alt=""></p>
+<p>The quantities got updated in the item chart of accounts:<img src="../../images/image103.png" alt=""></p>
+<p>And in the item ledger entries for the separation order:<img src="../../images/image104.png" alt=""></p>
+<ul>
+<li><p>The quantities are fine,</p>
+</li>
+<li><p>The cost amount for the input material is fine as well.</p>
+</li>
+<li><p>But the cost amounts for the output materials are kind of odd:</p>
+<ul>
+<li><p>The negative cost amount for the waste material should be 0.85 tons * 25/ton = 21.25. But at the moment the separation functionality is limiting the cost to the value of the input of 20.</p>
+</li>
+<li><p>Taking this -20 for H in account the cost amount of F makes perfectly sense. But it should be a positive 1.25 if the cost amount for F would have been -21.25.</p>
+</li>
+</ul>
+</li>
+</ul>
+<h5 id="second-production-with-different-split">Second production with different split</h5>
+<p>A second production order &quot;...26&quot; ends with a different split of F and H:<img src="../../images/image105.png" alt=""></p>
+<ol>
+<li><p>The yield for the valuable good is now 30%</p>
+</li>
+<li><p>Resulting in 70% for the &quot;waste&quot;.</p>
+</li>
+</ol>
+<p>The item chart of account is showing the correct quantities:<img src="../../images/image106.png" alt=""></p>
+<p>The resulting item ledger entries in this case are showing the expected values:<img src="../../images/image107.png" alt=""></p>
+<ul>
+<li><p>The consumption is a negative cost of 20 as for the first production order.</p>
+</li>
+<li><p>But in this case the negative value for the limited quantity of waste material H won't take all this negative value</p>
+</li>
+<li><p>Which leaves a remaining negative value of 2.50 for the &quot;valuable&quot; material F. So the gross margin selling the material F would be the sales amount PLUS this negative value of 2.50.</p>
+</li>
+</ul>
+<h5 id="adjusting-the-costs">Adjusting the costs</h5>
+<p>When the costs for the inbound process leading to the stock for the input material get adjusted this should effect the output of the separation in the appropriate way. This is shown with the following extension of the example.</p>
+<p>A second load of the input material got posted leading to an increased tonnage on stock:<img src="../../images/image108.png" alt=""></p>
+<p>The negative costs for the 2</p>
+<p><sup>nd</sup></p>
+<p>load are 10/to instead of the initial 20/to.:<img src="../../images/image109.png" alt=""></p>
+<p>As both loads had a quantity of 10 tons the new average cost is -15.</p>
+<p>The Adjust Cost – Item Entries function gets applied to all the relevant materials:<img src="../../images/image110.png" alt=""></p>
+<p>Which updates the item ledger entries:<img src="../../images/image111.png" alt=""></p>
+<ul>
+<li><p>The negative Costs for the consumptions got updated correctly to 15.</p>
+</li>
+<li><p>But now the same effect as for the first production order got applied for both production orders:</p>
+<ul>
+<li><p>The expected negative costs for the waste material H got limited to the cost amount from the input material of 15 instead of sticking with the 17.50 for the 2</p>
+<p><sup>nd</sup></p>
+<p>production order or the expected 21.25 for the first production order.</p>
+</li>
+<li><p>The resulting cost amount for the Material F is 0.</p>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="mixing-of-goods">Mixing of goods</h4>
+<h5 id="starting-data-2">Starting Data</h5>
+<p>The following stock is available at the start of this example:<img src="../../images/image112.png" alt=""></p>
+<ul>
+<li><p>40 tons of the valuable material I and</p>
+</li>
+<li><p>18 tons of the waste material K.</p>
+</li>
+</ul>
+<p>From the following item ledger entries:<img src="../../images/image113.png" alt=""></p>
+<p>With an average cost of:</p>
+<ul>
+<li><p>30 per ton for I</p>
+</li>
+<li>
+<ul>
+<li>15 per ton for K</li>
+</ul>
+</li>
+</ul>
+<h5 id="seperation-template">Seperation Template</h5>
+<p>The Seperation Template for a mixture consist of a production order like this:<img src="../../images/image114.png" alt=""></p>
+<ol>
+<li><p>First Item to be mixed is I</p>
+</li>
+<li><p>With an expected quantity of 60%</p>
+</li>
+<li><p>Second Item to be mixed is K</p>
+</li>
+<li><p>With an expected quantity of 40%</p>
+</li>
+</ol>
+<p>The whole separation template looks like this:<img src="../../images/image115.png" alt=""></p>
+<ol>
+<li><p>The first step</p>
+</li>
+<li><p>Defines the Routing and in the back of the routing the work center being utilized and</p>
+</li>
+<li><p>The Bill of Materials (see the Production Template above) to be used.</p>
+</li>
+<li><p>The fraction defines the output material which is G in our example</p>
+</li>
+<li><p>The quantity split which is 100% as we mix the 2 materials into one resulting output material</p>
+</li>
+<li><p>And the most simple Unit Cost Allocation Type of Equal to simplify the example.</p>
+</li>
+</ol>
+<h5 id="mixing-order">Mixing order</h5>
+<p>The order for the mixing is simply a separation order following the usual process for a separation:<img src="../../images/image116.png" alt=""></p>
+<ol>
+<li><p>Defining the separation template to use and</p>
+</li>
+<li><p>The quantity to be separated.</p>
+</li>
+</ol>
+<p>This results in the following numbers:</p>
+<ul>
+<li><p>The materials and their expected quantities.</p>
+</li>
+<li><p>The costs for the valuable material</p>
+</li>
+<li><p>But the costs for the waste material don't get displayed.</p>
+</li>
+<li><p>And the resulting Costs for the mixed materials are purely based on the costs for the valuable material.</p>
+</li>
+</ul>
+<p>The productional journal:<img src="../../images/image117.png" alt=""></p>
+<p>gets posted which updates the separation order:<img src="../../images/image118.png" alt=""></p>
+<p>But this is purely the actual consumption and the finished quantity. The situation for the costs hasn't changed.</p>
+<p>The status of the separation order got changed to finished with the resulting cost adjustment batch.</p>
+<h5 id="results-1">Results</h5>
+<p>Looking at the results concerning quantities in the item chart or accounts:<img src="../../images/image119.png" alt=""></p>
+<p>Shows the expected tonnages for all three involved items.</p>
+<p>The item ledger entries are showing the correct values for the cost amounts as well:<img src="../../images/image120.png" alt=""></p>
+<ul>
+<li><p>0.6 tons of I – with an average value of 30 – sum up to cost of 18.</p>
+</li>
+<li><p>0.4 tons of waste K – with an average value of -15 – sum up to a cost of – 6.</p>
+</li>
+<li><p>The resulting 1 ton of the mixture G got posted with a cost of 12 which is still a valuable good.</p>
+</li>
+</ul>
+<h5 id="second-mixture-producing-waste">Second mixture producing &quot;Waste&quot;</h5>
+<p>In a second production order the mixture results mostly (90%) from the waste material K with a minimum addition of the valuable item I:</p>
+<p><img src="../../images/image121.png" alt=""></p>
+<ol>
+<li><p>Item 100 kg plus</p>
+</li>
+<li><p>Waste 900 kg</p>
+</li>
+</ol>
+<p>The resulting separation order is:<img src="../../images/image122.png" alt=""></p>
+<ul>
+<li><p>Displaying the right quantities and</p>
+</li>
+<li><p>The right costs for the valuable item.</p>
+</li>
+<li><p>But the costs for the waste material and the output are not displaying the right numbers.</p>
+</li>
+</ul>
+<p>After all the postings the quantities can be checked in the item chart of account, showing the expected numbers:</p>
+<p><img src="../../images/image123.png" alt=""></p>
+<p>And in the item ledger entries showing the expected numbers as well:<img src="../../images/image124.png" alt=""></p>
+<ul>
+<li><p>0.1 tons of I – with an average value of 30 – sum up to cost of 3.</p>
+</li>
+<li><p>0.9 tons of waste K – with an average value of -15 – sum up to a cost of – 13.50.</p>
+</li>
+<li><p>The resulting 1 ton of the mixture G got posted with a cost of -10.50 which is making this a non-valuable item / &quot;Waste&quot;.</p>
+</li>
+</ul>
+<p>The average value of the mixture G is updated correctly:<img src="../../images/image125.png" alt=""></p>
+<ul>
+<li><p>The unit cost is 0.75 due to the cost amount of 1.50.</p>
+</li>
+<li><p>This amount results from the 2 entries of:</p>
+<ul>
+<li><p>12 for the first mixture and</p>
+</li>
+<li><p>– 10.50 from the 2</p>
+<p><sup>nd</sup></p>
+<p>mixture</p>
+</li>
+</ul>
+</li>
+</ul>
+<p>So in average G is a &quot;valuable&quot; material.</p>
+<h3 id="relocation-of-materials">Relocation of materials</h3>
+<h4 id="starting-data-3">Starting Data</h4>
+<p>The example for this process starts with material being created via separation to make sure that the full value path keeps consistent when relocation is involved.</p>
+<p>The example will relocate some of the material F which was one of the two sorting products from I (compare the process in chapter 3.3.1.1 for the initial process leading to this starting data.):<img src="../../images/image126.png" alt=""></p>
+<p>The material F was produced in 2 separation orders:<img src="../../images/image127.png" alt=""></p>
+<ul>
+<li><p>0.65 tons with a cost amount of 30.70 and</p>
+</li>
+<li><p>0.7 tons with a cost amount of 30.60.</p>
+</li>
+</ul>
+<h4 id="transfer-process">Transfer Process</h4>
+<p>The internal transfer is driven by a transfer order:<img src="../../images/image128.png" alt=""></p>
+<ol>
+<li><p>With the location the material is stored right now.</p>
+</li>
+<li><p>With the location the material should get transferred to.</p>
+</li>
+<li><p>An In-Transit Location is necessary as the transfer gets posted in 2 steps (see below) which makes a lot of sense if the transfer isn't just a short distance transfer from one box to another box on the yard for example.</p>
+</li>
+<li><p>The transfer needs a posting date of course.</p>
+</li>
+<li><p>The material to be transferred need to be filed in.</p>
+</li>
+<li><p>The tonnage to be transferred need to be entered.</p>
+</li>
+</ol>
+<!--  -->
+<ol>
+<li><p>With all these data entered the posting can be triggered:</p>
+</li>
+<li><p>The first step is the posting of the shipment from the source location to the in-transit location:<br>
+<img src="../../images/image129.png" alt=""></p>
+</li>
+<li><p>The second posting is the receiving at the destination location:<img src="../../images/image130.png" alt=""><br>
+with the following prompt from the system:<br>
+<img src="../../images/image131.png" alt=""></p>
+</li>
+</ol>
+<p>The quantities in the item chart haven't changed as the material is still on stock:<img src="../../images/image132.png" alt=""></p>
+<p>But as soon as we limit the entries to those for one of the 2 involved locations, we can track the transfer as expected:</p>
+<p><img src="../../images/image133.png" alt=""></p>
+<p>and</p>
+<p><img src="../../images/image134.png" alt=""></p>
+<p>These are the item ledger entries for this process:<img src="../../images/image135.png" alt=""></p>
+<p>You can see clearly the two steps with the different document Nos and you see the cost amount for the transferred material of 9.08 which is due to the following calculation:</p>
+<p><img src="../../images/image136.emf" alt=""></p>
+<p>Which proofs that it got calculated correctly. The rounding difference is due to the fact, that this calculation was done in Excel with the rounded values from the item ledger entry page whereas NAV is internally working with a more digits.</p>
+<h4 id="adjust-cost--item-entries">Adjust Cost – Item Entries</h4>
+<p>The next step is to look at the impact of modified inbound costs for the value management. This starts with an additional inbound for the unsorted material I with a posting date prior to the separation leading to our relocated material F.</p>
+<p>We purchased a new load of material I:<img src="../../images/image137.png" alt=""></p>
+<ul>
+<li><p>New load is 20 tons with a cost amount of 400 making it 20/ton.</p>
+</li>
+<li><p>The two old loads have been 10 tons each:</p>
+<ul>
+<li><p>For 350 = 35/ton and</p>
+</li>
+<li><p>For 250 = 25/ton</p>
+</li>
+</ul>
+</li>
+<li><p>Which makes up the cost amount of 30 for the 1 ton of consumption for the separations from the 2 old loads.</p>
+</li>
+</ul>
+<p>The adjust Cost – Item Entries updates the costs due to the new load:<img src="../../images/image138.png" alt=""></p>
+<p>Based on the two quantities of 20 tons with 20 and 30/ton, the new average cost for I is now 25 which is seen in the cost amount for the consumptions:<img src="../../images/image139.png" alt=""></p>
+<p>And this updates results in the following updates:<img src="../../images/image140.png" alt=""></p>
+<ul>
+<li><p>New average cost for I = 25/ton</p>
+</li>
+<li><p>New costs for the two outputs for F: 25.70 and 25.60 (instead of 30.70 and 30.60).</p>
+</li>
+<li><p>Which results in the Cost amount for the transferred 0.2 tons:</p>
+</li>
+</ul>
+<p><img src="../../images/image141.emf" alt=""></p>
+<h2 id="additional-costs--revenues">Additional costs / revenues</h2>
+<p>Beside the costs directly related to the stocking and disposal of costs (see chapter 3.2) and their flow through the internal processes (see chapter 3.3) we might want to manage additional costs and revenues as part of the &quot;value&quot; for the materials on stock. The decision which additional costs should get inherited / &quot;activated&quot; in the stock value is most of all a business decision and might need to take some legal issues like the &quot;Niederstwertprinzip&quot; in the German accounting standard in account.</p>
+<p>In this chapter we describe the technical aspects whereas these business decisions need a separate discussion with the customer.</p>
+<h3 id="surcharges-for-valuable-good">Surcharges for valuable good</h3>
+<p>The first example describes the well know process from any non-waste producing industry where you:</p>
+<ol>
+<li><p>By the raw material.</p>
+</li>
+<li><p>Add surcharges for services like logistics or toll.</p>
+</li>
+<li><p>Sell it and look at C – B – A to be the &quot;gross margin&quot;.</p>
+</li>
+</ol>
+<p>A new material &quot;I&quot; was setup for this example to start from an &quot;empty&quot; stock:<img src="../../images/image142.png" alt=""></p>
+<h4 id="contract-setup">Contract setup</h4>
+<p>In the contract the item charge service (see necessary setups for item charges in 2.3) is simply added as an additional line to the line for the stocking (compare chapter 3.2.1.1) within the same sub contract:</p>
+<p><img src="../../images/image143.png" alt=""></p>
+<p>In the material line the important settings for this feature are:</p>
+<ol>
+<li><p>Sub contract no. to attach this material line to the item charge line (see 5)</p>
+</li>
+<li><p>Material reference has to be &quot;Item&quot;.</p>
+</li>
+<li><p>The Material Code needs to be populated.</p>
+</li>
+<li><p>The Waste Entry Type needs to be Stocking or Drop Shipment with Drop Shipment Type &quot;negative adjustment&quot;</p>
+</li>
+</ol>
+<p>And the important settings for the item charge line are:</p>
+<ol>
+<li><p>Same Sub Contract No as 1 to make sure both lines will be part of newly created orders.</p>
+</li>
+<li><p>The service needs to be setup as an item charge service (see chapter 2.3).</p>
+</li>
+</ol>
+<p>Now you might setup the split of the charge in the contract already:</p>
+<p><img src="../../images/image144.png" alt=""></p>
+<p>In the popup page you can manually enter the assignment or via the function &quot;Suggest Item Charge...&quot; apply the setting from the service card (see chapter 2.3):</p>
+<p><img src="../../images/image145.png" alt=""></p>
+<p>In our example – and with the defaulted option of &quot;Equally&quot; for the Item Charge Assignment – this is not required at all.</p>
+<h4 id="order">Order</h4>
+<p>An order was created from the contract and the tonnage of 2 was entered with the resulting purchase amount for the material of 50 and the item charge of 40:<img src="../../images/image146.png" alt=""></p>
+<p>Posting of this order creates an item ledger entry with the <strong>expected</strong> purchase amount <strong>excluding (!)</strong> the item charge in this process status: The posting of the item charges is part of the later posting of the invoice for the item charge. So only the actual charges get posted later down the process line but no &quot;expected&quot; charges get posted upfront:<img src="../../images/image147.png" alt=""></p>
+<p>Be aware that this might have some business implications:</p>
+<p>In this early stage you see these kind of &quot;misleading&quot; costs. So these data are not supposed to be used to make decisions if a disposal price will leave us with some necessary gross margin. This might be an issue for later optimization of the functionality.</p>
+<h4 id="posting-the-item-charge--results">Posting the item Charge / Results</h4>
+<p>In the unposted invoice resulting from this order:<img src="../../images/image148.png" alt=""></p>
+<ol>
+<li>The item charge price gets modified. Modifying the amount as well.</li>
+</ol>
+<p>Posting this invoice results in posting the item charge now. The item ledger entry purchase and cost amount get increased by the posted item charge of 30:</p>
+<p><img src="../../images/image149.png" alt=""></p>
+<p>The details can be checked out in the value entries for this item ledger entry with a separate entry for the posted charge:<img src="../../images/image150.png" alt=""></p>
+<ul>
+<li><p>Showing the item charge service no and description.</p>
+</li>
+<li><p>With the Cost amount being posted to G/L as well and with the resulting Cost per unit.</p>
+</li>
+<li><p>A little bid odd seems to be the item No which is the service no of the material line instead of the Item no.</p>
+</li>
+</ul>
+<h3 id="assigning-charges-to-several-material-lines">Assigning charges to several material lines</h3>
+<p>In documents with several material lines, the charge needs to be splitted amongst those materials. This is managed by entering a proper Item Charge Assignment:</p>
+<h4 id="contract">Contract</h4>
+<p>A line for a second material was added in the example contract:<img src="../../images/image151.png" alt=""></p>
+<p>With the same crucial fields as in the first material line:</p>
+<ol>
+<li><p>Same subcontract no.</p>
+</li>
+<li><p>Material Reference Type is Item</p>
+</li>
+<li><p>With same or different material</p>
+</li>
+<li><p>And with Waste Entry Type Stocking</p>
+</li>
+</ol>
+<h4 id="order-1">Order</h4>
+<p>In the order the different materials get stocked with different quantities:<img src="../../images/image152.png" alt=""></p>
+<p>With the Item charge Assignment functions you and the &quot;Suggest Item Charge Assignment&quot; function from this page you can assign the item charge:</p>
+<p>With the option &quot;Equally&quot; the charge get simply splitted in &quot;equal&quot; slices for each material line:<br>
+<img src="../../images/image153.png" alt=""></p>
+<p>With the option &quot;Amount&quot; the charge get simply splitted in slices weighted by amount:<br>
+<img src="../../images/image154.png" alt=""></p>
+<p>This basic split options got inherited from the standard NAV functionality and seem not to be sufficient for the typical enwis) business cases where a split weighted by quantities seems to be more appropriate in most cases (see chapter 3.5.5.2).</p>
+<p>As the management of those splitted charge amounts is buggy at the current status of development, the results from posting don't get displayed and described here.</p>
+<h3 id="surcharges-from-the-outbound-process">Surcharges from the outbound process</h3>
+<h4 id="starting-data-4">Starting Data</h4>
+<p>The example starts with a material I being on stock:<img src="../../images/image155.png" alt=""></p>
+<p>With a cost amount of 25/ton making it 250 for the 10 tons on stock:<img src="../../images/image156.png" alt=""></p>
+<h4 id="outbound-process">Outbound process</h4>
+<p>The outbound process starts with the outbound contract:<img src="../../images/image157.png" alt=""></p>
+<ol>
+<li><p>Subcontract B is the outbound contract for this example</p>
+</li>
+<li><p>The charge item service is the handling fee</p>
+</li>
+<li><p>Which we purchase from our subcontractor</p>
+</li>
+<li><p>With a flat fee of 40.</p>
+</li>
+<li><p>The material outbound line should use the same subcontract to end up in the same order as the surcharge service.</p>
+</li>
+<li><p>This line is a sales line as this example deals with valuable material.</p>
+</li>
+<li><p>The material is I and</p>
+</li>
+<li><p>It's an outbound = disposal of the material</p>
+</li>
+</ol>
+<p>The item charge gets assigned as seen before:<img src="../../images/image158.png" alt=""></p>
+<p>The outbound order gets created from the template:<img src="../../images/image159.png" alt=""></p>
+<ol>
+<li>The tonnage gets entered in the order line.</li>
+</ol>
+<p>Then the order get posted and the resulting invoices:</p>
+<ul>
+<li><p>The purchase invoice for the item charge: <img src="../../images/image160.png" alt=""></p>
+</li>
+<li><p>With its item charge assignment:<img src="../../images/image161.png" alt=""></p>
+</li>
+<li><p>And the sales invoice (no screen shot).</p>
+</li>
+</ul>
+<h4 id="result-1">Result</h4>
+<p>The quantity on stock is now reduced to 5:<img src="../../images/image162.png" alt=""></p>
+<p>And the outbound item ledger entry was created:<img src="../../images/image163.png" alt=""></p>
+<ul>
+<li><p>With the quantity and</p>
+</li>
+<li><p>With the cost amount reducing the remaining cost amount for the inbound which is reducing the stock value</p>
+</li>
+<li><p>And an additional &quot;Cost Amount (Non-invtbl.)&quot; for the handling fee as these costs have no importance for the stock value. But the gross margin of this entry could be calculated correctly from the following numbers:</p>
+<ul>
+<li><p>Sales amount (200)</p>
+</li>
+<li><p>Minus Cost Actual (125)</p>
+</li>
+<li><p>Minus Cost non-invtbl (40)</p>
+</li>
+<li><p>Makes 35</p>
+</li>
+</ul>
+</li>
+</ul>
+<p>The value entries show the details similar to the item ledger entry:<img src="../../images/image164.png" alt=""></p>
+<h3 id="surcharges-for-waste">Surcharges for waste</h3>
+<p>The same surcharges managed for valuable materials should be managable for waste in the meaning of materials with negative value. The simple inbound/outbound process for these materials got described in chapter 3.2.2</p>
+<h4 id="contract-1">Contract</h4>
+<p>The contract for waste consists of:<img src="../../images/image165.png" alt=""></p>
+<ol>
+<li><p>A sales line for the service of collection with the customer which results in the negative value for the item on stock.</p>
+</li>
+<li><p>And the costs for example for the subcontractor performing the transport which should decrease the negative stock value to some degree.</p>
+</li>
+</ol>
+<p>From the business perspective this makes a lot of sense:</p>
+<ul>
+<li><p>The value of paper collected from small wheelie bins gets outdated by the collection costs and you might be able to charge the customer for this service.</p>
+</li>
+<li><p>But when we take the costs for our subcontractor performing the collection for us in account, this will now outdate the sales amount.</p>
+</li>
+<li><p>So as the sum from both lines we &quot;payed&quot; for stocking the material which makes sense as we are now able to send out full truck loads of this materials to a paper mill for a serious price.</p>
+</li>
+</ul>
+<p>Depending on the &quot;basic&quot; material price the stock value can still be negative if we talk about household waste instead of paper. But as well in this case, we might have stocked the material in a bunker for an incinerator where its negative value has vanished for some degree compared with the material which still needs to be collected from the household.</p>
+<h4 id="orders">Orders</h4>
+<p>In the following example, 2 orders get created:</p>
+<p>One order without a subcontractor being involved:<img src="../../images/image166.png" alt=""></p>
+<ol>
+<li><p>The collected quantity is 2 tonnes.</p>
+</li>
+<li><p>But the 2</p>
+</li>
+</ol>
+<p><sup>nd</sup></p>
+<p>line got deleted as no item charge applies.</p>
+<p>In the 2</p>
+<p><sup>nd</sup></p>
+<p>order:<img src="../../images/image167.png" alt=""></p>
+<ol>
+<li>The same tonnage of 2 gets entered.</li>
+</ol>
+<p>But the item charge of 40 service remains in the order.</p>
+<p>Posting the orders creates the item ledger entries with the same expected (negative) Costs for both of them:<br>
+<img src="../../images/image168.png" alt=""></p>
+<p>This is the same situation as for valuable goods (see 3.4.1.2): The item charge gets posted as soon as the purchase invoice for this service gets posted:</p>
+<h4 id="item-charge-posting">Item Charge Posting</h4>
+<p>The resulting invoice for the item charge line in our example looks like:<img src="../../images/image169.png" alt=""></p>
+<p>The posting of this invoice results in the corrected item ledger entry for the 2</p>
+<p><sup>nd</sup></p>
+<p>order:<img src="../../images/image170.png" alt=""></p>
+<ul>
+<li><p>Purchase Amount is visible and</p>
+</li>
+<li><p>The cost actual are now showing the item charge and the (negative) cost amount still as &quot;expected&quot; as the sales invoice hasn't been posted yet.</p>
+</li>
+</ul>
+<p>The value entries are showing the details:<img src="../../images/image171.png" alt=""></p>
+<p>After posting the sales invoices for the collections of the waste from both orders, the item ledgers got updated as expected:<img src="../../images/image172.png" alt=""></p>
+<p>The Sales amount and the Cost amounts are no actual and not expected any more. And most of all the cost amount for the 2</p>
+<p><sup>nd</sup></p>
+<p>order is now showing the summed amounts of the received collection fee and the item charge for the subcontractor. So this material has a negative cost of 10 and the material from the first order a negative cost of 50.</p>
+<p>Details can be found in the value entries of course:<img src="../../images/image173.png" alt=""></p>
+<h3 id="surcharges-and-adjust-cost--item-entry">Surcharges and Adjust Cost – Item Entry</h3>
+<p>The item charges are adjusting the Cost Amounts of the inbound item ledger entries. As the outbound item ledger entries take their value from the inbound entries – usually in an &quot;average&quot; approach in the waste and recycling industry – this should follow the same value flow already documented for values resulting from the direct costs of sale or purchase (compare chapters 3.2, 3.3.3 and 3.4).</p>
+<p>The example uses the following contract extending the contract from chapter 3.5.3.1. So it's a waste where we charge for the collection (= stocking) – first line - , pay a subcontractor let's say for the transport – second line – and finally get payed a minimal price from the customer receiving the material. This could be a typical &quot;paper business&quot;:</p>
+<ul>
+<li><p>For the collection of paper in small bins you might get payed.</p>
+</li>
+<li><p>But logistical costs occur.</p>
+</li>
+<li><p>The full truck load being dumped at a recycling branch or as bales being sold to a paper mill are valuable goods.</p>
+</li>
+</ul>
+<p>The crucial fields in the additional disposal line are:<img src="../../images/image174.png" alt=""></p>
+<ol>
+<li><p>The separate Sub Contract.</p>
+</li>
+<li><p>The posting type sales as we charge the recycling branch for the material.</p>
+</li>
+<li><p>The paper mill as a second customer beside the one from where we pick-up the paper</p>
+</li>
+<li><p>The Material Reference Type Item</p>
+</li>
+<li><p>The Material Code itself</p>
+</li>
+<li><p>And last not least the Waste Entry Type of Disposal (or Drop Shipment with positive Drop shipment Type)</p>
+</li>
+</ol>
+<p>The output order looks like this:<img src="../../images/image175.png" alt=""></p>
+<ol>
+<li>With a tonnage of 2 in this example.</li>
+</ol>
+<p>Posting this order creates the item ledger entry for this output with right now just the expected Sales Amount and no assigned Costs yet:<img src="../../images/image176.png" alt=""></p>
+<p>Posting the sales invoice for the output makes the expected sales amount an actual amount:<img src="../../images/image177.png" alt=""></p>
+<p>And the Adjust Cost – Item Entry should now apply the average costs from the input item ledger entries:</p>
+<p><img src="../../images/image178.png" alt=""></p>
+<p>For some reason this feature is buggy. A deeper analysis identified that the item charge posting wasn't adjusting the data for the item average cost calculation.</p>
+<p><img src="../../images/image179.png" alt=""></p>
+<h4 id="making-them-valuable-goods">Making them valuable goods</h4>
+<h3 id="production-costs">Production costs</h3>
+<p>Production costs are quite similar compared with surcharges for the inbound/outbound processes (3.4.1 to 3.4.5):</p>
+<ul>
+<li><p>They increase the applied costs for a material which might be seen as the current value of the material.</p>
+</li>
+<li><p>They are a result of the main process which in this case is a separation (see 3.3).</p>
+</li>
+</ul>
+<p>Actually the value management in NAV is using the same data structures, additional value entries to manage this. So the result should be mostly the same as for the surcharges.</p>
+<p>Screen shots and description missing up to now.</p>
+<h3 id="current-limitations">Current limitations</h3>
+<h4 id="buggy-item-charge-assignment">Buggy item charge assignment</h4>
+<p>Ursprünglich wurde nur auf erster Zeile verteilt. Erst die Nutzung der Assignment auf dem Vertrag führte überhaupt zum Split?!</p>
+<h4 id="missing-quantity-related-split">Missing Quantity related split</h4>
+<p>See chapter 3.4.2.2</p>
+<h4 id="blocking-equipment-services">Blocking equipment services</h4>
+<p>Equipment services which are services:</p>
+<ul>
+<li><p>with a non empty service type and/or</p>
+</li>
+<li><p>with a non empty Equipment No and/or</p>
+</li>
+<li><p>with a non empty Equipment Type</p>
+</li>
+</ul>
+<p>are blocked to be marked as Item Charges. As usually the logistic costs and revenues assigned to these services might be seen as part of the value of the material, this limitation seems to make no sense.</p>
+<p>Eliminating this limitation in a test database showed, that the functionality is working fine in this case.</p>
+<h4 id="posting-drop-shipment-with-wrong-sign">Posting drop shipment with wrong sign</h4>
+<h5 id="contract-setup-for-drop-shipment">Contract setup for drop shipment</h5>
+<p>The usual setup for a drop shipment contract in enwis) for a valuable good looks like this:<img src="../../images/image180.png" alt=""></p>
+<p>The line for the collection of the material from the source needs the following characteristic fields to be populated:</p>
+<ol>
+<li><p>Posting Type Purchase as it's a valuable material.</p>
+</li>
+<li><p>Waste Entry Type needs to be Drop Shipment</p>
+</li>
+<li><p>The Drop Schipment Type needs to be &quot;Negative Adjustment&quot; which means its decreased from the source stock. Most users get initially confused by this definition. But it's the how enwis) works.</p>
+</li>
+</ol>
+<p>And the line for the drop at the destination:</p>
+<ol>
+<li><p>Posting Type Sales as we sell the valuable material.</p>
+</li>
+<li><p>Waste Entry Type Drop Shipment as in the collection line.</p>
+</li>
+<li><p>But Drop Shipment Type is now &quot;Positive Adjustment&quot;.</p>
+</li>
+</ol>
+<p>The resulting order looks pretty much the same but now with the tonnage of 2 being entered:<img src="../../images/image181.png" alt=""></p>
+<h5 id="posting-results-1">Posting results</h5>
+<p>But the item ledgers being created got posted with the wrong sign for the quantities:<img src="../../images/image182.png" alt=""></p>
+<ul>
+<li><p>The collection line – line 10000 – got posted as quantity -2 and</p>
+</li>
+<li><p>The delivery line – line 25000 – for the final destination got posted with the positive quantity of 2.</p>
+</li>
+</ul>
+<p>As a result, the value management gets totally corrupted.</p>
+<h5 id="correct-posting-for-incorrect-setup">Correct posting for incorrect setup</h5>
+<p>If the user sets the contract up in the opposite way:<img src="../../images/image183.png" alt=""></p>
+<ol>
+<li>With drop Shipment Type &quot;Positive Adjustment&quot; for the collection and</li>
+</ol>
+<!--  -->
+<ol>
+<li>With drop Shipment Type &quot;Negative Adjustment&quot; for the drop</li>
+</ol>
+<p>With an order with a tonnage of 4:<img src="../../images/image184.png" alt=""></p>
+<p>The item ledger entries are looking much more reasonable after posting the order:<img src="../../images/image185.png" alt=""></p>
+<p>After posting the invoices as well the item ledger entries got updated in the expected way:<img src="../../images/image186.png" alt=""></p>
+<ul>
+<li><p>The sales amount for the material drop is the sales amount from the drop line.</p>
+</li>
+<li><p>The purchase amount for the collection is the sum of purchase amount and item charge.</p>
+</li>
+<li><p>And most of all the Cost Amount shows the same value for both line – with opposite sign of course – which is the same as the purchase amount from the collection line.</p>
+</li>
+</ul>
+<p>The details can be checked in the value entries for the collection line:<img src="../../images/image187.png" alt=""></p>
+<p>And for the drop sales line:<img src="../../images/image188.png" alt=""></p>
+<h4 id="item-charges-not-adjusting-average-costs">Item Charges not adjusting average costs</h4>
+<h5 id="contract-2">Contract</h5>
+<p>Simple example contract for a valuable good:<img src="../../images/image189.png" alt=""></p>
+<ol>
+<li><p>We pay</p>
+</li>
+<li><p>For receiving the material</p>
+</li>
+<li><p>We sell the material</p>
+</li>
+<li><p>By disposing it.</p>
+</li>
+</ol>
+<p>In the second line an additional item charge increases the costs for the received goods.</p>
+<h5 id="two-input-orders">Two input orders</h5>
+<p>One load gets received without an item charge but purely with the purchase costs of 50 for the 2 tonnes:</p>
+<p><img src="../../images/image190.png" alt=""></p>
+<p>A second input order pays 50 for the 2 tonnes but an additional item charge of 40:<img src="../../images/image191.png" alt=""></p>
+<p>The remaining item ledger entries look like expected:<img src="../../images/image192.png" alt=""></p>
+<ul>
+<li><p>Costs of 50 for the first order and</p>
+</li>
+<li><p>Costs of 90 for the second order</p>
+</li>
+</ul>
+<p>The value entries for the 2</p>
+<p><sup>nd</sup></p>
+<p>order look fine as well:<img src="../../images/image193.png" alt=""></p>
+<h5 id="average-cost-calculation">Average Cost Calculation</h5>
+<p>But the Average Cost Calculation was not updated:</p>
+<p><img src="../../images/image194.png" alt=""><img src="../../images/image195.png" alt=""></p>
+<ul>
+<li><p>Only the two entries with the original sales amount of 50 for 2 tonnes each are visible without any adjustment due to the item charge.</p>
+</li>
+<li><p>The Adjust Cost – Item Entries:<br>
+<img src="../../images/image196.png" alt=""></p>
+</li>
+<li><p>Limited to this item</p>
+</li>
+<li><p>And triggered with OK</p>
+</li>
+</ul>
+<p>Has no impact for the Average costing:<img src="../../images/image197.png" alt=""></p>
+<h5 id="3">3</h5>
+<p><sup>rd</sup></p>
+<p>input order</p>
+<p>A third input order with an item charge but a different purchase price got created:<img src="../../images/image198.png" alt=""></p>
+<p>And posted. But with limited impact on the average unit cost calculation:</p>
+<p>The Unit Cost on the item card wasn't updated due to the missing Adjust Cost Item Entries:</p>
+<p><img src="../../images/image199.png" alt=""></p>
+<p>And the details are not really sufficient:<img src="../../images/image200.png" alt=""></p>
+<p>The new entry is showing the purchase price for the new order correctly. But actually it's missing the item charge as well.</p>
+<p>The old entries are kept untouched still missing the item charge for the 2</p>
+<p><sup>nd</sup></p>
+<p>order.</p>
+<p>The Average unit costs got adjusted based on this wrong data kind of correctly.</p>
+<p>At least the item card got updated with this newly calculated wrong value:</p>
+<p><img src="../../images/image201.png" alt=""></p>
+<h1 id="remaining-issues--cases">Remaining issues / cases</h1>
+<p>The following features and cases haven't been documented in this document and need further testing. Parts of them ended in identifying serious bugs and so have been excluded from this documentation for the moment.</p>
+<h2 id="item-charges">Item Charges</h2>
+<h3 id="item-charges-for-material-lines-of-entry-type-drop-shipment">Item Charges for material lines of entry type drop shipment</h3>
+<p>See chapter 3.5.5.4</p>
+<h3 id="equipment-services-as-item-charges">Equipment services as item charges</h3>
+<h3 id="mixt-amounts-of-materials-and-item-charges">Mixt amounts of materials and item charges:</h3>
+<ul>
+<li><p>Mehrere Zeilen aber nicht alle Materialzeilen: Verteilung der Zuschläge</p>
+</li>
+<li><p>Mehrere Zuschläge und deren Verteilung</p>
+</li>
+<li><p>Negative Zuschläge</p>
+</li>
+<li><p>Negative Materialkosten und Zuschläge</p>
+</li>
+<li><p>Positive Materialkosten und Abschläge</p>
+</li>
+</ul>
+<h3 id="other-issues">Other issues</h3>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Einfach. Mehr. Wert.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

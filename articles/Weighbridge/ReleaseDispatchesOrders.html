@@ -1,0 +1,266 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Release Dispatches Orders | tegos Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Release Dispatches Orders | tegos Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../images/logos/tegos_favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/logos/logo-tegos-white.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ReleaseDispatchesOrders">
+<h1 id="release-dispatches-orders">Release Dispatches Orders</h1>
+
+<h2 id="general">General</h2>
+<p>Order lines, which may be used for weighing, are marked in the corresponding order line (usually material line) with the value &quot;Weigh&quot; in the field <em>Weighbridge Dispatching</em>. Following selection of the order line, the field <em>Weighbridge Dispatching</em> is set to the option &quot;Weighed&quot; (also for the initial weighing!). As soon as an order line has been marked with the option &quot;Weighed&quot;, this line is no longer available for other weighing processes.</p>
+<p>For the case that an incorrect contract or order line is used for weighing, the function</p>
+<p><em><span class="smallcaps">Auftragsdispo wieder
+freigeben</span></em></p>
+<p>can be enabled for other weighing processes.</p>
+<p>The function can be called via the link</p>
+<p><em><span class="smallcaps">Actions
+Funktion release dispatches orders</span></em></p>
+<p>.</p>
+<p>The following options are available:</p>
+<ul>
+<li><p>Release only</p>
+</li>
+<li><p>Release and delete order line</p>
+</li>
+<li><p>Release and delete order</p>
+</li>
+</ul>
+<p>The individual options are explained in more detail below.</p>
+<p><strong><u>Note:</u></strong></p>
+<p><strong>This function can only be used if no weighing (initial weighing) has taken place.</strong></p>
+<h2 id="option-release-only">Option: Release only</h2>
+<p>This option results in the order line which has been selected in error being available for other weighing processes again. No change is made to the original order.</p>
+<p><strong><u>Example:</u></strong></p>
+<ul>
+<li><p>Application of a new weighbridge ticket (<strong>Ctrl + N</strong> or button</p>
+<p><em><span class="smallcaps">new</span></em></p>
+<p>)</p>
+</li>
+<li><p>Calling / display of the dispatched orders (<strong>Ctrl + D</strong> or</p>
+<p><em><span class="smallcaps">Button dispatches orders</span></em></p>
+<p>)</p>
+</li>
+<li><p>Order DA00046 is selected for the weighing. The selected order is marked with the value &quot;Weighed&quot; in the appropriate line in the field <em>weighbridge dispatching</em> and is thus no longer available to other weighing processes.</p>
+</li>
+</ul>
+<p><img src="../../images/image1.png" alt=""></p>
+<ul>
+<li><p>The order DA00046 is however not correct for the current weighing process. A different order should have been selected for the weighing. The order DA00046 is must be made available to the weighbridge for weighing.</p>
+</li>
+<li><p>Call the</p>
+<p><em><span class="smallcaps">Actions Funktion release
+dispatches orders</span></em></p>
+<p>via the weighbridge ticket</p>
+</li>
+<li><p>Confirm the subsequent message with &quot;JA&quot;</p>
+</li>
+</ul>
+<blockquote>
+<p><img src="../../images/image2.png" alt=""></p>
+</blockquote>
+<ul>
+<li>Selection option &quot;Release only&quot;.</li>
+</ul>
+<p><img src="../../images/image3.png" alt=""></p>
+<ul>
+<li>The order is now once again available for other weighing processes. The field <em>Weighbridge Dispatching</em> is once again reset to the value &quot;Weigh&quot;.</li>
+</ul>
+<p><img src="../../images/image4.png" alt=""></p>
+<h2 id="option-release-and-delete-order-line">Option: Release and delete order line</h2>
+<p>This option results in the order line which was selected in error being deleted.</p>
+<p><strong><u>Example:</u></strong></p>
+<ul>
+<li>In the order DA00051 two order lines in the field <em>Weighbridge Dipatching</em> are marked with the value &quot;Weigh&quot;</li>
+</ul>
+<p><img src="../../images/image5.png" alt=""></p>
+<ul>
+<li><p>Application of a new weighbridge ticket (<strong>Ctrl + N</strong> or button</p>
+<p><em><span class="smallcaps">new</span></em></p>
+<p>)</p>
+</li>
+<li><p>Calling / display of the dispatched orders (<strong>Ctrl + D</strong> or</p>
+<p><em><span class="smallcaps">button dispatched orders</span></em></p>
+<p>)</p>
+</li>
+</ul>
+<p><img src="../../images/image6.png" alt=""></p>
+<ul>
+<li>Order DA00051 with the line number 20000 is selected for the weighing. The selected order is marked with the value &quot;Weighed&quot; in the appropriate line in the field <em>weighbridge dispatching</em> and is thus no longer available to other weighing processes.</li>
+</ul>
+<p><img src="../../images/image7.png" alt=""></p>
+<ul>
+<li><p>Order DA00051 with the line number 20000 is however not correct for the current weighing process. The order line with the material code &quot;Construction Waste&quot; should have been chosen. The order line with the line number 20000 is no longer needed and can be deleted.</p>
+</li>
+<li><p>Call the</p>
+<p><em><span class="smallcaps">Function Release dispatches
+orders</span></em></p>
+<p>via the weighbridge ticket</p>
+</li>
+<li><p>Confirm the subsequent message with &quot;YES&quot;</p>
+</li>
+</ul>
+<blockquote>
+<p><img src="../../images/image8.png" alt=""></p>
+</blockquote>
+<ul>
+<li>Select option &quot;Release and Delete Order Line&quot;</li>
+</ul>
+<blockquote>
+<p><img src="../../images/image9.png" alt=""></p>
+</blockquote>
+<ul>
+<li>The incorrectly selected order line with the material code &quot;Bulky Waste&quot; is deleted. The order line with the material code &quot;Construction Waste&quot; is available to the weighbridge for weighing</li>
+</ul>
+<p><img src="../../images/image10.png" alt=""></p>
+<h2 id="option-release-and-delete-order">Option: Release and delete order</h2>
+<p>This option results in the order which was selected in error being deleted. This option must for example be applied if a weighing process has been triggered via a contract (=dispatched contracts) and this contract has not been. As soon as a dispatched contract is selected for a weighing process, an order is applied in the background of this weighing. As the contract for this weighing process has not been correct, the order applied in the background must be deleted.</p>
+<p><strong>Example:</strong></p>
+<ul>
+<li>In the contract SC-0000059 a contract line in the field <em>Waagedisposition</em> has been marked with the value &quot;Verwiegen&quot; and with the value &quot;JA&quot; in the field <em>Nur Vertragsverwiegungen</em>. This order line is now to be weighed</li>
+</ul>
+<p><img src="../../images/image11.png" alt=""></p>
+<ul>
+<li><p>Application of a new weighbridge ticket (</p>
+<p><span class="smallcaps">Ctrl + N</span></p>
+<p>or</p>
+<p><span class="smallcaps">button</span></p>
+<p><span class="smallcaps">new</span></p>
+<p>)</p>
+</li>
+<li><p>Calling / display of the dispatched contracts (</p>
+<p><span class="smallcaps">Ctrl + B or Button Dispatched Contracts</span></p>
+<p>)</p>
+</li>
+</ul>
+<p><img src="../../images/image12.png" alt=""></p>
+<ul>
+<li>For the current weighing process the contract DV00011 is selected in error and accepted in the weighbridge ticket. An order (DA-00052) is applied in the background of this incorrect weighing</li>
+</ul>
+<p><img src="../../images/image13.png" alt=""></p>
+<ul>
+<li><p>This incorrect order can be deleted in the weighbridge ticket via the</p>
+<p><span class="smallcaps">function Release Dispatched
+orders</span></p>
+</li>
+<li><p>Confirm the subsequent message with &quot;Yes&quot;</p>
+</li>
+</ul>
+<p><img src="../../images/image14.png" alt=""></p>
+<ul>
+<li>Select option &quot;Release and Delete Order&quot;</li>
+</ul>
+<p><img src="../../images/image15.png" alt=""></p>
+<ul>
+<li>The order DA-00052 is deleted. It is now possible to call up the correct order line for this weighing via the weighbridge ticket</li>
+</ul>
+<p><img src="../../images/image16.png" alt=""></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Einfach. Mehr. Wert.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

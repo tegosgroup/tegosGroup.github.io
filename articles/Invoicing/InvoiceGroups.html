@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Invoice Groups | tegos Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Invoice Groups | tegos Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../images/logos/tegos_favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/logos/logo-tegos-white.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="InvoiceGroups">
+<h1 id="invoice-groups">Invoice Groups</h1>
+
+<h2 id="general-information">General Information</h2>
+<p>An invoice group can be stored for every user, invoice type, and invoice batch. When an invoice group is assigned to users, then those users only see the invoice types and invoice batches associated with that invoice group.</p>
+<p>On the invoice group card, users can determine down to the field which filter definitions each member in this group is allowed to use or not.</p>
+<p>This makes it possible to limit the invoice options for certain users (e.g. to certain sites, order codes, jobs, etc.).</p>
+<h2 id="setup">Setup</h2>
+<p>Invoice groups are set up and edited by going to enwis)</p>
+<p><em><span class="smallcaps">Invoicing/Administration/Setup/Groups &amp;
+matrices/Invoice Groups</span></em></p>
+<p>. Users assigned to a specific invoice group will only be able to edit fields on the invoice type card assigned to the same invoice group if those fields are checked on the invoice group card.</p>
+<p>The setup under the</p>
+<p><span class="smallcaps">General</span></p>
+<p>and</p>
+<p><span class="smallcaps">Combine Invoice Filter</span></p>
+<p>tabs could appear as follows:</p>
+<p><img src="../../images/image1.png" alt=""></p>
+<p><img src="../../images/image2.png" alt=""></p>
+<p>If you look at enwis)</p>
+<p><em><span class="smallcaps">Workflow/Administration/User Setup</span></em></p>
+<p>and see that, in the <em>Invoice Group Code</em> field under the</p>
+<p><span class="smallcaps">Filters</span></p>
+<p>tab, the users have been assigned to the invoice group PRIV. CUST as shown above, then these users can only view the invoice types and invoice batches that are also assigned to the same invoice group.</p>
+<p><img src="../../images/image3.png" alt=""></p>
+<p>In addition, these users can only edit the fields on the invoice type that have been released for their editing by checking the appropriate boxes on the invoice group card. All other fields on the invoice type card will be deactivated.</p>
+<p>An invoice type for which the settings of the invoice group PRIV. CUST shown above have been applied might look as follows under the</p>
+<p><span class="smallcaps">General</span></p>
+<p>and</p>
+<p><span class="smallcaps">Combine
+Invoice Filter</span></p>
+<p>tabs:</p>
+<p><img src="../../images/image4.png" alt=""></p>
+<p><img src="../../images/image5.png" alt=""></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Einfach. Mehr. Wert.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

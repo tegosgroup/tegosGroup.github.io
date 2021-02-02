@@ -1,0 +1,1706 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Waste Management Setup | tegos Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Waste Management Setup | tegos Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../images/logos/tegos_favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/logos/logo-tegos-white.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="WasteManagementSetup">
+<h1 id="waste-management-set-up">Waste management set up</h1>
+
+<h2 id="introduction">Introduction</h2>
+<hr>
+<p>In enwis) there are various set ups with which the programme behaviour is controlled at central points.</p>
+<p>These are:</p>
+<ul>
+<li><p>Waste management setup)</p>
+</li>
+<li><p>Dispatching set up</p>
+</li>
+<li><p>Invoice setup</p>
+</li>
+<li><p>Concept set up</p>
+</li>
+<li><p>Commitments setup</p>
+</li>
+<li><p>Weighbridge setup</p>
+</li>
+<li><p>Analytics setup</p>
+</li>
+<li><p>Treatment setup</p>
+</li>
+<li><p>Waste document setup</p>
+</li>
+<li><p>Operational journal setup</p>
+</li>
+<li><p>Data warehouse setup</p>
+</li>
+</ul>
+<p>Of these the</p>
+<p><strong><em><span class="smallcaps">waste management setup</span></em></strong></p>
+<p>is the most important. The fundamental enwis)® functions are parametrised via this.</p>
+<p>The waste management set up can be called up by the following menu path</p>
+<p><em><span class="smallcaps">enwis) services/Administation/setup/waste
+management setup</span></em></p>
+<p>for example.</p>
+<p>Their registers and fields are described individually below.</p>
+<h2 id="general-register">General register</h2>
+<p>On the register</p>
+<p><span class="smallcaps">general</span></p>
+<p>it possible to meet the following settings:</p>
+<ul>
+<li><em>Allow Posting From / Allow Posting To</em></li>
+</ul>
+<p>Here the data can be entered from or up to the postings for the area of the waste management ledger entries, equipment ledger entries, transport ledger entries and personnel ledger entries permitted by enwis)®.</p>
+<p>If the posting time periods are not restricted in enwis), the posting time periods of the general ledger apply.</p>
+<p>Posting time periods can be consigned at various points in enwis). The hierarchy is as follows:</p>
+<ul>
+<li><p>Waste management setup user</p>
+</li>
+<li><p>Waste management setup</p>
+</li>
+<li><p>User setup</p>
+</li>
+<li><p>General ledger setup</p>
+</li>
+</ul>
+<!--  -->
+<ul>
+<li><em>credit warnings</em></li>
+</ul>
+<p>Here you can determine whether the application is to display a warning message about the status of the customer on creation of customer waste management orders or invoices or customer lines in waste management orders.</p>
+<p>The following options are available:</p>
+<table>
+<thead>
+<tr>
+<th>Both Warnings</th>
+<th>If this option is used the application checks the fields <em>Credit Limit</em> and <em>Overdue Balance</em> on the customer card and issues a warning message if the customer has exceeded his credit limit or is in arrears with payment.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Credit Limit</td>
+<td>If this option is used, the application compares the value in the field <em>Credit Limit</em> of the customer card with the balance of the customer and issues a warning message if the balance of the customer exceeds this amount.</td>
+</tr>
+<tr>
+<td>Overdue Balance</td>
+<td>If this option is used, the application checks the field <em>Overdue Balance</em> on the customer card and issues a warning message if the customer is in arrears with payment.</td>
+</tr>
+<tr>
+<td>No warning</td>
+<td>If you select this option the application does not issue any warning messages on the status of the customer.</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><em>Stockout Warning</em></li>
+</ul>
+<p>Here it is possible to determine whether the application is to issue a warning message as soon as the warehouse outflow would lead to a negative inventory.</p>
+<p>The application uses all posted waste ledger entries as a basis of the calculation in addition to the waste entries which have already been created but not yet posted with the entry type &quot;Disposal&quot;.</p>
+<p>In order to receive a warning message as soon as the inventory becomes negative, it is necessary to place a tick in the field <em>Stockout Warning.</em></p>
+<ul>
+<li><em>Allow Cust. / Vend. Changeover</em></li>
+</ul>
+<p>Here it is possible to determine whether the functionality of the customer/vendor jumping is in principle allowed or not.</p>
+<p>If this functionality is in principle to be allowed, a tick must be placed in the field <em>Allow Cust./Vend</em>. <em>Changeover</em>. If this field does not show a tick, then customer/vendor jumping is not possible in the application regardless of all other relevant settings.</p>
+<ul>
+<li><em>Transfer Bal. Acc. Only Once</em></li>
+</ul>
+<p>Here it is possible to specify that a counter posting line is only generated from an order line once.</p>
+<p>Via the functions</p>
+<p><span class="smallcaps">Create Bal- Acc. Lines</span></p>
+<p>or</p>
+<p><span class="smallcaps">Create Bal- Acc. Line</span></p>
+<p>the corresponding counter lines are generated in the <strong>order</strong> by the application for the existing order lines which have an entry in the field <em>Bal. Acc. Post-with No..</em></p>
+<p>If this function is applied, it is written back in all order lines from which counter lines are generated that corresponding counter lines have already been generated. For this purpose the fields <em>Bal. Account Line Exploded</em> and <em>Belongs to Bal. Acc. Line</em> are filled in the original line.</p>
+<p>If the field <em>Transfer Bal. Acc. Only Once</em> is ticked, counter posting lines are not generated once again from order lines from which counter posting lines were already generated. If the field is not ticked, counter posting lines are generated every time, double or triple where appropriate.</p>
+<p>If the function</p>
+<p><em><span class="smallcaps">delete all bal. acc.
+lines</span></em></p>
+<p>or</p>
+<p><em><span class="smallcaps">delete bal. acc. line</span></em></p>
+<p>is called, the entries in the fields <em>Bal. Account Line Exploded</em> and <em>Belongs to Bal. Acc. Line</em> are also reset so that these order lines would once again be taken into account for a recent development.</p>
+<ul>
+<li><em>Write Back Balande Account</em></li>
+</ul>
+<p>In this field it is possible to specify that the content of the field <em>Post-with No.</em> of the original line is transferred into the field <em>Bal. Acc. Post-with No.</em> of the counter posting line which has emerged from it. In addition, if this field is ticked, for a manual change of the <em>Post-with No.</em> in the counter posting line generated, this is written back into the field <em>Bal. Acc. Post-with No.</em> the original line, meaning: The field <em>Bal. Acc. Post-with No.</em> of the original line is synchronised with changes in the field <em>Post-with No.</em> of the counter posting line which has emerged from it.</p>
+<ul>
+<li><em>Global Delivery Codes</em></li>
+</ul>
+<p>Delivery codes can be used either globally, i.e. for all customer and vendors equally or locally i.e. limited to individual customers and vendors.</p>
+<p>If this field is ticked all delivery codes are available globally. If this field is</p>
+<p><u>not</u></p>
+<p>ticked, only the delivery codes consigned for each customer or vendor are available.</p>
+<ul>
+<li><em>Global order codes</em></li>
+</ul>
+<p>Order codes can be used either globally, i.e. for all customers and vendors equally or locally i.e. limited to individual customers and vendors.</p>
+<p>If this field is ticked, all order codes are available globally. If this field is</p>
+<p><u>not</u></p>
+<p>ticked, only the order codes consigned for each customer or vendor are available.</p>
+<ul>
+<li><em>Keep Quotes</em></li>
+</ul>
+<p>In this field it is possible to specify that quotes are not to be deleted automatically if an order is created from them via the function</p>
+<p><em><span class="smallcaps">create Order</span></em></p>
+<p>.</p>
+<ul>
+<li><em>Keep Task Date</em></li>
+</ul>
+<p>In this field it is possible to specify that the task date of the order lines is not to be changed if the task date is changed in the order header.</p>
+<ul>
+<li><em>Ext. Texts Date</em></li>
+</ul>
+<p>Here it is possible to specify the date to which the application is to refer when inserting one of the text components provided with a start date.</p>
+<p>The following options are available</p>
+<table>
+<thead>
+<tr>
+<th>Document Date</th>
+<th>The application refers to the document date</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Order Date</td>
+<td>The application refers to the order date</td>
+</tr>
+<tr>
+<td>Task Date</td>
+<td>The application refers to the task date</td>
+</tr>
+</tbody>
+</table>
+<p>The standard of MS Dynamics NAV always refers to the document date.</p>
+<ul>
+<li><em>Reference Nos. Start</em></li>
+</ul>
+<p>Here it is possible to consign a general starting point for the establishment of entry numbers via the function</p>
+<p><em><span class="smallcaps">Create Refernece List Nos.</span></em></p>
+<p>If a value 10000 is consigned here for example then the first entry number established in a document by the function</p>
+<p><em><span class="smallcaps">Create Refernece List Nos</span></em></p>
+<p>. receives the value 10000, the second the value 10001 etc.</p>
+<ul>
+<li><em>Quote to Document function</em></li>
+</ul>
+<p>Here the ID can have a code unit consigned which is additionally to be realised via the functions</p>
+<p><em><span class="smallcaps">create Order</span></em></p>
+<p>or</p>
+<p><em><span class="smallcaps">create Contract</span></em></p>
+<p>of the quote document when creating a document from a quote.</p>
+<ul>
+<li><p><em>Quote to Doc. Function Name</em></p>
+</li>
+<li><p>In this field the name of a code unit selected in the field <em>Quote to Document function</em> is displayed. The field cannot be changed by the user.</p>
+</li>
+<li><p><em>Check operative data on delete</em></p>
+</li>
+</ul>
+<p>When deleting order lines, a large number of operational data are also deleted if appropriate which are linked with this order line (e.g. waste entries, equipment entries, weighbridge ticket number, waste transfer note).</p>
+<p>If this field is ticked, a warning message is displayed before deletion which reminds the user that the application of a new order line may involve doing more than assigning a service number. The function checks the presence of certain data such as waste entry and issues a corresponding collection warning message.</p>
+<ul>
+<li><p><em>Service Qty. Transfer</em></p>
+</li>
+<li><p>Via the function</p>
+<p><em><span class="smallcaps">transfer quantity</span></em></p>
+<p>it is possible to transfer the invoice quantity (= field <em>Quantity</em>) in the order from the first service line to further service lines. The legalities according to which this can occur can be specified via the field <em>Service Qty. Transfer.</em></p>
+</li>
+</ul>
+<p>The following options are available:</p>
+<table>
+<thead>
+<tr>
+<th>No Transfer</th>
+<th>Invoice quantities are in principle not transferred even if this function is called up explicitly from the order.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>If Empty</td>
+<td>The invoice quantity is transferred into all order lines which show the value 0 in the field Q_uantity_.</td>
+</tr>
+<tr>
+<td>Service No.</td>
+<td>The invoice quantity is transferred into all order lines with the same service number.</td>
+</tr>
+<tr>
+<td>Service Level</td>
+<td>The invoice quantity is transferred into all order lines, the service of which belongs to the same service level.</td>
+</tr>
+<tr>
+<td>Service Type</td>
+<td>The invoice quantity is transferred into all order lines, the service of which belongs to the same service type.</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><em>Implement Site Logic</em></li>
+</ul>
+<p>Here it is possible to specify whether the site logic is to be taken into account.</p>
+<p>If the site logic is taken into consideration, this has the following consequences for example:</p>
+<ul>
+<li><p>The transport entries of the transport dispatching are filtered on calling up via the site of the user if a site is allocated to it in the User setup</p>
+</li>
+<li><p>When posting the waste ledger entries and equipment ledger entries, a check takes place regarding whether the site code of the entry matches the user's site code, if a site is assigned to the user in the User setup and the change of site is not permitted. In this case posting can only occur for matching site codes</p>
+</li>
+</ul>
+<p>If the field <em>Implement Site Logic</em> is not ticked, these tests or filterings remain undone.</p>
+<ul>
+<li><em>Post Line Site Codes (post site of the line)</em></li>
+</ul>
+<p>The site code in the document header can differ from that of the document line. This can be the case for example if a combine invoice was created with lines from several sites. The invoice header then contains the site of the user who has created the combine invoice. The document lines contain the sites which have performed the operational service.</p>
+<p>If this field is ticked, all resultant ledger entries are posted with the site of the relevant document line. If this field is not ticked, all resultant ledger entries are posted with the site of the document header.</p>
+<ul>
+<li><em>Allow site logic for quotes</em></li>
+</ul>
+<p>Here it can be specified whether quotes are filtered onto the site which the current user belongs to.</p>
+<p>The following options are available:</p>
+<table>
+<thead>
+<tr>
+<th>Blank</th>
+<th>Quotes are not filtered by site</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Purchase</td>
+<td>Only vendor quotes are filtered by site</td>
+</tr>
+<tr>
+<td>Sale</td>
+<td>Only customer quotes are filtered by site</td>
+</tr>
+<tr>
+<td>Both</td>
+<td>All quotes are filtered by site</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><em>Allow site logic for contract</em></li>
+</ul>
+<p>Here it can be specified whether contracts are filtered onto the site which the current user belongs to.</p>
+<p>The following options are available:</p>
+<table>
+<thead>
+<tr>
+<th>Blank</th>
+<th>Contracts are not filtered by site</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Purchase</td>
+<td>Only vendor contracts are filtered by site</td>
+</tr>
+<tr>
+<td>Sale</td>
+<td>Only customer contracts are filtered by site</td>
+</tr>
+<tr>
+<td>Both</td>
+<td>All contracts are filtered by site</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><em>Allow site logic for order</em></li>
+</ul>
+<p>Here it can be specified whether orders are filtered onto the site which the current user belongs to.</p>
+<p>The following options are available:</p>
+<table>
+<thead>
+<tr>
+<th>Blank</th>
+<th>Orders are not filtered by site</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Purchase</td>
+<td>Only vendor orders are filtered by site</td>
+</tr>
+<tr>
+<td>Sale</td>
+<td>Only customer orders are filtered by site</td>
+</tr>
+<tr>
+<td>Both</td>
+<td>All orders are filtered by site</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><em>Allow site logic for tours</em></li>
+</ul>
+<p>Here it can be specified whether tours and tour plans are filtered onto the site which the current user belongs to.</p>
+<ul>
+<li><em>Log User on Doc. Comments</em></li>
+</ul>
+<p>Here you can specify whether the <em>user ID</em> of the current user is to be written back into the document comment when creating and modifying document comments.</p>
+<p>If this field is ticked, the field Eingefügt von (inserted by) is filled with the <em>user ID</em> of the current user when applying the observation line; on changing the field <em>Last Modified by</em> is filled in.</p>
+<p>These recording functions are limited to comments in documents which have not been posted or archived, thus only of interest to long term contracts.</p>
+<h2 id="register-numbering">Register Numbering</h2>
+<p>On the register</p>
+<p><span class="smallcaps">Numberierung</span></p>
+<p>it possible to meet the following settings:</p>
+<ul>
+<li><em>Service Nos.</em></li>
+</ul>
+<p>Here the code of the number series is entered which is to be used in order to allocate numbers to services.</p>
+<ul>
+<li><em>Job Nos.</em></li>
+</ul>
+<p>Here the code of the number series is entered which is to be used in order to allocate numbers to waste management projects.</p>
+<ul>
+<li><em>Business Partner Nos.</em></li>
+</ul>
+<p>Here the code of the number series is entered which is to be used in order to allocate numbers to business partners.</p>
+<ul>
+<li><em>Business Partner Site Nos.</em></li>
+</ul>
+<p>Here the code of the number series is entered which is to be used in order to allocate numbers to business partner sites.</p>
+<ul>
+<li><em>Cust. Task Site Nos.</em></li>
+</ul>
+<p>Here the code of the number series is entered which is to be used in order to allocate numbers to customer task sites.</p>
+<ul>
+<li><em>Base Cust. Task Site Nos.</em></li>
+</ul>
+<p>Here the code of the number series is entered which is to be used in order to allocate numbers to customer base task sites.</p>
+<ul>
+<li><em>Vend. Task Site Nos.</em></li>
+</ul>
+<p>Here the code of the number series is entered which is to be used in order to allocate numbers to vendor task sites.</p>
+<ul>
+<li><em>Base Vend. Task Site Nos.</em></li>
+</ul>
+<p>Here the code of the number series is entered which is to be used in order to allocate numbers to vendor base task sites.</p>
+<ul>
+<li><em>Cust. /Vend. No. is Base Site</em></li>
+</ul>
+<p>If this field is ticked, the customer number or vendor number is set as the number of the customer base task site or vendor base task site.</p>
+<ul>
+<li><em>Autom. Vend.-No. Assgnm.</em></li>
+</ul>
+<p>This field controls the allocation of the vendor number if an associated creditor is generated automatically from the <strong><em>customer card</em></strong> via the function</p>
+<p><em><span class="smallcaps">create vendor</span></em></p>
+<p>.</p>
+<p>The following options are available:</p>
+<p>Blank           | The automatic application of vendors via the function</p>
+<p><em><span class="smallcaps">create vendor</span></em></p>
+<p>from the <strong>customer card</strong> is</p>
+<p><u>not</u></p>
+<p>possible.
+--------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Vend. Nos.      | The next free number from the number series consigned to the field vendor numbers in the vendor and purchase set up is allocated to the vendor.
+Cust. Nos. plus | The customer number which the code is placed in front of which is consigned in the field <em>Vend.-No.Prefix</em> of the <em><strong>waste management setup</strong></em> is set as vendor number.</p>
+<p><u>Example:</u></p>
+<p>The customer number is D4711; the code K is consigned in the field <em>Vend.-No.Prefix</em>; the resultant vendor number is KD4711.
+Numeric Pas     | The numeric proportion of the customer number which the code is placed in front of which is consigned in the field <em>Vend.-No.Prefix</em> of the <em><strong>waste management set up</strong></em> is set as vendor number.</p>
+<p><u>Example:</u></p>
+<p>The customer number is D4711; the code K is consigned in the field <em>Vend.-No.Prefix</em>; the resultant vendor number is K4711.</p>
+<ul>
+<li><em>Vend.-No. Prefix</em></li>
+</ul>
+<p>Here a code can be consigned which is placed in front of the vendor number if the vendor is generated automatically via the function</p>
+<p><em><span class="smallcaps">Create vendor</span></em></p>
+<p>from the <strong><em>customer card</em></strong>.</p>
+<p>The code is accessed if the field <em>Autom. Vend.-No. Assgnm.</em> in the <strong><em>waste management setup</em></strong> shows the option value &quot;Cust. Nos. plu &quot;or &quot;Numeric Pad&quot;.</p>
+<ul>
+<li><em>Autom. Cust.-No. Assgnm.</em></li>
+</ul>
+<p>In line with the field <em>Autom. Vend.-No. Assgnm.</em></p>
+<ul>
+<li><em>Cust.-No. Prefix</em></li>
+</ul>
+<p>In line with the field <em>Vend.-No. Prefix</em></p>
+<ul>
+<li><em>Haz.-mat Type Nos.</em></li>
+</ul>
+<p>Here the code of the number series is entered which is to be used in order to allocate numbers to hazardous material types.</p>
+<ul>
+<li><em>Global Int. Mat.-Catalog Nos.</em></li>
+</ul>
+<p>Here the code of the number series is entered which is to be used in order to allocate numbers to the internal material catalog.</p>
+<ul>
+<li><em>Ext. Material Catalog Nos.</em></li>
+</ul>
+<p>Here the code of the number series is entered which is to be used in order to allocate numbers to EWC materials.</p>
+<ul>
+<li><em>Notification Nos.</em></li>
+</ul>
+<p>Here the code of the number series is entered which is to be used in order to allocate notification numbers.</p>
+<ul>
+<li><em>Official Notification Nos.</em></li>
+</ul>
+<p>Here the code of the number series is entered which is to be used in order to allocate official notification numbers.</p>
+<p>An internal notification number must be assigned to each notification. Corresponding number series can be consigned via the field <em>Notification Nos</em>.</p>
+<p>Many disposal enterprises are also able to issue official notification numbers. For these cases a number series can also be consigned for these via the field <em>Official Notification No.</em>.</p>
+<ul>
+<li><em>Waste Mgt. Employee Nos.</em></li>
+</ul>
+<blockquote>
+<p>Here the code of the number series is entered which is to be used in order to allocate waste management employee numbers.</p>
+</blockquote>
+<ul>
+<li><em>Vehicle Nos.</em></li>
+</ul>
+<p>Here the code of the number series is entered which is to be used in order to allocate vehicle numbers.</p>
+<ul>
+<li><em>Personnel Group Nos.</em></li>
+</ul>
+<p>Here the code of the number series is entered which is to be used in order to allocate personnel group numbers.</p>
+<ul>
+<li><em>Equipment Nos.</em></li>
+</ul>
+<p>Here the code of the number series is entered which is to be used in order to allocate equipment numbers.</p>
+<ul>
+<li><em>Transport Group Nos.</em></li>
+</ul>
+<p>Here the code of the number series is entered which is to be used in order to allocate transport group numbers.</p>
+<ul>
+<li><em>External Document No. Nos.</em></li>
+</ul>
+<p>Here a global number series for external document numbers can be consigned.</p>
+<ul>
+<li><em>Cust. /Vend. Ext. Doc. No. Nos</em></li>
+</ul>
+<p>The number series set up in the field <em>External Document No. Nos.</em> can then be consigned by customer/vendor if the field <em>Cust. /Vend. Ext. Doc. No. Nos</em>. has a tick placed in it.</p>
+<ul>
+<li><em>Tour Plan Nos.</em></li>
+</ul>
+<p>Here the code of the number series is entered which is to be used in order to allocate tour plan numbers.</p>
+<ul>
+<li><em>Tour Nos.</em></li>
+</ul>
+<p>Here the code of the number series is entered which is to be used in order to allocate tour numbers.</p>
+<h2 id="register-archive">Register Archive</h2>
+<p>On the register</p>
+<p><span class="smallcaps">Archive</span></p>
+<p>it is possible to meet the following settings:</p>
+<p><img src="../../images/image1.png" alt="Wor1993"></p>
+<ul>
+<li><em>Print Multi-Reports Separately</em></li>
+</ul>
+<p>If this field is ticked, a request form opens before each print out. This function gives the user the possibility of selecting a printer manually for each individual report via &quot;Setting Page&quot; or to change the default print parameters instead of printing in the side view.</p>
+<ul>
+<li><em>Multi-Reports incl. Rep. Type</em></li>
+</ul>
+<p>The multi-report function takes the consigned report types into account.</p>
+<p>It is possible to consign a report (or a series of several reports) for each combination from intended use (quote, contract, order), posting type, business flow, customer, customer task site, business relationship type and report type code.</p>
+<p>This means that the simultaneous print out of multiple reports for a widest range of purposes (order confirmation, haulage display, customer registration etc.) can be fully automated. The establishment of the report to be selected thereby occurs in line with the pricing. This means: A report does not need to be consigned for each combination; all fields of the report selection are searched through for the current value of the order line to be printed in this field or an empty value.</p>
+<ul>
+<li><em>Archive Contract</em></li>
+</ul>
+<p>Via the field <em>Archive Contact</em> it is possible to specify that a copy is placed in the archive on automatic deletion of contracts. Contracts are</p>
+<ul>
+<li><p>in addition to posted invoices and credit memos - the only documents which are continuously present in the system outside the archive. Contracts do not disappear like orders for example. They remain permanently unless they are deleted.</p>
+</li>
+<li><p><em>Archive Order</em></p>
+</li>
+</ul>
+<p>Via the field <em>Archive Order</em> it is possible to stipulate that a copy of the order is archived when it is cleared. On clearance the order is converted into a completed order.</p>
+<p>If no tick is placed in the field <em>Archive Order</em> then it disappears out of the system.</p>
+<p>If the field is ticked, an archived version emerges on clearance.</p>
+<p>If the clearance of the completed order is retracted and the order which is again available is posted once again, a second version of the order is transferred into the archive.</p>
+<ul>
+<li><em>Archive Quote</em></li>
+</ul>
+<p>This option field can be used to control how enwis) is to proceed with regard to the archiving of quotes. The following options are available:</p>
+<table>
+<thead>
+<tr>
+<th>Never</th>
+<th>Quotes are in principle not archived.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>On Confirmation</td>
+<td>Quotes are archived if the user confirms the corresponding dialogue window with &quot;Yes&quot;.</td>
+</tr>
+<tr>
+<td>Always</td>
+<td>Quotes are in principle archived.</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><em>Arch. Contr. On Manual Delete</em></li>
+</ul>
+<p>Via the field <em>Arch. Contr. On Manual Delete</em> it is possible to specify whether enwis) should archive a contract when deleting it manually.</p>
+<ul>
+<li><em>Arch. Order On Manual Delete</em></li>
+</ul>
+<p>Via the field <em>Arch. Order on Manuel Delete</em> it is possible to specify whether enwis) should archive an order when deleting it manually.</p>
+<ul>
+<li><em>Arch. Code On Manuel Delete</em></li>
+</ul>
+<p>Here it is possible to consign a code which is transferred into the archived document on manual deletion of a document.</p>
+<ul>
+<li><em>Archive Invoice / Credit Memo</em></li>
+</ul>
+<p>The two fields <em>Archive Invoice</em> and <em>Archive Credit Memo</em> refer to the unposted version of both document types.</p>
+<p>It is urgently advised that a tick is placed in both fields! It is only when unposted invoices and credit memos are archived that the enwis) comfort cancellation functions which support the user in the value and quantity cancellation can be used.</p>
+<p>Therefore enwis) accesses the archive version of the underlying unposted document for the cancellation of posted documents.</p>
+<p>These unposted documents are the final station in which all data are completely present in the form of the order line from enwis). When posting, splitting occurs into the invoice entries of enwis) and the invoice or credit memo line of MS Dynamics NAV which is clearly reduced in information content.</p>
+<ul>
+<li><em>Copy Comments Contr. to Order</em></li>
+</ul>
+<p>Via the field <em>Copy Comments Contr. to Order</em> it is possible to specify whether observations consigned in the contract header and the contract lines are transferred into the order.</p>
+<p>Any comments can be consigned in the contract header and the contract lines independent of one another. These are only transferred into the order created from the contract if the field <em>Copy Comments Contr. to Order</em> is ticked.</p>
+<ul>
+<li><em>Copy Document</em></li>
+</ul>
+<p>Via the field <em>Copy Document</em> it is possible to control the copying function for the creation of orders from documents which are already present. The following options can be selected:</p>
+<table>
+<thead>
+<tr>
+<th>Standard</th>
+<th>A dialogue window is opened in which it is necessary to select which type of documents or archived documents are to be used as a copying template for the creation of a new document.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Orders</td>
+<td>The overview of the orders opens. An order can be selected which is to be used as a copying template.</td>
+</tr>
+<tr>
+<td>Order Archive</td>
+<td>The overview of the archived orders opens. An archived order can be selected which is to be used as a copying template.</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><em>Create History for Contract</em></li>
+</ul>
+<p>If the field <em>Create History for Contract</em> is ticked, this is automatically written into the document history of the contract on the creation of a contract from a quote.</p>
+<p>The tracking of the document history is only possible for waste transfer notes, quotes and contracts.</p>
+<p>With this function it is clear which documents have &quot;historically&quot; led to other documents.</p>
+<p>If a tick is placed in the field <em>Create History for Contract</em>, a document history is created from a quote on each creation of a contract, via which it is clear from which quote the contract has emerged.</p>
+<h2 id="register-prices">Register Prices</h2>
+<p>On the register</p>
+<p><span class="smallcaps">prices</span></p>
+<p>it is possible to meet the following settings:</p>
+<p><img src="../../images/image2.png" alt="Wor93AD"></p>
+<ul>
+<li><em>Order Pricing by</em></li>
+</ul>
+<p>It can be specified which daily data present in the document are to be taken into account in the pricing. In the pricing enwis) goes back to the service price table. Prices which are consigned there can be provided with a start date and an end date where appropriate.</p>
+<p>In the field <em>Order Pricing by</em> both the options &quot;Order Date&quot; and &quot;Task Date&quot; are available. Here the option &quot;Task Date&quot; should be selected.</p>
+<ul>
+<li><em>Contract Pricing by</em></li>
+</ul>
+<p>It can be specified which daily data present in the document are to be taken into account in the pricing. In the pricing enwis) goes back to the service price table. Prices which are consigned there can be provided with a start date and an end date where appropriate.</p>
+<p>In the field <em>Preisfindung im Auftrag nach</em> the options &quot;Posting Date&quot;, &quot;Work Date&quot; and &quot;Actual Date&quot; are available. Here the option &quot;Work Date&quot; or &quot;Actual Date&quot; should be selected.</p>
+<ul>
+<li><em>Invoice Pricing by</em></li>
+</ul>
+<p>It can be specified which daily data present in the document are to be taken into account in the pricing. In the pricing enwis) goes back to the service price table. Prices which are consigned there can be provided with a start date and an end date where appropriate.</p>
+<p>In the field <em>Contract Pricing by nach</em> both the options &quot;Posting Date&quot; and &quot;Task Date&quot; are available. Here the option &quot;Task Date&quot; should be selected.</p>
+<ul>
+<li><em>Create Price Grp. w. Contract</em></li>
+</ul>
+<p>If this field is ticked an identical price group for the contract is created.</p>
+<ul>
+<li><em>Auto-Create Cust. Price Group</em></li>
+</ul>
+<p>If the field <em>Auto-Create Cust. Price Group</em> is ticked, a new price group is applied automatically on creation of a new customer. In this way each customer automatically receives an individual price code which makes it possible to differentiate prices customer specifically.</p>
+<ul>
+<li><em>Auto-Create Task Site Pr. Group</em></li>
+</ul>
+<p>The option field <em>Auto-Create Task Site Pr.Group.</em> has an analogous function. It contains the following options:</p>
+<ul>
+<li><p>Blank</p>
+</li>
+<li><p>Task Site</p>
+</li>
+<li><p>Customer + Task Site</p>
+</li>
+</ul>
+<p>If prices are not to be differentiated according to customer task sites, it is necessary to select the option &quot;<blank>&quot;. If prices are to be set up customer task site specifically, one of the other two options must be selected.<p>
+<p>If the option &quot;Task Site&quot; is selected, the customer task site code is applied as price group at the same time in order to reach a customer task site specific pricing.</p>
+<p>On selection of the option &quot;Customer + Task Site&quot; a price group from the combination of customer number and customer task site code is applied.</p>
+<p><strong><u>Note:</u></strong></p>
+<p><strong>It must be ensured that the price group code has a maximum of ten digits.</strong></p>
+<p><strong>Customer number and customer task site code are thus allowed a maximum of ten characters!</strong></p>
+<ul>
+<li><em>Sep. f. Task Site Price Group</em></li>
+</ul>
+<p>The field <em>Sep. f. Task Site Price Group</em> refers to the previously mentioned possibility of the price group definition for customer task sites.</p>
+<p>If the price group code is to be made up of the customer number and customer task site code, a single separating character (e.g. &quot;+&quot;, &quot;#&quot; or &quot;-&quot;) can be consigned in this field which separates the two components of the combined price group code from one another.</p>
+<ul>
+<li><em>Auto-Create Vend. Price Group</em></li>
+</ul>
+<p>If the field <em>Auto-Create Vend. Price Group</em> is ticked, a new price group is applied automatically on creation of a new vendor. In this way each vendor automatically receives an individual price code which makes it possible to differentiate prices vendor specifically.</p>
+<ul>
+<li><em>Do Not Invoice Vendors</em></li>
+</ul>
+<p>If a tick is placed in the field <em>Do Not Inovice Vendors</em>, vendor lines are in principle not invoiced. No invoices or credit memos are thus in principle generated from them. The field <em>Invoice</em> is automatically set to the value &quot;Nein&quot; in the vendor document lines.</p>
+<ul>
+<li><em>Purch. On Hold</em></li>
+</ul>
+<p>Here it is possible to enter a maximum three digit code which is then written into each vendor order line in the field <em>On Hold</em> as standard. This is excluded from the invoice as long as this digit code is present in the line.</p>
+<p>In principle all vendor lines are thus also excluded from the invoicing. There is however the possibility of removing the Abwarten code from the lines later on so that they can be invoiced.</p>
+<ul>
+<li><em>Recalculate price</em></li>
+</ul>
+<p>The field <em>Recalculate price</em> controls when the last valid access to the service price table occurs. It has the following options:</p>
+<table>
+<thead>
+<tr>
+<th>Never</th>
+<th>The recourse only occurs during the order application, however on a multiple basis, if price forming criteria are entered, added or changed. In this way enwis) does in principle go back to the service price table once again on changes to the service or quantity.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Release</td>
+<td>Within the framework of the clearance enwis) does once again extract the valid service price from the service price table while taking all price relevant criteria in the order line into account. The document date which enwis) should take into consideration in the temporal demarcation of individual service prices can be specified via the field <em>Order Pircing by</em> in the waste management setup.</td>
+</tr>
+<tr>
+<td>Combine Invoice</td>
+<td>The same applies analogously for the option &quot;Combine Invoice&quot;. However this option refers to the next higher stage in the processing of the documents. If price relevant changes are still made in the completed order, these are taken into account in the combine invoice if the option &quot;Combine Invoice&quot; is ticked in the Recalculate Price.</td>
+</tr>
+<tr>
+<td>Always</td>
+<td>Similarly the option &quot;always&quot; extends the possibilities for retrospective entry of price relevant changes. For the option &quot;Immer&quot; changes are taken into account in the unposted documents and in the final pricing if these documents are finally posted. Here the point in time of the definitive access to the service price table is dependent on the settings in the field <em>Invoice Pricing by.</em></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><em>Grad. Price Relation (Default)</em></li>
+</ul>
+<p>The field <strong><em>Graduated Price Relation</em></strong> is used to define which entries the establishment of the quantities refers to on consideration of accumulated quantities.</p>
+<p>The following options are available in the field Mengenstaffelbezug:</p>
+<ul>
+<li><p>Waste Material</p>
+</li>
+<li><p>Service</p>
+</li>
+</ul>
+<p>On selection of the option &quot;Waste Material&quot;, the accumulated quantities from the field <strong><em>Waste Material Code</em></strong> of the order line and the associated waste ledger entries are formed. This option makes sense if there is a 1:1 connection between service and waste material. The waste code can be allocated on the service card.</p>
+<p>On selection of the option &quot;Sevice&quot; the accumulated quantities from the field <strong>No.</strong> of the order line and the associated waste ledger entries are formed.</p>
+<ul>
+<li><em>Split Graduate Price</em></li>
+</ul>
+<p>The field <em>Split Gradute Price</em> controls the handling of the enwis) quantity graduation function. Each service price can be differentiated by quantity via quantity graduations.</p>
+<p><strong><u>Example:</u></strong></p>
+<p>0 to 5 to: 35 € / to</p>
+<p>6 to 15 to: 30 € / to</p>
+<p>16 to 30 to: 27.50 € / to</p>
+<p>Quantity splitting means that the price is made up from these differentiated graduated prices and that these are also shown differentiated. The quantity splitting can occur manually from the order and the unposted invoice or automatically with the combine invoice.</p>
+<p>Two pre-requisites apply for this: Each service price line for which quantity splitting is to occur must have a tick in the field <em>Split Graduate Price</em>.</p>
+<p>In addition the field <em>Split Graduate Price</em> must be set up in the <strong><em>waste management setup</em></strong>. The following options are available here:</p>
+<table>
+<thead>
+<tr>
+<th>Never</th>
+<th>In principle no quantity splitting occurs. Even if the field Mengenstaffel splitten was ticked in the service price line.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Manual</td>
+<td>Quantity splitting can only be triggered out of the document manually.</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>Quantity splitting can be triggered manually and it is additionally carried out manually in the combine invoice if it is set up in such a way in the corresponding order line.</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><em>Check Bottom Price</em></li>
+</ul>
+<p>The field <em>Check Bottom Price</em> makes it possible to set up a balance between defined lower price limits and current invoice prices as a standard work flow. For this purpose it is necessary to define a minimum price in the field <em>Bottom Price</em> in the <strong><em>service price list</em></strong>. If the <strong><em>waste management setup</em></strong> also has the field <em>Check Bottom Price</em> ticked, enwis) compares whether the sales price entered on the order line goes below the lower price limit. In this case an error message is issued and the order line cannot be posted.</p>
+<p><strong><u>Note:</u></strong></p>
+<p><strong>This balance does not occur within the framework of the document processing and it only occurs on posting the invoice.</strong></p>
+<ul>
+<li><em>Consider Ending Date</em></li>
+</ul>
+<p>The field <em>Consider Ending Date</em> refers to end dates which can be consigned in the service price table. The temporal differentiation of valid prices normally occurs exclusively via the start date.</p>
+<p><strong><u>Example:</u></strong></p>
+<p>The price of 9.50 € for the construction waste service runs out from 01.08.2013 when a new price of 11.15 € is available from this start state.</p>
+<p>An end date which is placed in the service price table is however only taken into consideration if the field <em>Consider Ending Date</em> is ticked. Then enwis) will no longer find this service price after the end date.</p>
+<ul>
+<li><em>Price Tr. excl. Starting Date</em></li>
+</ul>
+<p>If the function</p>
+<p><em><span class="smallcaps">edit price by criteria</span></em></p>
+<p>is called up, the start date is optionally ignored for filtering.</p>
+<ul>
+<li><em>Start Price Editing Adjusted</em></li>
+</ul>
+<p>The criteria with which the dialogue &quot;Change Service Price&quot; is opened can be controlled in the <strong><em>Waste Management Setup</em></strong> on the register</p>
+<p><span class="smallcaps">Preise</span></p>
+<p>via the option field <em>Start Price Editing Adjusted</em>.</p>
+<p>The options are:</p>
+<ul>
+<li><p>Never</p>
+</li>
+<li><p>On service price</p>
+</li>
+<li><p>On rental price</p>
+</li>
+<li><p>Always</p>
+</li>
+</ul>
+<p>In principle it is possible to make a distinction between two types of presentation here: the start with an adapted or non-adapted price line - this can still be differentiated to the effect that the user displays a service price or a rental price.</p>
+<p>If the price processing is</p>
+<p><u>not</u></p>
+<p>adapted as it is started, the function</p>
+<p><em><span class="smallcaps">Preis über Kriterien
+bearbeiten</span></em></p>
+<p>is filled with all price relevant criteria which are located on the document line from which the function is called up.</p>
+<p>If the function</p>
+<p><em><span class="smallcaps">edit price by criteria</span></em></p>
+<p>is started with adapted price processing, pricing is put in ahead which aims to find an existing more general service price line which meets as many of the criteria input on the document line as possible.</p>
+<ul>
+<li><em>Confine Price Criteria</em></li>
+</ul>
+<p>If the field <em>confine Price Criteria</em> is ticked then this has direct effects on the possibility of price maintenance and the display of the price criteria. In the service price list in which the master data of the services are maintained, only the price criteria which have</p>
+<p><u>not</u></p>
+<p>been deactivated are shown automatically.</p>
+<p>The deactivated price criteria on the other hand are blocked out. They can be shown by the user but they are still deactivated and they cannot be processed.</p>
+<p>The deactivated price criteria are then also not available in these price overviews and views of the operational area.</p>
+<p>The dialogue</p>
+<p><em><span class="smallcaps">edit price by criteria</span></em></p>
+<p>for example does in principle only show those price criteria which are not deactivated. All deactivated price criteria are not displayed and they cannot be shown either.</p>
+<h2 id="register-dimensions">Register Dimensions</h2>
+<p>On the register</p>
+<p><span class="smallcaps">Dimensions</span></p>
+<p>it is possible to meet the following settings:</p>
+<ul>
+<li><em>No Transfer of Dims.to Docs.</em></li>
+</ul>
+<p>If a tick is placed in the field <em>No Transfer of Dims. to Docs.**</em>,** dimension values are not written into the documents at all and are instead only established following generation of the posted invoice from the master data and allocated to the entries which emerge on posting.</p>
+<p>This process has two great advantages:</p>
+<ul>
+<li><p>The performance of the database is increased as the dimension values do not have to be incorporated through all documents</p>
+</li>
+<li><p>Users are not tempted to &quot;correct&quot; the dimension values of the documents. Instead the master data appear as the correct place for the maintenance of dimension values</p>
+</li>
+</ul>
+<!--  -->
+<ul>
+<li><em>Manually Set Doc. Line Dimensions</em></li>
+</ul>
+<p>The field <em>Manually Set Doc. Line Dimensions</em> controls the transfer of dimension values from the master data into the documents.</p>
+<p>In MS Dynamics NAV Standard all document line dimensions are in principle deleted and newly established as soon as a field of the sales or purchase line is validated from the master data of which guideline dimensions can be taken.</p>
+<p>In enwis) the field <em>Manually Set Doc. Line Dimensions</em> can be used to control this programme behaviour. The following three options are available:</p>
+<table>
+<thead>
+<tr>
+<th>Refresh all</th>
+<th>enwis) behaves like standard Navision. Whenever a field of the waste management line is validated from the master data of which guideline dimensions are taken, all document line dimensions of this line are deleted and newly structured.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Keep Addes Dims.</td>
+<td>Only dimensions extracted from master data are deleted and newly established. Additionally manually input dimensions remain (but not just manually changed dimension values or dimensions which were taken from master data; these values are newly calculated and the manually made changes are overwritten.).</td>
+</tr>
+<tr>
+<td>Change current only</td>
+<td>Only the dimensions which are taken from the master data of the currently changed document line field are deleted and newly established. All other dimensions are retained without any changes.</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><em>Not Transfer of Dims. to Jnls.</em></li>
+</ul>
+<p>If a tick is placed in the field, dimension values are not written into the journals and instead only assigned to the entries via the dimension matrix on posting.</p>
+<ul>
+<li><em>Block Dims. on Contr. to Order</em></li>
+</ul>
+<p>When creating the order from the contract, the automatic dimension transfer is blocked in all current order lines. The line dimensions of the contract are however transferred into the line dimension of the order.</p>
+<ul>
+<li><em>Block Doc. Dims. on Status</em></li>
+</ul>
+<p>When there is a change of status of the order, the automatic dimension transfer is blocked in all current order lines. In this field it is possible to consign the corresponding status e.g. final control.</p>
+<ul>
+<li><em>Block Doc. Dims. on Release</em></li>
+</ul>
+<p>When the order is cleared, the automatic dimension transfer is blocked in all current order lines.</p>
+<ul>
+<li><em>Block Dims on Combine Invoice</em></li>
+</ul>
+<p>When creating the combine invoice, the automatic dimension transfer is blocked in all current invoice lines. The existing dimensions of the order line are however transferred into the invoice line.</p>
+<ul>
+<li><em>Block Dims. on Rental Invoice</em></li>
+</ul>
+<p>When creating the rental invoice, the automatic dimension transfer is blocked in all current lines of the invoice which develops or the completed order which develops. The logics for establishment of dimensions in the course of the rental invoice itself do however take effect before.</p>
+<ul>
+<li><em>Block Doc. Dims. on Posting</em></li>
+</ul>
+<p>When creating the posted invoice document, the automatic dimension transfer is blocked in all current lines of the document which develops and is posted. Of course the dimensions of posted documents can no longer be changed in any case.</p>
+<p>This option is however important in another context:</p>
+<p>If new unposted invoice documents are created from the directly called functions</p>
+<p><em><span class="smallcaps">Quantity Correction</span></em></p>
+<p>or</p>
+<p><em><span class="smallcaps">copy invoice</span></em></p>
+<p>from the unposted document, in them the field <em>Block transfer of dimensions</em> is automatically set to &quot;YES</p>
+<p><span class="smallcaps">&quot;</span></p>
+<p>if it is also on &quot;</p>
+<p><span class="smallcaps">YES&quot;</span></p>
+<p>for the posted document. This means that it is possible to avoid changes to dimension values in cancellations through validation of fields.</p>
+<h2 id="register-entries">Register Entries</h2>
+<p>On the register</p>
+<p><span class="smallcaps">entries</span></p>
+<p>it is possible to meet the following settings:</p>
+<ul>
+<li><em>Check Transport Entries, Check Personnel Entries, Check Equipment Entries</em></li>
+</ul>
+<p>Via the three fields enwis) can be prompted to check applied entries for completeness. The following options are available:</p>
+<table>
+<thead>
+<tr>
+<th>Never</th>
+<th>No check takes place. Entries which do not have an entry in the field <em>No.</em> or <em>Quantity</em> are simply ignored and not posted. With this setting of the system it is quite possible that incomplete entries may pass unnoticed and be lost as they are not posted.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Purchase</td>
+<td>Entries are only checked for completeness in the customer area. This means that it is only meaningful if transport services are in principle purchased but not sold for example.</td>
+</tr>
+<tr>
+<td>Sales</td>
+<td>This option works analogous to only customer entries being checked for completeness.</td>
+</tr>
+<tr>
+<td>Always</td>
+<td>Both customer and vendor entries are checked for completeness.</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><em>Waste Qty. Relationship, Transport Qty. Relationship, Equipment Qyt. Relationship, Personnal Qty. Relationship</em></li>
+</ul>
+<p>The corresponding service type determines whether the operational quantity fills the invoice quantity or vice-versa.</p>
+<ul>
+<li><p>Op. Qyt. sets Inv. Qty.: enwis) interprets entries in the field <em>Operational Qty.</em> as quantity indications via e.g. a waste movement and thus transfers an input in <em>Operational Qty.</em> into the field <em>Qty. to Dispose</em>. For the option &quot;Op. Qyt. sets Inv. Qty&quot; this operational quantity is transferred into the invoice relevant field <em>Quantity</em> of the document line.</p>
+</li>
+<li><p>Inv. Qty. sets Op. Qty.: The invoice relevant value from the field <em>Quantity</em> is transferred into the field <em>Qty. to Dispose</em>.</p>
+</li>
+</ul>
+<!--  -->
+<ul>
+<li><em>Fetches Entries</em></li>
+</ul>
+<p>The field <em>Fetches Entries</em> controls whether entries which have been acquired can be posted or not. Acquired entries are entries which were just acquired in the daily reports for processing. While an entry is marked as &quot;fetch&quot; it cannot be processed or deleted in the order. When attempting processing the user receives an error message. Entries which are blocked by a daily report can also not be posted without further input.</p>
+<p>The option field <em>Fetches Entries</em> is the decisive factor for the programme behaviour. This provides three options:</p>
+<table>
+<thead>
+<tr>
+<th>Do not post</th>
+<th>Acquired entries cannot be posted. When posting, the same error message is issued as for the attempt to delete or modify an acquired entry.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Post</td>
+<td>The entry is posted with its original value although it is just blocked by a daily report; at the same time the corresponding daily report line is deleted. The daily report logic is hereby completely overridden if the daily report was not written back at the correct time. This option can only be chosen if work with the daily reports is not to take place in the way described.</td>
+</tr>
+<tr>
+<td>Update</td>
+<td>The entry is updated with the value input in the daily report and posted; the daily report line is subsequently deleted. In this way it is not yet ensured that the processing has already taken place as there is no possibility of checking the point in time of posting in the daily reports for this option from the perspective of the user. If the follow-up entry is to occur systematically via the daily reports through different users and possibly at various places, the option &quot;Do not post&quot; is to be selected as it is only then that a clearance by the user in the daily reports has to occur prior to posting.</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><em>Personnel Entries by Vehicle / Transfer Crew thru Status</em></li>
+</ul>
+<p>Crews can be absorbed into personnel entries for the vehicle as an option.</p>
+<ul>
+<li><em>Auto-Create Entries</em></li>
+</ul>
+<p>The field refers to the point in time of generation of entries. It has the following options:</p>
+<table>
+<thead>
+<tr>
+<th>Never</th>
+<th>Transport, personnel and equipment entries are not applied automatically and they can only be generated manually.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>On Operative Qty.</td>
+<td>The entry is applied if a value is entered in one of the fields <em>Qty. to Drive, Qty. to Work</em> or Qty. to Handle_._</td>
+</tr>
+</tbody>
+</table>
+<p>The combination from logging of a defined service type (i.e. a service of the type &quot;Transport&quot;, &quot;Personell&quot; or &quot;Equipment&quot; and an entry in the field <em>Operational Qty</em> of the <em><strong>Order Line</strong></em> has the same effect.
+Always            | The entry is applied when it is clear which service type is logged in the order line. This means that a transport entry is also applied for example if no operational quantity is logged but a service of the type &quot;Transport&quot; is logged in the order line. This makes sense primarily if the entries are to be used for follow-up quantity entry in the daily reports. Then applied entries can automatically be fetched into the daily report in the order logging. The quantity data are added there and the quantities logged are written back into the entries.</p>
+<ul>
+<li><em>Create Waste Entries</em></li>
+</ul>
+<p>The field determines the point in time at which the waste management entries are to be applied. The following options can be selected:</p>
+<p>Per Function only   | Waste management entries are not applied automatically and instead they must be generated manually via the function</p>
+<p><em><span class="smallcaps">Create Waste Entries</span></em>
+------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+On Print            | The waste management entry is applied if the required accompanying documents are printed out. All data necessary for this purpose can be recorded on the order line and the printing can also be initiated from the order form. enwis) then generates the waste management entry suitable for the data in the background.
+On Lookup           | The waste management entry is applied if the user changes from the line into the entry. Then all data relevant for the waste management entry on the line are transferred into this.
+On Lookup and Print | This option really should be: On Lookup and Print as the entry is generated automatically if accompanying documents are printed or the entry window is opened.
+Earliest            | The entry is applied as soon as waste material, warehouse movement and quantity were logged, i.e. as soon as all storage relevant data are together.</p>
+<ul>
+<li><em>Latest Entry Posting</em></li>
+</ul>
+<p>It is recommended to set the value to &quot;On Releaste&quot;. Then all entries allocated to an order are posted automatically within the framework of clearance of the order. In this way it is guaranteed that material and equipment movements are logged promptly and can be dispatched accordingly.</p>
+<ul>
+<li><em>Delete Posted Entries</em></li>
+</ul>
+<p>The field <em>Geb. Positionen löschen</em> controls whether the entry line or the documents which led to the development of the posted entries/the ledger entry may be deleted or not. As a rule it makes sense to prevent the deletion of documents if entries which have already been posted are present for them.</p>
+<p>The field has the following options:</p>
+<table>
+<thead>
+<tr>
+<th>Never</th>
+<th>A document on which there is a posted entry can in principle not be deleted. We recommend setting this as the standard option so it remains clear which documents and processes have led to the development of individual ledger entries.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Always</td>
+<td>The deletion of the document is possible without further ado; the posted entry, meaning the ledger entry does however remain which would make little sense as a rule as it is then no longer clear which process the entry emerged from.</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>Individual entry lines can be deleted if a tick was placed in the <strong><em>entry</em></strong> in the field <em>Allow Delete after Posting</em> prior to entry.</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><em>No Del. Transp. Entr. v. Line</em></li>
+</ul>
+<p>The field decides whether the transport entry is fully deleted or whether just the vehicle is removed if the vehicle is deleted in the order line.</p>
+<ul>
+<li><em>Release Equip. Entry on Corr.</em></li>
+</ul>
+<p>Equipment ledger entries can be cancelled from the order. For this purpose the field <em>Release Equip. entry on Corr..</em> must be ticked. If this is the case an equipment entry which may be linked to the ledger entry is cleared automatically, thus set to the status &quot;not posted&quot; on cancellation of equipment ledger entries from the equipment journal.</p>
+<p>If the equipment posting is cancelled, the equipment entry once again receives the status &quot;not posted&quot; and is subsequently posted on clearance of the order or posting of the entry a second time.</p>
+<p>This is however only the case if the field <em>Release Equip. Entry on Corr**</em>.** is ticked. If that is not the case the equipment entry is not cleared for posting again following cancellation of the associated equipment ledger entry in the order.</p>
+<p>The system behaviour for equipment cancellation from the journal is similar. If an equipment posting is cancelled in the order, it is relatively clear that the associated equipment entry should be set to the status &quot;not posted&quot; automatically.</p>
+<p>This does however also occur if an equipment ledger entry from a journal is cancelled.</p>
+<p>It is possible that a user may cancel an equipment ledger entry manually in an equipment journal. If this occurs, enwis) investigates whether a further equipment entry exists for this equipment ledger entry in a current order. If this is the case, this is also cleared, as if it were cancelled directly from the order.</p>
+<ul>
+<li><em>Driver Personnel Group Code; Co-Driver Personnel Group Code</em></li>
+</ul>
+<p>These two codes can be used to define which personnel groups can be activated in the transport entries and in the dispatching via the corresponding fields as driver and co-driver.</p>
+<ul>
+<li><em>Unit of Measure Code Hour</em></li>
+</ul>
+<p>The field refers to the fields <em>Driving Time, Loading Time</em> and <em>Laiding Time</em> in the <strong><em>Personnel Entries</em></strong> and <strong><em>Transport entries</em></strong>. The enwis) realtime function can</p>
+<p><u>not</u></p>
+<p>be used here and times logged must be entered manually instead. The time unit used here is specified via the field <em>Unit of Measure Hour</em>.</p>
+<ul>
+<li><em>Default Time Type Service; Default Time Type Equipment; Default Time Type Personnel; Default Time Type Transport</em></li>
+</ul>
+<p>The fields refer to the enwis) realtime function. The standard time types are used if services, equipment, personnel and transport groups do not have any time types consigned.</p>
+<p>In the realtime calculation enwis) calculates the real time difference from the daily data and times entered, thus the real service duration and requirement to the second. enwis) must however be informed in which unit this conversion is to occur.</p>
+<p>This can occur specifically for each service, each equipment item and each transport or personnel group. Or this conversion unit can be consigned in a standardised way via the fields named.</p>
+<ul>
+<li><em>Transfer Dispatching Grp. from</em></li>
+</ul>
+<p>Dispatching groups are transferred from the vendor/customer task site into the order line. They present a grouping of addresses (e.g. city areas)</p>
+<ul>
+<li><em>Use Service Catalogs</em></li>
+</ul>
+<p>Service catalogs are compilations of various services such as e.g. certain combinations of equipment and waste materials. Service catalogs are set up under the menu point</p>
+<p><em><span class="smallcaps">enwis)
+Service/Service/Reports and Analysis/Charts &amp; Views/Service
+catalogs</span></em></p>
+<p>and they can be allocated to individual sites, projects and customer task sites via a matrix.</p>
+<p>In the order line the link</p>
+<p><em><span class="smallcaps">ACtions(Alt +
+F10)</span></em></p>
+<p><em><span class="smallcaps">Line insert catalog line</span></em></p>
+<p>can be used to allocate a service catalog to the order line. The field <em>Leistungskataloge nutzen</em> must be ticked so that this function can be used.</p>
+<ul>
+<li><em>Check Service Catalog</em></li>
+</ul>
+<p>In addition to the selection of the services in the order, the service catalogs can also be used - as positive catalogs in a sense - to force or prevent the limitation to certain services or service combinations for a customer for example. The field <em>Check Service Catalog</em> is used for this purpose.</p>
+<p>This has the following options:</p>
+<table>
+<thead>
+<tr>
+<th>Never</th>
+<th>No check takes place.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>If Catalog Code Exists</td>
+<td>A check only takes place if a catalog code could be established for the order line.</td>
+</tr>
+<tr>
+<td>Always</td>
+<td>A check always takes place. If the combination from service and allocated service relevant criteria is not found in the service catalog defined by the catalog code during checking, a clearance is only possible depending on the setting in the field <em>On Catalog Comparsion Conflict</em>.</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><em>Save Man. Catalog Comparsion</em></li>
+</ul>
+<p>Any number of catalog comparisons can be carried out for each document at different times. The result window displayed only contains the result of the current comparison first of all.</p>
+<p>The catalog comparison ledger entries shown as the result of the current comparison are thus not saved in the database automatically and they first of all only serve for the purpose of information of the respective user. The temporary catalog comparison entries generated from a document by a specific matching can however also be saved.</p>
+<p>The extent to which the user can influence this is determined by the default setting of the field <em>Save Man.Catalog Comparsion</em>.</p>
+<p>The option values of this field are:</p>
+<table>
+<thead>
+<tr>
+<th>Never</th>
+<th>The manually triggered catalog comparisons are never saved. Saving cannot be triggered by user either.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Optional</td>
+<td>The comparisons are only saved if the user brings this about from the form displayed via the button</td>
+</tr>
+</tbody>
+</table>
+<p><em><span class="smallcaps">Save</span></em></p>
+<p>.
+Always   | The comparisons are always saved. Saving cannot be prevented by the user either.</p>
+<ul>
+<li><em>On Catalog Comparsion Conflict</em>.</li>
+</ul>
+<p>The field refers to both the enwis) system behaviour on automatic matching of order lines with service catalogs and also with so-called comparison catalogs or positive and negative catalogs. Such comparison catalogs can be allocated to all customer and vendor task sites and also storage locations.</p>
+<p>The field <em>On Catalog Comparsion Conflict</em>.on the other hand controls how enwis) is to behave if a conflict is established between a relevant catalog and the associated order line.</p>
+<p>The field has the following options:</p>
+<p>Block Activity        | With the option &quot;Block Activity &quot;, orders which contain conflicts cannot be transferred to another status or cleared by the user while the conflict exists.</p>
+<p>If a conflict is established on change of status or clearance then this activity is not carried out and an error message is issued instead. The conflict must be resolved before the user can pass on or clear the order.
+--------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Create Ledger Entries | With the option &quot;Create Ledger Entries&quot; comparison catalog ledger entries are formed automatically which save the established conflicts. The processing is however not stopped and the order can change the status or be cleared despite the conflict.</p>
+<p>This setting appears to make sense if comparison catalog conflicts are as a rule regarded as not being problematic and only have to be checked from time to time retrospectively via the compare catalog ledger entries or for increasing frequency.</p>
+<p>It is also conceivable that the operation is a bulk business which is not to be impeded by error messages which cannot be assessed or corrected at all by the case worker involved in terms of content. In this case the comparison catalog ledger entries could be checked regularly and promptly by a qualified employee in order to retrospectively process cleared orders with comparison catalog conflicts.
+Both                  | If the field is on the option &quot;Both&quot; then both comparison catalog ledger entries are generated and the activity saved.</p>
+<p>In principle this only involves a comfort function which makes the localisation of the conflict possible for the user without having to initiate an explicit manual match once again. He only has to call the comparison catalog ledger entry allocated automatically to the document from the document.</p>
+<h2 id="register-status">Register Status</h2>
+<p>On the register</p>
+<p><span class="smallcaps">Status</span></p>
+<p>it is possible to meet the following settings:</p>
+<ul>
+<li><em>Status Change Functiom; Release Function; System Batch Post Function</em></li>
+</ul>
+<p>Via the three fields it is possible to consign individually programmed code units in addition to the standard code unit which are activated when these functions are called up. In this way special functions can be integrated in enwis) which are not provided in standard and only make sense in certain customer specific contexts.</p>
+<ul>
+<li><em>Catalog Comparison on Status; Catalog Comparision on Release</em></li>
+</ul>
+<p>Both fields refer to the automatic match with comparison catalogs, thus the possibility of allocating negative and/or positive catalogs to customer and vendor task sites and storage locations and comparing them automatically with orders or order lines.</p>
+<p>The catalog comparison can be called manually by the user from the document; it can however also be undertaken automatically by the system via the options placed in both these fields on a change of status and/or clearance.</p>
+<ul>
+<li><em>Transfer Qty. on Status</em></li>
+</ul>
+<p>The field specifies whether and when an automatic service quantity transfer is to be performed. The quantity transfer involves the transfer of values in the field <em>Quantity</em> of an order line into other lines of the same order.</p>
+<p>In the field <em>Transfer Qty. on Status</em> it is possible to specify whether and for which change of status an automatic quantity transfer is to take place.</p>
+<ul>
+<li><em>Service Qty. on Release</em></li>
+</ul>
+<p>The field also specifies whether and when an automatic service quantity transfer is to be performed. The quantity transfer involves the transfer of values in the field <em>Quantity</em> of an order line into other lines of the same order.</p>
+<p>If a tick is placed in the field <em>Service Qty. on Release</em>, a quantity transfer takes place within the framework of the clearance (depending on the default setting in the field <em>Transfer Qty. on Status</em> for the first time or additionally).</p>
+<p>As quantities are however only transferred in lines which have empty quantities, quantities being transferred in duplicate is not possible.</p>
+<ul>
+<li><em>Assign text automatically</em></li>
+</ul>
+<p>If the field is ticked, free texts are allocated to the service line above without reference to a customer or a service within the framework of the clearance.</p>
+<p>In principle the allocation is important so that it also remains within the framework of the combine invoice. enwis) works on a line basis in principle. It cannot therefore do anything with free floating texts which are logged in order lines.</p>
+<p>If these text lines are also to reach the customer within the framework of invoicing, they must therefore be allocated to a billable service line.</p>
+<p>Undertaking the allocations within the order form via the functions</p>
+<p><em><span class="smallcaps">Assign text befort</span></em></p>
+<p>and</p>
+<p><em><span class="smallcaps">assign text after</span></em></p>
+<p>controlled by the user makes more sense that an automatic allocation. This manual allocation occurs regardless of the setting in the field <em>Assign text automatically.</em></p>
+<p>Via the field <em>Assign text automatically</em> it is possible to specify whether an automatic allocation of all texts which have not so far been allocated is to be made.</p>
+<ul>
+<li><em>Allow Partial Invoicing</em></li>
+</ul>
+<p>If this field is ticked then the clearance of an order can be retracted although lines of the order were already invoiced.</p>
+<ul>
+<li><em>Order Assignment on Release</em></li>
+</ul>
+<p>Allocation methods can be used to allocate other lines in which e.g. services linked in terms of content and supplements/deductions or similar are logged to individual order lines.</p>
+<p>The order line allocation can be initiated manually by function from the order or it can occur automatically.</p>
+<p>If a tick is placed in the field <em>Order Assignment on Release</em>, enwis) automatically performs the allocation of the order lines in accordance with the consigned allocation method within the framework of the clearance.</p>
+<ul>
+<li><em>Order Assignment on Status</em></li>
+</ul>
+<p>The field has the options: <blank>, &quot;Dispatching&quot;, &quot;Processing&quot; and &quot;Completion&quot;. Here it is specified whether an automatic order line allocation should take place at all and at which status change.<p>
+<ul>
+<li><em>Automatic Order Assignment</em></li>
+</ul>
+<p>The settings in the two aforementioned fields only apply if the field <em>Automatic Order Assignment</em> was set to the option &quot;Always&quot;.</p>
+<p>The field has the options:</p>
+<table>
+<thead>
+<tr>
+<th>Never</th>
+<th>An automatic order line allocation does not occur, even for the manual start of the function from the order.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Manual</td>
+<td>The order allocation only occurs through explicit function call up from a form.</td>
+</tr>
+<tr>
+<td>Always</td>
+<td>The order lines allocation through calling up function and automatically on status change or clearance is possible.</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><em>Order Assignment Method</em></li>
+</ul>
+<p>Via the field it is finally possible to specify how the programme behaves on an automatic order lines allocation if allocated order lines already exist. The options are:</p>
+<table>
+<thead>
+<tr>
+<th>Only if without Assignment</th>
+<th>Only automatic order lines are generated if none exist for the order line.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Internal Assgnmts.</td>
+<td>Existing allocations which refer to lines within the same order are deleted and created or newly created by the automatic order lines allocation.</td>
+</tr>
+<tr>
+<td>Complete Assgnmts.</td>
+<td>All existing allocation lines of the order are deleted and newly created.</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><em>Bal. Acc. on Release</em></li>
+</ul>
+<p>All the necessary counter posting lines will be applied automatically on order clearance at the latest.</p>
+<ul>
+<li><em>Transfer Bal. Acc. on Status</em></li>
+</ul>
+<p>In addition one of the options can be selected in the field <em>Transfer Bal. Acc. on Status</em> in order to allow the counter posting lines to be applied through a status change before the clearance. The settings described so far are shown redundantly - counter posting lines can be created for both status change and also for clearance - in this way it is ensured that each required counter posting line is only applied once.</p>
+<ul>
+<li><em>Bal. Acc. Transfer</em></li>
+</ul>
+<p>In the field <em>Bal. Acc. Transfer</em> the option &quot;Create Bal. Ass. Lines&quot; can be selected. For this setting counter lines are only applied for order lines which were already applied with a counter posting number manually by the user.</p>
+<p>The use of the option &quot;Transfer Bal. Acc_.&quot;_ by contrast sees counter lines applied for all order lines even if a counter posting number was only posted in the order on one occasion. The counter posting number is extracted from the first order line, the posting type of which is identical to the posting type of the order header. The transfer occurs in all original lines of the same posting type for which no counter posting number was consigned. Subsequently the counter lines are generated from all original lines.</p>
+<p>If by contrast the field <em>Bal. Acc. Transfer</em> has the option <em>&quot;No Transfer&quot;</em> set, an automatic generation of counter lines does not take place regardless of what was set in the fields located above. Counter lines can then only be generated from the document by function.</p>
+<p>Via the following fields under the rubric <strong><em>Cust. /Vend. Changeover</em></strong> it is possible to control the functionality of the customer-vendor jumping. For the use of this function, the register</p>
+<p><span class="smallcaps">General</span></p>
+<p>of the waste management set up must in principle have the field <strong><em>Allow Cust./Vend. Changeover</em></strong> ticked. The standard setting for this function is to be made in the three fields in the register</p>
+<p><span class="smallcaps">Status</span></p>
+<p>as follows:</p>
+<table>
+<thead>
+<tr>
+<th>Auto-Changeover on Release</th>
+<th><yes></yes></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Auto-Changeover on Status</td>
+<td><blank></blank></td>
+</tr>
+<tr>
+<td>Suppress Changeover until</td>
+<td>Completion</td>
+</tr>
+</tbody>
+</table>
+<p>For this setting the jump occurs as late as possible. It does however occur on clearance of the order in each case.</p>
+<p>This setting makes sense to the extent that the order processing is to be adapted to the &quot;historic&quot; development of the prices by the jumping. Therefore a jump at the latest possible point in time of the order processing appears the most appropriate. In addition it occurs invisibly for the user in the background on clearance so that the user is not irritated by changes to the business flow which are apparently made randomly by the system - if a purchase suddenly turns into a sale and vice versa.</p>
+<p>If an earlier jump is nevertheless desired, the settings in the fields <em>Auto-Changeover on Status</em> and <em>Suppress Changeover until</em> must be made accordingly.</p>
+<h2 id="register-stock">Register Stock</h2>
+<p>On the register</p>
+<p><span class="smallcaps">Stock</span></p>
+<p>it is possible to meet the following settings:</p>
+<p><img src="../../images/image3.png" alt="Wor9F83"></p>
+<ul>
+<li><em>Location Mandatory / Bin Mandatory</em></li>
+</ul>
+<p>Via the two fields <em>Location Mandatory</em> and <em>Bin Mandatory</em> it is possible to control that each warehouse inflow can be posted with just the indication of a storage or warehouse location. If a tick is placed in one or both of these fields, enwis) checks whether a storage or warehouse location was assigned to the warehouse inflow on posting. This check occurs on clearance of the order so that it is ensured that the inventory posting occurs on clearance with indication of storage location or warehouse.</p>
+<ul>
+<li><em>Insert Location Assignment</em></li>
+</ul>
+<p>Via the field <em>Insert Location Assignment</em> a special enwis) function can be used which makes it possible to equate internally generated waste quantities with externally generated waste quantities in the waste management company itself for evaluation purposes.</p>
+<p>Internal waste quantities occur in relation to storage location as a rule; as a rule it is the storage location itself through which internally generated waste quantities are caused. Therefore it is possible to allocate an internal customer or vendor to the storage location. If the field <em>Insert Location Assignment</em> is also ticked, the internal customer/vendor which was allocated to a storage location is extracted from the location card and transferred to the journal for postings in the waste management journal.</p>
+<p>In this way this internal storage posting also occurs with the indication of a customer and this is written in the ledger entry. In this way it is possible for internal storage entries to be evaluated statistically jointly with the externally caused waste movements from the actual business activity via the quantities of customer/vendors.</p>
+<ul>
+<li><em>Area Code Mandatory</em></li>
+</ul>
+<p>In the field <em>Area Code Mandatory</em> the system can be set in such a way that no material movement can be carried out without the indication of a Federal State.</p>
+<p>It only makes sense to use this option if a special waste management company works in more than one Federal State and consequently has to verify the origin of the waste by Federal State.</p>
+<ul>
+<li><em>Outward Stock Movement</em></li>
+</ul>
+<p>The field <em>Lagerabgangslogik</em> refers to the automatic application of waste management ledger entries.</p>
+<p>An individual warehouse outflow method can be consigned to each storage location and each waste material. This can lead to conflicts between the warehouse outflow method of the storage location and that of the waste material. In the field <em>Lagerabgangslogik</em> it should therefore be specified whether the storage location or the waste material is decisive in the case of such conflicts.</p>
+<p>For the option <em>&quot;Location before Material&quot;</em> the warehouse outflow method of the storage location has priority over that of the waste material. With the option <em>&quot;Material before Location&quot;</em> the opposite applies.</p>
+<p>Outflow methods of the type <em>&quot;<blank>&quot;</blank></em> are not taken into account. If the method &quot;<blank>&quot; was allocated to the storage location for example and the waste material has the method &quot;FIFO&quot; the latter is decisive even if the option <em>&quot;Location before Material&quot;</em> was selected in the waste management set up.<p>
+<ul>
+<li><em>Allow Refusal without Qty.</em></li>
+</ul>
+<p>If the field <em>Allow Refusal without Qty.</em> is ticked, refusal ledger entries can be generated without an indication of quantity.</p>
+<p>The purpose of the refusal function is to redirect materials which require particular monitoring in line with transport regulations, either back to the sender or to a different waste management plant and to record this redirection. In the case of a refusal the transport does in principle not go to the company's own warehouse, thus as a rule not over its own weighbridge. The exact quantity is thus unknown but it can frequently be estimated. Therefore it is a good idea to post refusal ledger entries without indications of quantity.</p>
+<ul>
+<li><em>Use Waste Entry Type Matrix</em></li>
+</ul>
+<p>The waste entry type matrix is activated via the field <em>Use Waste Entry Type Matrix</em>. The waste entry type matrix controls how certain types of business transactions have an effect on the inventory.</p>
+<ul>
+<li><em>Allow Qty. Allocation</em></li>
+</ul>
+<p>The field <em>Allow Qty. Allocation</em> is used to control whether the waste quantity logged in the movement form may be distributed over various waste management entries.</p>
+<p>Normally there is a 1:1 relationship between movement form and waste management entry. If the waste quantity logged in a waste management entry does however have to be distributed over several storage locations, the waste management entry must also be split correspondingly so that several entries then refer to a movement form. The quantity allocated to the movement form is thus distributed over several entries. This is only possible if the field is ticked.</p>
+<ul>
+<li><em>Unit Cost. Calc. Function</em></li>
+</ul>
+<p>Via the field <em>Unit Cost Calc. Function</em> a code unit for the calculation of unit costs can be consigned. A unit cost method (e.g. option &quot;Calc. Function&quot;) can be consigned to each waste material.</p>
+<p>The option &quot;Calc. Function&quot; means: The unit cost is established by a user defined calculation function. An individual code unit like this one can be consigned to each waste material as a calculation function.</p>
+<p>In addition or as an alternative, a global code unit can be consigned for establishment of the service price in the waste management set upin the field <em>Unit Cost. Calc. Function</em>. If the service price method &quot;Calc. Function&quot; was selected in the waste material but no calculation function was defined, the function consigned in the waste management set up is operated instead.</p>
+<ul>
+<li><em>Match Stocking Posting w. Catalog</em></li>
+</ul>
+<p>If this field is ticked, an explicit comparison occurs with the allocated positive or negative catalogs.</p>
+<ul>
+<li><em>Consider Int./Ext. Relations</em></li>
+</ul>
+<p>In enwis) it is possible to consign references between a waste material and several EWC numbers. This can occur from the waste material card or also from the EWC card. The extent to which the consigned references have an effect on the operational business is specified via the option field <em>Consider Int./Ext. Relations</em> in the waste management set up.</p>
+<p>The following options are available and form a hierarchy which becomes stricter:</p>
+<table>
+<thead>
+<tr>
+<th>Never</th>
+<th>The references can be consigned in the master data. In the operational area (thus e.g. in the field EWC No. on the order line) the references are neither displayed via the Lookup function and nor are they controlled. The Lookup of the field EWC-No. branches out onto the whole EWC table.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>On Lookup</td>
+<td>The references consigned in the master data are not controlled on selection of an EWC no. in the operational document. On Lookup e.g. in the field EWC No. on the order line these references are displayed instead of the complete EWC table in case references are consigned for the current waste material.</td>
+</tr>
+</tbody>
+</table>
+<p>If no references are consigned for the current waste material, then the complete EWC table is displayed as Lookup. – This is the recommended setting for work with waste material EWC references.
+If Available | The references consigned in the master data are displayed on the order line on Lookup e.g. in the field EWC no.; in addition the references are controlled on input of an EWC number.</p>
+<p>This only applies when a reference is also consigned for the selected waste material. This means: If EWC references are consigned for a waste material then only these EWC numbers can be selected for the waste material - regardless of whether work is taking place via Lookup or direct key input; the selection is restricted to the consigned EWC references.</p>
+<p>If no EWC reference is consigned for the waste material then EWC numbers can be selected from the complete EWC table.
+Always       | In principle only consigned waste material EWC references are taken into consideration for both Lookup and for the input. If no EWC reference is consigned for a waste material, no EWC number can be input for this waste material either.</p>
+<p><strong><u>Note:</u></strong></p>
+<p><strong>The described tests and Lookups apply for the operational area, i.e. for documents and weighbridge tickets but not for journals. In journals waste materials can in principle be combined with all EWC numbers. This is required in order to cancel any incorrect postings due to incorrect master data and repost them.</strong></p>
+<ul>
+<li><em>Man. Waste Ledger Entry Appl.</em></li>
+</ul>
+<p>Via the field <em>Man. Waste Ledger Entry Appl.</em> it is specified according to which criteria enwis) proposes waste management ledger entries for the manual application. The following options are available:</p>
+<table>
+<thead>
+<tr>
+<th>Int. Waste dependent</th>
+<th>enwis) proposes waste management ledger entries for application on the basis of the matching of the internal waste material.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ext. Waste dependent</td>
+<td>enwis) proposes waste management ledger entries for application on the basis of the matching of the EWC number.</td>
+</tr>
+<tr>
+<td>Doubly dependent</td>
+<td>enwis) proposes waste management ledger entries for application on the basis of the matching of the internal waste material and the EWC number.</td>
+</tr>
+<tr>
+<td>Independent</td>
+<td>There are no waste related criteria available to enwis) with regard to the application of ledger entries. The user has a free choice between all waste management ledger entries stored in the system.</td>
+</tr>
+</tbody>
+</table>
+<p>If manual ledger entry application is primarily used, this appears a less suitable option as the selection of the &quot;correct&quot; ledger entry is then very troublesome.</p>
+<ul>
+<li><em>Autom. Waste Ledg. Entry Appl.</em></li>
+</ul>
+<p>Via the field <em>Autom. Waste Ledg. Entry Appl</em>. it is specified according to which criteria enwis) applies waste ledger entries to one another with the automatic application. As the automatic application occurs without monitoring by a user, the criteria are necessarily stricter. The following options are available:</p>
+<table>
+<thead>
+<tr>
+<th>Int. Waste dependent</th>
+<th>enwis) undertakes the ledger entry application depending on the matching with regard to the internal waste material.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Doubly dependent</td>
+<td>enwis) undertakes the ledger entry application depending on the matching with regard to the internal waste material and the matching of the EWC number.</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><em>Autom. Creation of Job. Nos.</em></li>
+</ul>
+<p>Via the field <em>Autom. Creation of Job. Nos.</em> the numbering of projects is controlled, if enwis) is set in such a way, so that a project is allocated to the contract on generation of a contract from a quote. This function is activated if the field <em>Create Job for Contract</em> <em>is ticked</em> in the waste management set up on the register</p>
+<p><span class="smallcaps">contract</span></p>
+<p>.</p>
+<p>If a contract is created from a quote, then a project related to this contract is generated in the background at the same time which is automatically allocated to the contract. A project is only newly applied if a project has not already been allocated to the quote header. In addition to the contract header, the project is allocated to all contract lines automatically where another project was not already allocated.</p>
+<p>This function provides the possibility of forming service prices individually for each contract. If a project is allocated to each contract there is the possibility of differentiating the service price table contract specifically.</p>
+<p>The following options are available:</p>
+<blank>
+</blank>     | This option must only be selected if no project is to be allocated to the contract, thus only if the field _Create Job for Contract_ is not ticked.
+-------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Job. Nos.            | enwis) goes back to the same number series as for the "normal" projects in the numbering of the contract projects.
+<p>Contract projects and other projects cannot be distinguished on the basis of their numbering.
+Document             | The project gets the same number as the document or contract to which it is allocated.
+Prefix plus Document | In line with the previous option, the project gets the same number as the document, however the maximum two digit symbol code is put in front of this number which must be consigned in the field <em>Job No. Prefix</em>.</p>
+<ul>
+<li><em>Job No. Prefix</em></li>
+</ul>
+<p>A two digit symbol code can be consigned in this field which can be placed in front in the Autom. Projektnummernvergabe (option = Prefix plus Document).</p>
+<ul>
+<li><em>Supplement Carrier from Order</em></li>
+</ul>
+<p>If a tick is placed in this field, the carrier consigned in the order adds to the movement paper (movement/transfer ticket) with the carrier if this has not already been consigned in the waste transfer note.</p>
+<h2 id="register-prozesse">Register Prozesse</h2>
+<p>On the register</p>
+<p><span class="smallcaps">Processes</span></p>
+<p>it is possible to meet the following settings:</p>
+<p><img src="../../images/image4.png" alt="Wor432A"></p>
+<ul>
+<li><em>Add. Process Cost Ch. of Accs.</em></li>
+</ul>
+<p>Process cost plans can be created manually. They can however also be filled automatically on posting order lines. In the waste management set up the field <em>Add Process Cost Ch. of Accs**</em>.<em>* must be ticked for this purpose. Then all process costs logged in order lines are automatically written into the process plan which was specified in the field</em> General Ch. Of Accs_._ Name.*</p>
+<ul>
+<li><em>Service Error Selection Start</em></li>
+</ul>
+<p>In this field it is possible to specify the sources from which the new service can be selected within the framework of the service error selection.</p>
+<ul>
+<li><em>Service Grp. Rentals</em></li>
+</ul>
+<p>The field is of decisive importance for the rental invoice. Services are defined as rental services via the code consigned in this field.</p>
+<p>Rental services are set up automatically by enwis) in the course of the rental calculation and written into completed orders generated by the system itself.</p>
+<p>Only services to which a service group code was allocated in the field <em>Service Grp. Rentals</em>, are recognised as rental services by enwis) and they can be used by the system for the calculation and billing of the rental duration.</p>
+<p>For the rental invoice in enwis) it is thus not permissible to consign a code in the field <em>Service Grp. Rental</em> and once again allocate this code to a service via the field <em>Service Group code</em> on the <strong><em>service card</em></strong>.</p>
+<h2 id="register-contract">Register Contract</h2>
+<p>On the register</p>
+<p><span class="smallcaps">contract</span></p>
+<p>it is possible to meet the following settings:</p>
+<p><img src="../../images/image5.png" alt="WorCF53"></p>
+<ul>
+<li><em>Cycle Preview Function; Cycle Preview Function Name</em></li>
+</ul>
+<p>In both of these fields it is possible to consign an individually programmed report which is used for the cycle preview instead of the standard report present in enwis).</p>
+<ul>
+<li><em>Sort Cycle Preview by</em></li>
+</ul>
+<p>Here it is possible to consign according to which criterion the cycle preview is to be sorted as standard. The following options are available: &quot;<blank>&quot;, &quot;Contract&quot;, &quot;Task Date&quot;, &quot;Business Partner&quot;and &quot;Businsess Partner Site&quot;. The setting made here has an immediate effect on the structure of the cycle preview and it cannot be overridden within the function<p>
+<p><em><span class="smallcaps">create cyclic
+documents</span></em></p>
+<p>either.</p>
+<ul>
+<li><em>Cycle Equip. Jnl. Template, Cycle Equip. Jnl. Batch</em></li>
+</ul>
+<p>If journal lines are to be filled within the framework of the generation of cyclic documents, the corresponding journal in the fields <em>Cycle Equip. Jnl. Template</em> and <em>Cycle Equip. Jnl. Batch</em> must be consigned.</p>
+<ul>
+<li><em>Merge Cycle Orders by; Cycle Merging Active for</em></li>
+</ul>
+<p>The fields refer to the possibility of combining cyclically generated orders on the basis of the reference sizes &quot;Contract No., Business Partner or Business Partner Site&quot;.</p>
+<p>The four options consigned only operate as default values for the fields of the same name <em>Merge Cycle Orders by</em> and <em>Cycle Merging Active for</em> which are available in the periodic activity</p>
+<p><em><span class="smallcaps">create cyclic documents</span></em></p>
+<p>. The settings made in the waste management set up can occasionally be overridden on calling up of the function by the user.</p>
+<ul>
+<li><em>Check next cycle date</em></li>
+</ul>
+<p>If the field is ticked, a tick is placed into the field of the same name of the function</p>
+<p><em><span class="smallcaps">create cyclic documents</span></em></p>
+<p>which can once again be removed by the user on a case by case basis. If the field is on &quot;Yes&quot;, enwis) checks the next cycle date and corrects it where necessary.</p>
+<ul>
+<li><em>Order Assignment from Contract</em></li>
+</ul>
+<p>If this field is ticked, the allocation of the order lines occurs on creation of the order from the contract.</p>
+<ul>
+<li><em>Contract to Order Function; Contr. to Order Function Name</em></li>
+</ul>
+<p>In the field <em>Contract to Order Function</em> it is possible to consign an individually programmed code unit which is started if an order is generated from a contract in addition to the standard routine. Via this field it is possible to integrate special functions into the enwis) standard environment, which are only meaningful or necessary within certain work flows, without any problems.</p>
+<ul>
+<li><em>Posting Date of Contr. Orders</em></li>
+</ul>
+<p>Default settings for the field of the same name can be set in the contract header in this option field and they can be corrected there if necessary.</p>
+<p>The field does in principle define how the posting date of the contract affects the posting date of the order. The options are: &quot;Order Date&quot;, &quot;Task Date&quot;, &quot;Posting Date&quot; and &quot;Work Date&quot;. The posting date of the order can thus either be placed on the posting date of the contract or on the order date or task date of the current order automatically.</p>
+<p>In this context it is pointed out that the current task or start date is decisive in the further processing for the posting of the entries and not the posting date of the order. The posting date of the order is only relevant for the invoicing if invoicing occurs directly from the order. Otherwise a new posting date is set in the course of the combine invoices.</p>
+<ul>
+<li><em>No Transfer of Unit Price</em></li>
+</ul>
+<p>If this field is ticked, the price is not transferred from the contract into the order.</p>
+<ul>
+<li><em>Contract to Order</em></li>
+</ul>
+<p>In the field <em>Contract to Order</em> selected options are written as a default value in the field <em>Contract Qty. Relations</em> in the <strong><em>Contract Header</em></strong>. The following options can be selected:</p>
+<table>
+<thead>
+<tr>
+<th>Default</th>
+<th>The field <em>Contract Qty. Relations</em> is automatically set to the option <blankr> on new application of a contract. This results in the contract being restricted in terms of quantity.</blankr></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Independent</td>
+<td>The field <em>Contract Qty. Relations</em> is automatically set to the option &quot;Independent&quot;on new application of a contract. The contract is thus not limited in terms of quantity.</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><em>Multiple Weighing per Line</em></li>
+</ul>
+<p>Options selected in the field <em>Multiple Weighing per Line</em> are written into the field of the same name in the <strong><em>Contract header</em></strong>.</p>
+<p>The following options can be selected within the framework of the multiple weighing:</p>
+<ul>
+<li><p>On request</p>
+</li>
+<li><p>Automatic</p>
+</li>
+<li><p>Never</p>
+</li>
+</ul>
+<p>If the option value &quot;On Request&quot; is selected, a confirmation message is displayed in case a new weighbridge ticket could be allocated to an already existing order line.</p>
+<p>If the option value is &quot;Automatic&quot;, the allocation of further weighbridge tickets occurs without request.</p>
+<p>With the option value &quot;Never&quot; no multiple weighing is possible.</p>
+<ul>
+<li><em>Contract Task Date (Default)</em></li>
+</ul>
+<p>Via the field <em>Contract Task Date (Default)</em> it is specified whether and, if yes, enwis) is to transfer a service date specified in the contract into orders generated from the contract.</p>
+<p>The field has the options:</p>
+<table>
+<thead>
+<tr>
+<th>Create</th>
+<th>The task date is set to the actual work date of the system on order creation from the contract.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Transfer</td>
+<td>A task date fixed in the contract is copied into the order.</td>
+</tr>
+<tr>
+<td>Create when Blank</td>
+<td>The current work date is written into the order if no task date was fixed in the contract.</td>
+</tr>
+<tr>
+<td>Blank</td>
+<td>No task date is issued for the order application from the contract. The user must do this manually.</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><em>Current Price in Contracts</em></li>
+</ul>
+<p>Via the field <em>Current Price in Contracts</em> it is controlled whether two different prices can be displayed in contract lines. This makes sense for long-term contracts where the price does change as a rule.</p>
+<p>The price valid for the contract application is displayed in the field <em>Preis</em>, in the field <em>Current Unit Price</em> of the contract line the current price where appropriate depending on the default setting.</p>
+<p>If work is to take place with this function it makes sense that the field <em>Contract Pricing by</em> in the waste management set up on the register</p>
+<p><span class="smallcaps">Prices</span></p>
+<p>is set to the option &quot;Actual Date&quot;.</p>
+<p>The following options are available:</p>
+<table>
+<thead>
+<tr>
+<th><blank></blank></th>
+<th>The current price is not displayed in the contract. The field is not displayed. If the field is nevertheless displayed manually by the user, then the message &quot;No Display&quot; is issued instead of a value.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Show</td>
+<td>The current price is displayed in the contract. The field can however not be edited.</td>
+</tr>
+<tr>
+<td>Write Indirectly</td>
+<td>The current price is displayed in the contract. The price can also be edited via this field at the same time. Following changing of the price in this field, the dialogue</td>
+</tr>
+</tbody>
+</table>
+<p><em><span class="smallcaps">Edit price by Criteria</span></em></p>
+<p>is opened automatically by the application. The new price is already entered into the field <em>Preis</em> of this dialogue.
+Write Directly   | The current price is displayed in the contract. The price can also be edited via this field at the same time. Following changing of the price in this field the price correction made is written back directly into the price list of the database without the dialogue</p>
+<p><em><span class="smallcaps">Edit price by Criteria</span></em></p>
+<p>being opened beforehand. You are however strongly advised not to use this option as a price change occurs here without any control of the relevant criteria.</p>
+<ul>
+<li><em>Deactivate Price in Contract</em></li>
+</ul>
+<p>It is possible to use this field to predefine whether the normal price field in the contract is to be automatically blocked out or not.</p>
+<p>The blocking out of the field <em>Unit Price</em> in the contract primarily makes sense if the function <em>Current Unit Price</em> is being worked with. As the current price is the current relevant price, it is as a rule recommended to display the current price and block out the old one.</p>
+<ul>
+<li><em>Block Contracts w. Cust./Vend.</em></li>
+</ul>
+<p>It is urgently recommended that a tick is placed in the field <em>Block Contracts w. Cust./Vend.</em> Only then can it be guaranteed that no orders are generated from contracts for blocked customers.</p>
+<p>If a customer is blocked, neither orders nor contracts can be created for him directly. In spite of the blocking it is however possible to apply new orders for this customer via the customer task site plan from existing contract lines or directly from existing contracts. This can only be prevented if the field <em>Block Contracts w. Cust./Vend.</em> is set to &quot;Yes&quot;!</p>
+<ul>
+<li><em>Create Job for Contract</em></li>
+</ul>
+<p>This field is used to control whether a project is allocated to the contract simultaneously on generation of a contract from a quote which makes a contract specific set up of service prices possible. If this function is to be used, the numbering method for these contract projects must also be specified in the field <em>Autom. Assignment Job. No..</em></p>
+<ul>
+<li><em>Consider Sub. Contract on Marks</em></li>
+</ul>
+<p>If the function</p>
+<p><em><span class="smallcaps">Make Order from complete
+contract</span></em></p>
+<p>is called up from a contract and no contract lines were marked, all contract lines are copied into the order generated from it. The lines of the order then correspond to the contract lines one to one.</p>
+<p>If contract lines were marked, the programme behaviour is by contrast dependent on the setting of the field <em>Consider Sub. Contract on Marks</em>.</p>
+<p>If the field <em>Consider Sub. Contract on Marks</em></p>
+<p><u>not</u></p>
+<p>ticked, enwis) only copies the marked lines into the order.</p>
+<p>If the field <em>Consider Sub. Contract on Marks</em> is ticked, enwis) copies the marked lines and all unmarked lines which belong to the same subcontract as a marked line into the order.</p>
+<ul>
+<li><em>Transfer from Contract</em></li>
+</ul>
+<p>It is possible to use this field to define what is to be transferred from the contract line into the order line if this transfer occurs through the selection of a contract number from the order line. The field has the following options:</p>
+<table>
+<thead>
+<tr>
+<th>Contract No.</th>
+<th>Only the contract number and the contract line number are transferred into the order. enwis) checks whether a service number which may already have been issued, the posting type and the entry in the field <em>Post-with No.</em> in <strong><em>Contract-/Orderline</em></strong> match.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Service No.</td>
+<td>In addition to contract number and contract line number, the service number is validated into the order line even if this differs from a service which may already have been entered.</td>
+</tr>
+<tr>
+<td>Service/Posting No.</td>
+<td>In addition to contract data and service number, posting type and posting with number are also validated into the order line even if the values differ from values which may already have been issued there.</td>
+</tr>
+<tr>
+<td>Supplement only</td>
+<td>In addition to the contract data, the service number, the posting type and posting with number are transferred into the order line in case the corresponding fields in the order line are empty. Otherwise the fields in the order line must match with those in the contract line.</td>
+</tr>
+<tr>
+<td>Transfer completely</td>
+<td>The complete contract line is transferred - analogous to the creation of an order from a contract.</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><em>Filter Service No. in Contract</em></li>
+</ul>
+<p>This field is used to determine whether pre-filtering should occur for the automatic filter onto the contract lines which may be in the service number which is already present in the order line.</p>
+<p>Whether this is desired or not is a question of work flow.</p>
+<p>If the contract functions are mainly used to compile new orders from various contracts, this is definitely a practical default setting.</p>
+<ul>
+<li><em>Always Filter Order Header</em></li>
+</ul>
+<p>This field can be used to instruct enwis) to filter onto the contract lines onto the data consigned in the order header when looking up empty order lines. As a rule a customer or vendor is entered into the order header on order application.</p>
+<p>If the field <em>Always Filter Order Header</em> is ticked, filtering always occurs via the number of this customer or supplier on Lookup from the order lines into the contract lines.</p>
+<ul>
+<li><em>Do not Filter Task Site</em></li>
+</ul>
+<p>The field <em>Do not Filter Task Site</em> can be used to specify whether a customer task site or office is to be taken into account or not in the last named filtering via the data present in the order header. If the field is ticked, a customer task site present in the order header is not taken into account.</p>
+</blank></blank></blank></blank></article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Einfach. Mehr. Wert.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

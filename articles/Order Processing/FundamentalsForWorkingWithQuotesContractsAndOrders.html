@@ -1,0 +1,309 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Fundamentals for working with quotes, contracts and orders | tegos Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Fundamentals for working with quotes, contracts and orders | tegos Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../images/logos/tegos_favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/logos/logo-tegos-white.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="FundamentalsForWorkingWithQuotesContractsAndOrders">
+<h1 id="fundamentals-for-working-with-quotes-contracts-and-orders">Fundamentals for working with quotes, contracts and orders</h1>
+
+<h2 id="general">General</h2>
+<p>One of the essential properties of enwis) is the continuous data flow
+which makes the multiple input of data superfluous. All documents build
+on one another or pass their data onto the relevant downstream stage of
+the business process. A continuous passing on of data occurs between
+quotes, contracts, the various order stages and finally the invoices
+generated from them which is only added to with additional information
+in the course of order processing.</p>
+<p>The central data container is never the form header - thus not the
+header of quotes, contracts or orders - but in principle the apparently
+downstream line. The various lines of a form are completely autonomous
+of the header and one another and they contain all data which enwis)
+requires for the data processing. The form header is essentially only a
+user friendly screen which structures the otherwise very unclear and
+apparent chaos of the order lines.</p>
+<p>This means it is possible to show order components for different
+customers and vendors and a mixture of customers and vendors in a
+contract or order.</p>
+<p><strong><u>Example:</u></strong></p>
+<p><strong>The customer collection of waste from a customer's premises can be put
+together with the vendor related transfer to the disposal site.</strong></p>
+<p>It is also possible to bundle order entries with reference to any
+customer task sites and vendor task sites of the most varied vendors and
+customers in a contract or an order.</p>
+<p>Quotes, contracts and orders form the basis of the operational business
+in enwis). All three forms have a largely analogous structure but very
+different functions. They do in principle consist of a header and any
+number of lines.</p>
+<p>The data of the customer or vendor are consigned in the header. The
+lines represent the individual quote, contract or order entries. The
+functionalities in the operative business in the customer and vendor
+area are largely analogous functionally as they are generally in enwis).
+Therefore subsequent reference is made only to customers which can as a
+rule be interpreted as &quot;customers and vendors&quot;.</p>
+<p>Both billable and non billable services can be defined in the order.
+Company internal processes can be shown for example for which nobody is
+billed but for which the cost in terms of personnel, material and
+machines is to be recorded for cost accounting purposes.</p>
+<p>In enwis) orders are not just for the depiction of the external and
+accounting relevant exchange processes with customer or suppliers but
+also for the capture of operationally induced services which are either
+not invoiced at all or not invoiced in this form.</p>
+<p>The essential difference between contract and order is of a temporal
+nature.</p>
+<p>The order is a one off action which is carried out on a particular date.
+The order can be defined as an interrelated bundling of business
+processes which is meaningful in terms of content and time. The order or
+the order line is the basis of the dispatching and also the invoicing.
+The order thus forms an enclosed operating process and it captures all
+the linked costs and proceeds.</p>
+<p>In the contract on the other hand a longer term agreement with a
+customer or supplier about certain services is consigned. The contract
+is used as a copying template for the creation of orders. It already
+contains all relevant data - business partners, conditions, services,
+prices etc. - which can easily be copied into the order and only need to
+be provided with an order date.</p>
+<p>The contract always remains present in the system; it can easily be
+referred back to.</p>
+<p>The order by contrast has been completed once it has been processed and
+it should also be deleted as the system is otherwise unnecessarily
+bloated.</p>
+<p>Orders which have been completed and invoiced are marked with a
+corresponding tick so that they cannot be invoiced again.</p>
+<p>On posting, the completed order is either deleted, archived or it
+remains as a completed order with the notification that it was already
+posted.</p>
+<p>It is possible to set whether the completed order remains as such
+following posting, or it is archived or removed completely in the
+<em><strong>Invoice Setup</strong></em> register <span class="smallcaps">general</span> in
+the field <em>Del. Compl. Orders on Posting.</em></p>
+<p>The posted, completed order is however no longer functional; it cannot
+for example be referred back to for the creation of a new order. It
+therefore makes sense to make the setting for routine deletion of
+completed orders or the archiving of the order when posting.</p>
+<p>Orders are the most important document type in enwis). The application
+of quotes and contracts is not absolutely necessary in enwis). Orders
+must be applied in order to be able to show the business processes in
+enwis).</p>
+<p>A work flow with a recommended business process is described below.</p>
+<h2 id="work-flow-document-flow">Work flow document flow</h2>
+<p>The recommended work flow could look as follows:</p>
+<ul>
+<li><p>Creation of a contact in the menu <em><span class="smallcaps">sales und
+Marketing</span></em> from MS Dynamics NAV for the purpose of creating a
+quote for potential new customers. This makes sense as only a few
+data have to be entered for a contact and the customer list is not
+unnecessarily bloated by a number of data sets which may never
+result in a business relationship.</p>
+</li>
+<li><p>Creation of a quote for this contact if it involves a potential new
+customer or for a customer if he is already listed in the system.
+Quotes can be applied under the <span class="smallcaps">enwis) Order
+Processing <em>waste Producer Processes</em> <em>quotes</em></span>. If a business
+relationship comes about via a quote, a customer can be created from
+the contact through the push of a button and a contract or an order
+can be created from the quote.</p>
+</li>
+<li><p>Orders or contracts can only be created for customers. If a longer
+term agreement with the business partner is involved, a contract
+should be created from the quote. Contracts can be applied under the
+menu <span class="smallcaps">enwis) Order Processing <em>waste Producer
+Processes</em> <em>contracts.</em></span> The conversion of a quote into a
+contract can largely occur automatically. Contracts can of course
+also be applied directly without the presence of a quote. The
+contract presents the copy template for the later orders factually.
+The order by contrast is the one off implementation of a contract.</p>
+</li>
+<li><p>If a short term business relationship or one off business is
+involved, an order can also be created directly from the quote.
+Otherwise the contract can be used as a copy template for the repeat
+creation of orders. In both processes the order creation is largely
+automatic as the order created by pushing a button accepts the
+essential data from the basic quote or contract.</p>
+</li>
+</ul>
+<p>Orders can of course be applied directly without prior creation of a
+quote or contract. Orders can be applied under the menu <span class="smallcaps">enwis) Order Processing <em>waste Producer Processes</em>
+<em>orders</em></span>.</p>
+<p>It is recommended to work on the basis of contracts in principle as the
+system is thereby maintained continuously and it is always possible to
+access the same database for evaluations. The associated additional cost
+for the copying of orders from contracts is negligible.</p>
+<ul>
+<li>During the course of order processing, data (e.g. disposed quantity,
+vehicles used and employees etc.) can be added and changed. In this
+way differences between the originally agreed and the actually
+rendered services can be documented.</li>
+</ul>
+<p>For monitoring of this further order processing and data maintenance the
+<em><strong>Order Header</strong></em> has the field <em>Status</em> available on the register
+<span class="smallcaps">posting</span>. The following option values are
+available in the field <em>Status</em>: Order logging, dispatching, follow up
+entry and final control. Whether and how these are used individually can
+be stipulated depending on the company.</p>
+<p>A work flow control is thus possible within the order
+processing/dispatching department. Order logging, dispatching and
+control can for example be assigned to various employees or areas for
+example which receive the orders presented for processing depending on
+the respective status.</p>
+<p><strong><u>Example:</u></strong></p>
+<p><strong>Following completion of the logging of an order in the call centre, it
+is set to the status <em>Dispostion</em>. Only orders with this status are
+dispatched. In the subsequent status <em>Nacherfassung</em> the input of
+weighing data and other follow up entries occurs. The order clearance
+either occurs immediately or the order is set to the status &quot;Completion&quot;
+so that the data captured can be checked once more if necessary.</strong></p>
+<ul>
+<li>The order clearance makes every order into a completed order
+regardless of its previous status. With the clearance the posting of
+the disposed waste or recyclable material quantity to the warehouse
+occurs. At the same time the completed order is available for
+invoicing.</li>
+</ul>
+<p>Posting in the general ledger as a result of the clearance does not yet
+occur. Therefore the clearance can also easily be withdrawn and
+necessary corrections can be added.</p>
+<p>The completed order is still in the area upstream of the general ledger.
+A cancellation of completed orders is neither necessary nor possible.</p>
+<p><strong><u>Note:</u></strong></p>
+<p><strong>It is important to take into account the fact that the quantities
+posted on the clearance are not cancelled by the withdrawal of the
+clearance. Waste management, equipment, transport and personnel entries
+must be cancelled manually where necessary. This applies particularly
+where the clearance was withdrawn in order to correct these quantity
+indications. In this case the entry to be corrected must in principle be
+cancelled before it is corrected and entered once again.</strong></p>
+<ul>
+<li>Invoices are generated automatically from all completed orders
+through the combine invoicing carried out monthly for example. The
+combine invoicing can be called and carried out in the <em><span class="smallcaps">menu enwis) invoicing combing invoicing combing
+invoicing</span></em>.</li>
+</ul>
+<p>These invoices are not compulsorily entered first of all and can instead
+be checked as pro-forma invoices, agreed with the recipient where
+appropriate and also deleted once again where required.</p>
+<p>If this appears too inconvenient, the combine invoices can also be used
+to create directly posted invoices if people wish to rely on the fact
+that the orders already contain the correct data.</p>
+<ul>
+<li>It is however recommended to only create the actual invoice
+following the final check of the pro-forma invoice by posting it.</li>
+</ul>
+<p>The posting of costs and proceeds in the general ledger accounts and the
+formation of process cost ledger entries occurs at the same time.</p>
+<p>An invoiced order can be deleted. The movements connected with the
+invoicing on the general ledger accounts can however be cancelled if
+necessary. The accounting effects of a final invoiced order cannot be
+removed from the system without trace in line with the principles of
+appropriate bookkeeping and this can only be done by making the
+cancellation retrogressive. In this way the originally created ledger
+entries remain in the accounts.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Einfach. Mehr. Wert.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

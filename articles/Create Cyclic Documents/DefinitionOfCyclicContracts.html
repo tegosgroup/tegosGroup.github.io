@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Definition of Cyclic Contracts | tegos Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Definition of Cyclic Contracts | tegos Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../images/logos/tegos_favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/logos/logo-tegos-white.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DefinitionOfCyclicContracts">
+<h1 id="definition-of-cyclic-contracts">Definition of cyclic contracts</h1>
+
+<h2 id="definition-of-cyclic-contracts-1">Definition of cyclic contracts</h2>
+<p>In order to start cyclic runs, first of all it is necessary to mark individual contracts, contract lines and/or contract entries as cyclic. Only contracts and contract components to which a cyclic code and a start date for the first cyclic run are assigned are incorporated into a cyclic run.</p>
+<p><strong>Example:</strong></p>
+<p><strong>The contract DV00012 was given the cyclic code <em>WEEKLY</em>. In addition the start date (the date on which a document is to be automatically created from this contract) is entered in the field <em>Next Cycle Date</em>. In this case the 27.03 is entered in the order line as the next cycle date. This consignment is only necessary once.</strong></p>
+<p><strong>From now the user only starts the batch processing regularly, which generates the cyclic documents. The contract shown is taken into consideration for the first time if the start date (30.10.2013) is in the time period for which the batch processing runs for creation of the cyclic documents.</strong></p>
+<p><img src="../../images/image1.png" alt=""></p>
+<p><strong>This then generates the document according to the rules which are defined in the cyclic code <em>WEEKLY</em> and from these rules it also calculates the date on which the next cyclic document is to be generated automatically. This date is then written back in the field <em>Next Cycle Date.</em></strong></p>
+<p><strong>In the cyclic code <em>WEEKLY</em> the time form is <em>Relative (weekly)</em> and the interval is defined.</strong></p>
+<p>The application would then generate a new document on 30.10.2013 from the contract DV00012 and set the field to 06.11.2013.</p>
+<p>The contract card would look as follows following the cyclic run:</p>
+<p><img src="../../images/image2.png" alt=""></p>
+<p>The date on which a document was generated automatically from the contract is also written in the field <em>Last Cycle Date</em> for information purposes. In addition the log number of the cyclic run which was the last to be initiated by a document generation is written back in the field <em>Cycle Log-No.</em> The fields named are present in the contract header, the contract lines and on the equipment entries.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Einfach. Mehr. Wert.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

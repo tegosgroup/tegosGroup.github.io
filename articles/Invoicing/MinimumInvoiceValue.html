@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Minimum Invoice Value | tegos Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Minimum Invoice Value | tegos Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../images/logos/tegos_favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/logos/logo-tegos-white.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="MinimumInvoiceValue">
+<h1 id="minimum-invoice-value">Minimum Invoice Value</h1>
+
+<h2 id="general-information">General Information</h2>
+<p>The logic of the minimum invoice value allows users to suppress the creation of unposted documents via combine invoicing if the documents to be created do not meet or exceed the defined invoice value.</p>
+<p>The minimum invoice value is saved in the LCY Code. When the invoice or credit note is created in a foreign currency, the invoice amount will be converted into the LCY first for the purpose of comparison.</p>
+<p>Minimum invoice values can be saved for each customer, vendor, and document type (invoice or credit note). The creation of an unposted invoice or credit note can be suppressed depending on the gross value of the document.</p>
+<p>The definition of the minimum invoice value can also be linked to the balance account post-with number. However, this logic will only be followed if the underlying invoice layout has been set up to sort the invoice by balance account and to create a new invoice when the sorting changes.</p>
+<h2 id="setup">Setup</h2>
+<p>In order to use the minimum invoice value logic, the <em>Allow Minimum Invoice Values</em> box under the</p>
+<p><em><span class="smallcaps">General</span></em></p>
+<p>tab in <strong>Invoice Setup</strong> must be checked.</p>
+<p><img src="../../images/image1.png" alt=""></p>
+<p>If it is not, then the minimum invoice values will be ignored, even if the information mentioned above has been saved. This setup has two benefits:</p>
+<ul>
+<li><p>The principle management of minimum invoice values can be handled centrally.</p>
+</li>
+<li><p>Users who do not want to use the minimum invoice value logic can reduce the extra processing time needed to calculate the minimum invoice values.</p>
+</li>
+</ul>
+<p>The actual minimum invoice value for each invoice layout can be saved by going to</p>
+<p><span class="smallcaps">Actions</span></p>
+<p><span class="smallcaps">Function</span></p>
+<p><span class="smallcaps">Minimum
+Invoice Value</span></p>
+<p>.</p>
+<p>In the example below, a minimum invoice value of EUR 100.00 has been saved for customer invoices in the STANDARD invoice layout.</p>
+<p><img src="../../images/image2.png" alt=""></p>
+<h2 id="invoices">Invoices</h2>
+<p>When users run a combine invoice and some unposted documents are not created due to minimum invoice values, a message will appear informing the users of the number and type of these documents not created. This also applies if the invoices are generated through invoice types or invoice batches.</p>
+<p><img src="../../images/image3.png" alt=""></p>
+<p>Whether to consider minimum invoice values can be set individually for each invoice run. This is determined using the <em>Ignore Minimum Invoice Value</em> box under the</p>
+<p><span class="smallcaps">Options</span></p>
+<p>tab in <strong>Combine Invoicing</strong>.</p>
+<p><img src="../../images/image4.png" alt=""></p>
+<p>When this box is checked, the minimum invoice value will not be considered in the current invoice run, even if one has been saved. This allows users to invoice older sales orders that never reached the minimum value, even though no new services have been rendered for that customer.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Einfach. Mehr. Wert.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,233 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Invoice Types and Invoice Batches | tegos Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Invoice Types and Invoice Batches | tegos Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../images/logos/tegos_favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/logos/logo-tegos-white.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="InvoiceTypesAndInvoiceBatches">
+<h1 id="invoice-types-and-invoice-batches">Invoice Types and Invoice Batches</h1>
+
+<h2 id="general-information">General Information</h2>
+<p>A number of functions have been bundled under invoice types and invoice batch that greatly simplify the options for invoice management.</p>
+<p>Among them are the following functions:</p>
+<ul>
+<li><p>Filters for order releases, rental invoices and combine invoices can be defined and saved as an invoice type. Invoicing can be initiate from the invoice type card.</p>
+</li>
+<li><p>Any number of invoice types can be consolidated into one invoice batch. Releases, rental invoices and combine invoices can be consolidated into one invoice batch. Each invoice type in the invoice batch will be processed one after another. Invoicing can be initiated directly from the invoice batch.</p>
+</li>
+<li><p>The invoicing procedure will be saved in an invoice log and the associated log ledger entries. Errors which arise during batch processing are also documented in log ledger entries.</p>
+</li>
+</ul>
+<h2 id="invoice-types">Invoice Types</h2>
+<p>Invoice types can be called up by going to _enwis)</p>
+<p><span class="smallcaps">Invoicing/Selection by</span></p>
+<p><span class="smallcaps">Department/Combine Invoicing/Invoice Batch/Invoice
+Types</span>_</p>
+<p>. Using the invoice types, any number of different invoice filters can be defined and permanently saved.</p>
+<p><img src="../../images/image1.png" alt=""></p>
+<p>Under the</p>
+<p><span class="smallcaps">General</span></p>
+<p>tab you can set the main invoice options that will otherwise have to be set for each individual invoice under the</p>
+<p><span class="smallcaps">Options</span></p>
+<p>tab in Batch Processing Combine Invoicing.</p>
+<p>The value stored in the <em>Invoice Type</em> field indicates whether the invoice type means that</p>
+<ul>
+<li><p>a combine invoice</p>
+</li>
+<li><p>an equipment invoice</p>
+</li>
+<li><p>a release (i.e. order release)</p>
+</li>
+</ul>
+<p>should be executed.</p>
+<p>Important date fields (e.g. <em>invoice date</em>) can be fixed and stored in the system or controlled by the posting formulas (e.g. invoice date formula).</p>
+<p><img src="../../images/image2.png" alt=""></p>
+<p><strong><u>Note:</u></strong></p>
+<p><strong>If both fields hold values, the fixed date stored in the system has priority over the posting formula.</strong></p>
+<p>The date formula is always associated with the current work date. If 2/12/2012 is set as the work date and the invoice date formula is set as &quot;-CM-1D&quot;, then 30/11/2012 would be used as the invoice date. If this invoice type were initiated in the following month, e.g. on 4/1/2013, then 31/12/2012 would be used as the invoice date, assuming the same invoice date formula.</p>
+<p>The same logic applies to the document date, the task date, and the rental document task date.</p>
+<p>Users can store detailed filter definitions for the combine invoice and the rental invoice under the</p>
+<p><span class="smallcaps">Combine Invoice
+Filter</span></p>
+<p>and</p>
+<p><span class="smallcaps">Rental Invoice Filter</span></p>
+<p>tabs.</p>
+<p><strong><u>Combine invoice filter example:</u></strong></p>
+<p><img src="../../images/image3.png" alt=""></p>
+<p><strong>In the example above, a combine invoice will be created for all completed customer orders (= posting type Sales) for the DORTMUND site if the Invoice Layout Code field indicates STANDARD and the Task Date was in the previous month (= Task Date Formula).</strong></p>
+<p>Detailed filters for the order release can be defined under the</p>
+<p><span class="smallcaps">Release Filter</span></p>
+<p>tab.</p>
+<p><strong><u>Release filter example:</u></strong></p>
+<p><img src="../../images/image4.png" alt=""></p>
+<p><strong>In the example above, all customer orders (= posting type Sales) for the DORTMUND site will be released if the Status field indicates Final Inspection and the Task Date was in the previous month.</strong></p>
+<p>By going to</p>
+<p><span class="smallcaps">Home Process</span></p>
+<p><em><span class="smallcaps">Function</span></em></p>
+<p><em><span class="smallcaps">Invoices</span></em></p>
+<p>or pressing the F9 key, the defined order releases, rental invoices, and combine invoices can be initiated and executed directly from the invoice type card.</p>
+<p><img src="../../images/image5.png" alt=""></p>
+<p>All of these actions executed for the invoice type will be saved in an invoice log and can be viewed as log ledger entries (Navigate Invoice Type Log Ledger Entries). See the documentation on invoice logs for more information.</p>
+<h2 id="invoice-batch">Invoice Batch</h2>
+<p>Invoice types present the opportunity to save invoice definitions. By using an invoice batch, users can combine as many invoice types into one batch as they wish. If the invoices are created using an invoice batch, then all invoice types will be processed in the order in which the user has selected them.</p>
+<p>The entire posting process can be illustrated using an invoice batch:</p>
+<ul>
+<li><p>Step 1: Order release (operational orders become completed orders)</p>
+</li>
+<li><p>Step 2: Rental invoices (create completed rental orders)</p>
+</li>
+<li><p>Step 3: Combine invoicing (combine invoice of completed orders and completed rental orders)</p>
+</li>
+<li><p>Step 4: Posting combine invoice documents</p>
+</li>
+</ul>
+<p><img src="../../images/image6.png" alt=""></p>
+<p>The steps are automatically executed one after another without the users having to do anything in between.</p>
+<p><strong><u>Note:</u></strong></p>
+<p><strong>If an invoice batch includes a command to generate a rental invoice with complete orders and then incorporate this into a combine invoice, then the following steps must be taken.</strong></p>
+<p><strong>First of all, an invoice batch line is needed with the invoice type &quot;Equipment Invoice&quot;. This invoice type might set a limit for the task date (posting date of the rental value entry), for example.</strong></p>
+<p><strong>This invoice batch line creates the completed orders from the rental invoice. Next, an invoice batch line is needed with the invoice type &quot;Combine Invoicing&quot;.</strong></p>
+<p><strong>In this invoice type, the <em>Rental Invoice Document Line</em> field (under the Combine Invoice Filter tab) should indicate the option &quot;YES&quot;. This will ensure that the completed orders (= the generated rental lines) are incorporated into the combine invoice.</strong></p>
+<p><img src="../../images/image7.png" alt=""></p>
+<p>If there are any order release errors, i.e. certain orders cannot be released, then the following steps will not be executed.</p>
+<p>Each line in an invoice batch will basically either be entirely processed or not at all. If an error occurs in one line of an invoice batch, then that entire invoicing step will be left unfinished. However, invoice steps that have already been successfully completed will not be influenced or undone by an error in a subsequent step.</p>
+<p>What enwis) should do with an invoice step when an error occurs is defined in the <em>Always Execute</em> field under the</p>
+<p><span class="smallcaps">General</span></p>
+<p>tab for the invoice type to which that invoice batch line is assigned.</p>
+<p>When an error occurs in an invoice step, that invoice step will only be executed if the <em>Always Execute</em> box is checked (indicating YES) for the invoice type to which the invoice batch is assigned.</p>
+<p><img src="../../images/image8.png" alt=""></p>
+<p>If an error occurs in combine invoicing, i.e. certain completed orders cannot be incorporated into the combine invoice, then users can decide in advance whether the</p>
+<p><u>correctly</u></p>
+<p>generated invoices should none the less be posted or not.</p>
+<p>Users can set whether and how automatic posting should occur in the <em>Automatic Posting</em> field under the</p>
+<p><span class="smallcaps">Posting</span></p>
+<p>tab. The following options are available:</p>
+<ul>
+<li><p>Never Items are never automatically posted</p>
+</li>
+<li><p>When No Errors Items are only automatically posted when no errors have occurred during the batch processing</p>
+</li>
+<li><p>Always Correctly generated invoices are posted even if there are potential errors</p>
+</li>
+</ul>
+<p>With regard to the automatic posting of generated combine documents from the invoice batch or invoice type, users can set whether only the current invoice log or the entire combine invoice should be posted in the <em>Posting Range</em> field under the</p>
+<p><span class="smallcaps">Posting</span></p>
+<p>tab.</p>
+<p><img src="../../images/image9.png" alt=""></p>
+<p>By going to</p>
+<p><em><span class="smallcaps">Home Process</span></em></p>
+<p><em><span class="smallcaps">Function</span></em></p>
+<p><em><span class="smallcaps">Run invoice
+Batch</span></em></p>
+<p>or pressing the F9 key, the order releases, rental invoices, and combine invoices defined in the invoice batch lines can be initiated and executed.</p>
+<p>All of the actions executed for this invoice batch will be saved in an invoice log and can be viewed in log ledger entries. See the documentation on invoice logs for more information.</p>
+<p><img src="../../images/image10.png" alt=""></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Einfach. Mehr. Wert.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Create Cyclic Documents &#65533; Task Preview | tegos Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Create Cyclic Documents &#65533; Task Preview | tegos Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../images/logos/tegos_favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/logos/logo-tegos-white.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="CreateCyclicDocumentsTaskPreview">
+<h1 id="cyclical-document-creation--task-preview">Cyclical Document Creation – Task Preview</h1>
+
+<h2 id="preview">Preview</h2>
+<p>When batch processing is initiated with the <em>Preview</em> task, the system first generates a list of all documents to be created, as though the <em>Create Documents</em> option had been selected.</p>
+<p>This is a list of sales orders that do not actually exist: a preview list. This list is shown on the screen as a form.</p>
+<p><img src="../../images/image1.png" alt=""></p>
+<p>Some points on it can be edited. For example, users can change the task date and thereby defer the sales order. They can also delete individual lines from the list.</p>
+<p>Users can print a cycle plan directly from the preview by clicking on the</p>
+<p><em><span class="smallcaps">Print</span></em></p>
+<p>icon. Any changes made by users will already be incorporated when the list is printed.</p>
+<p>From the preview, users can decide how the system proceeds. If they close the preview, the suggestions (including any edits) will be discarded. No changes of any kind can be made to the database.</p>
+<p>Under the</p>
+<p><em><span class="smallcaps">General</span></em></p>
+<p>tab in Cycle Preview, users have the option to define other tasks, as they do under</p>
+<p><em><span class="smallcaps">Create Cyclic Documents</span></em></p>
+<p>when starting batch processing.</p>
+<p><img src="../../images/image2.png" alt=""></p>
+<p>When users select the <em>Create Documents</em> task and click on OK, the cyclical documents will be created from the preview list. All changes made by the users will be incorporated.</p>
+<p>If users select the <em>Print Cycle Plan</em> task, the system will only print the cycle plan.</p>
+<p><strong><u>Note:</u></strong></p>
+<p><strong>Changes to the information in the cycle preview only affect the documents to be created, not the underlying contracts. For example, documents are created on March 27, 2013 and consequently the next cycle date in the contract will be set to April 3, 2013; deleting the document line (in the preview) with the task date of March 27, 2013 would prevent this sales order from being created but it would not change the next cycle date in the contract, which will still be set to April 3, 2013.</strong></p>
+<p><strong><em>The system logic assumes that the cycle is not supposed to be changed, merely that the last sales order should not be executed, by exception and for whatever reason.</em></strong></p>
+<p>When one considers the preview logic, it makes good sense in general to proceed through</p>
+<p><em><span class="smallcaps">Create Cyclic Documents</span></em></p>
+<p>in batch processing in two stages:</p>
+<ol>
+<li><p>First, initiate batch processing with the <em>Show Preview</em> task.</p>
+</li>
+<li><p>In the preview, users can still decide whether to select the <em>Create Document</em> task afterwards or to discard the results in the preview. In addition, users have the option of deferring the document creation task date manually.</p>
+</li>
+</ol>
+<p>The important actions during the cycle are documented and saved in the cycle log entries. This also documents when and if a preview as started and when it was ended again. In addition, the system documents whether the preview information was accepted unchanged or changed beforehand.</p>
+<h2 id="defer-task-dates-automatically">Defer Task Dates Automatically</h2>
+<p>As mentioned above, the system automatically defers task dates according to the logic set in the cycle code. This is normally when a task falls on a bank holiday. When the calculation function finds a next task date that is blocked, either by a negative calendar in the system or the settings in the <em>Include Saturdays</em> and <em>Include Sundays</em> fields on the cycle card, the task date of the sales order is deferred until the next possible date.</p>
+<p>Automatic date deferment is very useful, especially during the Easter and Christmas periods, when several Sundays and bank holidays fall in a row and the dates therefore need to be reviewed and perhaps manually corrected.</p>
+<p>To help dispatchers immediately spot a critical date, automatically deferred task dates are flagged as <em>Deferred</em> in the list.</p>
+<p><img src="../../images/image3.png" alt=""></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Einfach. Mehr. Wert.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

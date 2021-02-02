@@ -1,0 +1,224 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Operational Journal Events | tegos Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Operational Journal Events | tegos Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../images/logos/tegos_favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/logos/logo-tegos-white.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="OperationalJournalEvents">
+<h1 id="operational-journal-events">Operational journal events</h1>
+
+<h2 id="events">Events</h2>
+<p>The operational journal is fundamentally based on events. These can be defined individually and they thus display process related operational sequences. These process related operational sequences can have both a link to the waste management relevant processes and also to each desired process which is logged and documented via events.</p>
+<p>A necessity emerges from this process related display to log the operational journal relevant data in the form that only processes which also belong together in terms of content are logged. For an order this would mean that only the order lines which depict a business transaction are generated within an order. This means that several different business partners could be logged in an order. They must however belong to the same business transaction.</p>
+<p><strong><u>Example:</u></strong></p>
+<p><strong>An order which depicts a customer waste management where the transport is carried out by a vendor subcontractor would be an example of this. As both these processes do however belong to a business transaction, this process can continue to be shown in an order.</strong></p>
+<p><strong>The order project number thus shows the bracket which connects the individual processes with one another.</strong></p>
+<p>The references for the process are shown on the register</p>
+<p><span class="smallcaps">General</span></p>
+<p>of the events card. In the example above returns are involved (field <em>Event Group</em>), with a delivery involved which contained foreign matter. The delivery itself took place on 31.10.2013 (field <em>Event Date</em>). The logging of this event took place on the same day (field <em>Document Date</em>. The delivery took place in the Silver Location (field <em>Location Code</em>) and the person responsible was the yard administrator with the internal personnel number 5524 (field <em>Person in Charge</em>).</p>
+<p><img src="../../images/image1.png" alt=""></p>
+<p>The precise allocation to the order can be traced back via the index</p>
+<p><span class="smallcaps">reference</span></p>
+<p>.</p>
+<p><img src="../../images/image2.png" alt=""></p>
+<p>Here it is possible to view all allocations to the process. If a weighbridge ticket also existed for this order this would also be shown correspondingly.</p>
+<p>The index</p>
+<p><span class="smallcaps">Time</span></p>
+<p>shows the logged data related to the process. This means that if the user had indicated start time, end date and end time on logging the order, these data would be carried along correspondingly.</p>
+<p><img src="../../images/image3.png" alt=""></p>
+<p>On the register</p>
+<p><span class="smallcaps">Lines</span></p>
+<p>the text lines are issued which were logged for this event. Here it is possible to generate both automatic text lines and also manual additions by the user for each process if required.</p>
+<p><img src="../../images/image4.png" alt=""></p>
+<h2 id="definition-of-event-codes">Definition of event codes</h2>
+<p>Events can be pre-defined by the user. This occurs via the event codes</p>
+<p><em><span class="smallcaps">enwis) waste Location/ operational
+journal/Lists/event codes</span></em></p>
+<p>)</p>
+<p><img src="../../images/image5.png" alt=""></p>
+<p>Event codes can be created in line with the processes which are to be recorded in the operational journal. The individual event codes can be divided into event groups.</p>
+<p>A group can cover the area of returns for example. For this group it is then possible to allocate different event codes such as e.g. incorrect material deliveries, wet or proportions of foreign matter.</p>
+<p>On the register</p>
+<p><span class="smallcaps">rules</span></p>
+<p>it is possible to define rules for each event code. These are activated on creating the event.</p>
+<p><img src="../../images/image6.png" alt=""></p>
+<p>Via the field _Automatic Ex. Text Lines-_Option it is possible to define whether the text in the text area is to be transferred automatically. The following options are possible:</p>
+<ul>
+<li><p><em>Insert</em>: the text lines are already transferred on creation of an event</p>
+</li>
+<li><p><em>On Posting:</em> the text lines are only added on the actual posting of the event</p>
+</li>
+</ul>
+<p>The field <em>Time Mandatory</em> determines whether the user has to consign a time indication on creation of the event. The following options are possible:</p>
+<ul>
+<li><p><em><blank>:</blank></em> no time indication is necessary</p>
+</li>
+<li><p><em>Starting-Time</em>: Indication of the start time</p>
+</li>
+<li><p><em>Starting/Finishing-Time</em>: Indication of the start and finish time</p>
+</li>
+</ul>
+<p>If the field <em>Calculate Duration</em> is ticked, the corresponding time duration is established by the system automatically via the time indications.</p>
+<p>Further rules can be defined by <em>No. of Rules</em>. Further rules for the creation or posting of the events can be determined via the event posting rules.</p>
+<p>The following option values can be selected in the field <em>Type:</em></p>
+<ul>
+<li><p>Person in Charge</p>
+</li>
+<li><p>Site</p>
+</li>
+<li><p>Location Code</p>
+</li>
+<li><p>Plant</p>
+</li>
+<li><p>Action</p>
+</li>
+<li><p>Result</p>
+</li>
+</ul>
+<p>In line with the posting rule it is possible to define by line whether a certain value needs to be indicated on creation (=option: &quot;Code Mandatory&quot;) or whether a certain value must match on creation (=option: &quot;Same Code&quot;).</p>
+<p>In the example below a storage location must be consigned in the event so that it can be posted.</p>
+<p><img src="../../images/image7.png" alt=""></p>
+<h2 id="create-events-directly-via-an-order">Create events directly via an order</h2>
+<p>In principle the transport, equipment, personnel and waste ledger entries generated with an order are logged automatically. This means that only manual intervention is required by the user if additional documents are needed.</p>
+<p>Events can be applied via the following link:</p>
+<p><em><span class="smallcaps">Order Line Actions (Ctrl. + F10) Line Make Event
+Event</span></em></p>
+<p>A new window opens in which a new event document is applied. This event document can be further processed and posted correspondingly.</p>
+<p><img src="../../images/image8.png" alt=""></p>
+<p>The rules and texts defined in the code are used automatically as soon as the event code has been selected. You can make further additions in the text field.</p>
+<p>The references to the order can be accepted into the document by the system automatically.</p>
+<p><img src="../../images/image9.png" alt=""></p>
+<h2 id="create-event-via-a-weighbridge-ticket">Create event via a weighbridge ticket</h2>
+<p>The same possibilities to generate an event via an order also exist for a weighbridge ticket via the link</p>
+<p><em><span class="smallcaps">ACtions
+Function make event event</span></em></p>
+<p>A new window opens in which a new event document is applied. This event document can be further processed and posted correspondingly.</p>
+<p><img src="../../images/image10.png" alt=""></p>
+<p>The references to the weighbridge ticket can be accepted into the document by the system automatically.</p>
+<p><img src="../../images/image11.png" alt=""></p>
+<h2 id="create-event-via-a-journal">Create event via a journal</h2>
+<p>Events can also be created directly via a journal</p>
+<p><em><span class="smallcaps">enwis waste location/operational journal operational
+journal</span></em></p>
+<p>.</p>
+<p>The desired event code must be selected in this case as well.</p>
+<p><img src="../../images/image12.png" alt=""></p>
+<h2 id="recurring-events">Recurring events</h2>
+<p>If operational processes can be described via several different event codes (and possible measures and result codes) and these processes occur repeatedly at time intervals, they can be applied as a recurring event.</p>
+<p>Recurring events can be applied in the event document via the button</p>
+<p><em><span class="smallcaps">Recurring events</span></em></p>
+<p>.</p>
+<p><img src="../../images/image13.png" alt=""></p>
+<p><img src="../../images/image14.png" alt=""></p>
+<p>Recurring Events Template opens. This can be defined like a &quot;normal&quot; event document.</p>
+<p><img src="../../images/image15.png" alt=""></p>
+<p>Any number of events can be generated via these recurring event templates.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Einfach. Mehr. Wert.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

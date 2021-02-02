@@ -1,0 +1,156 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Equipment Card | tegos Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Equipment Card | tegos Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../images/logos/tegos_favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/logos/logo-tegos-white.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="EquipmentCard">
+<h1 id="equipment-card">Equipment card</h1>
+
+<h2 id="general">General</h2>
+<p>Equipment does not just involve repositories and containers but also special equipment (e.g. cameras) which can be loaned to customers.</p>
+<p>Equipment is administered under the menu item</p>
+<p><em><span class="smallcaps">Equipment</span></em></p>
+<p>in the main menu</p>
+<p><em><span class="smallcaps">enwis) services</span></em></p>
+<p>.</p>
+<h2 id="new-application-of-equipment">New application of equipment</h2>
+<p>Equipment is applied in the menu</p>
+<p><em><span class="smallcaps">enwis)
+services Equipment Lists Equipment</span></em></p>
+<p>.</p>
+<p>The equipment card does not represent a single item of equipment but instead stands for each equipment type. There is the possibility of consigning individual equipment IDs to each item of equipment which then represent a single piece of equipment. These repository IDs can be maintained in the order line or equipment entry via the field <em>ID-Code</em>.</p>
+<p>A new item of equipment can be applied via the button</p>
+<p><em><span class="smallcaps">New</span></em></p>
+<p>(<strong>Ctrl + N</strong>).</p>
+<p>The most important fields are described below.</p>
+<p>Depending on the set up, an automatic code or a manual number can be allocated for the equipment to be newly applied in the field <em>Nr.</em></p>
+<p><img src="../../images/image1.png" alt="WorE676"></p>
+<p>The field <em>Description</em> contains the relevant equipment description.</p>
+<p>A suitable unit can be selected in the field <em>Base Unit of Measure Codes</em> whereby equipment should in principle be introduced in the unit &quot;Piece&quot;.</p>
+<p>The option &quot;Posting&quot; must be selected in the field <em>Account Type</em>.</p>
+<p>The set up in the field <em>Account Type</em> is decisive primarily when equipment charts of accounts are being worked with as this set up allows the presentation of repository movement and inventories of the equipment.</p>
+<p>In the field <em>Equipment Grp**.**</em> a corresponding equipment group is selected.</p>
+<p>The combination of the two fields <em>Equipment Grp</em>. on the equipment card and <em>Rental Invoice Grp. Code</em> on the customer card determines the correct invoicing method in the <strong><em>Rental Invoice Matrix</em></strong>.</p>
+<p>In the field <em>Transport Group Code</em> it is possible to stipulate the transport group by which the equipment is normally transported. This makes the later transport dispatching more straightforward.</p>
+<p>Repositories can be clearly marked in the field <em>Container</em> in order to isolate these from the remaining equipment such as machines, cranes, presses etc.</p>
+<p>The field <em>Costing Method</em> on the register card</p>
+<p><span class="smallcaps">Application</span></p>
+<p>should be set to the option &quot;Application&quot;. With this setting it is ensured that the collection order can only be cleared once this has been settled with the corresponding provision. This setting is particularly important for the rental calculation as the rental calculation starts at the point in time of the provision and ends at the point of collection.</p>
+<p>Practical experience shows that the option &quot;Application&quot; is the best choice here. The user is thereby forced to always provide each equipment movement carried out with an application manually. If no application is made the entry is cancelled with the error message &quot;Compensation with Ser. No can not be 0&quot; Automatic application methods (FIFO, LIFO) are of course possible but they can in practice very easily lead to an uncontrolled inventory application and therefore to an incorrect invoice.</p>
+<p>As just described, with the application method &quot;Application&quot; the user is always forced to provide each equipment movement with an application manually. But that would mean that an initial provision would have to be provided with an application which is of course not possible in terms of content. Therefore it is possible to stipulate in the field <em>Application skipped on</em> that certain equipment movements can be excluded from an application.</p>
+<p>In practice that is as a rule the provision as an item of equipment can in a normal case only be placed and then collected afterwards.</p>
+<p><img src="../../images/image2.png" alt="Wor410A"></p>
+<p>On the register card</p>
+<p><span class="smallcaps">Invoicing</span></p>
+<p>, a general product posting group in the field of the same name must be selected. This posting group is necessary to keep the continuous business logic in enwis) but it is not linked with the general ledger. It is recommended that a &quot;Dummy&quot; product posting group is applied in order to isolate this from the product posting groups of the general ledger.</p>
+<p><img src="../../images/image3.png" alt="Wor665B"></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Einfach. Mehr. Wert.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

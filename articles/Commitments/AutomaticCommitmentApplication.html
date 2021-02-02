@@ -1,0 +1,169 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Automatic commitment application | tegos Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Automatic commitment application | tegos Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../images/logos/tegos_favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/logos/logo-tegos-white.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="AutomaticCommitmentApplication">
+<h1 id="automatic-commitment-application">Automatic commitment application</h1>
+
+<h2 id="general">General</h2>
+<p>From time to time it is necessary to apply the remaining obligation of commitments which have not been fully processed. Depending on the task and work flow, the waste management sector solution provides three different possibilities:</p>
+<ul>
+<li><p>Commitments summary being taken over by the suggest commitments</p>
+</li>
+<li><p>Application of the commitments through generation of orders</p>
+</li>
+<li><p>Application via Commitments application journals</p>
+</li>
+</ul>
+<h2 id="application-via-suggest-commitments">Application via suggest commitments</h2>
+<p>The current balance of the faded in commitments is also shown in the order on calling the suggest commitments. If the dialogue is confirmed with &quot;</p>
+<p><span class="smallcaps">OK”</span></p>
+<p>, only the <em>Commitment No.</em> is taken into the field of the same name on the <strong><em>order line</em></strong>.</p>
+<p>If the dialogue is confirmed with the option &quot;incl. quantity&quot; the current balance is also carried over to the order line so that the commitment is fully applied when posting the line.</p>
+<p>The content of the commitment automatically determines where the quantity is transferred to. If the content is &quot;service&quot; then the commitment balance is validated into the field <em>Quantity</em> of the order line. If the content is &quot;waste material&quot; then the balance is transferred into quantity to be managed (quantity of the waste entry) etc.</p>
+<h2 id="application-via-order-creation">Application via order creation</h2>
+<p>Another possibility for automatic application involves generating orders via which the remaining balance is entered. For this it is necessary that the commitment is allocated directly to a contract.</p>
+<p>This allocation occurs via the fields <em>Contract No.</em> and if necessary <em>Sub Contract No.</em> on the register</p>
+<p><span class="smallcaps">posting</span></p>
+<p>of the <em><strong>commitments card</strong>.</em></p>
+<p><img src="../../images/image1.png" alt=""></p>
+<p>If a contract is consigned to a commitment, then automatic application via the batch processing</p>
+<p><em><span class="smallcaps">Kontingente über
+Vertrag ausgleichen</span></em></p>
+<p>is possible. This batch processing can be called via the</p>
+<p><em><span class="smallcaps">Menü enwis)
+services/commitments/Tasks/periodic activities/apply commitments via
+contract</span></em></p>
+<p>or from the <strong><em>commitment card</em></strong> via the link</p>
+<p><em><span class="smallcaps">Actions Functions apply commitments via
+contract</span></em></p>
+<p>.</p>
+<p><img src="../../images/image2.png" alt=""></p>
+<p>The batch processing creates orders from the contracts or subcontracts with which the commitments to be applied are linked and thereby transfers the current remaining balance automatically into the quantity field of the order line which enables the commitment to then be balanced on entering the order.</p>
+<p>The same logics apply for the reference between quantity application in the order and content of the commitment as for the taking over of the commitment balance from the suggest commitments in the order.</p>
+<p>The field <em>Apply Automatically</em> on the register</p>
+<p><span class="smallcaps">Buchung</span></p>
+<p>of the <strong><em>commitments card</em></strong> does not mean that only commitments in which this field is ticked can be applied automatically. It only provides one filtering possibility for the batch processing which can be used by the user.</p>
+<p><img src="../../images/image3.png" alt=""></p>
+<h2 id="application-via-commitments-application-journals">Application via commitments application journals)</h2>
+<p>The third possibility for automatic application of the remaining balances of commitments is provided by the <strong><em>commitment application journals</em></strong> in the menu</p>
+<p><em><span class="smallcaps">commitments</span></em></p>
+<p>. These are structured analogously to the inventory or throughput journals.</p>
+<p><img src="../../images/image4.png" alt=""></p>
+<p>Via the button</p>
+<p><em><span class="smallcaps">calculate commitments
+balance</span></em></p>
+<p>a batch process is called which creates the journal lines from the current balances of the commitments to be calculated.</p>
+<p>These journal lines are calculated automatically in such a way that each commitment was zeroed on entry.</p>
+<p>Depending on the commitment balance this can mean that a relief from the remaining obligation or a subsequent obligation for an overfulfilled commitment is created.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Einfach. Mehr. Wert.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

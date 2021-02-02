@@ -1,0 +1,167 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Service Errors and Refusals | tegos Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Service Errors and Refusals | tegos Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../images/logos/tegos_favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/logos/logo-tegos-white.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ServiceErrorsAndRefusals">
+<h1 id="service-errors-and-refusals">Service Errors and Refusals</h1>
+
+<h2 id="service-errors">Service Errors</h2>
+<p>Service errors can be assigned a pre-defined event code. A short example will illustrate what effect this has.</p>
+<p><strong><u>Example:</u></strong></p>
+<p><strong>A vendor delivers materials of lesser quality than actually agreed upon, meaning that the corresponding order describes a different service and a different material.</strong></p>
+<p>The weighbridge now has the option of making changes using the</p>
+<p><em><span class="smallcaps">Correct Service Errors</span></em></p>
+<p>function.</p>
+<p><img src="../../images/image1.png" alt=""></p>
+<p>First, the original service ordered is shown under the</p>
+<p><span class="smallcaps">General tab.</span></p>
+<p>Users can then select a new service in the <em>Service No.</em> field. If materials are stored along with the services, these are automatically corrected as well. If necessary, users can make the changes manually under the</p>
+<p><span class="smallcaps">Detail</span></p>
+<p>tab.</p>
+<u>
+  <strong>Note:</strong>
+</u>
+<p><strong>Users can set &quot;Same Contract&quot; or &quot;All Contracts&quot; in the <em>Service Error Selection</em> field to filter the list of services.</strong></p>
+<p>When this change made, users can simultaneously record an event so that the changes are documented in the Operational Journal.</p>
+<p>Use the Event button to then record comments to be added to this procedure when it is recorded in the Operational Journal. This takes place using an event document.</p>
+<p>Users can either enter the text manually in this event document or select predefined action codes and event codes.</p>
+<p><img src="../../images/image2.png" alt=""></p>
+<h2 id="refusals">Refusals</h2>
+<p>enwis) manages refusals in the form of ledger entries, i.e. there are refusal ledger entries to document that a refusal has taken place.</p>
+<p>Refusal ledger entries are created when the <em>Refusal Type</em> field in the waste entry contains an option other than <blank>. The refusal type can also be set on the order line, where it will later be added to the waste entries.<p>
+<p><img src="../../images/image3.png" alt=""></p>
+<p>Refusal ledger entries are created after order release and then added to the <strong>5030512 Refusal Ledger Entries</strong> table.</p>
+<p>The associated &quot;refusal&quot; event document can then be set up via the following line: Order Line Actions (Alt + F10) Line Create Event Refusal</p>
+<p>The event document may look like the following:</p>
+<p><img src="../../images/image4.png" alt=""></p>
+<p>Additional information can be added to the event document and then posted.</p>
+<p><strong><u>Note:</u></strong></p>
+<p><strong>When the <em>Wait for Refusal Posting</em> box is checked, events created from a refusal on an order line will not be posted until after the order line has been posted.</strong></p>
+<p>As soon as the refusal order line has been posted, enwis) automatically records the Refusal Ledger Entry No. on the previously created event document.</p>
+<p><img src="../../images/image5.png" alt=""></p>
+<p>Click on the <em>Refusal Ledger Entry No.</em> to go directly to the corresponding refusal ledger entry.</p>
+<p>All of the order information about the waste material, the producer, the waste transfer note, etc. is copied to the refusal ledger entry and can be called up there.</p>
+<p>Go to enwis) Waste Management Plant Off. Waste Doc. Agent RC History Refusals to call up and complete the details of the posted refusal ledger entry.</p>
+<p><img src="../../images/image6.png" alt=""></p>
+<p>Go to</p>
+<p><em><span class="smallcaps">Associated Information</span></em></p>
+<p><em><span class="smallcaps">Reasons</span></em></p>
+<p><em><span class="smallcaps">Reasons</span></em></p>
+<p>to record comments; these entry comments will be the reasons for refusal.</p>
+<p><img src="../../images/image7.png" alt=""></p>
+<p>In contrast to waste ledger entries, refusal ledger entries can also be posted without quantity (Refused before Weighing).</p>
+<p>To do so, check the <em>Allow Refusal without Qty.</em> box in <strong>Waste Management Setup</strong> under the</p>
+<p><span class="smallcaps">stock</span></p>
+<p>tab.</p>
+<p><img src="../../images/image8.png" alt=""></p>
+</blank></article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Einfach. Mehr. Wert.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

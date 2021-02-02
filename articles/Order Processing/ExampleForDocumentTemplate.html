@@ -1,0 +1,281 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Example for Document Template | tegos Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Example for Document Template | tegos Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../images/logos/tegos_favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/logos/logo-tegos-white.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ExampleForDocumentTemplate">
+<h1 id="table-of-contents">Table of Contents</h1>
+
+<p>1 Objective 1</p>
+<p><a href="#manually-created-contract-to-compare-with">2 Manually created contract to compare with 1</a></p>
+<p><a href="#setup-the-document-template">3 Setup the document template 2</a></p>
+<p><a href="#setup-a-filtered-place-holder">3.1 Setup a filtered place holder 3</a></p>
+<p><a href="#create-a-contract-using-the-document-template">4 Create a contract using the document template 4</a></p>
+<p><a href="#create-the-contract-header-as-usual">4.1 Create the contract header (as usual) 4</a></p>
+<p><a href="#create-the-lines-via-document-template">4.2 Create the lines via document template 4</a></p>
+<p><a href="#guidelines-for-document-template-setups">5 Guidelines for document template setups 6</a></p>
+<p><a href="#fully-predefined-document-templates">5.1 Fully predefined document templates 7</a></p>
+<p><a href="#flexible-template">5.2 Flexible template 8</a></p>
+<p><a href="#partly-defined-templates">5.3 Partly defined templates 9</a></p>
+<p><a href="#further-guidelines">5.4 Further guidelines 10</a></p>
+<h1 id="objective">Objective</h1>
+<p>These screen shots should give a short introduction how to use the feature of document templates.</p>
+<h1 id="manually-created-contract-to-compare-with">Manually created contract to compare with</h1>
+<p>This is a typical enwis) contract being created manually:</p>
+<p><img src="../../images/image1.png" alt=""></p>
+<h1 id="setup-the-document-template">Setup the document template</h1>
+<p>In the document template page in the General tab a code and description gets setup.</p>
+<p>Then the line structure for the contract gets defined. In this case we have 3 subcontracts – with <strong>fixed values</strong> in the Sub contract field - for submission, exchange and for final pick-up with 1 to 3 lines for each sub contract.</p>
+<p>In the lines some services get defined with a fixed value as this is always applicable for the &quot;7 cbm skip&quot; type of contracts. Beside this the following <strong>place holders</strong> get defined:</p>
+<ol>
+<li><p>The customer which will be defaulted from the header as we will see later.</p>
+</li>
+<li><p>The task-site which will as well be defaulted.</p>
+</li>
+<li><p>The material service for the hazardous waste. We'll see later how this gets filtered to only the applicable services.</p>
+</li>
+<li><p>The location where we dispose the collected waste:</p>
+</li>
+</ol>
+<p><img src="../../images/image2.png" alt=""></p>
+<h2 id="setup-a-filtered-place-holder">Setup a filtered place holder</h2>
+<p>A place holder gets defined by:</p>
+<ol>
+<li><p>A unique Code</p>
+</li>
+<li><p>A description</p>
+</li>
+<li><p>The decision to apply a filter on the table or to select values from the table manually</p>
+</li>
+<li><p>The related (master data) table</p>
+</li>
+<li><p>The filter for 3</p>
+</li>
+<li><p>The field to be copied to the document when using this place holder</p>
+</li>
+<li><p>The description to be copied to the document if applicable</p>
+</li>
+<li><p>Place holders can be marked as mandatory or optional</p>
+</li>
+</ol>
+<p>And for easier visibility for the user the selectable items – due to 3 and 5 - get listed in the items tab:</p>
+<p><img src="../../images/image3.png" alt="C:\Users\ajungkamp\Pictures\Screenpresso\KoRe\2017-08-03_14h07_59.png"></p>
+<p>To filter the services in this example you have to have a clear selection criteria which was the service group in this case:</p>
+<p><img src="../../images/image4.png" alt="C:\Users\ajungkamp\Pictures\Screenpresso\KoRe\2017-08-03_14h08_59.png"></p>
+<h1 id="create-a-contract-using-the-document-template">Create a contract using the document template</h1>
+<h2 id="create-the-contract-header-as-usual">Create the contract header (as usual)</h2>
+<p>The contract creation start as usual with an empty contract:</p>
+<p><img src="../../images/image5.png" alt=""></p>
+<p>In the contract header you populate the usual fields like:</p>
+<ol>
+<li><p>Customer</p>
+</li>
+<li><p>Task-Site</p>
+</li>
+<li><p>Valid period</p>
+</li>
+<li><p>...for the contract</p>
+</li>
+</ol>
+<p><img src="../../images/image6.png" alt=""></p>
+<h2 id="create-the-lines-via-document-template">Create the lines via document template</h2>
+<p>Now you call a function to setup the contract lines via a document template</p>
+<p><img src="../../images/image7.png" alt=""></p>
+<p>In the pop-up page you select the appropriate template (1):</p>
+<p><img src="../../images/image8.png" alt=""></p>
+<p>After you validated your selection for the template you get prompted with a sub page to enter the values for the place holders:</p>
+<ol>
+<li><p>CUST and CTS placeholder got defaulted from the header as you see. So you only have to enter:</p>
+</li>
+<li><p>The location and</p>
+</li>
+<li><p>The hazardous Material Service</p>
+</li>
+</ol>
+<p><img src="../../images/image9.png" alt=""></p>
+<p>When you drill into the values to choose from for the hazardous material services you are limited just to those services being related to hazardous materials due to setup of the place holder &quot;HZ MAT S&quot; seen earlier:</p>
+<p><img src="../../images/image10.png" alt=""></p>
+<p>Now you pick the one used in the manual example contract. The document template tab helps the user to see where the place holders are used in the template:</p>
+<p><img src="../../images/image11.png" alt=""></p>
+<p>Then this is the resulting contract, with the following remarkable informations:</p>
+<ul>
+<li><p>The line structure is created like defined in the document template</p>
+</li>
+<li><p>The hazardous material service is used in line 3 and 6.</p>
+</li>
+<li><p>The location is used in those lines as well.</p>
+</li>
+<li><p>Due to the proper setup of the contract, the contract uses the same prices as the manually created contract:</p>
+</li>
+</ul>
+<p><img src="../../images/image12.png" alt=""></p>
+<p>Compare with manualy created contract:</p>
+<p><img src="../../images/image13.png" alt=""></p>
+<h1 id="guidelines-for-document-template-setups">Guidelines for document template setups</h1>
+<p>The setup for the document templates is always a balance between:</p>
+<ul>
+<li><p>Creating specific templates with mostly fixed values for fast creation of often used services. This will end in a huge list of templates so which might become a challenge for the user to pick the right one.</p>
+</li>
+<li><p>Creating templates with quite restricted place holders to clearly guide the user. This will lead to lots of templates.</p>
+</li>
+<li><p>Creating &quot;flexible&quot; templates which allow the user to choose from a lot of values for each of the place holders which makes this data entry more demanding and time consuming.</p>
+</li>
+<li><p>Leave some fields in the template undefined and force the user to maintain those data manually in the created contract. As not all fields/data are available via the templates this is necessary anyhow in some circumstances but might be an operational solution for more cases.</p>
+</li>
+</ul>
+<p>Following the above example contract above some possibilities to setup document templates for this example should give you an impression how you might proceed in a case like this.</p>
+<h2 id="fully-predefined-document-templates">Fully predefined document templates</h2>
+<p>If a special service is widely used in the company and makes up for several % of the contracts it might be worth it to setup a document template with basically all fixed values. An example might be smaller wheelies with a widely collected material like wood:</p>
+<p><img src="../../images/image14.png" alt=""></p>
+<p>So in the contract creation process the user input is quite limited:</p>
+<ol>
+<li><p>Setup the contract header as the data customer and task-site are always specific for a contract and need to be populated manually.</p>
+</li>
+<li><p>Pick the docment template</p>
+</li>
+<li><p>But in the place holder page nothing is left to do except clicking OK:</p>
+</li>
+</ol>
+<blockquote>
+<p><img src="../../images/image15.png" alt=""></p>
+</blockquote>
+<h2 id="flexible-template">Flexible template</h2>
+<p>To allow to reduce the number of templates it's possible to leave the place holders open. So this template is usable for all kind of equipments and for hazardous waste:</p>
+<p><img src="../../images/image16.png" alt=""></p>
+<p>But the user needs to pick from a huge list of services for the 3 additional place holders during the contract creation process:<br>
+<img src="../../images/image17.png" alt=""></p>
+<p>An alternative would be to work with just one equipment service which in this case can be fixed and let the user only pick from the list of equipments once:<br>
+<img src="../../images/image18.png" alt=""></p>
+<p>With the following pop-up page during contract creation:</p>
+<p><img src="../../images/image19.png" alt=""></p>
+<p>But be aware that the description of the service will be a little bid ambiguous in this approach. (<em>For reports like delivery papers or for the invoice you might enrich this description with the equipment information but might confuse the user in pages.</em>)</p>
+<h2 id="partly-defined-templates">Partly defined templates</h2>
+<p>Instead of the approach to split the templates by the equipment (service) you might split the templates by materials:</p>
+<p><img src="../../images/image20.png" alt=""></p>
+<p>With the following pop-up:</p>
+<p><img src="../../images/image21.png" alt=""></p>
+<h2 id="further-guidelines">Further guidelines</h2>
+<p>The given examples are very much simplified. In real business you might need to setup lots of additional document templates due to other special conditions of a business case like:</p>
+<ul>
+<li><p>Service with cycles / without cycles</p>
+</li>
+<li><p>Service with sub contractors</p>
+</li>
+<li><p>Additional parameters to be defined</p>
+</li>
+<li><p>Additional services to be foreseen</p>
+</li>
+<li><p>....</p>
+</li>
+</ul>
+<p>This will enlarge the list of templates much further which has to be kept in mind when thinking about the best approach.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Einfach. Mehr. Wert.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

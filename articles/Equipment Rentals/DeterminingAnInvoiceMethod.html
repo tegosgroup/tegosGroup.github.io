@@ -1,0 +1,247 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Determining an invoice method | tegos Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Determining an invoice method | tegos Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../images/logos/tegos_favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/logos/logo-tegos-white.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DeterminingAnInvoiceMethod">
+<h1 id="determining-an-invoice-method">Determining an invoice method</h1>
+
+<h2 id="general">General</h2>
+<p>In enwis) it is possible to establish rentals on the basis of different calculation methods. These different calculation methods are known as Invoice method in enwis).</p>
+<p>With the help of the invoice method the parameters with which the rental time period is to be established are determined. These parameters include e.g. the number of days which are actually to run into the rental time period, the information regarding whether a daily or monthly rental is to be calculated etc. The set up of an invoice method is described in detail in a separate document.</p>
+<p>First of all it is necessary to clarify how the suitable invoice method is established.</p>
+<p>The establishment of an invoice method occurs analogously to the establishment of an inventory account via a matrix, namely the rental invoice matrix. The combination of different criteria in the rental invoice matrix leads to the desired invoice method.</p>
+<h2 id="rental-invoice-groups">Rental Invoice Groups</h2>
+<p>The rental invoice group code is a central criterion in the rental invoice matrix. This can be issued by customer, vendor, customer task site, vendor task site or project.</p>
+<p>The rental invoice groups can be set up via the following menu path</p>
+<p><em><span class="smallcaps">enwis)
+services/equipment/Administration/Equipment Rentals/Rental
+invoicing/rental invoice groups</span></em></p>
+<p><img src="../../images/image1.png" alt=""></p>
+<p>The rental invoice group is consigned on the customer/vendor card in the field <em>Rental Invoice Grp. Code</em> on the register</p>
+<p><span class="smallcaps">Invoicing</span></p>
+<p>as shown in the following image.</p>
+<p><img src="../../images/image2.png" alt=""></p>
+<p>On the customer/vendor task site card this also occurs on the register</p>
+<p><span class="smallcaps">Fakturierung</span></p>
+<p>. On the project card this allocation occurs on the register</p>
+<p><span class="smallcaps">general</span></p>
+<p>.</p>
+<p>In the selection of the correct rental invoice group, enwis) proceeds in line with the following hierarchy: Project in front of customer/vendor task site in front of customer/vendor.</p>
+<h2 id="equipment-group">Equipment Group)</h2>
+<p>The equipment group code is an additional criterion for establishment of the invoice method via the rental invoice matrix. Equipment groups can be set up via the menu path</p>
+<p><em><span class="smallcaps">enwis)
+Services/Equipment/Administration/setup/groups &amp; matrices/equipment
+group</span></em></p>
+<p><img src="../../images/image3.png" alt=""></p>
+<p>Each equipment item can be allocated to one of the equipment groups defined here. The allocation occurs via the field <em>Equipment Group.</em> on the register</p>
+<p><span class="smallcaps">general</span></p>
+<p>of the equipment card.</p>
+<p><img src="../../images/image4.png" alt=""></p>
+<h2 id="rental-invoice-matrix">Rental Invoice Matrix</h2>
+<p>In the rental invoice matrix the various criteria can now be used to consign combinations from which enwis) establishes an invoice method automatically.</p>
+<p>The rental invoice matrix can be called up under</p>
+<p><em><span class="smallcaps">enwis) services/equipment/Administration/Equipment
+Rentals/Rental invoicing/rental invoice matrix</span></em></p>
+<p>but also from the customer/vendor card, the customer/vendor task site card and from the project card.</p>
+<p>In addition to the criteria rental invoice group and equipment group already named, the matrix can also have the posting type, the equipment number (of a concrete equipment item rather than just the equipment group), the service group code and the start date consigned as relevant criteria to the invoice method fixing.</p>
+<p><img src="../../images/image5.png" alt=""></p>
+<p>The logic is to be seen as analogous to the pricing. In the example above all commercial customers who rent a skip get the invoice method MONTHLY while the private customers who rent a skip get the invoice method DAILY.</p>
+<p><strong><u>Note:</u></strong></p>
+<p><strong>If all customers are to receive the same invoice method for all containers, it is sufficient to apply a single data record which has an entry in the field <em>Invoice Method Code</em> and for which all other fields otherwise remain empty.</strong></p>
+<h2 id="number-of-rental-invoice-and-equipment-groups">Number of rental invoice and equipment groups</h2>
+<p>A question in the implementation of enwis) is how many equipment group codes or rental invoice group codes there should be. The response depends on what the establishment of the invoice method is primarily based on.</p>
+<p>For the simplification of just two invoice methods let us assume an invoice according to daily rental (DAILY) and an invoice according to monthly rental (MONTHLY). In practice there could be the following scenarios:</p>
+<ul>
+<li>The establishment of whether a daily or monthly rental is calculated depends on the customer/vendor (or additionally on the customer/vendor task site or on the project). In this case it would make sense to apply two rental invoice group codes (DAILY and MONTHLY) and only one equipment group code or none at all. Of course it is also possible to set up several equipment groups in order to make distinctions at another point in the operational business but not to apply rental invoice matrix lines for these and instead to leave the corresponding field empty.</li>
+</ul>
+<!--  -->
+<ul>
+<li>Rental invoice group code = DAILY</li>
+</ul>
+<blockquote>
+<p>Equipment group code = DEFAULT or <blank><p>
+</blank></blockquote>
+<p>Invoice method code = DAILY</p>
+<ul>
+<li>Rental invoice group code = MONTHLY</li>
+</ul>
+<blockquote>
+<p>Equipment group code = DEFAULT or <blank><p>
+</blank></blockquote>
+<ul>
+<li>Invoice method code = MONTHLY</li>
+</ul>
+<!--  -->
+<ul>
+<li>The establishment of whether a daily rental or a monthly rental is calculated depends on the equipment. In this case it would be suitable to apply just one or no rental invoice group and two equipment group codes (DAILY and MONTHLY). In the rental invoice matrix there would then be both the following entries</li>
+</ul>
+<!--  -->
+<ul>
+<li>Rental invoice code = DEFAULT or <blank></blank></li>
+</ul>
+<blockquote>
+<p>Equipment group code = DAILY</p>
+</blockquote>
+<p>Invoice method code = DAILY</p>
+<ul>
+<li>Rental invoice group code = DEFAULT</li>
+</ul>
+<blockquote>
+<p>Equipment group code = MONTHLY</p>
+</blockquote>
+<blockquote>
+<p>Invoice method code = MONTHLY</p>
+</blockquote>
+<ul>
+<li>If the customer/vendor or the equipment is not exclusively responsible for the establishment of the invoice method, the set up of the rental invoice matrix becomes somewhat more complex. Such a complex set up always occurs if e.g. customer A (rental invoice code = A) always gets a daily rental calculated with the equipment group code SKIP and a monthly rental with the equipment group MGB. The customer B (rental invoice code = B) always gets a monthly rental in connection with the equipment group SKIP and always an annual rental with the equipment group MGB. In this case the rental invoice matrix would have a much broader scope</li>
+</ul>
+<!--  -->
+<ul>
+<li>Rental invoice group code = A</li>
+</ul>
+<blockquote>
+<p>Equipment group code = SKIP</p>
+</blockquote>
+<blockquote>
+<p>Invoice method = DAILY</p>
+</blockquote>
+<ul>
+<li>Rental invoice group code = A</li>
+</ul>
+<blockquote>
+<p>Equipment group code = BOX</p>
+</blockquote>
+<blockquote>
+<p>Invoice method = MONTHLY</p>
+</blockquote>
+<ul>
+<li>Rental invoice group code = B</li>
+</ul>
+<blockquote>
+<p>Equipment group code = SKIP</p>
+</blockquote>
+<blockquote>
+<p>Invoice method = MONTHLY</p>
+</blockquote>
+<ul>
+<li>Rental invoice group code = B</li>
+</ul>
+<blockquote>
+<p>Equipment group code = BOX</p>
+</blockquote>
+<blockquote>
+<p>Invoice method = YEARLY</p>
+</blockquote>
+<p>In practice the customer/vendor or the equipment is not exclusively responsible for the establishment of the invoice method and the combination of these criteria is decisive instead. Therefore it is urgently recommended that the establishment of the invoice method is schematised in a very flexible and comfortable way via the matrix.</p>
+<p>In the individual case the establishment of the invoice method can however always be overruled. The invoice method can also be consigned in the order or contract in the field of the same name in the equipment entry. An invoice method entered here does in each case have priority over the invoice method which is established via the rental invoice matrix. The same applies on posting of an equipment item via the equipment journal.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Einfach. Mehr. Wert.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>
