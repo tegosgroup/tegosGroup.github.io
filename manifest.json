@@ -13,6 +13,17 @@
       "is_incremental": false
     },
     {
+      "type": "Resource",
+      "source_relative_path": "CNAME",
+      "output": {
+        "resource": {
+          "relative_path": "CNAME"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "api/index.md",
       "output": {
@@ -9844,6 +9855,17 @@
         ".html": {
           "relative_path": "index.html",
           "hash": "2aMn8on/UPFgDkvCibbkGw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "robots.txt",
+      "output": {
+        "resource": {
+          "relative_path": "robots.txt"
         }
       },
       "is_incremental": false,
