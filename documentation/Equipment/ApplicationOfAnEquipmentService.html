@@ -1,0 +1,163 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Application of an equipment service | tegos Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Application of an equipment service | tegos Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    <meta name="robots" content="noindex">
+    
+    <link rel="shortcut icon" href="../../images/logos/tegos_favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/logos/logo-tegos-white.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ApplicationOfAnEquipmentService">
+<h1 id="application-of-an-equipment-service">Application of an equipment service</h1>
+
+<h2 id="general">General</h2>
+<p>enwis) allows a very flexible depiction of container management and rental calculation. Equipment services can be defined correspondingly flexibly.</p>
+<p>Equipment services are intended to depict equipment movements, thus the provision, collection, exchange or the emptying of equipment. Whether and to the extent that this is invoice relevant and which prices are linked to it is secondary for equipment services. The primary task of equipment services is to depict the inventory relevant movement of containers.</p>
+<p>The most important fields for the new application of an equipment service are explained below.</p>
+<h2 id="general-register">General register</h2>
+<p>The following fields should be filled in on the</p>
+<p><em><span class="smallcaps">General</span></em></p>
+<p>register.</p>
+<p><img src="../../images/image1.png" alt=""></p>
+<ul>
+<li><em>No</em>.: Number which clearly identifies the service and via which this is activated in the order line for example</li>
+</ul>
+<p><strong><u>Note:</u></strong></p>
+<p><strong>In the numbering of services it should be taken into account that a service catalog is often very comprehensive and may easily include several hundred or even thousands of entries. This catalog can be structured with the help of the service numbers. It may therefore make sense not to have services numbered fully automatically by the system on application by enwis) and instead to number them systematically and manually so that they can easily be identified by the user. In this way it would for example be recommended to number all waste management services starting with the number 100010 while all equipment services are numbered starting with 200010.</strong></p>
+<ul>
+<li><p><em>Description and Description 2</em>: Input of free texts to describe the content of the respective service</p>
+</li>
+<li><p><em>Base Unit of Measure</em>: Input of a measurement unit which is relevant for the internal service recording e.g. unit. The value consigned in the field Basiseinheitencode is transferred automatically to the fields <em>Sales Unit of Measure</em> and <em>Purch. Unit of Measure</em> on the register</p>
+<p><span class="smallcaps">invoicing.</span></p>
+</li>
+<li><p><em>Service Group Code:</em> The option field primarily controls the relationship between operational quantity and invoice quantity. In principle the service type should be aligned to the billable core of the service, i.e. an equipment service should receive the service type equipment more meaningfully because the equipment entry is of decisive significance for the operational processing and also the invoices. enwis) interprets the entries in the field <em>Operational Qty</em>. of the document line as indication of quantity about the equipment movement and therefore transfers an input in <em>Operational Qty</em>. into the field <em>Qty to Handl</em>. If the system is set up appropriately this operational quantity is transferred into the invoice relevant field <em>Quantity</em> of the document line and if necessary an equipment entry is applied into which the data present such as e.g. equipment number and the equipment type are transferred.</p>
+</li>
+<li><p><em>Equipment No</em>.: Input of the respective equipment. Important: enwis) does not understand the equipment number to represent a single piece of equipment but a group of identical pieces of equipment.</p>
+</li>
+<li><p><em>Equipment Type:</em> The type and direction of the equipment movement are stipulated via this option field. The equipment type provision opens a so-called equipment ledger entry which must be closed once again following collection and applied. A relevant equipment type should thus be allocated to all services which are relevant for equipment hire and the system should be set so that the equipment entry is applied automatically so that an equipment ledger entry is generated in each case.</p>
+</li>
+</ul>
+<h2 id="invoicing-register">Invoicing register</h2>
+<p>The following fields should be filled in on the register</p>
+<p><em><span class="smallcaps">Invoicing</span></em></p>
+<p>:</p>
+<p><img src="../../images/image2.png" alt=""></p>
+<ul>
+<li><p><em>Gen. Prod. Posting Group:</em> Consignment of the relevant posting groups so that the proceeds and costs can be recorded on the corresponding general ledger accounts</p>
+</li>
+<li><p><em>VAT Class:</em> Consignment of the relevant posting groups so that the VAT postings can be posted on the corresponding general ledger accounts</p>
+</li>
+<li><p><em>Sales Unit of Measure/Purch. Unit of Measure</em>: It is possible to consign unit codes different to the basic unit code via the fields <em>Sales Unit of Measure</em> and <em>Purch. Unit of Measure</em> which are normally used for the measurement of the invoice amount. If invoicing normally occurs e.g. via the unit &quot;Pieces&quot; but the unit &quot;Ton&quot; is decisive for the stockkeeping, &quot;Ton&quot; must be defined as the basic unit of the service while &quot;Pieces&quot; can be stipulated as a purchase or sales unit.</p>
+</li>
+<li><p><em>Cost Center Code:</em> Linking of the service with a fixed cost center</p>
+</li>
+<li><p><em>Cost Object Code:</em> Linking of the service with a fixed cost object</p>
+</li>
+</ul>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Einfach. Mehr. Wert.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

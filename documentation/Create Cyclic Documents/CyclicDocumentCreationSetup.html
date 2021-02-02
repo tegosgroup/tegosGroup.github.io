@@ -1,0 +1,295 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Cyclic Document Creation - Setup | tegos Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Cyclic Document Creation - Setup | tegos Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    <meta name="robots" content="noindex">
+    
+    <link rel="shortcut icon" href="../../images/logos/tegos_favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/logos/logo-tegos-white.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="CyclicDocumentCreationSetup">
+<h1 id="cyclical-document-creation--setup">Cyclical Document Creation – Setup</h1>
+
+<h2 id="general-information">General Information</h2>
+<p>Users must set up the <em>Cycle Log-Nos.</em> field under the</p>
+<p><em><span class="smallcaps">Numbering</span></em></p>
+<p>tab in</p>
+<p><span class="smallcaps">Invoice Setup</span></p>
+<p>before they can work with cyclical document creation.</p>
+<p><img src="../../images/image1.png" alt=""></p>
+<p>In the <em>Sort Cycle Preview by</em> field in</p>
+<p><em><span class="smallcaps">Waste
+Management Setup</span></em></p>
+<p>they can save the criteria to be used for the preview of sales orders on the monitor before creating the actual documents. The following options are available:</p>
+<ul>
+<li><p>Contract</p>
+</li>
+<li><p>Task Date</p>
+</li>
+<li><p>Business Partner</p>
+</li>
+<li><p>Business Partner Site</p>
+</li>
+</ul>
+<p><img src="../../images/image2.png" alt=""></p>
+<p>This preview can be printed out. If an individual report is used instead of the default report, it can be specified in the <em>Cycle Preview Function</em> field. As this report only prints out temporary information, it must be defined by a code unit. The code units are set up as <em>Type = Cycle</em> by going to</p>
+<p><em><span class="smallcaps">Equipment</span></em></p>
+<p><em><span class="smallcaps">Setup</span></em></p>
+<p><em><span class="smallcaps">Waste Mgt
+Calculation Function</span></em></p>
+<p>.</p>
+<p>When cyclical document creation is used to fill out ledger lines, the corresponding ledger must be entered into the <em>Cycle Equip. Jnl. Template</em> and <em>Cycle Equip. Jnl. Batch</em> fields in <em>Waste Management Setup</em>.</p>
+<p><img src="../../images/image3.png" alt=""></p>
+<h2 id="cycles--setup">Cycles – Setup</h2>
+<p>Cycles in enwis) are methods for the system to determine the next processing date from the saved date. Cycles can be set up according to any number of user-defined criteria and defined according to individual calculation routines.</p>
+<p><strong><u>Example:</u></strong></p>
+<p><strong>Beginning on a specific start date, the system should create a new sales order from a contract each week. In the contract, the start date is set as January 8, for example.</strong></p>
+<p><strong>When running cyclical document creation, the first document will be created from the contract on January 8 and the next date for automatic document creation will be set to January 15 based on the underlying calculation method.</strong></p>
+<p>Users can define cycles by going to</p>
+<p><em><span class="smallcaps">enwis)
+Services</span></em></p>
+<p><em><span class="smallcaps">Setup</span></em></p>
+<p><em><span class="smallcaps">Cyclical Document Creation</span></em></p>
+<p>or to</p>
+<p><span class="smallcaps">enwis) Sales Orders</span></p>
+<p><span class="smallcaps">Rents</span></p>
+<p><span class="smallcaps">Rent
+Cycles</span></p>
+<p>.</p>
+<p>Any number of cycles can be defined. The number of possible definitions is so vast that it should cover all situations that might present themselves in practice. There is a broad range of control mechanisms and logic available to users for specific, automatic date calculation.</p>
+<p>The basic settings are saved on the cycle card under the</p>
+<p><span class="smallcaps">General</span></p>
+<p>tab. All of these options will be explained in detail below.</p>
+<p><img src="../../images/image4.png" alt=""></p>
+<h2 id="time-type">Time Type</h2>
+<p>The central logic behind the cycle method is set in the <em>Time Type</em> field.</p>
+<p>The following options are available:</p>
+<ul>
+<li><p>Relative (monthly)</p>
+</li>
+<li><p>Relative (weekly)</p>
+</li>
+<li><p>Daily</p>
+</li>
+<li><p>Absolute</p>
+</li>
+<li><p>Positive Calendar</p>
+</li>
+<li><p>Explicit</p>
+</li>
+</ul>
+<h3 id="relative-monthly">Relative (monthly)</h3>
+<p>This time type assumes that the task date will be repeated at a specific interval of one or more months.</p>
+<p>When using this time type, the next cycle date will be determined primarily on the settings in the <em>Interval</em> field and those under the <em>Weekdays</em> tab.</p>
+<p>The date formula in the <em>Interval</em> field will determine whether the cycle repeats monthly or at an interval of more than one month. Users can enter as many months, quarters, or years in this field as they wish. The date formula 2M, for example, would mean that the sales orders are only created every second month.</p>
+<p><img src="../../images/image5.png" alt=""></p>
+<p>The day of the month when the sales orders should be automatically created is defined under the</p>
+<p><span class="smallcaps">Weekdays</span></p>
+<p>tab.</p>
+<p>In the example above, users have defined that a sales order should be created in the second week of the month on <em>Tuesday</em> and <em>Thursday</em> and in the fourth week of the month of <em>Wednesday</em> and <em>Friday</em>.</p>
+<h3 id="relative-weekly">Relative (weekly)</h3>
+<p>This time type assumes that the task date will be repeated at a specific interval of one or more weeks.</p>
+<p>To determine the next cycle date, <em>Relative (weekly)</em> must be set in the <em>Time Type</em> field.</p>
+<p>An interval of 6W, for example, would mean that a sales order will be generated every six weeks.</p>
+<p><img src="../../images/image6.png" alt=""></p>
+<p>How many days of the week a sales order should be automatically created on will also be defined under the</p>
+<p><em><span class="smallcaps">days of
+week</span></em></p>
+<p>tab.</p>
+<p><img src="../../images/image7.png" alt=""></p>
+<p>In this case, however, only the days in &quot;Week 1&quot; are material. The definition in &quot;Week 1&quot; applies to all weeks when sales orders should be automatically created according to the defined interval.</p>
+<p>In the screen shot above, a sales order will be created on <em>Monday</em>, <em>Wednesday</em>, and <em>Friday</em> in those weeks determined by the interval setting.</p>
+<h3 id="daily">Daily</h3>
+<p>The <em>Daily</em> time type defines that sales orders should be created in a rhythm measured in days. In this case as well, only the days in &quot;Week 1&quot; under the</p>
+<p><span class="smallcaps">days of week</span></p>
+<p>tab are material. It is not necessary or possible to enter a date formula in the <em>Interval</em> field, which is faded to indicate so.</p>
+<p><img src="../../images/image8.png" alt=""></p>
+<p>When using the <em>Daily</em> time type, sales orders will automatically be created on each day checked under the</p>
+<p><span class="smallcaps">days of
+week</span></p>
+<p>tab (though if no days are checked, then no sales orders will be generated).</p>
+<p><strong><u>Note:</u></strong></p>
+<p><strong>When the same days of the week are checked, then the Daily time type and the Relative (weeks) time type with an interval of 1W will lead to the same results.</strong></p>
+<h3 id="absolute">Absolute</h3>
+<p>When using the <em>Absolute</em> time type, the date formula entered into the <em>Interval</em> field is the only thing that matters to determine the rhythm. Users can enter intervals such as 3D (= 3 days) or 2M (= 2 months). The next cycle date will always be calculated in absolute terms based on the previous one. It is not necessary or possible to check any of the boxes under the</p>
+<p><span class="smallcaps">days of week</span></p>
+<p>tab in this case.</p>
+<p><img src="../../images/image9.png" alt=""></p>
+<p><strong><u>Note:</u></strong></p>
+<p><strong>The difference between the <em>Absolute</em> time type with an interval of 1M and the <em>Relative (months)</em> time type with an interval of 1M is as follows:</strong></p>
+<p>When using the <em>Absolute</em> time type, the week date of each task shifts from month to month. In addition, only one task day can be defined by this rhythm, not several fixed weekdays.</p>
+<p>The <em>Include Saturdays</em> and <em>Include Sundays</em> fields influence how the system should behave when the task date would fall on a Saturday or Sunday.</p>
+<p>When using the <em>Absolute</em> time type, the calculated task date could fall on a Saturday or Sunday, though enwis) can automatically push it back.</p>
+<p>For example, if the <em>Include Saturdays</em> and/or <em>Include Sundays</em> boxes are not checked, when using the <em>Absolute</em> time type, if the task date were to fall on a Saturday or Sunday, enwis) would automatically defer the task until the next possible date.</p>
+<p><strong><u>Example:</u></strong></p>
+<p><strong>The time type is set to Absolute and the <em>Include Saturdays</em> field is not checked. If the calculated task date were to fall on a Saturday, the system would automatically defer the task until the following Sunday or, if the <em>Include Sundays</em> box is also not checked, to the following Monday.</strong></p>
+<p><strong><u>Note:</u></strong></p>
+<p><strong>All deferred task dates are automatically flagged by the system so that dispatchers can quickly identify this and review or edit it.</strong></p>
+<h3 id="positive-calendar">Positive Calendar</h3>
+<p>The Positive Calendar time type is an extremely interesting alternative where the system regularly recalculates the interval. A calendar can be saved in the <em>Calendar Code</em> field for each cycle. When the Positive Calendar time type is selected, sales orders will be create for all dates saved in the positive calendar, and only on these dates. The positive calendar can be set up manually.</p>
+<p><img src="../../images/image10.png" alt=""></p>
+<p>Instead of creating documents, automatic document creation can create positive calendars completely automatically.</p>
+<p>One possible procedure would be as follows:</p>
+<p>At the start of the year, a positive calendar of task dates for the entire year is automatically created. This positive calendar can then be reviewed and manually edited if necessary. This calendar now serves to inform customers of all task dates in the coming year, for starters. It also determines the cycle. After all, individual sales orders for the entire year have already been set up.</p>
+<p>This cycle, like all other cycles, can now automatically create sales orders for a period limited by the users, whereby it successively works through all of the dates saved in the positive calendar (instead of calculating new ones each time). A sales order is created on each date saved in the positive calendar assuming it falls within the current cycle.</p>
+<p><strong><u>Sidebar: Negative Calendars</u></strong></p>
+<p><strong>If a calendar is set up for any time type other than Positive Calendar, the system will interpret it as a negative calendar. In other words, if users set up a calendar but select a <em>Time Type</em> field setting that is not Positive Calendar, then the system will automatically treat these calendar dates as a negative calendar.</strong></p>
+<p><strong>Such a negative calendar might, for example, include public holidays and the times when the customer's company is closed and no task should occur.</strong></p>
+<p>Automatic deferment can also be defined by saving calendar codes.</p>
+<p>A calendar code in the Positive Calendar time type contains all information regarding when sales orders should be created. After the system calculates a task date (when using the time type Relative (weekly), Relative (monthly), Daily, or Absolute), it checks whether this date might be blocked by a negative calendar entry. If so, then the task date is automatically deferred until the next possible date and flagged accordingly. In this case, the settings in the <em>Include Saturdays</em> and <em>Include Sundays</em> fields are also relevant for the relative time types. When these boxes are checked, the next possible task date might fall on a Saturday or Sunday, otherwise it cannot.</p>
+<p>When the <em>Defer if Bank Holiday in Week</em> box is checked, the system will check whether the current day is a bank holiday (i.e. present in the negative calendar) and whether there was another bank holiday earlier in the same week. If so, the task date will be deferred by another day. However, this function only works with the Relative (weeks) time type. When any of the other time types is selected, the <em>Defer if Bank Holiday in Week</em> field is faded.</p>
+<p><img src="../../images/image11.png" alt=""></p>
+<h3 id="on-demand">On Demand</h3>
+<p>The On Demand time type will not trigger any automatic calculation. The only purpose of using a cycle with this time type is to flag contracts for later sales-related recording.</p>
+<p><img src="../../images/image12.png" alt=""></p>
+<h3 id="individual-calculation-functions">Individual Calculation Functions</h3>
+<p>The <em>Calc. Function</em> field is the last one relevant to date calculation. An entire user-defined function can be saved here to be used for calculating the next task date. It can be a completely individual code unit with all programming options offered by Dynamics NAV.</p>
+<p>This procedure is not recommended, however. The logic already developed into the system should be enough to cover all business situations.</p>
+<h2 id="creating-document-types">Creating Document Types</h2>
+<p>The <em>Create Document Type</em> field defines which type of document enwis) should create for which cycle method when using cyclical document creation.</p>
+<p>Normally, contracts are the basis for creating sales orders, but they are not the only option.</p>
+<p><img src="../../images/image13.png" alt=""></p>
+<p>The following options are available for the <em>Create Document Type</em> field:</p>
+<ul>
+<li><p>Sales Orders</p>
+</li>
+<li><p>Completed Orders</p>
+</li>
+<li><p>Invoices</p>
+</li>
+<li><p>Credit Notes</p>
+</li>
+<li><p>Contract</p>
+</li>
+<li><p>Journals</p>
+</li>
+<li><p>Ledger Entries</p>
+</li>
+</ul>
+<p>A sales order, a completed order, an unposted invoice, an unposted credit note, or a new contract can be created automatically from a contract or a contract line.</p>
+<p>The automatic creation of contracts can be used in situations where contracts with a customer are extended or renegotiated each month or each year and each time a new contract number should be set up. This way, it is not necessary for users to set these contracts up manually.</p>
+<p>Documents created cyclically can be generated from both contracts and parts of contracts, namely, the contract lines and contract entries. When a cycle code is saved to a position, this can either generate a ledger line or directly create a posted ledger entry.</p>
+<p><strong><u>Example:</u></strong></p>
+<p><strong>When a container should be dropped off or picked up according to a specific cycle, but this drop off or pick up should not be invoiced, or should be managed as an independent sales order and only the container rental should be invoiced by its laid-up time, it sufficient to fill a ledger entry from the equipment entry in the contract and to then post it, or to post the equipment entry (which the container rental should later be calculated from based on the laid-up time) directly. These procedures are not set up in the system as sales orders, however, and therefore cannot be dispatched.</strong></p>
+<p>The <em>From Contract Lines</em> field defines how the system should act when a sales order is not to be created from an existing contract but rather from a contract line.</p>
+<p><img src="../../images/image14.png" alt=""></p>
+<p>There is an option for copying the contract header to the order header (<em>Option</em> = <em>Transfer Contract Header)</em> or for generating a new order header from the contract line (<em>Option = New Contract Header</em>). The <em>New Contract Header</em> option is practical when several different customers and/or vendors and customer and/or vendor task sites are summarized within one contract.</p>
+<h2 id="first-week-of-month">First Week of Month</h2>
+<p>The <em>First Week of Month</em> field defines which week will be considered the first in the month: the first week in which Monday falls within the current month (Option = <em>Complete</em>) or the first week in which any day falls within the current month (Option = <em>Part</em>) When users choose the <em>Part</em> option, the first week of the current month might begin in the previous month.</p>
+<p>When the <em>Cumulative</em> option is chosen, cyclical document creation occurs on the absolute first weekday in the current month.</p>
+<p><strong><u>Example:</u></strong></p>
+<p><strong>April 1, 2013, falls on a Wednesday.</strong></p>
+<p><strong>When users choose the <em>Part</em> option, the system counts March 30 and 31, 2013, to the week of April 1.</strong></p>
+<p><strong>When the <em>Complete</em> option is chosen, the week beginning on Monday, April 6, 2013 is counted as the first week of April.</strong></p>
+<p><strong>With the <em>Cumulative</em> option, documents are created on the absolute first weekday in the current month.</strong></p>
+<p><img src="../../images/image15.png" alt=""><img src="../../images/image16.png" alt=""></p>
+<p>If the <em>Tuesday Week 1</em> box is checked under the <em>Weekdays</em> tab on the cycle card and the <em>First Week of Month</em> field is set to Kumulativ, then documents will first be created on Tuesday, April 7, 2013.</p>
+<p><strong><u>Note:</u></strong></p>
+<p><strong>When using the Relative (months) time type, different days of the week can be set under the <em>Weekdays</em> tab for each week in the month when sales orders should be automatically created.</strong></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Einfach. Mehr. Wert.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

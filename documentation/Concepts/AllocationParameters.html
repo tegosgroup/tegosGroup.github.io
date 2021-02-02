@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Allocation Parameters | tegos Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Allocation Parameters | tegos Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    <meta name="robots" content="noindex">
+    
+    <link rel="shortcut icon" href="../../images/logos/tegos_favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/logos/logo-tegos-white.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="AllocationParameters">
+<h1 id="allocation-parameters">Allocation Parameters</h1>
+
+<h2 id="allocation-parameters-1">Allocation Parameters</h2>
+<p>When creating concept allocation lines, additional parameters can be entered that will also be considered when the concept allocation is executed.</p>
+<p><img src="../../images/image1.png" alt=""></p>
+<p>When the Transfer Dimensions box is checked, the dimensions (e.g. cost center, cost object) will be copied over from the original line to the allocation line.</p>
+<p>Similar functions are available with the <em>Transfer Quality Code</em>, <em>Transfer Waste</em>, and <em>Transfer Equipment</em> fields, which will signal the system to copy over these dimensions from the original line. This transfer can be critical, because these fields might pertain to the invoices. Whether these parameters will be transferred normally depends on whether these fields are used for informational purposes or for invoicing purposes.</p>
+<p>One particularly important feature is the option to enter a process type in the allocation line that will then be copied over to a field on the order line with the same name. For one, this allows users to flag order lines as</p>
+<p><u>not</u></p>
+<p>relevant to invoicing, so that they will instead be posted to invoice ledger entries to process ledger entries. For another, information can be generated for external accounting and error allocation.</p>
+<p>The <em>Set Inv. Qty. by Qty. to Disp.</em> field defines the default setting for the <em>Quantity</em> field in the allocation line.</p>
+<p>This function is available for the content types waste material and equipment. This makes it possible, for example, to allocate a transport service billed to the customer as a lump sum to a fractional service, which will adjust the invoice quantity (<em>Quantity</em> field) in the created allocation line to equal the fractional quantity (<em>Qty. to Dispose</em> field).</p>
+<p>In this example, the following lines must be create:</p>
+<ul>
+<li><p>Concept allocation line</p>
+</li>
+<li><p>Line with the concept type &quot;Service&quot;, an allocation type and allocation agent number, and perhaps an allocation unit of measure code, if it differs from the original line</p>
+</li>
+<li><p>Line with the concept type &quot;Waste Material&quot;, an allocation type, allocation agent number, and invoice quantity</p>
+</li>
+</ul>
+<p>The same value must be set in the <em>Quantity %</em> field in the two lines to be allocated to. The system will set the process type of the created allocation line to <empty>, so that the line will be flagged as <em>To Invoice</em> = YES and it can be invoiced.<p>
+<p><img src="../../images/image2.png" alt=""></p>
+</empty></article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Einfach. Mehr. Wert.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

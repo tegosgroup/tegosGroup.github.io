@@ -1,0 +1,194 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Concept Allocation &#65533; Balance Accounts | tegos Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Concept Allocation &#65533; Balance Accounts | tegos Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    <meta name="robots" content="noindex">
+    
+    <link rel="shortcut icon" href="../../images/logos/tegos_favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/logos/logo-tegos-white.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ConceptAllocationBalanceAccounts">
+<h1 id="concept-allocation--balance-accounts">Concept Allocation – Balance Accounts</h1>
+
+<h2 id="general-information">General Information</h2>
+<p>When creating order lines through concept allocation, the balance account fields for the order lines to be created can automatically be filed with the information from the original lines.</p>
+<p>Whether and how the balance accounts should be created can and must be set up in the concept allocation</p>
+<p><u>for each</u></p>
+<p>concept allocation line using the <em>Create Balance Accounts from</em> field.</p>
+<p><img src="../../images/image1.png" alt=""></p>
+<p>The following three options are available:</p>
+<ul>
+<li><empty>
+</empty></li>
+<li><p>Postings</p>
+</li>
+<li><p>Balance Accounts</p>
+</li>
+</ul>
+<p>When the &quot;Empty&quot; option is selected, the balance account fields in the order lines to be created from the concept allocation are left unfilled. Only the Bal. Account Posting Type field will be preallocated following default logic when a new order line is created.</p>
+<p>When the &quot;Postings&quot; option is selected, the balance account fields in the order line to be created are filled with the information from the posting fields in the original lines.</p>
+<table>
+<thead>
+<tr>
+<th><strong>Line Created through Allocation</strong></th>
+<th><strong>Original Line</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bal. Account Posting Type</td>
+<td>= Posting Type</td>
+</tr>
+<tr>
+<td>Bal. Acc. Post-with No.</td>
+<td>= Post-with No.</td>
+</tr>
+<tr>
+<td>Bal. Acc. Task-at Code</td>
+<td>= Task-at Code</td>
+</tr>
+<tr>
+<td>Bal. Acc. Invoice-with No.</td>
+<td>= Invoice-with No.</td>
+</tr>
+</tbody>
+</table>
+<p>If the balance account option is selected, then the balance account fields in the order line to be created will be filled with the information from the balance account fields in the original line.</p>
+<table>
+<thead>
+<tr>
+<th><strong>Line Created through Allocation</strong></th>
+<th><strong>Original Line</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bal. Account Posting Type</td>
+<td>= Bal. Account Posting Type</td>
+</tr>
+<tr>
+<td>Bal. Acc. Post-with No.</td>
+<td>= Bal. Acc. Post-with No.</td>
+</tr>
+<tr>
+<td>Bal. Acc. Task-at Code</td>
+<td>Bal. Acc. Task-at Code</td>
+</tr>
+<tr>
+<td>Bal. Acc. Invoice-with No.</td>
+<td>= Bal. Acc. Invoice-with No.</td>
+</tr>
+</tbody>
+</table>
+<p>If users wish to prevent that order lines with a Bal. Acc. Post-with No. do not again automatically create new order lines during balance account management, then they should check the <em>Set Bal. Acc. Exploded to Yes</em> box in the corresponding concept allocation line.</p>
+<p><img src="../../images/image2.png" alt=""></p>
+<p>This will result in the <em>Bal. Account Line Exploded</em> field in the newly created <strong><em>order line</em></strong> has the value &quot;</p>
+<p><span class="smallcaps">Yes</span></p>
+<p>&quot;, so that it will not generate any more balance account lines.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Einfach. Mehr. Wert.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

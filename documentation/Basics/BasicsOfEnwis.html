@@ -1,0 +1,262 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Basics of enwis | tegos Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Basics of enwis | tegos Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    <meta name="robots" content="noindex">
+    
+    <link rel="shortcut icon" href="../../images/logos/tegos_favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/logos/logo-tegos-white.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="BasicsOfEnwis">
+<h1 id="basics-of-enwis">Basics of enwis)</h1>
+
+<h2 id="overview">Overview</h2>
+<p>In enwis), the difference between master data and transaction data is critical. Master data is necessary to record relatively constant information, such as customers, services, etc.</p>
+<p>Where possible, this data should only be entered into the system once and stored as master data. The more information users can enter into the master data, the less they need to enter during their day-to-day operations and the more automated and effectively the data can be handled.</p>
+<p>Master data is recorded in card format.</p>
+<p><img src="../../images/image1.png" alt="Wor6729"></p>
+<p>Transaction data includes all documents required to depict the operating business (offers, contracts, orders, etc.). Master data constitutes the basis for depicting the operating business.</p>
+<p>For example, only three pieces of information normally need to be entered to set up an order:</p>
+<ul>
+<li><p>Customer no.</p>
+</li>
+<li><p>Service no.</p>
+</li>
+<li><p>Requested quantity</p>
+</li>
+</ul>
+<p>All other information important to processing this order, such as</p>
+<ul>
+<li><p>Customer address</p>
+</li>
+<li><p>Responsible contact person</p>
+</li>
+<li><p>Sales agent involved</p>
+</li>
+<li><p>Income and expense accounts</p>
+</li>
+</ul>
+<p><img src="../../images/image2.png" alt="Wor373E"></p>
+<p>will either be maintained in the master data or automatically determined by enwis) (such as the posting matrix).</p>
+<p>enwis) provides two forms for depicting the operating business: the contract and the sales order. The contract is used to document a longer term agreement with a customer or supplier. In contrast, the sales order records a single service rendered.</p>
+<p>The contract can be viewed as a kind of template for sales orders, because a sales order can be created out of a contract with the &quot;touch of a button&quot;. For this reason, contracts and sales orders basically have a parallel structure and the main difference between the two is the length of time they remain in the system.</p>
+<p>Invoices and credit notes can only be created out of a sales order. Therefore, it is vital to create sales orders to be able to account for billable services with a customer or supplier.</p>
+<p><strong><u>Note:</u></strong></p>
+<p><strong>Invoices and credit notes can also be created without a previous sales order, but the resulting financial accounting entries have no reference to the service information.</strong></p>
+<p>In principle, users should always set up contracts, even if it is assumed that there will only be one business case. After being posted, the sales orders are deleted or archived. In contrast, contracts stay on file permanently to trace the business relations with customers and suppliers.</p>
+<p>Contracts and sales orders basically consist of a header with any number of lines below it. The lines represent the billable business cases.</p>
+<p>In turn, these lines are assigned of any number of line entries. The most important entries:</p>
+<ul>
+<li><p>Waste Entry net change in waste material and recyclable material</p>
+</li>
+<li><p>Equipment Entry net change in receptacles and containers</p>
+</li>
+<li><p>Transport Entry record of vehicle hours, et al.</p>
+</li>
+<li><p>Personnel Entry record of person hours, et al.</p>
+</li>
+</ul>
+<p>The line entries have no effect on the invoice calculations. The information in these entries is recorded for the purposes of stock accounting and statistics. The Equipment Entries are the exception to this, because they form the basis for billing for containers.</p>
+<p>The separation of the billable order lines and the line entries makes it possible to also separate the invoice quantities from the so-called operating quantities. Commercially relevant information and information required by waste legislation can be recorded and posted in the same sales order.</p>
+<p>This allows users to record and compare costs and revenues in the same sales order and thereby determine the sales order's contribution margin.</p>
+<p>One special feature of enwis) is the option to depict customer-specific and supplier-specific business cases in one sales order. Any number of business cases with any number of customers and vendors, sites and order addresses can be combined into one sales order. Because of this special feature, enwis) allows users to generate line-dependent invoices (combine invoices). Combine invoices break down the recorded sales orders into billable components and group these sales order lines into individual customers and vendors.</p>
+<p>They receive an invoice summarizing all sales order entries that apply to them, even though these may spread across entirely different sales orders.</p>
+<p>Customers receive an invoice custom-designed to meet their expectations and summarizing all of the sales order entries that apply to them, though they might be spread across entirely different sales orders.</p>
+<h2 id="data-management-and-data-flow">Data Management and Data Flow</h2>
+<p>The central data storage elements in enwis) are the documents. enwis) distinguishes between the following document types:</p>
+<ul>
+<li><p>Sales Quotes</p>
+</li>
+<li><p>Contracts</p>
+</li>
+<li><p>Sales Orders</p>
+</li>
+<li><p>Completed Orders</p>
+</li>
+<li><p>Unposted Invoices</p>
+</li>
+<li><p>Unposted Credit Notes</p>
+</li>
+</ul>
+<p>The unposted documents are recorded in the so-called waste management line. The waste management line includes all information relevant to the sales order:</p>
+<ul>
+<li><p>Service</p>
+</li>
+<li><p>Waste Material</p>
+</li>
+<li><p>Equipment</p>
+</li>
+<li><p>Service Prices</p>
+</li>
+<li><p>Quantity</p>
+</li>
+<li><p>Tour</p>
+</li>
+<li><p>Vehicle</p>
+</li>
+<li><p>Employee</p>
+</li>
+<li><p>Waste Transfer Note</p>
+</li>
+<li><p>Weighbridge Ticket</p>
+</li>
+</ul>
+<p>However, this information might not necessarily be in the waste management line; it might also appear in the line entries:</p>
+<ul>
+<li><p>Waste Material Waste Entry</p>
+</li>
+<li><p>Vehicle Transport Entry</p>
+</li>
+<li><p>Employee Personnel Entry</p>
+</li>
+<li><p>Equipment Equipment Entry</p>
+</li>
+</ul>
+<p>Each sales order line can be assigned any number of line entries. The information is not necessarily written from the lines into the corresponding entries. The system does not transfer information from the entries into the lines.</p>
+<p>The line entries are normally posted upon order release. The sales order becomes a completed order. The completed order is still permanently associated with the posted entries. The transition from a line entry into an entry means that this information can no longer be deleted.</p>
+<p>The waste management lines and their associated entries are not separated until an unposted invoice or credit note is created.</p>
+<p>The combine invoice process breaks the sales order down into its components and combines these into invoices and credit notes.</p>
+<p>Lines from entirely different sales orders can be brought together to make up one invoice or credit note and the lines of one order can be distributed to different invoices and credit notes.</p>
+<p>The sales order lines are linked together with one order job number. The order job number is automatically allotted when the sales order is set up or it can be manually assigned. The order job number allows users to trace the various invoice lines and entries emerging from one sales order.</p>
+<p>When an invoice or credit note is posted, Dynamics NAV creates a default sales invoice and records the information important to the waste management industry in so-called invoice ledger entries.</p>
+<p><strong><u>Note:</u></strong></p>
+<p><strong>This is why enwis) works with its own cancelation function. When a value is canceled, enwis) does not go back to the posted document but to the archived, unposted document. Unlike the posted sales invoice, the unposted document still contains all of the information.</strong></p>
+<p>It is strongly recommended that the enwis) Waste Management Setup be set so that unposted invoices and credit memos are always archived.</p>
+<p>To work with enwis), it is necessary to have an understanding of documents, posting routines, and cancelation functions:</p>
+<ul>
+<li><p>Contracts document longer term agreements with customers and suppliers</p>
+</li>
+<li><p>Contracts are templates for recurring sales orders</p>
+</li>
+<li><p>Sales orders depict a single procedure All sales quotes, contracts, and sales orders can be created with the touch of a button</p>
+</li>
+<li><p>All billable procedures must be recorded in the form of sales orders</p>
+</li>
+<li><p>Releasing a sales order creates a completed order that can be billed using combine invoicing</p>
+</li>
+<li><p>Sales orders can be archived when released</p>
+</li>
+<li><p>The entry information is normally posted as ledger entries when orders are released (e.g. waste ledger entries that monitor inward and outward stock movements)</p>
+</li>
+<li><p>Order release does not mean items are posted to the G/L Account in financial accounting</p>
+</li>
+<li><p>Completed orders can be seamlessly undone in order to add or correct information, unless that information has already been converted into ledger entries The latter can be undone using the appropriate cancelation function.</p>
+</li>
+<li><p>Combine Invoicing combines completed orders into unposted invoices and credit notes</p>
+</li>
+<li><p>Unposted invoices and credit notes can also be seamlessly deleted in order to correct the underlying completed order or sales order.</p>
+</li>
+<li><p>Unposted invoices should not be posted until they have been reviewed.</p>
+</li>
+<li><p>When invoices are posted, the costs and revenues are posted to the G/L Account in financial accounting</p>
+</li>
+<li><p>There is a setting in Invoice Setup that determines whether completed orders should be removed from the system after being completely invoiced and posted or not</p>
+</li>
+</ul>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Einfach. Mehr. Wert.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

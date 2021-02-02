@@ -1,0 +1,145 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Int.Ext. Catalog Relations | tegos Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Int.Ext. Catalog Relations | tegos Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    <meta name="robots" content="noindex">
+    
+    <link rel="shortcut icon" href="../../images/logos/tegos_favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/logos/logo-tegos-white.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="IntExtCatalogRelations">
+<h1 id="waste-material-ewc-references">Waste material-EWC references</h1>
+
+<p>In enwis) links between a waste number and a number of EWC numbers can be stored. This can be done by both the Waste card and in the EWC card.<br>
+The types of waste card can be assigned to the button</p>
+<p><em><span class="smallcaps">Int./Ext. Catalog Relations</span></em></p>
+<p>of waste as many numbers.</p>
+<h1 id="general">General</h1>
+<p>In enwis) it is possible to consign references between a waste material and several EWC numbers. This can occur from the <strong>waste material card</strong> or also from the <strong>EWC card</strong>.</p>
+<p>Any number of EWC numbers can be assigned to the waste material in the waste material card via the button</p>
+<p><em><span class="smallcaps">Int./Ext.
+Catalog Relations</span></em></p>
+<p>.</p>
+<p><img src="../../images/image1.png" alt=""></p>
+<h2 id="set-up">Set up</h2>
+<p>The extent to which the references consigned have an influence on operational business is stipulated via the option field <em>Consider Int./Ext. Relations</em> in the <strong>waste management set up</strong> on the Stock register.</p>
+<p><img src="../../images/image2.png" alt=""></p>
+<p>The following options are available and effectively represent a hierarchy which becomes stricter:</p>
+<p>Never        | The references can be consigned in the master data. In operation</p>
+<p>(e.g. in the field <em>EWC No.</em> on the order line) the references are however neither displayed via the Lookup function nor are they controlled.</p>
+<p>The Lookup of the field <em>EWC No.</em> branches out onto the whole <strong>EWC table</strong>.
+------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+On Lookup    | On selection of an EWC number the references consigned in the master data</p>
+<p>are not controlled in the operational document. For Lookup e.g. in the field <em>EWC No.</em> on the order line these references are displayed instead of the complete <strong>EWC table</strong> in case references are consigned for the current waste material. If no references are consigned for the current waste material, then the complete EWC table is displayed as Lookup.<br>
+This is the recommended setting for work with waste material EWC references.
+If Available | For Lookup the references consigned in the master data e.g. in the field</p>
+<p><em>EWC No.</em> are displayed on the order line; in addition the references are controlled on input of an EWC number. This only applies when a reference is also consigned for the selected waste material. This means: If EWC references are consigned for a waste material then only these EWC numbers can be selected for the waste material. It doesn't matter whether work takes place via Lookup or direct keyboard input; the selection is limited to the consigned EWC references. If no EWC reference is consigned for the waste material then EWC numbers can be selected from the complete <strong>EWC table.</strong>
+Always       | In principle only consigned waste material EWC references are taken into consideration for both Lookup and for the input. If no EWC reference is consigned for a waste material, no EWC number can be input for this waste material either.</p>
+<p>The functions described apply for operational areas, i.e. for documents and weighbridge tickets, but not for journals. In journals waste materials can in principle be combined with all EWC numbers. This is therefore required in order to be able to cancel any incorrect postings on the basis of incorrect master data and to re-enter the details.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Einfach. Mehr. Wert.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

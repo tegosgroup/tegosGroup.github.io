@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Multiple Weighing | tegos Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Multiple Weighing | tegos Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    <meta name="robots" content="noindex">
+    
+    <link rel="shortcut icon" href="../../images/logos/tegos_favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/logos/logo-tegos-white.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="MultipleWeighing">
+<h1 id="multiple-weighing">Multiple Weighing</h1>
+
+<h2 id="general-information">General Information</h2>
+<p>If a weighbridge ticket is generated on a dispatched contract line, instead of assigning it to a new sales order, it can be assigned to any sales order with the same order date that is also assigned to the contract line.</p>
+<h2 id="conditions">Conditions</h2>
+<p>In order to use this function, the contract in question must be labeled accordingly in the <em>Multiple Weighing per Line</em> field under the</p>
+<p><span class="smallcaps">Conditions</span></p>
+<p>register.</p>
+<p><img src="../../images/image1.png" alt=""></p>
+<p>The default value for new contracts can also be set in the <em>Multiple Weighing per Line</em> field under the</p>
+<p><span class="smallcaps">Contract</span></p>
+<p>register in <strong><em>Waste Management Setup</em></strong>. All contracts will then automatically have the default setting from waste management setup.</p>
+<p><img src="../../images/image2.png" alt=""></p>
+<h2 id="options">Options</h2>
+<p>The following multiple weighing options are available:</p>
+<ul>
+<li><p>On Request</p>
+</li>
+<li><p>Automatic</p>
+</li>
+<li><p>Never</p>
+</li>
+</ul>
+<p>When the field is set to &quot;On Request&quot;, an acknowledgement message will appear when a new weighbridge ticket could be assigned to an existing sales order line.</p>
+<p>When set to &quot;Automatic&quot;, later weighbridge tickets are assigned automatically, without the need for confirmation.</p>
+<p>Multiple weighing is not an option when the field is set to &quot;Never&quot;.</p>
+<h2 id="weighing">Weighing</h2>
+<p>When multiple weighing has been activated in the contract or in Waste Management Setup, the program behaves as usual when creating the first weighbridge ticket. Since there is not yet an order line for this task date and contract line, a new sales order is generate and the weighbridge ticket number is assigned to the order line.</p>
+<p><img src="../../images/image3.png" alt=""></p>
+<p><img src="../../images/image4.png" alt=""></p>
+<p>For each additional weighing, i.e. when a new weighbridge ticket can be assigned to an existing order line, the waste entry will be copied and then assigned to the new weighbridge ticket number.</p>
+<p><img src="../../images/image5.png" alt=""></p>
+<p>At the same time, the weighbridge ticket number will be removed from the order line, because there is now no longer one but rather multiple weighbridge tickets assigned to that order line.</p>
+<p><img src="../../images/image6.png" alt=""></p>
+<p>The weighbridge tickets are detailed in the individual waste entries of the order line.</p>
+<p><img src="../../images/image7.png" alt=""></p>
+<p>The <em>Qty. to Dispose</em> field in the order line will be added into the total weight of all waste entries in the lines.</p>
+<p><img src="../../images/image8.png" alt=""></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Einfach. Mehr. Wert.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,332 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Setting up an invoice method | tegos Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Setting up an invoice method | tegos Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    <meta name="robots" content="noindex">
+    
+    <link rel="shortcut icon" href="../../images/logos/tegos_favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/logos/logo-tegos-white.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="SettingUpAnInvoiceMethod">
+<h1 id="setting-up-an-invoice-method">Setting up an invoice method</h1>
+
+<h2 id="general">General</h2>
+<p>Invoice methods are set up and maintained in the menu Equipment via the menu path</p>
+<p><em><span class="smallcaps">enwis)
+Services/Equipment/administration/equipment rentals/rental
+invoice/invoice method</span></em></p>
+<p>among other places. As an example an invoice method TAG is set up, meaning that the invoice should occur by the day. The following fields can or must be filled in.</p>
+<h2 id="general-register">General register</h2>
+<p>The most important fields on the register</p>
+<p><span class="smallcaps">general</span></p>
+<p>individually:</p>
+<p><img src="../../images/image1.png" alt=""></p>
+<ul>
+<li><p><em>Code</em>: Input of a self-explanatory name or a designation for an invoice method (example: DAILY)</p>
+</li>
+<li><p>Description: Inputs of a description for the invoice method (example: daily rental, 3 days rent free)</p>
+</li>
+<li><p><em>Free of Charge Period (once):</em> Input of a unique invoice free period in days</p>
+</li>
+</ul>
+<p><strong><u>Example:</u></strong></p>
+<p><strong>If the business partner is not invoiced for the first three days of the first rental period for example, a 3 can be entered in this field. If an equipment item is supplied on 01.01 and collected on 10.01, this would result in 10 days, three of which are uniquely not to be calculated. enwis) does in this case thus only calculate 7 days.</strong></p>
+<ul>
+<li><em>Free of Charge Period (always):</em> Input of a constant invoice free period in days</li>
+</ul>
+<p><img src="../../images/image2.png" alt=""></p>
+<p><strong><u>Example:</u></strong></p>
+<p><strong>If the first three days of each rental period are not invoiced to the business partner, the field <em>Free of Charge Period (always)</em> can have a 3 inserted.</strong></p>
+<p><strong>An equipment item is provided on 01.01 and collected on 10.02. For an invoice interval (see below) of a month there would be two invoice periods, namely from 01.01 to 31.01 and from 01.02 to 10.02.</strong></p>
+<p><strong>enwis) would in this case only calculate 28 days for the first period rather than 28 and only 7 days for the second period rather than 10 days.</strong></p>
+<ul>
+<li><p><em>Invoice Submission Day:</em> Definition of whether the invoice day is to be invoiced. Values between 0 and 2 are possible.</p>
+</li>
+<li><p><em>Invoice Pick-up Day</em>: Definition of whether the collection day is to be invoiced. Values between 0 and 2 are possible.</p>
+</li>
+<li><p><em>Invoice Zero Quantities</em> (invoice zero amounts): Definition of whether an invoice line is to be created by the rental invoice if the rental time period is actually 0. A tick should always be placed in the field <em>Invoice Zero Quantities</em> as the user can on the one hand recognise that enwis) has calculated a rent but that this has a value of 0 due to the invoice free period for example. On the other it is recorded with regard to the business partner that a rental payment would be due but that this is not calculated.</p>
+</li>
+</ul>
+<p><strong><u>Example:</u></strong></p>
+<p><strong>An equipment item is provided on 01.01 and collected on 03.01. In the fields <em>Free of Charge Period (once)</em> or <em>Free of Charge Period (always)</em> 3 days are entered. A rental time period of 0 days results which is also issued on the invoices.</strong></p>
+<ul>
+<li><p><em>Billable</em>: Placing a tick in this field makes the invoice method billable. It would only make sense not to place a tick at this point if there was a desire to track the equipment provided by quantity but not to generate rent.</p>
+</li>
+<li><p><em>Invoice Saturday</em>: Definition of whether Saturday is to be invoiced. Values between 0 and 2 are possible.</p>
+</li>
+<li><p><em>Invoice Sunday:</em> Definition of whether Sunday is to be invoiced. Values between 0 and 2 are possible.</p>
+</li>
+<li><p><em>Full months in days</em>: In practice container rents are frequently calculated in such a way that calculation is in principle calculated precisely to the day while a fixed number of days (usually 30) is in principle set for full months while the days of months broken up by provision or collection are added precisely by the day</p>
+</li>
+</ul>
+<p><strong><u>Example:</u></strong></p>
+<p><strong>Provision 7. January 2012, collection 14. March 2012. The daily calculation now occurs so that the exact number of days is calculated for January and March while a fixed 30 days (full month) are applied for February. As the rental days are calculated in this way, a value &gt; 0 must be consigned in the field <em>full month in days.</em> According to practical experience this is as a rule 30 but a different value could be consigned instead.</strong></p>
+<ul>
+<li><p><em>Calendar code</em>: With this it is possible to consign a completely individual calendar. It is possible to use this calendar for each individual day of the year to define whether and with which factor this day plays a role for the rental calculation. In this way it is possible to take e.g. public holidays, school holidays or company holidays of certain customers into account automatically so they are not charged or charged at a lower rate.</p>
+</li>
+<li><p><em>Consider Starting Time und Consider Finishing Time</em>: For equipment with a particularly high value which is rented or rented out by the hour rather than the day, it may be necessary to use the time of the provision and/or collection in order to enable an exact invoice.</p>
+</li>
+</ul>
+<h2 id="register-interval">Register Interval</h2>
+<p>The most important fields on the register</p>
+<p><span class="smallcaps">interval</span></p>
+<p>individually:</p>
+<p><img src="../../images/image3.png" alt=""></p>
+<ul>
+<li><p><em>Start Interval</em></p>
+<p><span class="smallcaps">:</span></p>
+<p>This field is used to determine when the first rental calculation may occur.</p>
+</li>
+</ul>
+<p><strong><u>Example:</u></strong></p>
+<p><strong>Let us assume a monthly calculation of the rental. The equipment was provided on 07.01.2013. The first rental calculation is now to follow on 31.01.2013. For this purpose it is necessary to enter the value LM for laufender Monat (running month) into this field. This makes a rental calculation to 31.01.2013 possible. If 1M is entered in this field, a calculation would only be possible on 08.02.2013.</strong></p>
+<ul>
+<li><p><em>Invoicing Interval</em></p>
+<p><span class="smallcaps">:</span></p>
+<p>This field is used to determine the time period (following the start interval) according to which a rental may next be calculated.</p>
+</li>
+</ul>
+<p><strong><u>Example:</u></strong></p>
+<p><strong>Let us again assume provision on 07.01.2013 and a start interval of LM. The invoice interval is to be 1M, meaning the rental is to be calculated once per month. The first rental calculation is possible on 31.01.2013 as already described above.</strong></p>
+<p><strong>After the rental calculation has been posted the next possible invoice date is set to 28.02.2013 on the basis of the setting 28.02.2013.</strong></p>
+<ul>
+<li><p><em>Invoice after Pick-up</em></p>
+<p><span class="smallcaps">:</span></p>
+<p>If a tick has been placed in this field, a rental can only be calculated once the equipment has been collected regardless of the settings in the fields <em>Start Interval</em> and <em>Invoice Interval.</em></p>
+</li>
+<li><p><em>Max. period inv. after pick-up</em></p>
+<p><span class="smallcaps">:</span></p>
+<p>This field is used to determine how many days or months may be invoiced continuously.</p>
+</li>
+</ul>
+<u>
+  <strong>
+  <em>Example:</em>
+</strong>
+</u>
+<p><strong>In the case described above, a first rental calculation on 31.01.2013 would be possible. If calculation of the rental on 31.01.2013 is forgotten and a rental calculation only occurs on 30.06.2013, then it depends on the setting in this field whether the rental is calculated continuously from 07.01.2013 to 30.06.2013 (would be possible for a 6M setting) or whether a separate rental calculation is created for each month (would happen for a setting 1M).</strong></p>
+<p><strong>The rental invoice for the month of January would then have to be entered completely before a rental invoice for February could be generated.</strong></p>
+<ul>
+<li><p>_Subm./Pick-up in invoice period</p>
+<p><span class="smallcaps">:</span>_</p>
+<p>The abbreviation stands for maximum invoice period invalid following collection</p>
+</li>
+</ul>
+<p><strong><u>Example:</u></strong></p>
+<p><strong>Let us use the above case as a starting point. The rental up to 31.01.2013 was calculated and already posted completely. A following calculation is possible on the basis of the invoice interval of 1M on 28.02.2013. A maximum invoice period was also set at 1M so that a rental can only be calculated up to 28.02.2013 as a maximum. Now it is possible that the equipment was collected on 04.03.2013. For our example this means that two rental calculations would occur. Namely from 01.02.2013 to 28.02.2013 and from 01.03.2013 to 04.03.2013. If a rental calculation is now initiated on 03.03, enwis) already knows that the equipment has already been collected. If the field MAX. PERIODE UNG. N. ABHOLUNG has a tick placed in it, enwis) ignores the maximum invoice period and calculates continuously up to 04.03.2013.</strong></p>
+<ul>
+<li><p>_<span class="smallcaps">invoice immediately after</span></p>
+<p>:_ Here it is possible to specify that an item of equipment can be invoiced immediately after collection (= Option <em>Pick-Up</em>) although the date of the next possible invoice has not yet been reached. With the option &quot;Part-Pick-Up&quot; it is possible to specify that an item of equipment which has been provided once can be invoiced immediately after its collection although the date of the next possible invoice has not been reached. All other quantities which have not been collected can continue to be invoiced as usual.</p>
+</li>
+<li><p>_Submission on Exchange</p>
+<p><span class="smallcaps">: </span>_</p>
+<p>This field can be used to specify the effect the exchange of an equipment item has on the invoice. The following options are possible:</p>
+</li>
+</ul>
+<!--  -->
+<ul>
+<li><p><em>Start anew</em></p>
+<p><span class="smallcaps">:</span></p>
+<p>The option has the effect that the exchange is handled exactly as in the receptacle inventory. The previous provision is ended by the exchange, a new provision is started and the customer receives two invoices.</p>
+</li>
+<li><p>_Renew with same equipment</p>
+<p><span class="smallcaps">:</span>_</p>
+<p>In this option the invoice behaves asynchronously to the inventory, meaning that the exchange is divided into a provision and a collection in order to be able to track which equipment item is actually at the customer's premises. This is however ignored in the invoice. The rental period of the exchanged equipment item is continued as if this was not exchanged. The customer receives an invoice.</p>
+</li>
+<li><p><em>renew</em>: The invoice is only extended if an equipment item is exchanged for the same item of equipment (=same equipment number). If an item of equipment is exchanged for another one (e.g. a 10 cubic metre skip for a 7 cubic metre skip) then enwis) automatically switches into the mode &quot;Replace&quot; for this process.</p>
+</li>
+<li><p><em>Keep:</em> The invoice is extended and regardless of the type of the equipment items exchanged in each case. Here the invoice is also extended if the equipment item is exchanged for a completely different one (=different equipment number).</p>
+</li>
+</ul>
+<!--  -->
+<ul>
+<li><em>Invoice immed. after exchange:</em> If this field is ticked, an immediate invoice is triggered by the exchange of an equipment item.</li>
+</ul>
+<h2 id="register-service">Register Service</h2>
+<p>The most important fields on the register</p>
+<p><span class="smallcaps">service</span></p>
+<p>individually:</p>
+<ul>
+<li><em>Service Selection</em>: In this field the options &quot;Setup, Invoice Method, Ledger Entry and Hierarchic&quot; are available. These options are explained in more detail below.</li>
+</ul>
+<!--  -->
+<ul>
+<li><p><em>Setup:</em> If this option is chosen a service must be consigned centrally in the</p>
+<p><em><span class="smallcaps">Invoice Setup</span></em></p>
+<p>on the register</p>
+<p><span class="smallcaps">Rental Invoice</span></p>
+<p>in the field <em>Equipment Rental Serices</em>. This consigned service is then used in the creation of the rental invoice line as a rental service. Such a setting does as a rule only make sense if rents are always and exclusively calculated over a consistent period (day, month etc.).</p>
+</li>
+</ul>
+<p><img src="../../images/image4.png" alt=""></p>
+<ul>
+<li><p><em>Invoice method</em></p>
+<p><span class="smallcaps">:</span></p>
+<p>If this option is selected, a service can be consigned directly in the invoice method. The fields <em>Sales Service No.</em> and <em>Purchase Service No.</em> serve this purpose_._</p>
+</li>
+<li><p><em>Ledger Entry</em>: If this option is chosen then the service from the equipment ledger entries is used in the creation of the rental invoice line. If a provision is created via an order rather than an equipment journal, the service of the order line behind which the equipment ledger entry is hidden is also written into the equipment ledger entry.</p>
+</li>
+<li><p><em>Hierarchic:</em> If this option is selected then enwis) establishes the invoice service in line with the following sequence:</p>
+</li>
+</ul>
+<!--  -->
+<ul>
+<li><p>Equipment ledger entry</p>
+</li>
+<li><p>invoice method</p>
+</li>
+<li><p>Invoice setup</p>
+</li>
+</ul>
+<!--  -->
+<ul>
+<li><p><em>Sales Service No.</em></p>
+<p><span class="smallcaps">/</span></p>
+<p><em>Purchase Service No.</em> Here a service can be entered which is then used in the creation of the customer rental order / the customer/vendor rental invoice line. A pre-requisite for this is the selection of the option &quot;Invoice Method&quot; in the field <em>service selection</em>.</p>
+</li>
+<li><p><em>Sales Price Group</em></p>
+<p><span class="smallcaps">/</span></p>
+<p><em>Purchase Price Group</em></p>
+<p><span class="smallcaps">:</span></p>
+<p>At this point a price group code for the rental order / the rental invoice line to be created can be given. This price group code is written onto the invoice line instead of the automatically established price group code. This price group code has priority over all other price group codes established.</p>
+</li>
+<li><p><em>Calc. Function:</em> Here an individually developed code unit can be consigned which then calculates the rental according to individual, non standardised criteria. This option should in practice be avoided if possible.</p>
+</li>
+<li><p><em>Service description:</em> There are several options available in this field which are described below.</p>
+</li>
+</ul>
+<!--  -->
+<ul>
+<li><p><em>Leave unchanged</em>: The field <em>service selection</em> is used to determine the service which is brought into the rental order/ the rental invoice line. The service has a description and a description 2 where appropriate. This service description is accepted in this option exactly like in the service card.</p>
+</li>
+<li><p>Supplement: This service description is accepted for this option like in the service card but it is however added to with the description of the equipment (equipment card).</p>
+</li>
+<li><p><em>Replace:</em> The service description of the rental service card is ignored for this option and instead replaced by the description of the equipment.</p>
+</li>
+</ul>
+<!--  -->
+<ul>
+<li><p><em>Transfer Bal. Account</em></p>
+<p><span class="smallcaps">:</span></p>
+<p>If an equipment entry is applied via an order, the counter entry type, the counter entry number and the destination device code are transferred from the order line onto the equipment ledger entry. In the rental calculation this information is written back from the equipment ledger entry into the rental order / the rental invoice. That only happens if a tick is placed in this field. The same also applies for the entry of an equipment ledger entry via an equipment journal.</p>
+</li>
+<li><p><em>Transfer entry Dimensions</em></p>
+<p><span class="smallcaps">:</span></p>
+<p>If an equipment entry is applied via an order, then the global dimensions (as a rule cost center and cost object) can be transferred from the order line onto the equipment ledger entry. In the rental calculation this information is then written back from the equipment ledger entry into the rental order / the rental invoice line. That only happens if a tick is placed in this field. The same also applies for the posting of an equipment ledger entry via an equipment journal.</p>
+</li>
+<li><p><em>Transfer Quality Code:</em> If an equipment entry is applied via an order, the quality code can be transferred from the order line onto the equipment ledger entry. In the rental calculation this information is then written back from the equipment ledger entry into the rental order / the rental invoice. That only happens if a tick is placed in this field. The same also applies for the posting of an equipment ledger entry via an equipment journal.</p>
+</li>
+<li><p><em>Transfer Site</em></p>
+<p><span class="smallcaps">:</span></p>
+<p>If this field is ticked (default setting), the original site code with which the equipment value entry was entered (thus as a rule the site code of the order) is transferred into the invoice line of the rental calculation. If the field is not ticked then the rental calculation receives the site code of the user which creates it.</p>
+</li>
+<li><p><em>Incl. Exp. Content in Invoice:</em> The expected content of a provided container (e.g. paper, wood, construction waste etc.) can be added to each equipment ledger entry. If the field <em>Incl. Exp. Content in Invoice</em> is ticked, this waste type is also invoice relevant. This means: The waste material is transferred into the invoice line and can have an effect on the price fixing depending on the set up of the service price line. The waste description can also be written into the rental invoice document automatically in this context. This is dependent on the corresponding consignment in the fields waste material code and/or waste description on the register additional texts of the invoice layout as is also the case for the normal combine invoice. It must be ensured that these additional texts are only established on creation of the unposted invoice. That means: If completed orders are created within the framework of the rental invoice, these do not yet contain the waste description as additional text parts (it is however created with the subsequent combine invoice); if invoices which have not been entered are created directly within the framework of the rental invoice, these also contain the waste description immediately.</p>
+</li>
+</ul>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Einfach. Mehr. Wert.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

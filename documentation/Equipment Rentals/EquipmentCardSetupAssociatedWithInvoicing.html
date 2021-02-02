@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Equipment Card Setup Associated with Invoicing | tegos Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Equipment Card Setup Associated with Invoicing | tegos Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    <meta name="robots" content="noindex">
+    
+    <link rel="shortcut icon" href="../../images/logos/tegos_favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/logos/logo-tegos-white.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="EquipmentCardSetupAssociatedWithInvoicing">
+<h1 id="equipment-card-setup-associated-with-invoicing">Equipment Card Setup Associated with Invoicing</h1>
+
+<h2 id="setup">Setup</h2>
+<p>There are certain fields on the equipment card relevant to invoicing that have to be kept up-to-date.</p>
+<p>The <em>Equipment Grp.</em> field on the</p>
+<p><span class="smallcaps">General</span></p>
+<p>tab is involved in determining the invoice method. Each piece of equipment can be assigned here to defined equipment groups. Combined with a rental invoice group code, the rental invoice matrix is use to determine an invoice method for the current business case.</p>
+<p><img src="../../images/image1.png" alt=""></p>
+<p>Other settings can be adjusted on the</p>
+<p><span class="smallcaps">Application</span></p>
+<p>tab that will have a material, indirect influence on the rental invoice by controlling the equipment stock application and thereby initiating the invoice.</p>
+<p>Let us first take a look at the <em>Costing Method</em> field.</p>
+<p>Practical experience has shown that the &quot;Application&quot; option is the best choice here. This forces users to manually flag an application each time equipment is moved. If the application is not executed, the posting is interrupted with the error message &quot;Applies to Entry No. cannot be 0&quot;.</p>
+<p>Automated application methods (FIFO, LIFO) are possible, of course, but practical experience shows that they easily lead to uncontrolled stock application and thus to incorrect invoicing.</p>
+<p><strong><u>Example:</u></strong></p>
+<ul>
+<li><p><strong>Equipment submission (MO05) on 06/06 and on 08/06.</strong></p>
+</li>
+<li><p>**Pick-up of</p>
+<p><u>one</u></p>
+<p>container on 10/06.**</p>
+</li>
+</ul>
+<p><strong>According to the invoice method, the first two days are not billed. If the first container is picked up, there are two billable days. If the second container is picked up, there are no billable days. This little example quickly illustrates that automated application using one of the conventional costing methods does not make sense.</strong></p>
+<p><img src="../../images/image2.png" alt=""></p>
+<p>As can be seen, when using the &quot;Application&quot; application method, users are always forced to manually flag an application each time equipment is moved. This would mean, however, that the first Submission would also have to be flagged with an application, which is not logically possible. This is why there is an <em>Application Skipped On</em> field where users can indicate that certain equipment movements do not need to be flagged with an application.</p>
+<p>In practice, this is usually the Submission, because equipment is normally dropped off and then picked up.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Einfach. Mehr. Wert.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Bottom Price | tegos Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Bottom Price | tegos Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    <meta name="robots" content="noindex">
+    
+    <link rel="shortcut icon" href="../../images/logos/tegos_favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/logos/logo-tegos-white.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="BottomPrice">
+<h1 id="bottom-price">Bottom Price</h1>
+
+<h2 id="general-information">General Information</h2>
+<p>In general, prices are only defined for services. The price of a service can depend on a number of factors above and beyond the service itself. These criteria are either service-related and refer to the performance of a specific service, such as the service type, waste material, equipment, etc., in which case they are saved in the <strong><em>service price table</em></strong>, or they define the business relationship category, such as the posting type, balance account posting type, etc., and are found in the <strong><em>price group matrix</em></strong>.</p>
+<h2 id="bottom-price-1">Bottom Price</h2>
+<p>enwis) offers the option to save a service-related bottom price; if the price drops below this threshold, the system interrupts the posting and sends users the corresponding error message.</p>
+<h3 id="setup">Setup</h3>
+<p>To following settings are necessary for this option:</p>
+<ul>
+<li><p>The <em>Recalculate Price</em> field under the</p>
+<p><em><span class="smallcaps">Prices</span></em></p>
+<p>tab in <strong><em>Waste Management Setup</em></strong> must be set to &quot;Never&quot;.</p>
+</li>
+<li><p>The <em>Check Bottom Price</em> box under the</p>
+<p><em><span class="smallcaps">Prices</span></em></p>
+<p>tab in <strong><em>Waste Management Setup</em></strong> must be checked.</p>
+</li>
+</ul>
+<p><img src="../../images/image1.png" alt=""></p>
+<ul>
+<li>A bottom price must be entered into the <em>Bottom Price</em> field on the <strong><em>service price line</em></strong>.</li>
+</ul>
+<p><img src="../../images/image2.png" alt=""></p>
+<h3 id="example-of-bottom-price">Example of Bottom Price</h3>
+<p>Users create a new waste management order with the service shown in the screen shot above.</p>
+<p><img src="../../images/image3.png" alt=""></p>
+<p>enwis) copies the price saved in the service price table to the order line.</p>
+<p>Users create a second order and enter a price in the order line that is below the bottom price saved in the system.</p>
+<p><img src="../../images/image4.png" alt=""></p>
+<p>When they attempt to post the order, the following error message appears.</p>
+<p><img src="../../images/image5.png" alt=""></p>
+<p>The order line cannot be posted until a price is entered that equals or exceeds the bottom price.</p>
+<p><strong><u>Note:</u></strong></p>
+<p><strong>enwis) does not check the bottom price until posting. If users wish, program code can be written to have it checked earlier, e.g. in a release routine.</strong></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Einfach. Mehr. Wert.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>
