@@ -89,12 +89,12 @@
 <ol>
 <li>Calling directly from the menus</li>
 </ol>
-<p><em><span class="smallcaps">Waste
-producer processes</span></em></p>
+<p><em>Waste
+producer processes</em></p>
 <p>or</p>
-<p>_<span class="smallcaps">waste
-disposal processes</span></p>
-<p>._ Here there are no further data available to QuickDoc. It is opened virtually empty.</p>
+<p><em>waste
+disposal processes
+.</em> Here there are no further data available to QuickDoc. It is opened virtually empty.</p>
 <ol start="2">
 <li><p>Calling from the customer task site plan without branching into the contract lines beforehand. The data of the customer and the task site are available to QuickDoc and various QuickDoc forms for the application of various order types are available (depending on the selection of the dispatching code).</p>
 </li>
@@ -103,21 +103,18 @@ disposal processes</span></p>
 <li><p>QuickDoc can also be opened from the standard contract or order form via the link</p>
 </li>
 </ol>
-<p><em><span class="smallcaps">Aktionen create
-QuickDoc</span></em></p>
+<p><em>Aktionen create
+QuickDoc</em></p>
 <p>. QuickDoc then presents a comfortable input screen which makes it possible for the user to switch between the customary line presentation and screen view.</p>
-<p>The <em>Dispatching Codes</em> are of central importance for work with QuickDoc. Dispatching codes are set up in the _Menu enwis</p>
-<p><span class="smallcaps">Workflow</span></p>
-<p>/</p>
-<p><span class="smallcaps">administration</span></p>
-<p>/</p>
-<p><span class="smallcaps">dispatching Codes</span>_</p>
+<p>The <em>Dispatching Codes</em> are of central importance for work with QuickDoc. Dispatching codes are set up in the <em>Menu enwis Workflow
+/administration
+/dispatching Codes</em></p>
 <p>. They can be consigned in services or contracts or selected via QuickDoc. The set up of dispatching codes is described in a separate document.</p>
 <h2 id="standard-process">Standard process</h2>
 <p>The standard process for working with QuickDoc looks as follows:</p>
 <p>The order acceptance agent or the dispatcher selects the correct branch, office,... of the customer, opens the associated contract line and carries out the function</p>
-<p><em><span class="smallcaps">make order from
-complete contract</span></em></p>
+<p><em>make order from
+complete contract</em></p>
 <p>. In this way a QuickDoc form which matches the contract line is faded in, namely the one which is determined by the dispatching code consigned in the contract line.</p>
 <p>QuickDoc can however also be activated from the customer task site plan without reference to contract lines. There is the possibility of generating various types of orders in the header of the customer site task plan.</p>
 <p>If QuickDoc is called from the contract lines it specifies which dispatching code is responsible for the appearance of the QuickDoc form. If this reference is missing, this information must come from elsewhere.</p>
@@ -137,15 +134,15 @@ complete contract</span></em></p>
 <p>In order to use this function, dispatching codes are to be applied with the document type <em>contract</em>. The settings on the registers <em>Selection</em> and <em>Transfer</em> of the dispatching card are also important.</p>
 <p>There is also the possibility of disconnecting contract line and QuickDoc form from one another. This is useful if there is not yet a suitable contract line for the customer task site and an order nevertheless needs to be created.</p>
 <p>Then the order agent or dispatcher could select any contract line of the customer in the customer site plan and create a waste management order with reference to an equipment line for example and the reverse. In this case the order must be created via the function</p>
-<p><em><span class="smallcaps">service order</span></em></p>
+<p><em>service order</em></p>
 <p>. If a suitable dispatching code is present, a waste management order is generated, regardless of the defaults in the contract line.</p>
 <p>Dispatching codes which define suitable QuickDoc forms for this special application must have the document type <em>Contract</em> and have a tick in the field <em>Force Workflow</em>. Then the dispatching code forces a QuickDoc form which differs from the contract line.</p>
 <h2 id="order-application-via-quick-doc">Order application via Quick-Doc</h2>
 <h3 id="use-of-quickdoc-from-the-menu-interface">Use of QuickDoc from the menu interface</h3>
 <p>If QuickDoc is opened directly from the interface of the menu</p>
-<p><em><span class="smallcaps">Waste producer processes</span></em></p>
+<p><em>Waste producer processes</em></p>
 <p>or</p>
-<p><em><span class="smallcaps">Waste disposal processes</span></em></p>
+<p><em>Waste disposal processes</em></p>
 <p>, there is first of all now information about the customer, the contract, the service or the dispatching code available. The QuickDoc form is opened empty:</p>
 <p>It is only when a dispatching code (document type = Order) defined for this purpose is selected manually in the field <em>Dispatching Code</em> that the form is shaped in a way with which meaningful work can take place:</p>
 <p>Here the necessary data (e.g. customer, customer task site, service, equipment,...) can be input successively for the order logging:</p>
@@ -177,9 +174,8 @@ The use of QuickDoc requires particularly thorough price maintenance as the pric
 </li>
 </ul>
 <h3 id="use-of-quickdoc-from-the-order-lines-in-the-customer-task-site-plan">Use of QuickDoc from the order lines in the customer task site plan</h3>
-<p>From the contract lines of the customer task site plan QuickDoc is as a rule called up via the function</p>
-<p><span class="smallcaps">create order
-from contract.</span></p>
+<p>From the contract lines of the customer task site plan QuickDoc is as a rule called up via the function create order
+from contract.</p>
 <p>In this way a QuickDoc form suitable for the contract line is opened. The appearance of this form is determined by the dispatching code which is consigned in the contract line.</p>
 <p>In addition the following functions are also available which provide a completely different scenario:</p>
 <ul>
@@ -195,15 +191,15 @@ from contract.</span></p>
 <p>These functions are provided to generate orders although no suitable order line has been consigned in the system.</p>
 <p><strong>Example: A customer rings up and orders a container. Up until this point only waste management services have been contractually agreed with him and consigned in enwis.</strong></p>
 <p>In this case the user could use the function</p>
-<p><em><span class="smallcaps">create equipment order from contract</span></em></p>
+<p><em>create equipment order from contract</em></p>
 <p>and apply a corresponding order separate from any contract reference.</p>
 <p>For this purpose dispatching codes of the document type <em>Contract</em> are necessary, for which the field <em>Force Workflow</em> is ticked. In addition this dispatching code must show a work flow type which is suitable for the function button (e.g. create waste management order from contract work flow type waste management).</p>
 <p>This means a maximum of one dispatching code is to be set up for each function button. With this dispatching code it is possible to override the dispatching code of the contract line and to open and process a QuickDoc form which is independent of the contract line.</p>
 <p>Not all contract lines are shown in the contract lines overview however, but just those which have been marked as relevant for the processing via the customer task site plan by e.g. the internal sales service or the case worker responsible for the contract. In this way it is possible to define complementary services in the contract (e.g. maintain movement form or vendor counter postings) which can be automatically transferred into a new order via the subcontract number but which do not appear in the dispatching overview of the contract lines. This marking occurs in the contract via the field <em>Dispatching Code</em>. Only contract lines with a dispatching code are shown in the customer task site plan. Contract lines which are not to be shown in the customer task site plan must show a value <em>leer</em> in the field <em>Dispatching Code</em>. The contract lines are shown arranged by dispatching code in the customer task site plan.</p>
 <h2 id="further-functions">Further functions</h2>
 <p>Detailed information for all contract lines can be displayed via the link</p>
-<p>_<span class="smallcaps">NAVIGATE</span></p>
-<p>Line or Planning._</p>
+<p><em>NAVIGATE
+Line or Planning.</em></p>
 <p>The following information can be retrieved individually:</p>
 <ul>
 <li><p>Waste transfer notes connected with the contract line</p>
@@ -215,33 +211,32 @@ from contract.</span></p>
 <li><p>Document comments and line comments</p>
 </li>
 <li><p>via</p>
-<p><span class="smallcaps">Line</span></p>
-<p><em><span class="smallcaps">open equipment entries</span></em></p>
+<p>Line</p>
+<p><em>open equipment entries</em></p>
 <p>it is possible to show which equipment is at present at the selected customer task site.</p>
 </li>
 <li><p>via</p>
-<p>_<span class="smallcaps">line</span></p>
-<p><span class="smallcaps">open rental invoice </span>_</p>
+<p>_line</p>
+<p>open rental invoice _</p>
 <p>the equipment for the rental invoice can be branched out. From this overview it is possible to simulate a rental invoice directly and the result can be displayed on the screen or printed out.</p>
 </li>
 <li><p>via</p>
-<p><span class="smallcaps">Line</span></p>
-<p><em><span class="smallcaps">dispatching equipment</span></em></p>
+<p>Line</p>
+<p><em>dispatching equipment</em></p>
 <p>all equipment is displayed which has not yet been placed, exchanged, emptied or collected for which dispatched orders are located in the system</p>
 </li>
 <li><p>via</p>
-<p>_<span class="smallcaps">line</span></p>
-<p><span class="smallcaps">show document</span>_</p>
+<p>_line</p>
+<p>show document_</p>
 <p>it is possible to branch off directly from the contract from which the current contract line originates</p>
 </li>
 </ul>
-<p>Via the link</p>
-<p><span class="smallcaps">Navigate</span></p>
-<p><em><span class="smallcaps">capacity</span></em></p>
+<p>Via the link Navigate</p>
+<p><em>capacity</em></p>
 <p>the valid service and rental prices can be established, displayed and - if the user possesses the appropriate rights - also processed directly.</p>
 <p>The link</p>
-<p>_<span class="smallcaps">Actions</span></p>
-<p><span class="smallcaps">create </span>_</p>
+<p>_Actions
+create _</p>
 <p>provides the user with the possibility of creating a concrete order via the contract lines overview. In doing so he has a choice of six alternatives:</p>
 <h3 id="create-immediate-order-from-contract">Create Immediate Order from Contract</h3>
 <p>A new order is created directly from the current contract line. No additional inputs are required. The system decides automatically the way in which the new order is created:</p>
@@ -254,8 +249,8 @@ from contract.</span></p>
 </li>
 </ul>
 <p>The new order is generated automatically in the background. The user receives a message which states which new order was created from which contract. Via the link</p>
-<p><em><span class="smallcaps">Show last
-Document</span></em></p>
+<p><em>Show last
+Document</em></p>
 <p>it is subsequently possible to branch to the newly created order and make further entries where necessary.</p>
 <h3 id="create-order-from-contract-ctrl-u">Create order from contract (Ctrl +U)</h3>
 <p>The dispatching code is established via the current contract line (see above for explanation) and the relevant QuickDoc form is shown. The system distinguishes via the dispatching codes consigned in the contract whether e.g. an equipment order or waste management order is involved in the order to be created.</p>

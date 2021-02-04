@@ -104,9 +104,8 @@
 <p>The field <em>Post-with No</em>. is preallocated with the number of the customer entered in the order header. If various customers and possibly also vendors are to be activated in an order, this must be stipulated via the two fields <em>Posting Type</em> and <em>Post-with No</em>..</p>
 <p>The customer or vendor task site are stipulated via the field <em>Task-at Code</em> of the order line.</p>
 <p>The invoice recipient can be specified via the fields <em>Invoice-with No.</em> and <em>Inv. Sub-Adress Code</em> and this can be done completely regardless of who was entered in the line or order header as a customer or vendor.</p>
-<p>As a rule the customer or vendor who is also captured in the field <em>Post-with No.</em> is also entered automatically into the field <em>Invoice-with No.</em> If for example a different invoice recipient is however consigned on the <strong>customer</strong> or <strong>vendor card</strong> (field <em>Bill-to Customer No.</em> on the register</p>
-<p><span class="smallcaps">invoicing</span></p>
-<p>) this different invoice recipient is written automatically into the field <em>Invoice-with No.</em> of the order line. The field <em>Invoice-with No</em>. on the order line can also be overwritten manually.</p>
+<p>As a rule the customer or vendor who is also captured in the field <em>Post-with No.</em> is also entered automatically into the field <em>Invoice-with No.</em> If for example a different invoice recipient is however consigned on the <strong>customer</strong> or <strong>vendor card</strong> (field <em>Bill-to Customer No.</em> on the register invoicing
+) this different invoice recipient is written automatically into the field <em>Invoice-with No.</em> of the order line. The field <em>Invoice-with No</em>. on the order line can also be overwritten manually.</p>
 <p>Via the field <em>Inv. Sub-Adress Code</em> an</p>
 <p><u>invoice address</u></p>
 <p>consigned to the customer or vendor which is different to their main address is allocated. This invoice address must have been consigned to the customer/vendor previously on the customer/vendor card.</p>
@@ -114,9 +113,9 @@
 <p>The field <em>Waste Material Code</em> refers to the waste material catalog defined by the company itself which is the basis of the inventory valuation for example while the field <strong><em>EWC Code</em></strong> refers to the official EWC catalog.</p>
 <p><strong><u>Note</u></strong></p>
 <p>**The field designations <em>Waste Material Code</em> and EWC Code are not permanently present in the system. Instead they can be set up in enwis as follows:</p>
-<p><em><span class="smallcaps">enwis Services</span></em></p>
-<p><em><span class="smallcaps">Waste Material Administration Material Catalogs
-Setup</span></em>**</p>
+<p><em>enwis Services</em></p>
+<p><em>Waste Material Administration Material Catalogs
+Setup</em>**</p>
 <p><strong>Here other designations can also be chosen for the fields <em>Globaler Int. Material Catalog</em> and <em>Globaler Ext. Material Catalog</em> depending on the wishes of the customer.</strong></p>
 <p>Warehouse outflows and inflows or route business are depicted via the two fields <em>Waste Entry Type</em> and <em>Drop Shipment Type.</em></p>
 <p>The field <em>Waste Entry Type</em> has the following options:</p>
@@ -159,9 +158,9 @@ Setup</span></em>**</p>
 <ul>
 <li><p>a &quot;Submission&quot; means the transport of an item of equipment to the customer's site and set up there</p>
 </li>
-<li><p>&quot;Submission_&quot;_ the collection of an item of equipment from the customer</p>
+<li><p>&quot;Submission*&quot;* the collection of an item of equipment from the customer</p>
 </li>
-<li><p>&quot;Exchange_&quot;_ refers to the exchange of an item of equipment for another one of the same type</p>
+<li><p>&quot;Exchange*&quot;* refers to the exchange of an item of equipment for another one of the same type</p>
 </li>
 <li><p>&quot;Clearance&quot; disposal of the waste contained in the item of equipment while the item of equipment remains at the customer's site.</p>
 </li>
@@ -214,13 +213,11 @@ Setup</span></em>**</p>
 <p>Each order line can however have its own document number allocated if necessary. This must always occur manually.</p>
 <p>In the field <em>External Bill of Delivery No.</em> the number of an external weighbridge ticket can be captured for example if this needs to be additionally recorded for an external invoice number. There is a direct link from the order to the weighbridge via the option field <em>Weighbridge Dispatching</em>. Order lines which are set to the option &quot;Weigh&quot; in the field <em>Weighbridge Dispatching</em> are at present available to the weigh master as orders to be weighed.</p>
 <p>As soon as an order line dispatched for the weighbridge is linked with a weighbridge ticket, the field <em>Weighbridge Dispatching</em> is set to the value &quot;weighed&quot; on the order form so that the order is already no longer present when the overview of the dispatched orders is viewed for the next time.</p>
-<p>If a tick is made in the <strong><em>Weighbridge Setup</em></strong> in the register</p>
-<p><span class="smallcaps">General</span></p>
-<p>in the field <em>Auto-Transfer Weighbr. Result</em>, the weighing data are transferred into the order line connected to the weighbridge ticket automatically during the weighing process. No more work is involved here in the order processing.</p>
+<p>If a tick is made in the <strong><em>Weighbridge Setup</em></strong> in the register General
+in the field <em>Auto-Transfer Weighbr. Result</em>, the weighing data are transferred into the order line connected to the weighbridge ticket automatically during the weighing process. No more work is involved here in the order processing.</p>
 <p>The date of the service provision is captured in the field Task date. The dispatch date is set to the work date in the order header and the order lines by the system as standard. As a rule it must however be set to the dispatch date desired by the customer manually by the user on logging the order.</p>
-<p>If a dispatch date was already set in the contract, this is accepted in the order if an order is created from the contract. The way in which enwis transfers the dispatch date from the contract to the order can be controlled in the <strong><em>Waste Management Setup</em></strong>, Register</p>
-<p><span class="smallcaps">contract</span></p>
-<p>via the field <em>Contract Task Date (Default)</em> .</p>
+<p>If a dispatch date was already set in the contract, this is accepted in the order if an order is created from the contract. The way in which enwis transfers the dispatch date from the contract to the order can be controlled in the <strong><em>Waste Management Setup</em></strong>, Register contract
+via the field <em>Contract Task Date (Default)</em> .</p>
 <p>It has the four options:</p>
 <ul>
 <li><p>Create</p>
@@ -243,8 +240,8 @@ Setup</span></em>**</p>
 <p>The field can be set to &quot;Yes&quot; in the contract and thus transferred automatically to the order or only set to &quot;Yes&quot; in the order. Each order line to be invoiced can be controlled individually via the field <em>Qty. Consolidation.</em></p>
 <p>In the field <em>On Hold</em> a maximum three digit code can be issued, e.g. the name abbreviation of the responsible case worker. The relevant order line for the invoices is blocked by any entry in this field.</p>
 <p>The field <em>Comment</em> cannot be edited directly. If some comments were assigned via the link</p>
-<p><em><span class="smallcaps">action (Alt + F10) Line
-line Comments</span></em></p>
+<p><em>action (Alt + F10) Line
+line Comments</em></p>
 <p>or <strong>Ctrl + S</strong> of the line, a tick appears in the field <em>Comment</em>.</p>
 <p>Via the two fields <em>Contract No.</em> and <em>Contract Line No**</em>.** each order from which a contract was created is linked with this original form. These entries cannot be overridden manually by the user.</p>
 </article>

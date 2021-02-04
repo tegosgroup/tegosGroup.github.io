@@ -84,8 +84,8 @@
 <p>Internal waste materials form the basis for the acquisition of all material amounts, stock rotations and waste balances as shown at the start. Waste ledger entries are formed exclusively on the basis of internal waste materials.</p>
 <h2 id="general-register">General register</h2>
 <p>A numbering series must be allocated to the field <em>Nr</em>. in the waste management set up on the numbering register.</p>
-<p>The internally used designation of the waste material is entered in the field description_._ If this internal waste material is the copy of an EWC number and there is thus a 1:1 relationship between waste material and EWC code, the official denomination of the EWC number can be entered in the field O_fficial Description_.</p>
-<p>A basic unit can also be given for the waste material in the field B_ase Unit of Measure_. The basic unit which was deposited for a waste material is activated in the various material journals which are available in enwis.</p>
+<p>The internally used designation of the waste material is entered in the field description*.* If this internal waste material is the copy of an EWC number and there is thus a 1:1 relationship between waste material and EWC code, the official denomination of the EWC number can be entered in the field O<em>fficial Description</em>.</p>
+<p>A basic unit can also be given for the waste material in the field B<em>ase Unit of Measure</em>. The basic unit which was deposited for a waste material is activated in the various material journals which are available in enwis.</p>
 <p>The field <em>Account Type</em> refers to the waste material chart of accounts. The quantity movements of the internal waste materials are gathered in the waste material chart of accounts. Headings and sums can be formed. If desired, &quot;superfluous&quot; waste materials must be set up which are not used operationally and which just structure the chart of accounts. The corresponding account types such as &quot;Heading&quot; or &quot;Total&quot; must be assigned to these structural elements of the chart of accounts.</p>
 <p>The waste materials which are to be used for headings, amounts from and to, can be set up in the form of waste material cards or directly in the chart of accounts. An account type must be assigned to them. The functionality here is identical to that for the set up of the general ledger chart of accounts.</p>
 <p>If work is to take place with amounts from and to, it is important to start the function for indentation of the chart of accounts following setting up of the relevant accounts. In this way the accounts are indented automatically in accordance with their hierarchical classification and the waste material accounts which are to be added in the sum accounts are designated automatically in the field <em>Totaling.</em> Sums are only formed if the relevant basic accounts are assigned to the sum accounts in this way.</p>
@@ -95,8 +95,8 @@
 If a waste material is as a rule entered for a certain warehouse, it makes sense to allocate this storage location to the waste in a fixed way. Transfer to the order line is automatic on validation of the waste material.</p>
 <p>Here the storage location code which was consigned for an internal waste material is in principle overwritten by one which may have an EWC number. The storage location code of the EWC number always takes precedence over the waste material storage location code.</p>
 <p>The field <em>hazardous material code</em> can be used to assign the waste material to a hazardous material. Hazardous materials can be set up in the menu</p>
-<p><em><span class="smallcaps">enwis Services/waste
-Material/Lists/Hazardous Material Type</span></em></p>
+<p><em>enwis Services/waste
+Material/Lists/Hazardous Material Type</em></p>
 <p>.</p>
 <p>Hazardous materials are administered hierarchically by enwis. The hazardous material assigned to a waste material is overwritten by the one which has the waste transfer note facsimile on the order line in the event of conflict.</p>
 <p>In each case there is the possibility of once again manually overwriting the defaults of the waste material or waste transfer note facsimile on the order line.</p>
@@ -113,11 +113,22 @@ Material/Lists/Hazardous Material Type</span></em></p>
 <p>The value set is transferred into the waste ledger entries so that evaluations can be controlled. There are no additional functions connected with the field.</p>
 <p>Control of the rules by which the application of waste ledger entries is undertaken occurs via the option field <em>Costing Method</em> (warehouse outflow method). Warehouse outflow methods can and must be set up by waste material.</p>
 <p>The options of the field have the following meaning:</p>
-<p>FIFO        | The application of waste ledger entries is undertaken automatically by enwis in accordance with the rule &quot;first in, first out&quot;.
------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-LIFO        | The application of waste ledger entries is undertaken automatically by enwis in accordance with the<br>
-rule &quot;last in, first out&quot;.
-Specific    | An application does in principle only occur manually. If an application entry is assigned to a waste ledger entry in the field <em>Applies-to Entry No.</em>, this is applied. If the field <em>Applies-to Entry No.</em> is not filled, the entry takes place without applying ledger entries. An application thus only occurs if a waste ledger entry was explicitly selected for application.
+<table>
+<thead>
+<tr>
+<th>FIFO</th>
+<th>The application of waste ledger entries is undertaken automatically by enwis in accordance with the rule &quot;first in, first out&quot;.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LIFO</td>
+<td>The application of waste ledger entries is undertaken automatically by enwis in accordance with the<br></td>
+</tr>
+</tbody>
+</table>
+<p>rule &quot;last in, first out&quot;.
+Specific | An application does in principle only occur manually. If an application entry is assigned to a waste ledger entry in the field <em>Applies-to Entry No.</em>, this is applied. If the field <em>Applies-to Entry No.</em> is not filled, the entry takes place without applying ledger entries. An application thus only occurs if a waste ledger entry was explicitly selected for application.
 Application | When entering, a waste ledger entry must be consigned for the application. If<br>
 no applicable waste ledger entry is consigned, it is not in principle possible to make an entry. This logic should as a rule be given additional structure via the settings in the option field <em>Application skipped on.</em></p>
 <p>If the warehouse outflow method Application was selected, it is as a rule necessary to add to the entry logics by setting up the field <em>Application skipped on</em>.</p>
@@ -153,9 +164,8 @@ batch to be applied is available.</p>
 If the waste material was already consigned in a contract, a retrospective blockage of the waste material does not take effect. In spite of blocking of the waste material, new orders can be generated and entered from contracts without any difficulty.**</p>
 </div>
 <h2 id="posting-register">Posting register</h2>
-<p>The register</p>
-<p><span class="smallcaps">Posting</span></p>
-<p>contains a few MS Business Central standard fields which do however only have a limited function in enwis and also fields for the control of the generation of rental value entries:</p>
+<p>The register Posting
+contains a few MS Business Central standard fields which do however only have a limited function in enwis and also fields for the control of the generation of rental value entries:</p>
 <p>It is possible to consign service costs for waste materials or have them established by the system and to use these service costs as a basis for the inventory valuation via the fields <em>Unit Cost, Unit Cost Calculation, Calculation Function</em> and <em>Without Adjustment.</em></p>
 <p>The &quot;waste material rental&quot; can be depicted automatically via the option field <em>Storage Rental on</em>. Technically speaking the generation of rental value entries of the storage type can be controlled.</p>
 <p>Rental value entries of the &quot;storage&quot; type serve to enable the calculation of rentals for the warehouse put away of waste or other materials.</p>
@@ -197,9 +207,8 @@ The same field with the same options is available on the Location card. It is fo
 <p>The field <em>Without Adjustment</em> is functionally linked to the field <em>Cost (adjusted)</em> in the <strong><em>waste ledger entries</em></strong> (it is not present in the waste ledger entries). If the field <em>Without Adjustment</em> is not ticked, a service cost input in the waste entry is transferred into the field <em>Cost (adjusted)</em> of the waste ledger entry when entering. If the field <em>Without Adjustment</em> is ticked, this (temporary) allocation of an inventory value to the waste ledger entry does not occur. In each case an already entered value in the field <em>Cost (adjusted)</em> through the periodic Adjust Cost-Waste Entries is newly calculated and corrected where necessary.</p>
 <p>Values of the dimensions cost object and cost center can be assigned to the waste material in a fixed way via the fields <em>Cost Object</em> and <em>Cost center</em> so that they are transferred into the order line automatically on validation of the waste material.</p>
 <h2 id="treatment-register">Treatment Register</h2>
-<p>Waste materials can be allocated to a treatment process in a fixed way via the register</p>
-<p><span class="smallcaps">Treatement</span></p>
-<p>. Treatment processes are set up in the menu Treatment.</p>
+<p>Waste materials can be allocated to a treatment process in a fixed way via the register Treatement
+. Treatment processes are set up in the menu Treatment.</p>
 <p>The details of the definition of treatment processes are described in separate documentation which means that we will limit ourselves to the essentials here.</p>
 <p>Treatment orders are created from treatment processes just as orders are generated from contracts.</p>
 <p>If in the field <em>Method No. (Pos. Adjmt.)</em> a treatment process was assigned to a waste material in a fixed way, all warehouse inflows of this waste material are compelled to follow the treatment process.</p>

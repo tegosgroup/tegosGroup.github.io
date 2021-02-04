@@ -89,34 +89,31 @@
 <p>The set ups which are necessary for working with the function customer-vendor chaneover are explained below.</p>
 <h2 id="general-set-ups">General set ups</h2>
 <p>In order for the functionality of customer-vendor changeover to be used at all it is essential that a tick is placed in the</p>
-<p><em><span class="smallcaps">Waste Management Setup</span></em></p>
-<p>in the field <em>Allow Cust./Vend. Changeover</em> on the register</p>
-<p><span class="smallcaps">General</span></p>
-<p>.</p>
+<p><em>Waste Management Setup</em></p>
+<p>in the field <em>Allow Cust./Vend. Changeover</em> on the register General
+.</p>
 <p>All customers/vendors and their task sites, which are involved in the customer-vendor changeover, must also be assigned to one another via the business partner card and the associated business partner sites.</p>
 <h2 id="automatic-changeover-on-order-clearance">Automatic changeover on order clearance</h2>
 <p>In order to trigger the customer-vendor changeover automatically on order clearance, in the</p>
-<p><em><span class="smallcaps">Waste management
-setup</span></em></p>
-<p>the field <em>Auto-Changeover on Release</em> is ticked on the register</p>
-<p><span class="smallcaps">Status</span></p>
-<p>.</p>
+<p><em>Waste management
+setup</em></p>
+<p>the field <em>Auto-Changeover on Release</em> is ticked on the register Status
+.</p>
 <p>In the field <em>Auto-Changeover on Status</em> it is possible to make a setting so that the customer-vendor changeover and thus a new setting of price is to occur automatically as soon as a certain order status e.g. final control is reached. Dispatching, follow up entry and final control are available as possible options.</p>
 <h2 id="suppressing-customer-vendor-changeover-automatically">Suppressing customer-vendor changeover automatically.</h2>
-<p>The jumping can also in principle be suppressed depending on the order status. Via the option field <em>Suppress Changeover until</em> on the register</p>
-<p><span class="smallcaps">Status</span></p>
-<p>of</p>
-<p><em><span class="smallcaps">Waste
-management setup</span></em></p>
+<p>The jumping can also in principle be suppressed depending on the order status. Via the option field <em>Suppress Changeover until</em> on the register Status
+of</p>
+<p><em>Waste
+management setup</em></p>
 <p>it is possible to consign that the jumping is suppressed up to a particular status of the order. Dispatching, follow up entry and final control are available as possible options.</p>
 <p>The background: If a customer suddenly becomes a vendor, this could confuse a case worker in the order processing or be disadvantageous for the dispatching. If the field <em>Suppress Changeover until</em> is set up to the option value &quot;Processing&quot; for example, then no jumping is in principle carried out in waste management orders with the status &quot;Creation&quot; or &quot;Dispatching&quot;. The customer remains the customer even if the posting has to be converted to the posting type &quot;Purchase&quot;.</p>
 <p>If both functions:</p>
 <ul>
-<li><p><em><span class="smallcaps">Auto-changeover on Status
-processing</span></em></p>
+<li><p><em>Auto-changeover on Status
+processing</em></p>
 </li>
-<li><p><em><span class="smallcaps">suppress Changeover until
-processing</span></em></p>
+<li><p><em>suppress Changeover until
+processing</em></p>
 </li>
 </ul>
 <p>are seen in a work flow, the following scenario would be conceivable.</p>
@@ -154,15 +151,15 @@ processing</span></em></p>
 </ul>
 <h3 id="set-entry-type--sale-or-purchase">Set entry type = sale or purchase</h3>
 <p>In one example the customer-vendor changeover is explained via the function</p>
-<p><em><span class="smallcaps">Define Posting Type Salse or
-Purchase</span></em></p>
+<p><em>Define Posting Type Salse or
+Purchase</em></p>
 <p>A customer process finds a price line in which the field <em>Define Posting Type</em> is on the option value &quot;Purchase&quot;. The jumping is first of all triggered by the current difference between the posting type of the order line (=sale) and the value in the field <em>Define Posting Type</em>.</p>
 <p><u>Set up:</u></p>
 <p>It is possible to branch off into the price group matrix of the selected customer in the customer card via the link</p>
-<p><em><span class="smallcaps">Home/Process/ price group matrix</span></em></p>
+<p><em>Home/Process/ price group matrix</em></p>
 <p>. In the price group matrix a new line is applied as can be seen in the next image.</p>
 <p>In the next stage you branch off into the vendor which is consigned to the customer. The price group matrix of the selected vendor is called up from the vendor card via the link</p>
-<p><em><span class="smallcaps">home/Process/Price Group Matrix</span></em></p>
+<p><em>home/Process/Price Group Matrix</em></p>
 <p>. In the price group matrix a new line is applied as can be seen in the next image.</p>
 <p>In addition service price lines must be defined with an</p>
 <p><u>empty</u></p>
@@ -177,7 +174,7 @@ Purchase</span></em></p>
 <p>enwis has compared the posting type of the waste management line (sale) with the same one of the operated service price line and established that these do not match. The posting type of the waste management line is thus switched to the value &quot;Purchase&quot;. Instead of the customer D00340 the vendor K00940 linked via the business partner logic was entered. The customer task site E00000082 of the customer is also switched automatically to the vendor task site B0000078 via business partner logic.</p>
 <h3 id="define-posting-type--changeover-on-neg-price">Define Posting Type = Changeover on neg. Price</h3>
 <p>The function</p>
-<p><em><span class="smallcaps">changeover on neg. price</span></em></p>
+<p><em>changeover on neg. price</em></p>
 <p>is realised via another logic in order to implement customer-vendor jumping for a negative price. The following settings are required on the service price line:</p>
 <p>If this service price line is found in a customer process in the above example, then the customer/vendor changeover would only be triggered if the price consigned in the price line is negative.</p>
 <p>If the price is positive, changeover does not take place. If the price is negative, then the posting type of the order line is changed from sale to purchase (or the opposite). Nevertheless no pricing is triggered and the price found in the price line is used as an absolute value.</p>
@@ -193,8 +190,8 @@ Purchase</span></em></p>
 </div>
 <h3 id="define-posting-type--neg-price--purchasepos-price--sale">Define Posting Type = Neg. Price = Purchase/Pos. Price = sale</h3>
 <p>The functions</p>
-<p><em><span class="smallcaps">Neg. Price = Purchase/Pos. Price
-= Sale</span></em></p>
+<p><em>Neg. Price = Purchase/Pos. Price
+= Sale</em></p>
 <p>or Neg. Price = Sale/Pos. Price = purchase makes the customer-vendor jump possible on the basis of simple logic. In this way the direction of business (customer or vendor) is determined by the sign of the service price.</p>
 <p>The following settings are required on the service price line:</p>
 <p>For the service &quot;10-100107110101 A19&quot; a service price line with a negative service price (-100,- €) is applied. The field <em>Define Posting Type</em> is set to the option value &quot;Neg. Price = Purchase/Pos. Price = Sale&quot;</p>

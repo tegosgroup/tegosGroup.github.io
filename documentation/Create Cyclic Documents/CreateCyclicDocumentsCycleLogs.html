@@ -78,25 +78,17 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="CreateCyclicDocumentsCycleLogs">
-<h1 id="cyclical-document-creation--cycle-logs">Cyclical Document Creation – Cycle Logs</h1>
+<h1 id="cyclic-document-creation--cycle-logs">Cyclic Document Creation – Cycle Logs</h1>
 
 <h2 id="cycle-logs">Cycle Logs</h2>
 <p>All actions the system takes while automatically executing the <em>Create Cyclic Documents</em> function in batch processing are documented and saved in the form of cycle log entries.</p>
 <p>Cycle logs are created that can be used to completely track and edit a cycle after the fact. Users can call up and use cycle logs and all associated functions directly after running a cycle from the statistics window or later by going to</p>
-<span class="smallcaps">
-  <em>enwis Order
-Processing</em>
-</span>
-<span class="smallcaps">
-  <em>History</em>
-</span>
-<span class="smallcaps">
-  <em>Period Activities</em>
-</span>
-<span class="smallcaps">
-  <em>Cyclical Document Creation</em>
-</span>
-<p><em><span class="smallcaps">Cycle Logs</span></em></p>
+<p><em>enwis Order
+Processing</em></p>
+<p><em>History</em></p>
+<p><em>Period Activities</em></p>
+<p><em>Cyclic Document Creation</em></p>
+<p><em>Cycle Logs</em></p>
 <p>.</p>
 <p>The cycle log list shows all cycles ever run, including their log number, date, time, user ID and type. The <em>Type</em> field indicates whether the cycle was used to create documents or a positive calendar.</p>
 <p>The cycle log entries give a comprehensive overview of all activities execute during the cycle.</p>
@@ -111,17 +103,16 @@ Processing</em>
 <p>All documents, contracts, contract lines, and equipment entries that are part of the cycle are flagged with the corresponding cycle log number and can thereby be called up from the cycle log, viewed, checked, and processed.</p>
 <p>Take note, however, that not all functions will be available forever. The created sales orders will eventually be processed, merged into the combine invoice, and then removed from the system. The contracts will eventually form the basis of the next cycle and are then associated with that cycle log number. By way of the cycle log entries, however, users can track which actions were executed during the cycle and what were their results.</p>
 <p>By going to</p>
-<p><em><span class="smallcaps">Navigate</span></em></p>
-<p>, users can call up the documents created through cyclical document creation, including the sales orders, purchase orders, completed orders, sales invoices, purchase invoices, sales credit notes, and purchase credit notes.</p>
+<p><em>Navigate</em></p>
+<p>, users can call up the documents created through cyclic document creation, including the sales orders, purchase orders, completed orders, sales invoices, purchase invoices, sales credit notes, and purchase credit notes.</p>
 <p>By going to</p>
-<p><span class="smallcaps">actions</span></p>
-<p><span class="smallcaps">functions</span></p>
-<p>users can call up <em>Print Cycle Plan</em> and <em>Reset Cycle Log</em> functions.</p>
+<p>actions</p>
+<p>functions users can call up <em>Print Cycle Plan</em> and <em>Reset Cycle Log</em> functions.</p>
 <p>The</p>
-<p><em><span class="smallcaps">Print Cycle Plan</span></em></p>
+<p><em>Print Cycle Plan</em></p>
 <p>function allows users to print a cycle plan for a current cycle log after the fact. In this case, users must also keep in mind that this list will only be complete as long as the cyclically created documents remain in the system.</p>
 <p>A cycle plan can also be printed from the</p>
-<p><em><span class="smallcaps">Cyclic Documents</span></em></p>
+<p><em>Cyclic Documents</em></p>
 <p>function in batch processing after the fact using the virtual start date.</p>
 <p>Using the <em>Reset Cycle Log</em> function, users can reverse the entire cycle with the touch of a button. All created documents will be deleted and all updated contracts will be reset to their status before the cycle; this will mainly affect the <em>Cycle Log-No.</em>, <em>Last Cycle Date</em>, and <em>Next Cycle Date</em> fields.</p>
 <div class="NOTE">
@@ -130,7 +121,7 @@ Processing</em>
 </div>
 <p>When the result of a cycle is reset, this is flagged in the associated cycle log entry under the <em>Reset</em> field.</p>
 <p>Here users can see whether a contract has been reset, whether only a document was deleted, or whether both occurred. As mentioned above, the</p>
-<p><em><span class="smallcaps">Reset Cycle Log</span></em></p>
+<p><em>Reset Cycle Log</em></p>
 <p>function can also be executed for previous cycle logs. When the cycle log to be reset is not the most current cycle log, however, the system issues a warning to this effect that users must confirm.</p>
 <p>When calling up the <em>Reset Cycle Log</em> function, users have the following options:</p>
 <ul>
@@ -144,7 +135,7 @@ Processing</em>
 <p>Here users can specific whether only documents should be deleted, only the log entries in the contracts should be reset, or both actions should be executed, which is definitely the most practical option.</p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>If, during the course of batch processing cyclical document creation, ledger entries are posted directly from equipment entries because the setting on the cycle card signaled the system to do so, these cannot automatically be reset or reversed using the reset function.</p>
+<p>If, during the course of batch processing cyclic document creation, ledger entries are posted directly from equipment entries because the setting on the cycle card signaled the system to do so, these cannot automatically be reset or reversed using the reset function.</p>
 </div>
 </article>
           </div>

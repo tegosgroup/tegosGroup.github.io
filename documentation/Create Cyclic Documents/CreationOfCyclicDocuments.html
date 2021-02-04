@@ -83,24 +83,24 @@
 <h2 id="general">General</h2>
 <p>The batch processing which creates the documents automatically from the cycle contracts can be found in the following menus:</p>
 <ul>
-<li><p>_<span class="smallcaps">Waste producer processes</span></p>
-<p>/</p>
-<p><span class="smallcaps">Periodic Activities</span></p>
-<p>/</p>
-<p><span class="smallcaps">create cyclic documents</span>_</p>
+<li><p>_Waste producer processes
+/</p>
+<p>Periodic Activities
+/</p>
+<p>create cyclic documents_</p>
 </li>
-<li><p>_<span class="smallcaps">Waste disposal processes</span></p>
-<p>/</p>
-<p><span class="smallcaps">Periodic Activities</span></p>
-<p>/</p>
-<p><span class="smallcaps">create cyclic documents</span>_</p>
+<li><p>_Waste disposal processes
+/</p>
+<p>Periodic Activities
+/</p>
+<p>create cyclic documents_</p>
 </li>
-<li><p><em><span class="smallcaps">Dispatching/order acceptance/ Periodic
-Activities / create cyclic documents</span></em></p>
+<li><p><em>Dispatching/order acceptance/ Periodic
+Activities / create cyclic documents</em></p>
 </li>
 </ul>
 <p>The creation of the cyclic documents is started via the menu point</p>
-<p><em><span class="smallcaps">create cyclic documents</span></em></p>
+<p><em>create cyclic documents</em></p>
 <p>. The possibilities of the influence which the user has on the manner in which this routine works are very great and they are presented below.</p>
 <p>Among other things the user can:</p>
 <ul>
@@ -129,7 +129,7 @@ Activities / create cyclic documents</span></em></p>
 <p>Via the fields <em>Cycle date from</em> and <em>Cycle Date to</em> it is defined which cyclic contract (or contract lines / equipment entries) are in the viewing window of the batch processing.</p>
 <p>Only contracts with an entry in the field <em>Cycle Code</em> and a date in the field <em>Next Cycle Date</em> are taken into account by the batch processing.</p>
 <p>An entry in the field <em>Cycle date from,</em> is absolutely required while the field <em>Cycle date to</em> can be left. Both windows together define the time horizon (the viewing window) of the batch processing.</p>
-<p>In the current example a time window is defined which does not have a start and ends on 07.11.2013. This corresponds to the <em>date filter</em> 07.11.2013_._ All contracts are taken into account if their entry in the field <em>Next Cycle Date</em> is less than or equal to 07.11.2013.</p>
+<p>In the current example a time window is defined which does not have a start and ends on 07.11.2013. This corresponds to the <em>date filter</em> 07.11.2013*.* All contracts are taken into account if their entry in the field <em>Next Cycle Date</em> is less than or equal to 07.11.2013.</p>
 <p>Instead of an end date in the field <em>Cycle date to</em>, a maximum number of next tasks which are to be created can be indicated in the field <em>Number of Tasks.</em> Then all task data for the number of next tasks are calculated by contract or contract component.</p>
 <p>If both an end date and a number of maximum tasks are indicated, orders are generated or calculated until one of both arguments is reached.</p>
 <p>Via the field <em>Range</em> it is possible to specify how many documents are created with the following options available:</p>
@@ -142,7 +142,7 @@ Activities / create cyclic documents</span></em></p>
 <p><strong><u>Example:</u></strong></p>
 <p><strong>The next cycle date 30.10.20103 is defined in the contract DV00012.</strong></p>
 <p><strong>In the cyclic code the time form Relative (weekly) and the interval 1W are defined. In the characteristic &quot;Next document&quot; a document with the task date 27.03.2013 is created and the next cycle date of the contract is moved up to 06.11.2013.</strong></p>
-<p>If the field <em>Range</em> has the option <em>All Documents</em> selected in the batch processing then all documents up to the end of the time period defined by C_ycle date from_ and <em>Cycle Date to</em> are generated.</p>
+<p>If the field <em>Range</em> has the option <em>All Documents</em> selected in the batch processing then all documents up to the end of the time period defined by C<em>ycle date from</em> and <em>Cycle Date to</em> are generated.</p>
 <p>In the above example that would mean: From the order with the next cycle date 30.10.2013 documents are generated consecutively with the entry date 06.11.2013, 13.11.2013, 20.11.2013 and 27.21.2013. Subsequently the field <em>Next Cycle Date</em> goes onto 04.12.2013 in the contract.</p>
 <p>The user uses the options summarised under the point <em>Task</em> to establish what the batch processing is to achieve. The following four options are available:</p>
 <ol>
@@ -159,14 +159,14 @@ Activities / create cyclic documents</span></em></p>
 <p>The points are described in more detail in separate documentation.</p>
 <p>In the field <em>Proof next cycle date</em> it is possible to set whether the next cycle date (thus the first of the current cycle) is checked and corrected where necessary or not.</p>
 <p>The value of this field is always pre-allocated by the value of a field of the same name in the</p>
-<p><em><span class="smallcaps">Waste management
-setup/Register contract.</span></em></p>
+<p><em>Waste management
+setup/Register contract.</em></p>
 <h2 id="register-contract-register">Register Contract register</h2>
 <p>The contracts which are to be taken into account in the cycle sequence have already been restricted via the fields <em>Cycle Date from</em> and <em>Cycle Date to</em> on the register</p>
-<p><span class="smallcaps">Options</span></p>
-<p>. It was restricted to those contracts which show specific values in the field <em>Next Cycle Date</em>. On the register</p>
-<p><span class="smallcaps">contract</span></p>
-<p>there are further possibilities to set filters for the batch processing.</p>
+<p>Options
+. It was restricted to those contracts which show specific values in the field <em>Next Cycle Date</em>. On the register</p>
+<p>contract
+there are further possibilities to set filters for the batch processing.</p>
 <p>The following filter possibilities are present:</p>
 <ul>
 <li><p>Cycle filter</p>
@@ -193,11 +193,11 @@ setup/Register contract.</span></em></p>
 <p>If the Boolean field <em>Keep Cycle Date</em> is ticked and new documents are to be created from contracts then these documents are created on the basis of the next cycle date. The field Next Cycle Date is however not updated in the contract but remains on the original value. For a new cycle sequence documents would be newly created for the same task date.</p>
 <h2 id="register-statistics">Register Statistics</h2>
 <p>If all contracts are processed and all documents are created, a statistic can be displayed which first of all provides a quantitative overview of the batch processing carried out. These statistics can be viewed on the register</p>
-<p><span class="smallcaps">Statistics</span></p>
-<p>of the same form on which the definitions for the start of batch processing are also consigned. These statistics can have the following values for example:</p>
+<p>Statistics
+of the same form on which the definitions for the start of batch processing are also consigned. These statistics can have the following values for example:</p>
 <p>The information that the cycle sequence just carried out has the cycle log number (ZL0000022), that (5) new orders have been generated from existing contracts and any (x) orders were not created can be taken from the statistics window.</p>
 <p>Via the link</p>
-<p><em><span class="smallcaps">navigate</span></em></p>
+<p><em>navigate</em></p>
 <p>there is immediate access from all data and information which are linked with this cycle sequence:</p>
 <p>The user has the following possibilities:</p>
 <ul>
@@ -216,12 +216,12 @@ setup/Register contract.</span></em></p>
 </div>
 <h2 id="cyclic-documents-from-contracts">Cyclic documents from contracts</h2>
 <p>It is possible to use the menu point</p>
-<p><em><span class="smallcaps">Create
-cyclic documents</span></em></p>
+<p><em>Create
+cyclic documents</em></p>
 <p>to call up the batch processing for creation of the cyclic documents directly from a contract. An automatic filter is set onto the current contract.</p>
 <p>Via the menu point</p>
-<p><em><span class="smallcaps">Show cyclic
-documents</span></em></p>
+<p><em>Show cyclic
+documents</em></p>
 <p>it is possible to display the next 10 task data directly from a contract.</p>
 <p>No RequestForm is displayed and the next 10 deadlines are directly calculated and displayed.</p>
 <p>The function sequence starts the routine for creation of the cyclic documents with a filter on the following values:</p>

@@ -78,10 +78,10 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="CreateCyclicDocumentsTaskCreateCalendar">
-<h1 id="cyclical-document-creation-task-create-positive-calendar">Cyclical Document Creation: Task Create Positive Calendar</h1>
+<h1 id="cyclic-document-creation-task-create-positive-calendar">Cyclic Document Creation: Task Create Positive Calendar</h1>
 
 <h2 id="positive-calendar">Positive Calendar</h2>
-<p>When creating positive calendars, the system does not assume cyclical contracts (or contract lines or equipment entries); this is the sole exception to the rule for cyclical document creation. No documents are created here. Rather, a positive calendar will be created or continued and it can be saved to a cycle method with the Positive Calendar time type for generating cyclical documents.</p>
+<p>When creating positive calendars, the system does not assume cyclical contracts (or contract lines or equipment entries); this is the sole exception to the rule for cyclic document creation. No documents are created here. Rather, a positive calendar will be created or continued and it can be saved to a cycle method with the Positive Calendar time type for generating cyclic documents.</p>
 <p>Only existing positive calendars (that may be empty) will be filled. The scope of the positive calendar to be edited can be limited by the <em>Calendar Filter</em> field under the <em>Positive Calendar</em> tab in Batch Processing.</p>
 <p>Such a calendar is also useful for customer information about task dates that run over longer periods of time. This records information in the system, in the form of a calendar, without already creating sales orders.</p>
 <p>The advantage is that the positive calendar grants users a very easy to follow, easy to edit overview of the task dates over a longer period of time (e.g. a year's overview of the planned household and bulk waste tours).</p>
@@ -89,22 +89,21 @@
 <p>These task dates can be easily understood and modified by users. They grant an exact overview in advance of all task dates that fall within a specific period of time. None the less, no sales order has been generated, because it might be disadvantageous for dispatching and sales order creation to create sales orders for an entire year that would then stay in the system unprocessed for a long time.</p>
 <p>Concrete sales orders set long in advance using the positive calendar will then be created one after another for the next week, the next fortnight, the next month or even the next day.</p>
 <p>Positive calendars are defined by going to</p>
-<p><em><span class="smallcaps">enwis Services</span></em></p>
-<p><em><span class="smallcaps">Administration</span></em></p>
-<p><em><span class="smallcaps">Cyclical Document Creation</span></em></p>
+<p><em>enwis Services</em></p>
+<p><em>Administration</em></p>
+<p><em>Cyclic Document Creation</em></p>
 <p><em>Cycle Calendar</em>.</p>
 <p>The Calendar Type can be positive or negative. When positive calendars are created, the system will only recognize cycle calendars explicitly labeled as positive calendars in the <em>Type</em> field.</p>
 <p>A cycle must also be assigned to the calendar in the <em>Cycle Code</em> field. It defines the calculation method according to which the calendar lines will be automatically calculated beginning on the start date.</p>
 <p>Certain prerequisites must be met before positive calendars can be created. In addition, there are some setting options available in the batch processing field <em>Create Cyclic Documents</em>. Users will find these under the <em>Positive Calendar</em> tab.</p>
 <p>First of all, the two date fields, <em>Cycle Date from</em> and <em>Cycle Date to</em> under the</p>
-<p><em><span class="smallcaps">Options</span></em></p>
+<p><em>Options</em></p>
 <p>tab must be filled in to precisely define the period of time before positive calendars can be created.</p>
 <p>Under the</p>
-<p><em><span class="smallcaps">Calendar</span></em></p>
+<p><em>Calendar</em></p>
 <p>tab users also have the option to specify the first and last calendar date to be observed. These should normally specify the same period of time already defined in <em>Cycle Date from</em> and <em>Cycle Date to</em> fields.</p>
 <p>The difference between these is that the date filter under the</p>
-<p><span class="smallcaps">Options</span></p>
-<p>tab limits the next cycle date, which might very well result in a new document being created outside the date limit. Setting the calendar date filter truncates these dates.</p>
+<p>Options tab limits the next cycle date, which might very well result in a new document being created outside the date limit. Setting the calendar date filter truncates these dates.</p>
 <p>Users must define the routine to be run with positive calendars under <em>Task</em>. There are positive calendars with no dates at all and some that already contain dates.</p>
 <ul>
 <li><p>When the <em>Create</em> setting is chosen, dates will only be copied to positive calendars that do not already contain dates, i.e. empty positive calendars.</p>

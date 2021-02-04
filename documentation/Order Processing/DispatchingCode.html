@@ -82,8 +82,8 @@
 
 <h2 id="dispatching-codes--general">Dispatching codes – General</h2>
 <p>The dispatching codes are of central importance for work with QuickDoc. Dispatching codes are set up in the menu</p>
-<p><em><span class="smallcaps">enwis
-Workflow/administration/dispatching code</span></em></p>
+<p><em>enwis
+Workflow/administration/dispatching code</em></p>
 <p>. They can be consigned in services or contracts or selected via QuickDoc.</p>
 <p>The following is controlled via the dispatching codes:</p>
 <ol>
@@ -116,16 +116,15 @@ Workflow/administration/dispatching code</span></em></p>
 <p>In order to achieve meaningful sorting, the dispatching codes can each be designated an alphanumeric code which ensures that the waste management lines do in principle appear first for example. Any number of dispatching codes can be set up.</p>
 <h2 id="dispatching-code-card">Dispatching code card</h2>
 <h3 id="dispatching-code---general-register">Dispatching code - General register</h3>
-<p>The fields of the register card</p>
-<p><span class="smallcaps">general</span></p>
-<p>individually:</p>
+<p>The fields of the register card general
+individually:</p>
 <p>The field <em>Document Type</em> is used to define which document type the dispatching code refers to. QuickDoc forms which are to be opened from contract lines must have a dispatching code with the document type = <em>Contract</em>. QuickDoc forms which are to be used without reference to a contract must have a dispatching code with the document type = <em>Order.</em></p>
 <p>The option field <em>Dispatching Batch Lines</em> can be used to define a sequence of dispatching codes which determines a sequence of QuickDoc forms which must be processed consecutively by the user.</p>
 <p>If this function is to be used, dispatching codes must be applied first of all which are to be incorporated into a batch. Via the link</p>
-<p>_<span class="smallcaps">Navigate</span></p>
-<p><span class="smallcaps">dispatching</span></p>
-<p><span class="smallcaps">dispatching
-batch lines</span>_</p>
+<p><em>Navigate
+dispatching
+dispatching
+batch lines</em></p>
 <p>additional dispatching codes can be assigned to the batch dispatching code. In this way an equipment line is first of all applied for processing of the subsequent dispatching batch and then a waste management line is applied in the order form.</p>
 <p>The corresponding QuickDoc forms are offered consecutively for processing which lead to generation of the corresponding order lines. The QuickDoc forms generated from a dispatching batch all lead to the same order.</p>
 <p>The field <em>Dispatching Batch</em> has the following options:</p>
@@ -176,8 +175,8 @@ For clarification the three different types of dispatching code are characterise
 <p>Dispatching codes with the document type <em>Contract</em> which determine the appearance of the QuickDoc form from the contract line. This can be seen as a standard variant of the use of QuickDoc and thus of dispatching codes. The field <em>Workflowart</em> has</p>
 <p><u>no</u></p>
 <p>significance here. QuickDoc is started by the function</p>
-<p><em><span class="smallcaps">Create
-Order.</span></em></p>
+<p><em>Create
+Order.</em></p>
 <h4 id="dispatching-code-document-type--order">Dispatching Code Document Type = Order</h4>
 <p>Dispatching codes with the document type <em>Auftrag</em> which are addressed from the customer task site plan without reference to contract lines. Here a dispatching code with a suitable work flow type must be available for each of the various buttons in the header of the customer task site plan.</p>
 <h4 id="dispatching-code-force-workflow">Dispatching code Force Workflow</h4>
@@ -196,9 +195,9 @@ Order.</span></em></p>
 </li>
 </ul>
 <p>The way in which the content of this allocation is filled via the dispatching code is down to the user. It definitely makes sense to design content appropriate QuickDoc forms for the buttons</p>
-<p><em><span class="smallcaps">Disposal Order</span></em></p>
+<p><em>Disposal Order</em></p>
 <p>and</p>
-<p><em><span class="smallcaps">equipment order</span></em></p>
+<p><em>equipment order</em></p>
 <p>. Here the function designations prompt a content relationship for function and QuickDoc form.</p>
 <p>On the other hand there is not such a content reference with regard to the functions <em>Default Order</em> and <em>Service Order.</em> With the help of this function it is possible to make additional QuickDoc forms available for the special order types.</p>
 <p>The appearance of the QuickDoc form is</p>
@@ -206,9 +205,8 @@ Order.</span></em></p>
 <p>determined via the field <em>Workflowart</em> but exclusively through the settings made in the other fields of the dispatching code card.</p>
 <p>With a value in the field <em>Minimum QuickDoc Height</em> (Min=0/Max=18480) a minimum height can be set for the QuickDoc screen. This means that if the QuickDoc screen is very small due to the settings in the dispatching code, it can be enlarged by a corresponding value in the field <em>Minimum QuickDoc Height</em>.</p>
 <h3 id="dispatching-code---register-selection">Dispatching code - Register Selection</h3>
-<p>The appearance of the QuickDoc form is determined via the register</p>
-<p><span class="smallcaps">selection</span></p>
-<p>of the dispatching card. The following options in the fields present can be set:</p>
+<p>The appearance of the QuickDoc form is determined via the register selection
+of the dispatching card. The following options in the fields present can be set:</p>
 <table>
 <thead>
 <tr>
@@ -256,39 +254,30 @@ Order.</span></em></p>
 </ul>
 <p>Apart from the service number, the fields are not mandatory fields which are checked on the part of the system, meaning checks do not take place to ascertain whether data have been entered in these fields.</p>
 <p>If no fields have been declared as mandatory fields in the dispatching code, enwis only checks whether a customer and a service are present in the QuickDoc form.</p>
-<p>The field <em>Service No.</em> is in any case a mandatory field, for which the register <em>Selection</em> of the dispatching code card only makes the selection between the options <em>Editable</em> and <em>Not Editable</em> available_._</p>
+<p>The field <em>Service No.</em> is in any case a mandatory field, for which the register <em>Selection</em> of the dispatching code card only makes the selection between the options <em>Editable</em> and <em>Not Editable</em> available*.*</p>
 <p>This means that there is only one possibility for selection here regarding the changeability of data. The option &quot;<em>Not Editable</em>&quot; (cannot be edited) is only meaningful in dispatching codes with the document type <em>Contract</em> in which the order line also has the service number which the user may no longer change where appropriate.</p>
 <p>In dispatching codes with the document type <em>Order</em> by contrast, for the field <em>Service No.</em> it is necessary to select the option <em>Editable</em> as order recording with QuickDoc is otherwise impossible. As this field is empty without contract reference on calling up QuickDoc and an entry needs to be made by the user.</p>
-<p>Another aspect of the fields of the register</p>
-<p><span class="smallcaps">Selection</span></p>
-<p>is that there are partial interactions between the settings of the individual fields. If the field <em>Waste Code</em> is deactivated for example, this results in a few fields on the right hand side only appearing dimmed and they can no longer be controlled.</p>
+<p>Another aspect of the fields of the register Selection
+is that there are partial interactions between the settings of the individual fields. If the field <em>Waste Code</em> is deactivated for example, this results in a few fields on the right hand side only appearing dimmed and they can no longer be controlled.</p>
 <p>The background to this is that for a QuickDoc form in which no internal Waste Code can be captured all additional indications with reference to the internal materials (e.g. EWC code, waste transfer note, storage location) are superfluous and thus no fields should be made available for this in the QuickDoc form.</p>
 <h3 id="dispatching-code---register-display">Dispatching code - Register display</h3>
-<p>In the register</p>
-<p><span class="smallcaps">anzeige</span></p>
-<p>(display) of the dispatching card form IDs can be consigned. The forms specified open in the QuickDoc form on Lookup from the fields Location, Bin, Waste Code and Equipment.</p>
+<p>In the register anzeige
+(display) of the dispatching card form IDs can be consigned. The forms specified open in the QuickDoc form on Lookup from the fields Location, Bin, Waste Code and Equipment.</p>
 <p>On consigning a corresponding Lookup-ID it is thus possible not to jump from the field <em>Lagerort</em> of the QuickDoc form into the standard location overview but into the dispatching overview for the individual locations. In this way it would be possible to assign a suitable location depending on the visible capacity of the various locations.</p>
-<p>The register</p>
-<p><span class="smallcaps">transfer</span></p>
-<p>of the dispatching card is linked to the register</p>
-<p><span class="smallcaps">selection</span></p>
-<p>in terms of structure and partially in terms of functionality. In the register</p>
-<p><span class="smallcaps">Auswahl</span></p>
-<p>it is possible to specify which fields the user can view and in which fields he can make changes. In the register</p>
-<p><span class="smallcaps">übertragung</span></p>
-<p>it can or must also be specified to what extent these manually made changes are taken into consideration on data transfer from the contract into the order. The settings in both registers should therefore be matched to one another. In the register</p>
-<p><span class="smallcaps">transfer</span></p>
-<p>the option <em>Always</em> or <em>If not empty</em> should as a rule be allocated to active fields or mandatory fields.</p>
+<p>The register transfer
+of the dispatching card is linked to the register selection
+in terms of structure and partially in terms of functionality. In the register Auswahl
+it is possible to specify which fields the user can view and in which fields he can make changes. In the register übertragung
+it can or must also be specified to what extent these manually made changes are taken into consideration on data transfer from the contract into the order. The settings in both registers should therefore be matched to one another. In the register transfer
+the option <em>Always</em> or <em>If not empty</em> should as a rule be allocated to active fields or mandatory fields.</p>
 <p>Example:</p>
 <p><strong>A customer orders the provision of an ARC50. The case worker does however only find a contract line for the provision of an ASM7 in the customer task site plan. In the QuickDoc form the field Equipment No. is set to the option &quot;Active&quot;. The case worker therefore changes the ARC50 predefined by the contract to ASM7.</strong></p>
 <p><strong>If, in the register <em>Tranfer</em>, the option <em>Never</em> was selected for the field Equipment No., this entry of the case worker is ignored by enwis. The change can be made in the QuickDoc form but the ARC50 consigned in the contract appears in the order created.</strong></p>
 <p><strong>For the option <em>Always</em> on the other hand the change is taken into account on the data predefined by the contract, meaning that the ASM7 is transferred into the order.</strong></p>
-<p>Neither of the options is recommended as a standard setting. Instead all fields of the register</p>
-<p><span class="smallcaps">Transfer</span></p>
-<p>should be set to the option <em>If not empty.</em></p>
+<p>Neither of the options is recommended as a standard setting. Instead all fields of the register Transfer
+should be set to the option <em>If not empty.</em></p>
 <p>The option <em>If not empty</em> means that changes made by the user are transferred, up to deletions. This means that if the user changes from the ARC50 predefined by the contract to ASM7, then this will be written into the order. If he should however remove the Equipment No. completely, this deletion is ignored and the data from the contract are accepted into the order.</p>
-<p>The following options are available in the fields of the register card</p>
-<p><span class="smallcaps">Transfer:</span></p>
+<p>The following options are available in the fields of the register card Transfer:</p>
 <ul>
 <li><p>Always</p>
 </li>
@@ -298,9 +287,8 @@ Order.</span></em></p>
 </li>
 </ul>
 <p>These options define which data or which changes from the QuickDoc form are written into the order thus created. Here it is necessary to distinguish between various types of dispatching code.</p>
-<p>Via the fields in the register</p>
-<p><span class="smallcaps">transfer</span></p>
-<p>it is possible to control the extent to which the user can intervene in the data transfer from the contract into the order. The aforementioned options have the following effects:</p>
+<p>Via the fields in the register transfer
+it is possible to control the extent to which the user can intervene in the data transfer from the contract into the order. The aforementioned options have the following effects:</p>
 <ol>
 <li>Always</li>
 </ol>
@@ -322,24 +310,19 @@ Order.</span></em></p>
 <blockquote>
 <p>QuickDoc is then an extended copying function which only makes it possible to check the data to be copied from sight.</p>
 </blockquote>
-<p>In the register</p>
-<p><span class="smallcaps">selection</span></p>
-<p>it is specified which fields the user can view or process in the QuickDoc form or in which fields data must be present.</p>
+<p>In the register selection
+it is specified which fields the user can view or process in the QuickDoc form or in which fields data must be present.</p>
 <h3 id="dispatching-code---register-transfer">Dispatching code - Register Transfer</h3>
-<p>Via the register</p>
-<p><span class="smallcaps">transfer</span></p>
-<p>it must additionally be specified what effect changes or deletions of data on the contract line made by the user may have.</p>
-<p>For the option <em>Never</em> in the fields of the register</p>
-<p><span class="smallcaps">transfet</span></p>
-<p>the user has no possibility of changing predefined data from the contract sustainably. He can change the data in the QuickDoc form where necessary but these changes are not transferred to the order created. Instead enwis persistently goes back to the contract line during the order creation and ignores the changes in the QuickDoc form made by the user.</p>
+<p>Via the register transfer
+it must additionally be specified what effect changes or deletions of data on the contract line made by the user may have.</p>
+<p>For the option <em>Never</em> in the fields of the register transfet
+the user has no possibility of changing predefined data from the contract sustainably. He can change the data in the QuickDoc form where necessary but these changes are not transferred to the order created. Instead enwis persistently goes back to the contract line during the order creation and ignores the changes in the QuickDoc form made by the user.</p>
 <p>For the option <em>Always</em> on the other hand all changes made by the user are also transferred into the order. Order and contract may therefore differ in terms of content or the order may be incomplete because deletions of data made by the user are copied into the order.</p>
 <p>The recommended standard setting is the option If not empty. For this option only changes to data are transferred, meaning when predefined data are replaced by other data in a field. Deletions are ignored on the other hand. If the user deletes data without entering new values, enwis goes back to the default data of the contract line.</p>
-<p>This option is suitable for all fields in the register</p>
-<p><span class="smallcaps">transfer</span></p>
-<p>, to which the option <em>Active</em> or <em>Mandatory</em> was assigned in the register selection.</p>
-<p>These fields are designated as workable in the register</p>
-<p><span class="smallcaps">transfer</span></p>
-<p>. Therefore changes made by the user should also be transferred into the order.</p>
+<p>This option is suitable for all fields in the register transfer
+, to which the option <em>Active</em> or <em>Mandatory</em> was assigned in the register selection.</p>
+<p>These fields are designated as workable in the register transfer
+. Therefore changes made by the user should also be transferred into the order.</p>
 </article>
           </div>
           

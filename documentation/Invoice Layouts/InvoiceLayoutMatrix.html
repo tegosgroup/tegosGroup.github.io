@@ -92,15 +92,14 @@
 <p>The <em>Invoice Layout Code</em> field has to be filled in before the <em>completed orders</em> are created so that the subsequent combine invoice can refer to it. In general, there are four methods for doing this:</p>
 <h3 id="contract">Contract</h3>
 <p>The person in charge can fill out the <em>Invoice Layout Code</em> field manually in the contract. In this case, the invoice layout code is automatically copied to the sales order when the order is created from the contract, and from there it is copied unchanged to the</p>
-<p><em><span class="smallcaps">Completed Order</span></em></p>
+<p><em>Completed Order</em></p>
 <p>. This is definitely a practical method for managing certain business cases what should be invoiced separately.</p>
 <h3 id="sales-order">Sales Order</h3>
 <p>The person in charge can fill out or edit the <em>Invoice Layout Code</em> field manually in the sales order. This allows the invoice layout code to be copied over when the sales order is transferred into a completed order. Normally, this is only done in exceptional cases, because it would take too much effort to flag each order line with an invoice layout code manually.</p>
 <h3 id="release-function">Release Function</h3>
-<p>When sales orders are released, the invoice layout code is determined according to job-specific criteria saved in the <em>Release Function</em> under the</p>
-<p><span class="smallcaps">Status</span></p>
-<p>tab in</p>
-<p><em><span class="smallcaps">Waste Management Setup</span></em></p>
+<p>When sales orders are released, the invoice layout code is determined according to job-specific criteria saved in the <em>Release Function</em> under the Status
+tab in</p>
+<p><em>Waste Management Setup</em></p>
 <p>and copied from there to the document lines. This procedure is possible but not recommendable, because the system requires additional processing time to do so. The default procedures available should be more than adequate.</p>
 <h2 id="invoice-layout-matrix-2">Invoice Layout Matrix</h2>
 <p>When the sales order is released, the invoice layout code is automatically determined using the invoice layout matrix and copied from there to the document lines. This method will be described in further detail below. Combined with the manual assignment of an invoice layout in the contract, this is surely the most efficient and, for users, easiest way to handle the many options for assigning invoice layouts.</p>
@@ -160,7 +159,7 @@
 </li>
 </ul>
 <p>These additional criteria can be defined in</p>
-<p><em><span class="smallcaps">Invoice Setup</span></em></p>
+<p><em>Invoice Setup</em></p>
 <p>.</p>
 <p>The system can refer directly from the invoice layout matrix to the additional options defined in Invoice Setup using the <em>Invoice Layout Reference 1</em> field.</p>
 <p>The invoice layout code is determined using the invoice layout matrix as soon as the sales order is released. Invoice layout codes are only determined for order lines that do not already have one, e.g. that was assigned manually via a contract or sales order.</p>
@@ -174,10 +173,9 @@
 <h3 id="general-information-1">General Information</h3>
 <p>As described above, it is not generally necessary to assign an invoice layout to or create a new invoice layout for newly entered customers and vendors. Depending on the setup of the invoice layout matrix, this might already be taken care of by a default invoice layout.</p>
 <p>It is possible, however, to automate the explicit creation and/or assignment of an invoice layout when a new external account is entered. The default settings for this are defined in</p>
-<p><em><span class="smallcaps">Invoice Setup</span></em></p>
-<p>under the</p>
-<p><span class="smallcaps">Invoice Layout</span></p>
-<p>tab for customers and vendors.</p>
+<p><em>Invoice Setup</em></p>
+<p>under the Invoice Layout
+tab for customers and vendors.</p>
 <p>The values in the following fields are important:</p>
 <ul>
 <li><p>Inv. Layout New Customer</p>
@@ -213,9 +211,9 @@
 <p>The effect up to this point is no different than selecting the <em>Matrix</em> option; in both cases, the customer is assigned the same invoice layout.</p>
 <p>However, assigning the invoice layout using the <em>Set Matrix to Customer</em> option is more direct. It might be easier to track at a later point in time and easier to change.</p>
 <p>In addition, the filtered assigned matrix can be viewed directly from the customer card by going to</p>
-<p>_<span class="smallcaps">navigate</span></p>
-<p><span class="smallcaps">Invoice Layout</span>_</p>
-<p><em><span class="smallcaps">Invoice Layout Matrix</span></em></p>
+<p><em>navigate
+Invoice Layout</em></p>
+<p><em>Invoice Layout Matrix</em></p>
 <p>, which is not possible when assigning the invoice layout indirectly using general criteria.</p>
 <h3 id="option-copy-matrix-to-customer">Option: Copy Matrix to Customer</h3>
 <p>The system will create a new invoice layout and insert a new invoice layout matrix line.</p>

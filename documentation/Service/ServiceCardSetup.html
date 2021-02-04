@@ -118,9 +118,8 @@
 </ul>
 <p>What follows is an explanation of how to set up a service.</p>
 <h2 id="register-general">Register General</h2>
-<p>The main fields on the</p>
-<p><span class="smallcaps">General</span></p>
-<p>register are as follows:</p>
+<p>The main fields on the General
+register are as follows:</p>
 <p>Each service has a unique identifying number that is entered into the &quot;Number&quot; field; this is how the service is addressed in the document line.</p>
 <p>When numbering services, keep in mind that a service catalog is frequently quite comprehensive and can easily contain several hundred or several thousand entries. The service number can help give the service catalog some structure. It might therefore make sense not to set up enwis to fully automatically assign service numbers, but rather than do this manually and systematically so that users can more easily identify them.</p>
 <p><strong><u>Example:</u></strong></p>
@@ -128,9 +127,8 @@
 <p><strong>When entering the service card in this example, then the user only needs to decide whether the service involves waste management or equipment, and then corresponding number is assigned automatically.</strong></p>
 <p>Freely chosen text can be entered into the <em>Description</em> and <em>Description 2</em> fields to describe the content of each service.</p>
 <p>The unit of measure used internally for recording the service is stored in the <em>Base Unit of Measure Code</em> field, e.g. the unit &quot;ton&quot; for waste management services or the unit &quot;hour&quot; for transport services, etc.</p>
-<p>enwis automatically copies the value entered into <em>Base Unit of Measure Code</em> in the service card to the <em>Sales Unit of Measure Code</em> and <em>Purch. Unit of Measure Code</em> fields under the</p>
-<p><span class="smallcaps">Invoicing</span></p>
-<p>tab.</p>
+<p>enwis automatically copies the value entered into <em>Base Unit of Measure Code</em> in the service card to the <em>Sales Unit of Measure Code</em> and <em>Purch. Unit of Measure Code</em> fields under the Invoicing
+tab.</p>
 <p>enwis thereby offers the option to use different units of measure for the same service, so that internal operating procedures can employ different units of measure for invoicing customers and suppliers.</p>
 <p><strong><u>Example:</u></strong></p>
 <p>**Waste management services are recorded internally in tons but billed to the customer in m</p>
@@ -144,18 +142,18 @@
 <p>The value entered in the Posting Type field, be it empty, &quot;Purchasing&quot;, or &quot;Sales&quot;, will control the field with the same name on the document line. This will define whether the service involved is for customers or vendors.</p>
 <p>If the <em>Posting Type</em> field here is left empty, the content in the <em>Posting Type</em> field on the document line will be controlled by the document header. If there is a customer in the header of the sales order, then all order lines recording services with an empty <em>Posting Type</em> field will automatically be set to the posting type &quot;Sales&quot;.</p>
 <p>The <em>Bill of Resources</em> field cannot be edited directly. enwis will automatically enter the value &quot;Yes&quot; in this field when users establish a link between the service and a bill of resources by going to</p>
-<p><em><span class="smallcaps">Associated Information</span></em></p>
-<p><em><span class="smallcaps">Service</span></em></p>
-<p><em><span class="smallcaps">Bill of
-Resources</span></em></p>
+<p><em>Associated Information</em></p>
+<p><em>Service</em></p>
+<p><em>Bill of
+Resources</em></p>
 <p>.</p>
 <p>In contrast, the <em>Auto-Explode Components</em> field can be edited directly. Checking this box means that the components saved in the bill of resources will be automatically copied over to the document.</p>
 <p>The <em>Cascade Components</em> field has a similar function. To understand cascading, remember that the components in the bill of resources of a service might also contain other services, and these services might also have a bill of resources with other components; when cascading, the components of both the original service and these associated services are all copied over.</p>
 <p>More information on the topic of the Bill of Resources can be found in the separate documentation.</p>
 <p>By going to</p>
-<p><em><span class="smallcaps">Associated Information</span></em></p>
-<p><em><span class="smallcaps">Service</span></em></p>
-<p><em><span class="smallcaps">Extended Text</span></em></p>
+<p><em>Associated Information</em></p>
+<p><em>Service</em></p>
+<p><em>Extended Text</em></p>
 <p>, users can assign one or more extended text lines to each service; these lines are distinguished by starting date and they will be copied over to their own document lines.</p>
 <p>This can be set up to occur automatically when the service is validated in the document. To do so, check the <em>Automatic Ext. Texts</em> box on the service card.</p>
 <p>By default, the <em>Search Description</em> field on the service card is filled with the value from the <em>Description</em> field. However, this can be overwritten to include any entry.</p>
@@ -175,13 +173,11 @@ Resources</span></em></p>
 <p>field.</p>
 <p>The equipment types &quot;Drop Off&quot; and &quot;Pick Up&quot; are crucial for rental invoices. The equipment type &quot;Drop Off&quot; opens an equipment ledger entry that later needs to be closed and balanced out with a &quot;Pick Up&quot; entry. All services relevant to equipment rental should therefore be assigned a corresponding equipment type. For more information on this, see the &quot;Equipment Movements&quot; documentation.</p>
 <p>Checking the <em>Blocked</em> box will block services for operational usage. Blocked services can no longer be validated in the documents, i.e. the sales quotes, contracts, and sales orders.</p>
-<p>There is one thing to remember, though: If the service has already been saved in a contract line before being blocked, any number of new sales orders or order lines can be generated from this contract line despite the block. To prevent this from happening, go to <strong><em>Waste Management Setup</em></strong> under the</p>
-<p><span class="smallcaps">Contract</span></p>
-<p>tab and check the <em>Block Contracts w. Cust. /Vend.</em> box. This will prevent blocked services from repeatedly being copied over from contracts to sales orders.</p>
+<p>There is one thing to remember, though: If the service has already been saved in a contract line before being blocked, any number of new sales orders or order lines can be generated from this contract line despite the block. To prevent this from happening, go to <strong><em>Waste Management Setup</em></strong> under the Contract
+tab and check the <em>Block Contracts w. Cust. /Vend.</em> box. This will prevent blocked services from repeatedly being copied over from contracts to sales orders.</p>
 <h2 id="register-invoicing">Register Invoicing</h2>
-<p>The main fields under the</p>
-<p><span class="smallcaps">Invoicing</span></p>
-<p>register are shown below:</p>
+<p>The main fields under the Invoicing
+register are shown below:</p>
 <p>Checking the <em>Do Not Invoice</em> box will prevent the order lines from being included in combine invoicing. This is useful for services that are shown on the customer's invoice, such as the use of certain special vehicles, equipment or employees, but that are not billed separately.</p>
 <p>When services whose <em>Do Not Invoice</em> box is checked are validated in document lines, the document <em>Invoice</em> field is set to &quot;No&quot;.</p>
 <p>Up to 3 characters can normally be entered into the <em>On Hold</em> field of a service, e.g. the initials of the employee, in order to temporarily prevent newly created order lines with this service. The service can still be used for operational purposes, but order lines with this service will be ignored when combine invoicing. This makes it possible to temporarily block services from invoicing and, when needed, release them for invoicing again.</p>
@@ -196,13 +192,12 @@ Resources</span></em></p>
 <p>The same applies for the <em>Sales Rental Invoice UOM</em> and <em>Purch. Rental Invoice UOM</em> fields, which are mainly used for rental services.</p>
 <p>It makes sense to use &quot;Day&quot; as the base unit of measure for rental invoices, though leased equipment might be invoiced in hours, days, weeks, or months.</p>
 <p>These various time units can be saved in a rental service just like the conversion code, which sets the conversion between the invoicing unit of measurement and the base unit of measurement.</p>
-<p>The <em>Cycle Code</em> field can be used for cyclical document creation. Cyclical document creation allows recurring sales orders to be automatically created from contracts. If there is a set relationship between a service and its regular performance, it makes sense to save a cycle code directly in the service so that it can be copied over automatically when the service is validated in the contract lines. For more information on this, see the &quot;Cyclical Document Creation Setup&quot; documentation.</p>
+<p>The <em>Cycle Code</em> field can be used for cyclic document creation. Cyclic Document creation allows recurring sales orders to be automatically created from contracts. If there is a set relationship between a service and its regular performance, it makes sense to save a cycle code directly in the service so that it can be copied over automatically when the service is validated in the contract lines. For more information on this, see the &quot;Cyclic Document Creation Setup&quot; documentation.</p>
 <p>In the Concept No. field, a service can be linked with a concept, so that the concept is copied over when the service is validated in the documents. When business transactions involve multiple business partners, concepts in enwis serve to allocate the service quantities, costs, and revenues among the partners involved. For more information on this, see the &quot;Concepts&quot; documentation.</p>
 <p>The <em>Cost Center Code</em> and <em>Cost Object Code</em> fields can be used to associate the service with cost centers and cost objects that will be copied when the services are validated in the documents. Cost centers and cost objects are dimensions in MS Business Central and there setup is described in the corresponding standard training documentation.</p>
 <h2 id="register-handling">Register Handling</h2>
-<p>The main fields under the</p>
-<p><span class="smallcaps">Handling</span></p>
-<p>register are shown below:</p>
+<p>The main fields under the Handling
+register are shown below:</p>
 <p>The <em>Transfer Description 2</em> field on the service card manages whether the content in the <em>Description 2</em> field on the service card will be copied to a document line or not. The following options are available:</p>
 <table>
 <thead>
@@ -226,15 +221,13 @@ Resources</span></em></p>
 <p>Only order lines with a <em>Weighbridge Dispatching</em> field set to &quot;Weigh&quot; will be made available to the weighing operator as a sales order to be weighed.</p>
 <p>The individual options in the <em>Dispatch For Weighbridge</em> field on the service card manages whether the &quot;Weigh&quot; option is set in only customers' order lines, only vendors' order lines or both when the corresponding service is validated.</p>
 <h2 id="register-foreign-trade">Register Foreign Trade</h2>
-<p>The main fields under the</p>
-<p><span class="smallcaps">Export</span></p>
-<p>register are shown below:</p>
+<p>The main fields under the Export
+register are shown below:</p>
 <p>The <em>Tariff No.</em>, <em>Country of Origin Code</em>, and <em>Net Weight</em> fields on the service card were copied by enwis from the default item card in MS Business Central.</p>
 <p>These fields are relevant for customs declarations in the Export department. See the corresponding training documentation from MS Business Central for more information about their use.</p>
 <h2 id="register-indexing">Register Indexing</h2>
-<p>The main fields under the</p>
-<p><span class="smallcaps">Keywords</span></p>
-<p>register are show below:</p>
+<p>The main fields under the Keywords
+register are show below:</p>
 <p>The Keywords tab offers the option of saving a keyword catalog for each service describing the main characteristics of that service. Using this list of keywords, all services can then be filtered to show only those that meet specific characteristics, e.g. all services with a certain waste material, or a combination of specific characteristics.</p>
 </article>
           </div>

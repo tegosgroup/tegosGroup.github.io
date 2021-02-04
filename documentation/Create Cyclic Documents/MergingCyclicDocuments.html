@@ -78,15 +78,15 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="MergingCyclicDocuments">
-<h1 id="merging-cyclical-documents">Merging Cyclical Documents</h1>
+<h1 id="merging-cyclic-documents">Merging Cyclic Documents</h1>
 
 <h2 id="general-information">General Information</h2>
-<p>Cyclical documents can be merged when they are created. Normally, cyclical document creation generates one sales order per cyclical task date. When the merging function is used, for example, all cyclical documents pertaining to one contract can be merged into a single sales order. This reduces the number of sales orders in the system.</p>
+<p>Cyclic Documents can be merged when they are created. Normally, cyclic document creation generates one sales order per cyclical task date. When the merging function is used, for example, all cyclic documents pertaining to one contract can be merged into a single sales order. This reduces the number of sales orders in the system.</p>
 <p>Users should consider each job carefully before deciding whether to use this function or not. In generally, it is only practical to use this function when it appears to be inevitable.</p>
 <p>This function is not as practical for waste management companies, because they usually want to create a sales order for each task. For companies that mainly act as brokers, and for workflows where sales orders are not created until after execution in the system, merging documents into one can be beneficial, because users need not switch back and forth between sales orders so frequently to process them.</p>
 <p>For invoicing, it does not matter whether the services come from one sales order or are allocated among many.</p>
 <p>For cost accounting, it is clearly better to not merge documents but rather to work with individual sales orders, because this allows users to analyze product costing for each one.</p>
-<p>The following general statements apply to merging cyclical documents:</p>
+<p>The following general statements apply to merging cyclic documents:</p>
 <ul>
 <li><p>Only sales orders can be merged, not completed orders, invoices, etc.</p>
 </li>
@@ -97,17 +97,15 @@
 </ul>
 <h2 id="setup">Setup</h2>
 <p>The</p>
-<p><em><span class="smallcaps">Create Cyclic Documents</span></em></p>
-<p>function under the</p>
-<p><span class="smallcaps">Default Register</span></p>
-<p>for batch processing defines whether cyclical document creation will work with document merging or not.</p>
+<p><em>Create Cyclic Documents</em></p>
+<p>function under the Default Register for batch processing defines whether cyclic document creation will work with document merging or not.</p>
 <p>The settings in the <em>Merge Cycle Orders by</em> and the <em>Cycle Merging Active for</em> fields are material here.</p>
 <p>The following four options are available for the <em>Merge Cycle Orders by</em> field:</p>
 <table>
 <thead>
 <tr>
 <th><blank></blank></th>
-<th>Cyclical documents will not be merged. When this option is selected, the <em>Cycle Merging Active for</em> field cannot be edited.</th>
+<th>Cyclic Documents will not be merged. When this option is selected, the <em>Cycle Merging Active for</em> field cannot be edited.</th>
 </tr>
 </thead>
 <tbody>
@@ -144,9 +142,7 @@
 </tr>
 </tbody>
 </table>
-<p>When users call up the cyclical document creation function, the system normally copies the settings from the <em>Merge Cycle Orders by</em> and <em>Cycle Merging Active for</em> fields under the</p>
-<p><span class="smallcaps">Contract</span></p>
-<p>register in <strong><em>Waste Management Setup</em></strong> to the eponymous fields in cyclical document creation.</p>
+<p>When users call up the cyclic document creation function, the system normally copies the settings from the <em>Merge Cycle Orders by</em> and <em>Cycle Merging Active for</em> fields under the Contract register in <strong><em>Waste Management Setup</em></strong> to the eponymous fields in cyclic document creation.</p>
 <p>Users can see in the cycle log that several sales orders have been merged.</p>
 </article>
           </div>

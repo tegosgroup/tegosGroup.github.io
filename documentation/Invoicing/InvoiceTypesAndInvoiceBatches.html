@@ -92,16 +92,13 @@
 </li>
 </ul>
 <h2 id="invoice-types">Invoice Types</h2>
-<p>Invoice types can be called up by going to _enwis</p>
-<p><span class="smallcaps">Invoicing/Selection by</span></p>
-<p><span class="smallcaps">Department/Combine Invoicing/Invoice Batch/Invoice
-Types</span>_</p>
+<p>Invoice types can be called up by going to <em>enwis Invoicing/Selection by
+Department/Combine Invoicing/Invoice Batch/Invoice
+Types</em></p>
 <p>. Using the invoice types, any number of different invoice filters can be defined and permanently saved.</p>
-<p>Under the</p>
-<p><span class="smallcaps">General</span></p>
-<p>tab you can set the main invoice options that will otherwise have to be set for each individual invoice under the</p>
-<p><span class="smallcaps">Options</span></p>
-<p>tab in Batch Processing Combine Invoicing.</p>
+<p>Under the General
+tab you can set the main invoice options that will otherwise have to be set for each individual invoice under the Options
+tab in Batch Processing Combine Invoicing.</p>
 <p>The value stored in the <em>Invoice Type</em> field indicates whether the invoice type means that</p>
 <ul>
 <li><p>a combine invoice</p>
@@ -119,23 +116,19 @@ Types</span>_</p>
 </div>
 <p>The date formula is always associated with the current work date. If 2/12/2012 is set as the work date and the invoice date formula is set as &quot;-CM-1D&quot;, then 30/11/2012 would be used as the invoice date. If this invoice type were initiated in the following month, e.g. on 4/1/2013, then 31/12/2012 would be used as the invoice date, assuming the same invoice date formula.</p>
 <p>The same logic applies to the document date, the task date, and the rental document task date.</p>
-<p>Users can store detailed filter definitions for the combine invoice and the rental invoice under the</p>
-<p><span class="smallcaps">Combine Invoice
-Filter</span></p>
-<p>and</p>
-<p><span class="smallcaps">Rental Invoice Filter</span></p>
-<p>tabs.</p>
+<p>Users can store detailed filter definitions for the combine invoice and the rental invoice under the Combine Invoice
+Filter
+and Rental Invoice Filter
+tabs.</p>
 <p><strong><u>Combine invoice filter example:</u></strong></p>
 <p><strong>In the example above, a combine invoice will be created for all completed customer orders (= posting type Sales) for the DORTMUND site if the Invoice Layout Code field indicates STANDARD and the Task Date was in the previous month (= Task Date Formula).</strong></p>
-<p>Detailed filters for the order release can be defined under the</p>
-<p><span class="smallcaps">Release Filter</span></p>
-<p>tab.</p>
+<p>Detailed filters for the order release can be defined under the Release Filter
+tab.</p>
 <p><strong><u>Release filter example:</u></strong></p>
 <p><strong>In the example above, all customer orders (= posting type Sales) for the DORTMUND site will be released if the Status field indicates Final Inspection and the Task Date was in the previous month.</strong></p>
-<p>By going to</p>
-<p><span class="smallcaps">Home Process</span></p>
-<p><em><span class="smallcaps">Function</span></em></p>
-<p><em><span class="smallcaps">Invoices</span></em></p>
+<p>By going to Home Process</p>
+<p><em>Function</em></p>
+<p><em>Invoices</em></p>
 <p>or pressing the F9 key, the defined order releases, rental invoices, and combine invoices can be initiated and executed directly from the invoice type card.</p>
 <p>All of these actions executed for the invoice type will be saved in an invoice log and can be viewed as log ledger entries (Navigate Invoice Type Log Ledger Entries). See the documentation on invoice logs for more information.</p>
 <h2 id="invoice-batch">Invoice Batch</h2>
@@ -161,16 +154,14 @@ In this invoice type, the <em>Rental Invoice Document Line</em> field (under the
 </div>
 <p>If there are any order release errors, i.e. certain orders cannot be released, then the following steps will not be executed.</p>
 <p>Each line in an invoice batch will basically either be entirely processed or not at all. If an error occurs in one line of an invoice batch, then that entire invoicing step will be left unfinished. However, invoice steps that have already been successfully completed will not be influenced or undone by an error in a subsequent step.</p>
-<p>What enwis should do with an invoice step when an error occurs is defined in the <em>Always Execute</em> field under the</p>
-<p><span class="smallcaps">General</span></p>
-<p>tab for the invoice type to which that invoice batch line is assigned.</p>
+<p>What enwis should do with an invoice step when an error occurs is defined in the <em>Always Execute</em> field under the General
+tab for the invoice type to which that invoice batch line is assigned.</p>
 <p>When an error occurs in an invoice step, that invoice step will only be executed if the <em>Always Execute</em> box is checked (indicating YES) for the invoice type to which the invoice batch is assigned.</p>
 <p>If an error occurs in combine invoicing, i.e. certain completed orders cannot be incorporated into the combine invoice, then users can decide in advance whether the</p>
 <p><u>correctly</u></p>
 <p>generated invoices should none the less be posted or not.</p>
-<p>Users can set whether and how automatic posting should occur in the <em>Automatic Posting</em> field under the</p>
-<p><span class="smallcaps">Posting</span></p>
-<p>tab. The following options are available:</p>
+<p>Users can set whether and how automatic posting should occur in the <em>Automatic Posting</em> field under the Posting
+tab. The following options are available:</p>
 <ul>
 <li><p>Never Items are never automatically posted</p>
 </li>
@@ -179,14 +170,13 @@ In this invoice type, the <em>Rental Invoice Document Line</em> field (under the
 <li><p>Always Correctly generated invoices are posted even if there are potential errors</p>
 </li>
 </ul>
-<p>With regard to the automatic posting of generated combine documents from the invoice batch or invoice type, users can set whether only the current invoice log or the entire combine invoice should be posted in the <em>Posting Range</em> field under the</p>
-<p><span class="smallcaps">Posting</span></p>
-<p>tab.</p>
+<p>With regard to the automatic posting of generated combine documents from the invoice batch or invoice type, users can set whether only the current invoice log or the entire combine invoice should be posted in the <em>Posting Range</em> field under the Posting
+tab.</p>
 <p>By going to</p>
-<p><em><span class="smallcaps">Home Process</span></em></p>
-<p><em><span class="smallcaps">Function</span></em></p>
-<p><em><span class="smallcaps">Run invoice
-Batch</span></em></p>
+<p><em>Home Process</em></p>
+<p><em>Function</em></p>
+<p><em>Run invoice
+Batch</em></p>
 <p>or pressing the F9 key, the order releases, rental invoices, and combine invoices defined in the invoice batch lines can be initiated and executed.</p>
 <p>All of the actions executed for this invoice batch will be saved in an invoice log and can be viewed in log ledger entries. See the documentation on invoice logs for more information.</p>
 </article>

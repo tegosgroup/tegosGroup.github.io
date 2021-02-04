@@ -92,38 +92,35 @@
 </ul>
 <h2 id="application-via-suggest-commitments">Application via suggest commitments</h2>
 <p>The current balance of the faded in commitments is also shown in the order on calling the suggest commitments. If the dialogue is confirmed with &quot;</p>
-<p><span class="smallcaps">OK”</span></p>
-<p>, only the <em>Commitment No.</em> is taken into the field of the same name on the <strong><em>order line</em></strong>.</p>
+<p>OK”, only the <em>Commitment No.</em> is taken into the field of the same name on the <strong><em>order line</em></strong>.</p>
 <p>If the dialogue is confirmed with the option &quot;incl. quantity&quot; the current balance is also carried over to the order line so that the commitment is fully applied when posting the line.</p>
 <p>The content of the commitment automatically determines where the quantity is transferred to. If the content is &quot;service&quot; then the commitment balance is validated into the field <em>Quantity</em> of the order line. If the content is &quot;waste material&quot; then the balance is transferred into quantity to be managed (quantity of the waste entry) etc.</p>
 <h2 id="application-via-order-creation">Application via order creation</h2>
 <p>Another possibility for automatic application involves generating orders via which the remaining balance is entered. For this it is necessary that the commitment is allocated directly to a contract.</p>
 <p>This allocation occurs via the fields <em>Contract No.</em> and if necessary <em>Sub Contract No.</em> on the register</p>
-<p><span class="smallcaps">posting</span></p>
-<p>of the <em><strong>commitments card</strong>.</em></p>
+<p>posting of the <strong>*commitments card</strong>.*</p>
 <p>If a contract is consigned to a commitment, then automatic application via the batch processing</p>
-<p><em><span class="smallcaps">Kontingente über
-Vertrag ausgleichen</span></em></p>
+<p><em>Kontingente über
+Vertrag ausgleichen</em></p>
 <p>is possible. This batch processing can be called via the</p>
-<p><em><span class="smallcaps">Menü enwis
+<p><em>Menü enwis
 services/commitments/Tasks/periodic activities/apply commitments via
-contract</span></em></p>
+contract</em></p>
 <p>or from the <strong><em>commitment card</em></strong> via the link</p>
-<p><em><span class="smallcaps">Actions Functions apply commitments via
-contract</span></em></p>
+<p><em>Actions Functions apply commitments via
+contract</em></p>
 <p>.</p>
 <p>The batch processing creates orders from the contracts or subcontracts with which the commitments to be applied are linked and thereby transfers the current remaining balance automatically into the quantity field of the order line which enables the commitment to then be balanced on entering the order.</p>
 <p>The same logics apply for the reference between quantity application in the order and content of the commitment as for the taking over of the commitment balance from the suggest commitments in the order.</p>
 <p>The field <em>Apply Automatically</em> on the register</p>
-<p><span class="smallcaps">Buchung</span></p>
-<p>of the <strong><em>commitments card</em></strong> does not mean that only commitments in which this field is ticked can be applied automatically. It only provides one filtering possibility for the batch processing which can be used by the user.</p>
+<p>Buchung of the <strong><em>commitments card</em></strong> does not mean that only commitments in which this field is ticked can be applied automatically. It only provides one filtering possibility for the batch processing which can be used by the user.</p>
 <h2 id="application-via-commitments-application-journals">Application via commitments application journals)</h2>
 <p>The third possibility for automatic application of the remaining balances of commitments is provided by the <strong><em>commitment application journals</em></strong> in the menu</p>
-<p><em><span class="smallcaps">commitments</span></em></p>
+<p><em>commitments</em></p>
 <p>. These are structured analogously to the inventory or throughput journals.</p>
 <p>Via the button</p>
-<p><em><span class="smallcaps">calculate commitments
-balance</span></em></p>
+<p><em>calculate commitments
+balance</em></p>
 <p>a batch process is called which creates the journal lines from the current balances of the commitments to be calculated.</p>
 <p>These journal lines are calculated automatically in such a way that each commitment was zeroed on entry.</p>
 <p>Depending on the commitment balance this can mean that a relief from the remaining obligation or a subsequent obligation for an overfulfilled commitment is created.</p>
