@@ -86,9 +86,7 @@
 <p>To work with this function, at least one service price line must be set up with a reference price group and a reference type for each service whose price it should control.</p>
 <h2 id="reference-price-groups">Reference Price Groups</h2>
 <p>The prices in all service price lines to be assigned to such a group using the <em>Reference Price Group</em> field are not absolute prices; rather, they are surcharges and discounts to the reference price. When the <em>Reference Type</em> field is set to anything except <empty>, this price group thereby becomes a reference price group.<p>
-<p><img src="../../images/image1.png" alt=""></p>
 <p>How reference price groups work is illustrated in the following order line:</p>
-<p><img src="../../images/image2.png" alt=""></p>
 <p>The price from the order line is the sum of the reference price of EUR 120.00 from the <strong><em>service price line</em></strong> with the price group code EUWID plus the EUR 2.50 in the service price line with the price group code C00040 (see screen shot above).</p>
 <h2 id="reference-type">Reference Type</h2>
 <p>To work with the reference price function, at least</p>
@@ -109,7 +107,6 @@ Range      | This option only works if a price range is also set using the <em>M
 <p>Individual prices below the minimum price are automatically replaced by the minimum price, just as individual prices above the maximum price will be replaced by the maximum price.</p>
 <p>In reference price groups with reference type &quot;Range&quot;, the <em>Price</em> field remains empty or is filled by default with the value of 0.00, because only the ends of the range, defined as the minimum and maximum price, matter for such reference price groups.</p>
 <p>Service price lines associated with reference price groups with reference type &quot;Range&quot; therefore typically appear as follows:</p>
-<p><img src="../../images/image3.png" alt=""></p>
 <h2 id="example-of-reference-type-range">Example of Reference Type &quot;Range&quot;</h2>
 <p>Below we demonstrate an example of the reference type &quot;Range&quot;.</p>
 <h3 id="scenario">Scenario</h3>
@@ -138,12 +135,12 @@ Range      | This option only works if a price range is also set using the <em>M
 <li><p>Create another service price line with the value &quot;EUWID&quot; in the <em>Price Group Code</em> field and the option &quot;Range&quot; in the <em>Reference Type</em> field. In this line, enter the value of EUR 60.00 in the <em>Minimum Price</em> field and the value of EUR 75.00 in the <em>Maximum Price</em> field.</p>
 </li>
 </ul>
-<p><img src="../../images/image4.png" alt=""></p>
-<p><strong><u>Note:</u></strong></p>
-<p><strong>In reference price groups with reference type &quot;Range&quot;, only the ends of the range, defined as the minimum and maximum price, matter. This is why the <em>Price</em> field remains empty.</strong></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>In reference price groups with reference type &quot;Range&quot;, only the ends of the range, defined as the minimum and maximum price, matter. This is why the <em>Price</em> field remains empty.</p>
+</div>
 <h3 id="sales-order">Sales Order</h3>
 <p>enwis has found a minimum price of EUR 60.00 for this service. This is because the default price of EUR 50.00 (see previous screen shot) is less than the minimum price.</p>
-<p><img src="../../images/image5.png" alt=""></p>
 <p>If the range were to be expanded to a minimum price of EUR 35.00, then the default price of EUR 50.00 would be accepted, because this price falls within the defined range.</p>
 <h2 id="example-of-reference-types-surcharge-and-discount">Example of Reference Types &quot;Surcharge&quot; and &quot;Discount&quot;</h2>
 <p>Below we demonstrate an example of the reference types &quot;Surcharge&quot; and &quot;Discount&quot;.</p>
@@ -161,10 +158,8 @@ Range      | This option only works if a price range is also set using the <em>M
 <li><p>Create another service price line with the value &quot;EUWID&quot; in the <em>Price Group Code</em> field and the option &quot;Surcharge&quot; in the <em>Reference Type</em> field. Enter the value of EUR 100.00 in the <em>Price</em> field.</p>
 </li>
 </ul>
-<p><img src="../../images/image6.png" alt=""></p>
 <h3 id="sales-order-1">Sales Order</h3>
 <p>enwis calculated a price of EUR 115.00 for the service on this order line, which is nothing more than the sum of the reference group price of EUR 15.00 plus the corresponding price group price of EUR 100.00.</p>
-<p><img src="../../images/image7.png" alt=""></p>
 <p>If the setup had been the same, but the reference type &quot;Discount&quot; had been chosen, then the EUWID price would be treated as a discount and subtracted from the price group price and enwis would have calculated a final price of EUR 85.00.</p>
 <p>In general, users can set up different reference groups and enter them in separate service price lines. Using the <em>Reference Price Group</em> field, users can have the system refer to this price group for pricing.</p>
 <p>The &quot;Difference&quot; option in the <em>Reference Type</em> field has the same function as the &quot;Discount&quot; option.</p>
@@ -172,25 +167,21 @@ Range      | This option only works if a price range is also set using the <em>M
 <p>By pressing the key combination <strong>Ctrl + Alt + F1</strong>, users can zoom into the waste management line with the price surcharge.</p>
 <p>The type fields of <em>Base Price</em> and <em>Reference Price</em> have been filled in by the system. Here the <em>Base Price</em> field represents the price negotiated with the customer.</p>
 <p>The <em>Reference Price</em> field shows the reference price group associated with the reference type. These prices allow users to understand how the price on the order line was calculated.</p>
-<p><img src="../../images/image8.png" alt=""></p>
-<p><img src="../../images/image9.png" alt=""></p>
-<u>
-  <strong>Note:</strong>
-</u>
-<p><strong>The two prices, the base price and the reference price, can also be shown on the invoice. This allows the customer to also understand how the price was calculated.</strong></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The two prices, the base price and the reference price, can also be shown on the invoice. This allows the customer to also understand how the price was calculated.</p>
+</div>
 <h2 id="updating-reference-prices">Updating Reference Prices</h2>
 <p>All reference prices (e.g. EUWID) can be updated in their own form. The reference prices serve to simplify this process. Here the prices for one price group are defined relative to the prices in another price group (e.g. the &quot;EUWID&quot; group). If the price in the reference price group (such as EUWID) is changed, all prices in associated groups will be modified as well.</p>
 <p>Go to</p>
 <p><em><span class="smallcaps">enwis Services / Services / Service
 Prices / Reference Prices</span></em></p>
 <p>to see all reference price groups:</p>
-<p><img src="../../images/image10.png" alt=""></p>
 <p>This form allows users to conveniently view and edit the reference price groups. They have the option of filtering the list to show only certain price groups and a certain date. Then all associated services will be displayed for subsequent editing.</p>
-<u>
-  <strong>Note:</strong>
-</u>
-<p><strong>For price groups to represent reference prices, the Reference Type field in the price groups screen must have a value other than <empty>.</empty></strong></p>
-<p><img src="../../images/image11.png" alt=""></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>For price groups to represent reference prices, the Reference Type field in the price groups screen must have a value other than <empty>.<p>
+</empty></div>
 </empty></article>
           </div>
           

@@ -85,25 +85,20 @@
 <p>This allows the routine to continue posting other documents despite the error in posting one document, if the users have established the default setting in that invoice type accordingly.</p>
 <h2 id="handling-errors">Handling Errors</h2>
 <p>Alternatively, when the <em>Break On Error</em> box is checked, the invoice type or invoice batch will behave the same as in a manually initiated posting routine. In this case, the batch processing will not continue but will be interrupted when the same error message appears that the users would receive from the document when posting using the <strong>F9</strong> key.</p>
-<p><img src="../../images/image1.png" alt=""></p>
 <p><strong><u>Example:</u></strong></p>
 <p><strong>We assume that the RELEASE invoice type card will execute the release of two orders 1325 and 1326. The following error occurs for order 1326: Customer No. 1000113 ist blocked.</strong></p>
 <p>If the <em>Break On Error</em> box is checked in the invoice type, then the processing is immediately interrupted when the error occurs with the same error message that enwis would send were the invoice manually initiated from a document:</p>
-<p><img src="../../images/image2.png" alt=""></p>
 <p>In this case, no invoice log ledger entry will be made. In addition, no other subsequent posting routines with the same invoice type will be executed. enwis completely interrupts the processing when this error message is sent.</p>
 <p>If the <em>Break On Error</em> box is</p>
 <p><u>not</u></p>
 <p>checked, then the batch processing continues to the end. The following message will be issued to indicate that a problem occurred in the processing of at least one of the documents with that invoice type. This message is displayed if the <em>Show Statistics</em> box under the</p>
 <p><span class="smallcaps">General</span></p>
 <p>tab for that invoice type is checked.</p>
-<p><img src="../../images/image3.png" alt=""></p>
 <p>There is also a message in the corresponding invoice log showing that there was a problem executing the invoice type.</p>
-<p><img src="../../images/image4.png" alt=""></p>
 <h2 id="invoice-batches">Invoice Batches</h2>
 <p>The <em>Break On Error</em> field offers the same function for invoice batches. The two functions are completely separate, however, which means:</p>
 <p>The setting in the invoice type refers exclusively to how enwis handles the execution of individual documents of that invoice type and has no influence on how it handles the execution of this invoice type within an invoice batch.</p>
 <p>This function is defined separately for the invoice batch and there it defines how the program will treat all invoice types executed within that batch.</p>
-<p><img src="../../images/image5.png" alt=""></p>
 <h2 id="other-setup-options">Other Setup Options</h2>
 <p>The invoice group code that users are assigned to will determine whether they have the authority to change the <em>Break On Error</em> field setting in a given invoice type or invoice batch.</p>
 <p>The parameters are defined on the invoice group card regarding which members have the independent authority to change this invoice group code.</p>
@@ -111,10 +106,7 @@
 <p><span class="smallcaps">General</span></p>
 <p>tab, then the users may change this setting in the invoice type and invoice batch; otherwise, they must work with the given default setting.</p>
 <p>In the example below, users assigned to the PRIV. CUST. invoice group may not edit the <em>Break On Error</em> field. This field cannot be edited in the invoice type or invoice batch.</p>
-<p><img src="../../images/image6.png" alt=""></p>
-<p><img src="../../images/image7.png" alt=""></p>
 <p>There is an additional setting option which refers to internal invoice batch functions. Routines can be called up for orders and completed orders by pressing the F9 Posting Functions key to initiate an internal invoice batch.</p>
-<p><img src="../../images/image8.png" alt=""></p>
 <p>In the background, the same functions are triggered as would be initiated by calling up an invoice type filtered to only include the current order. Any errors here will also be intercepted and saved in a log as though the combine invoice had been manually initiated using an invoice type that actually exists.</p>
 <p>However, the users still have the option in this case to set whether this internal batch routine should operate with error suppression or immediate error messages. This is accomplished by checking the <em>Break on Batch Invoice Error</em> box under the</p>
 <p><span class="smallcaps">Combine
@@ -123,7 +115,6 @@ Invoice</span></p>
 <p>_<span class="smallcaps">Invoice
 Setup</span></p>
 <p>._</p>
-<p><img src="../../images/image9.png" alt=""></p>
 </article>
           </div>
           

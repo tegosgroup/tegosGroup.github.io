@@ -120,7 +120,6 @@ QuickDoc</span></em></p>
 complete contract</span></em></p>
 <p>. In this way a QuickDoc form which matches the contract line is faded in, namely the one which is determined by the dispatching code consigned in the contract line.</p>
 <p>QuickDoc can however also be activated from the customer task site plan without reference to contract lines. There is the possibility of generating various types of orders in the header of the customer site task plan.</p>
-<p><img src="../../images/image1.png" alt=""></p>
 <p>If QuickDoc is called from the contract lines it specifies which dispatching code is responsible for the appearance of the QuickDoc form. If this reference is missing, this information must come from elsewhere.</p>
 <p>Therefore the correct QuickDoc form must be activated via the various buttons or the buttons must be allocated to the dispatching codes. This occurs via the work flow types.</p>
 <p>These functions are also available from the contract lines of a customer task site in an analogous fashion. In the standard option the QuickDoc reverts back to the dispatching code consigned in the contract and offers the corresponding QuickDoc form for further processing.</p>
@@ -148,18 +147,15 @@ complete contract</span></em></p>
 <p>or</p>
 <p><em><span class="smallcaps">Waste disposal processes</span></em></p>
 <p>, there is first of all now information about the customer, the contract, the service or the dispatching code available. The QuickDoc form is opened empty:</p>
-<p><img src="../../images/image2.png" alt=""></p>
 <p>It is only when a dispatching code (document type = Order) defined for this purpose is selected manually in the field <em>Dispatching Code</em> that the form is shaped in a way with which meaningful work can take place:</p>
-<p><img src="../../images/image3.png" alt=""></p>
 <p>Here the necessary data (e.g. customer, customer task site, service, equipment,...) can be input successively for the order logging:</p>
-<p><img src="../../images/image4.png" alt=""></p>
 <p>If the order logging is completed with &quot;OK&quot;, the user receives the following message:</p>
-<p><img src="../../images/image5.png" alt=""></p>
 <p>enwis has created a standard order form in the background:</p>
-<p><img src="../../images/image6.png" alt=""></p>
-<p><strong><u>Note:</u></strong></p>
-<p><strong>No price processing can occur in the QuickDoc form. Prices cannot be viewed there either. Price maintenance occurs completely separately from the order logging and invisibly for those employees who work exclusively with QuickDoc. Prices are in principle automatically extracted from the service price table and written into the standard order form.</strong></p>
-<p><strong>The use of QuickDoc requires particularly thorough price maintenance as the price fixing thus removes control from the user. In the aftermath checks need to take place in the order created regarding whether a price has been fixed for each order line.</strong></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>No price processing can occur in the QuickDoc form. Prices cannot be viewed there either. Price maintenance occurs completely separately from the order logging and invisibly for those employees who work exclusively with QuickDoc. Prices are in principle automatically extracted from the service price table and written into the standard order form.<br>
+The use of QuickDoc requires particularly thorough price maintenance as the price fixing thus removes control from the user. In the aftermath checks need to take place in the order created regarding whether a price has been fixed for each order line.</p>
+</div>
 <h3 id="use-of-quickdoc-out-of-the-customer-task-site-plan-without-contract-lines-reference">Use of QuickDoc out of the customer task site plan without contract lines reference</h3>
 <p>QuickDoc can be started in the customer task site plan without branching into the contract lines allocated to the customer task sites beforehand. The following options are available in the header of the customer task site plan:</p>
 <ul>
@@ -172,7 +168,6 @@ complete contract</span></em></p>
 <li><p>Equipment Order</p>
 </li>
 </ul>
-<p><img src="../../images/image1.png" alt=""></p>
 <p>An individual dispatching code must be set up for each of the four order types if these buttons are to be used. The linking between the buttons and the dispatching codes is created via the field Workflow type on the dispatching card.</p>
 <p>When setting up the dispatching codes allocated to these buttons, it is necessary to consider the direction in which the data input will normally occur:</p>
 <ul>
@@ -185,9 +180,7 @@ complete contract</span></em></p>
 <p>From the contract lines of the customer task site plan QuickDoc is as a rule called up via the function</p>
 <p><span class="smallcaps">create order
 from contract.</span></p>
-<p><img src="../../images/image7.png" alt=""></p>
 <p>In this way a QuickDoc form suitable for the contract line is opened. The appearance of this form is determined by the dispatching code which is consigned in the contract line.</p>
-<p><img src="../../images/image8.png" alt=""></p>
 <p>In addition the following functions are also available which provide a completely different scenario:</p>
 <ul>
 <li><p>Create Default Order from Contract</p>
@@ -199,7 +192,6 @@ from contract.</span></p>
 <li><p>Create Equipment Order from Contract</p>
 </li>
 </ul>
-<p><img src="../../images/image9.png" alt=""></p>
 <p>These functions are provided to generate orders although no suitable order line has been consigned in the system.</p>
 <p><strong>Example: A customer rings up and orders a container. Up until this point only waste management services have been contractually agreed with him and consigned in enwis.</strong></p>
 <p>In this case the user could use the function</p>
@@ -212,7 +204,6 @@ from contract.</span></p>
 <p>Detailed information for all contract lines can be displayed via the link</p>
 <p>_<span class="smallcaps">NAVIGATE</span></p>
 <p>Line or Planning._</p>
-<p><img src="../../images/image10.png" alt=""></p>
 <p>The following information can be retrieved individually:</p>
 <ul>
 <li><p>Waste transfer notes connected with the contract line</p>
@@ -252,7 +243,6 @@ from contract.</span></p>
 <p>_<span class="smallcaps">Actions</span></p>
 <p><span class="smallcaps">create </span>_</p>
 <p>provides the user with the possibility of creating a concrete order via the contract lines overview. In doing so he has a choice of six alternatives:</p>
-<p><img src="../../images/image11.png" alt=""></p>
 <h3 id="create-immediate-order-from-contract">Create Immediate Order from Contract</h3>
 <p>A new order is created directly from the current contract line. No additional inputs are required. The system decides automatically the way in which the new order is created:</p>
 <ul>

@@ -83,7 +83,6 @@
 <h2 id="preview">Preview</h2>
 <p>When batch processing is initiated with the <em>Preview</em> task, the system first generates a list of all documents to be created, as though the <em>Create Documents</em> option had been selected.</p>
 <p>This is a list of sales orders that do not actually exist: a preview list. This list is shown on the screen as a form.</p>
-<p><img src="../../images/image1.png" alt=""></p>
 <p>Some points on it can be edited. For example, users can change the task date and thereby defer the sales order. They can also delete individual lines from the list.</p>
 <p>Users can print a cycle plan directly from the preview by clicking on the</p>
 <p><em><span class="smallcaps">Print</span></em></p>
@@ -94,11 +93,12 @@
 <p>tab in Cycle Preview, users have the option to define other tasks, as they do under</p>
 <p><em><span class="smallcaps">Create Cyclic Documents</span></em></p>
 <p>when starting batch processing.</p>
-<p><img src="../../images/image2.png" alt=""></p>
 <p>When users select the <em>Create Documents</em> task and click on OK, the cyclical documents will be created from the preview list. All changes made by the users will be incorporated.</p>
 <p>If users select the <em>Print Cycle Plan</em> task, the system will only print the cycle plan.</p>
-<p><strong><u>Note:</u></strong></p>
-<p><strong>Changes to the information in the cycle preview only affect the documents to be created, not the underlying contracts. For example, documents are created on March 27, 2013 and consequently the next cycle date in the contract will be set to April 3, 2013; deleting the document line (in the preview) with the task date of March 27, 2013 would prevent this sales order from being created but it would not change the next cycle date in the contract, which will still be set to April 3, 2013.</strong></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Changes to the information in the cycle preview only affect the documents to be created, not the underlying contracts. For example, documents are created on March 27, 2013 and consequently the next cycle date in the contract will be set to April 3, 2013; deleting the document line (in the preview) with the task date of March 27, 2013 would prevent this sales order from being created but it would not change the next cycle date in the contract, which will still be set to April 3, 2013.</p>
+</div>
 <p><strong><em>The system logic assumes that the cycle is not supposed to be changed, merely that the last sales order should not be executed, by exception and for whatever reason.</em></strong></p>
 <p>When one considers the preview logic, it makes good sense in general to proceed through</p>
 <p><em><span class="smallcaps">Create Cyclic Documents</span></em></p>
@@ -114,7 +114,6 @@
 <p>As mentioned above, the system automatically defers task dates according to the logic set in the cycle code. This is normally when a task falls on a bank holiday. When the calculation function finds a next task date that is blocked, either by a negative calendar in the system or the settings in the <em>Include Saturdays</em> and <em>Include Sundays</em> fields on the cycle card, the task date of the sales order is deferred until the next possible date.</p>
 <p>Automatic date deferment is very useful, especially during the Easter and Christmas periods, when several Sundays and bank holidays fall in a row and the dates therefore need to be reviewed and perhaps manually corrected.</p>
 <p>To help dispatchers immediately spot a critical date, automatically deferred task dates are flagged as <em>Deferred</em> in the list.</p>
-<p><img src="../../images/image3.png" alt=""></p>
 </article>
           </div>
           

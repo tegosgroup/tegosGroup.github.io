@@ -84,7 +84,6 @@
 <p>In enwis, the difference between master data and transaction data is critical. Master data is necessary to record relatively constant information, such as customers, services, etc.</p>
 <p>Where possible, this data should only be entered into the system once and stored as master data. The more information users can enter into the master data, the less they need to enter during their day-to-day operations and the more automated and effectively the data can be handled.</p>
 <p>Master data is recorded in card format.</p>
-<p><img src="../../images/image1.png" alt="Wor6729"></p>
 <p>Transaction data includes all documents required to depict the operating business (offers, contracts, orders, etc.). Master data constitutes the basis for depicting the operating business.</p>
 <p>For example, only three pieces of information normally need to be entered to set up an order:</p>
 <ul>
@@ -106,13 +105,14 @@
 <li><p>Income and expense accounts</p>
 </li>
 </ul>
-<p><img src="../../images/image2.png" alt="Wor373E"></p>
 <p>will either be maintained in the master data or automatically determined by enwis (such as the posting matrix).</p>
 <p>enwis provides two forms for depicting the operating business: the contract and the sales order. The contract is used to document a longer term agreement with a customer or supplier. In contrast, the sales order records a single service rendered.</p>
 <p>The contract can be viewed as a kind of template for sales orders, because a sales order can be created out of a contract with the &quot;touch of a button&quot;. For this reason, contracts and sales orders basically have a parallel structure and the main difference between the two is the length of time they remain in the system.</p>
 <p>Invoices and credit notes can only be created out of a sales order. Therefore, it is vital to create sales orders to be able to account for billable services with a customer or supplier.</p>
-<p><strong><u>Note:</u></strong></p>
-<p><strong>Invoices and credit notes can also be created without a previous sales order, but the resulting financial accounting entries have no reference to the service information.</strong></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Invoices and credit notes can also be created without a previous sales order, but the resulting financial accounting entries have no reference to the service information.</p>
+</div>
 <p>In principle, users should always set up contracts, even if it is assumed that there will only be one business case. After being posted, the sales orders are deleted or archived. In contrast, contracts stay on file permanently to trace the business relations with customers and suppliers.</p>
 <p>Contracts and sales orders basically consist of a header with any number of lines below it. The lines represent the billable business cases.</p>
 <p>In turn, these lines are assigned of any number of line entries. The most important entries:</p>
@@ -189,8 +189,10 @@
 <p>Lines from entirely different sales orders can be brought together to make up one invoice or credit note and the lines of one order can be distributed to different invoices and credit notes.</p>
 <p>The sales order lines are linked together with one order job number. The order job number is automatically allotted when the sales order is set up or it can be manually assigned. The order job number allows users to trace the various invoice lines and entries emerging from one sales order.</p>
 <p>When an invoice or credit note is posted, Business Central creates a default sales invoice and records the information important to the waste management industry in so-called invoice ledger entries.</p>
-<p><strong><u>Note:</u></strong></p>
-<p><strong>This is why enwis works with its own cancelation function. When a value is canceled, enwis does not go back to the posted document but to the archived, unposted document. Unlike the posted sales invoice, the unposted document still contains all of the information.</strong></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>This is why enwis works with its own cancelation function. When a value is canceled, enwis does not go back to the posted document but to the archived, unposted document. Unlike the posted sales invoice, the unposted document still contains all of the information.</p>
+</div>
 <p>It is strongly recommended that the enwis Waste Management Setup be set so that unposted invoices and credit memos are always archived.</p>
 <p>To work with enwis, it is necessary to have an understanding of documents, posting routines, and cancelation functions:</p>
 <ul>

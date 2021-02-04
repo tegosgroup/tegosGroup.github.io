@@ -91,11 +91,9 @@
 <p><em><span class="smallcaps">enwis
 services/equipment/Administration/Equipment Rentals/Rental
 invoicing/rental invoice groups</span></em></p>
-<p><img src="../../images/image1.png" alt=""></p>
 <p>The rental invoice group is consigned on the customer/vendor card in the field <em>Rental Invoice Grp. Code</em> on the register</p>
 <p><span class="smallcaps">Invoicing</span></p>
 <p>as shown in the following image.</p>
-<p><img src="../../images/image2.png" alt=""></p>
 <p>On the customer/vendor task site card this also occurs on the register</p>
 <p><span class="smallcaps">Fakturierung</span></p>
 <p>. On the project card this allocation occurs on the register</p>
@@ -107,11 +105,9 @@ invoicing/rental invoice groups</span></em></p>
 <p><em><span class="smallcaps">enwis
 Services/Equipment/Administration/setup/groups &amp; matrices/equipment
 group</span></em></p>
-<p><img src="../../images/image3.png" alt=""></p>
 <p>Each equipment item can be allocated to one of the equipment groups defined here. The allocation occurs via the field <em>Equipment Group.</em> on the register</p>
 <p><span class="smallcaps">general</span></p>
 <p>of the equipment card.</p>
-<p><img src="../../images/image4.png" alt=""></p>
 <h2 id="rental-invoice-matrix">Rental Invoice Matrix</h2>
 <p>In the rental invoice matrix the various criteria can now be used to consign combinations from which enwis establishes an invoice method automatically.</p>
 <p>The rental invoice matrix can be called up under</p>
@@ -119,10 +115,11 @@ group</span></em></p>
 Rentals/Rental invoicing/rental invoice matrix</span></em></p>
 <p>but also from the customer/vendor card, the customer/vendor task site card and from the project card.</p>
 <p>In addition to the criteria rental invoice group and equipment group already named, the matrix can also have the posting type, the equipment number (of a concrete equipment item rather than just the equipment group), the service group code and the start date consigned as relevant criteria to the invoice method fixing.</p>
-<p><img src="../../images/image5.png" alt=""></p>
 <p>The logic is to be seen as analogous to the pricing. In the example above all commercial customers who rent a skip get the invoice method MONTHLY while the private customers who rent a skip get the invoice method DAILY.</p>
-<p><strong><u>Note:</u></strong></p>
-<p><strong>If all customers are to receive the same invoice method for all containers, it is sufficient to apply a single data record which has an entry in the field <em>Invoice Method Code</em> and for which all other fields otherwise remain empty.</strong></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>If all customers are to receive the same invoice method for all containers, it is sufficient to apply a single data record which has an entry in the field <em>Invoice Method Code</em> and for which all other fields otherwise remain empty.</p>
+</div>
 <h2 id="number-of-rental-invoice-and-equipment-groups">Number of rental invoice and equipment groups</h2>
 <p>A question in the implementation of enwis is how many equipment group codes or rental invoice group codes there should be. The response depends on what the establishment of the invoice method is primarily based on.</p>
 <p>For the simplification of just two invoice methods let us assume an invoice according to daily rental (DAILY) and an invoice according to monthly rental (MONTHLY). In practice there could be the following scenarios:</p>

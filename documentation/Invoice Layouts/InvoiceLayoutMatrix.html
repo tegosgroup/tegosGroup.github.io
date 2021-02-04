@@ -106,7 +106,6 @@
 <p>When the sales order is released, the invoice layout code is automatically determined using the invoice layout matrix and copied from there to the document lines. This method will be described in further detail below. Combined with the manual assignment of an invoice layout in the contract, this is surely the most efficient and, for users, easiest way to handle the many options for assigning invoice layouts.</p>
 <h3 id="matrix-setup">Matrix Setup</h3>
 <p>The invoice layout matrix works similarly to the other known matrices in enwis, e.g. the rental invoice matrix. It determines an invoice layout code by finding the matrix entry that exactly matches the current business case.</p>
-<p><img src="../../images/image1.png" alt=""></p>
 <p>In doing so, it compares the order line to the invoice layout matrix. In the example above, the settings define that the invoice layout PAPER should be used when</p>
 <p><u>all</u></p>
 <p>of the following conditions apply:</p>
@@ -163,17 +162,14 @@
 <p>These additional criteria can be defined in</p>
 <p><em><span class="smallcaps">Invoice Setup</span></em></p>
 <p>.</p>
-<p><img src="../../images/image2.png" alt=""></p>
 <p>The system can refer directly from the invoice layout matrix to the additional options defined in Invoice Setup using the <em>Invoice Layout Reference 1</em> field.</p>
 <p>The invoice layout code is determined using the invoice layout matrix as soon as the sales order is released. Invoice layout codes are only determined for order lines that do not already have one, e.g. that was assigned manually via a contract or sales order.</p>
 <p>The manually assigned invoice code takes priority over automatic determination through the invoice layout matrix and the latter will not override the former.</p>
-<p><strong><u>Note:</u></strong></p>
-<p><strong>If the release of a completed order is reversed, the invoice layout will not be undone, nor will it be redefined when the order is released again.</strong></p>
-<p>**When a document is copied into another, the invoice layout code is</p>
-<p><u>never</u></p>
-<p>copied, too.**</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>If the release of a completed order is reversed, the invoice layout will not be undone, nor will it be redefined when the order is released again. When a document is copied into another, the invoice layout code is never copied, too.</p>
+</div>
 <p>Users can go from the invoice layout matrix to the invoice layout card of the current matrix line by clicking on the <em>Layout</em> icon.</p>
-<p><img src="../../images/image3.png" alt=""></p>
 <h2 id="invoice-layout-assignment-via-external-account">Invoice Layout Assignment via External Account</h2>
 <h3 id="general-information-1">General Information</h3>
 <p>As described above, it is not generally necessary to assign an invoice layout to or create a new invoice layout for newly entered customers and vendors. Depending on the setup of the invoice layout matrix, this might already be taken care of by a default invoice layout.</p>
@@ -182,7 +178,6 @@
 <p>under the</p>
 <p><span class="smallcaps">Invoice Layout</span></p>
 <p>tab for customers and vendors.</p>
-<p><img src="../../images/image4.png" alt=""></p>
 <p>The values in the following fields are important:</p>
 <ul>
 <li><p>Inv. Layout New Customer</p>

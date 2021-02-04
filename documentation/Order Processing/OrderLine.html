@@ -95,11 +95,11 @@
 </ul>
 <p>The standard option in the field <em>Art</em> is &quot;Service&quot;. For the option &quot;Service&quot; the user is guided into the service overview, meaning the service catalog of the company, in the field <em>Nr</em>. and can select from the services defined here.</p>
 <p>Numerous data consigned to the services are transferred automatically into the order line on input of the service number in the field <em>Nr</em>. The service descriptions are transferred into the fields <em>Description</em> or where appropriate <em>Description 2</em> of the order line.</p>
-<p><img src="../../images/image1.png" alt=""></p>
 <p>The fields <em>Gen. Bus. Posting Group, VAT Bus. Posting Group</em>, <em>Gen. Prod. Posting Group</em> und <em>VAT Prod. Posting Group</em> are extracted from the data consigned to the customer or service by enwis as standard. The costs and proceeds from the operational area are entered in the accounts of the general ledger via these posting groups on invoicing the orders. These fields are normally filled automatically by the master data consigned for the customer or service.</p>
-<p><img src="../../images/image2.png" alt=""></p>
-<p><strong><u>Note:</u></strong></p>
-<p><strong>If necessary these fields can be overwritten on the basis of the corresponding set up. This is however not advised. The case workers in the order logging should as a rule not concern themselves with the posting of proceeds on general ledger accounts. Posting groups should be maintained exclusively in the master data by the entitled persons.</strong></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>If necessary these fields can be overwritten on the basis of the corresponding set up. This is however not advised. The case workers in the order logging should as a rule not concern themselves with the posting of proceeds on general ledger accounts. Posting groups should be maintained exclusively in the master data by the entitled persons.</p>
+</div>
 <p>The field <em>Posting Type</em> stipulates whether a customer or vendor business is involved; depending on the setting in this field the branching from the field <em>Buchung mit Nr</em>. occurs into the customer or vendor list.</p>
 <p>The field <em>Post-with No</em>. is preallocated with the number of the customer entered in the order header. If various customers and possibly also vendors are to be activated in an order, this must be stipulated via the two fields <em>Posting Type</em> and <em>Post-with No</em>..</p>
 <p>The customer or vendor task site are stipulated via the field <em>Task-at Code</em> of the order line.</p>
@@ -110,7 +110,6 @@
 <p>Via the field <em>Inv. Sub-Adress Code</em> an</p>
 <p><u>invoice address</u></p>
 <p>consigned to the customer or vendor which is different to their main address is allocated. This invoice address must have been consigned to the customer/vendor previously on the customer/vendor card.</p>
-<p><img src="../../images/image3.png" alt=""></p>
 <p>The waste material or recyclable material is classified for waste management or transport orders via the fields <em>Waste Material Code</em> and <em>EWC Code</em>. These data are consigned in the master data of the service by many enwis customers so that both fields are automatically filled by these defaults.</p>
 <p>The field <em>Waste Material Code</em> refers to the waste material catalog defined by the company itself which is the basis of the inventory valuation for example while the field <strong><em>EWC Code</em></strong> refers to the official EWC catalog.</p>
 <p><strong><u>Note</u></strong></p>
@@ -119,7 +118,6 @@
 <p><em><span class="smallcaps">Waste Material Administration Material Catalogs
 Setup</span></em>**</p>
 <p><strong>Here other designations can also be chosen for the fields <em>Globaler Int. Material Catalog</em> and <em>Globaler Ext. Material Catalog</em> depending on the wishes of the customer.</strong></p>
-<p><img src="../../images/image4.png" alt=""></p>
 <p>Warehouse outflows and inflows or route business are depicted via the two fields <em>Waste Entry Type</em> and <em>Drop Shipment Type.</em></p>
 <p>The field <em>Waste Entry Type</em> has the following options:</p>
 <ul>
@@ -190,13 +188,14 @@ Setup</span></em>**</p>
 </li>
 </ul>
 <p>The field <em>Operational Qty.</em> and the fields <em>Qty. to Disposal, Qty. to Handle, Qty. to Drive</em> and <em>Qty. to Work</em> are only input aids in order to be able to generate line entries with the operational service data without having to change from the line into the entries.</p>
-<p><strong><u>Note:</u></strong></p>
-<p><strong>The data flow does in principle only run from the line to the entries and not in reverse. This means that inputs on the order line are transferred into the entry but changes made to the entry are not written back onto the line.</strong></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The data flow does in principle only run from the line to the entries and not in reverse. This means that inputs on the order line are transferred into the entry but changes made to the entry are not written back onto the line.</p>
+</div>
 <p>In the field <em>Unit Price</em> the service price per sales unit, meaning per tonne or cbm etc, is either input by the user or established automatically by the system. It is recommended that a standard service price is consigned to each service and that this is varied in line with other price forming factors such as e.g. price group of the customer.</p>
 <p>Via a tick in the field <em>Price fixed</em> there is the possibility of fixing the input price in such a way that it can no longer be overwritten. But</p>
 <p><u>no</u></p>
 <p>price history develops when using this function.</p>
-<p><img src="../../images/image5.png" alt=""></p>
 <p>The field <em>Quality Code</em> can be filled automatically from the master data of the service or it is maintained manually in the order line.</p>
 <p>Quality codes can be defined completely free depending on the requirements of the company. In the area of waste management, additions of foreign materials, the purity of materials, the heating value and similar material properties can be shown.</p>
 <p>From a functional point of view quality codes are an important, price forming criterion which is taken into consideration by enwis for pricing.</p>
@@ -218,12 +217,10 @@ Setup</span></em>**</p>
 <p>If a tick is made in the <strong><em>Weighbridge Setup</em></strong> in the register</p>
 <p><span class="smallcaps">General</span></p>
 <p>in the field <em>Auto-Transfer Weighbr. Result</em>, the weighing data are transferred into the order line connected to the weighbridge ticket automatically during the weighing process. No more work is involved here in the order processing.</p>
-<p><img src="../../images/image6.png" alt=""></p>
 <p>The date of the service provision is captured in the field Task date. The dispatch date is set to the work date in the order header and the order lines by the system as standard. As a rule it must however be set to the dispatch date desired by the customer manually by the user on logging the order.</p>
 <p>If a dispatch date was already set in the contract, this is accepted in the order if an order is created from the contract. The way in which enwis transfers the dispatch date from the contract to the order can be controlled in the <strong><em>Waste Management Setup</em></strong>, Register</p>
 <p><span class="smallcaps">contract</span></p>
 <p>via the field <em>Contract Task Date (Default)</em> .</p>
-<p><img src="../../images/image7.png" alt=""></p>
 <p>It has the four options:</p>
 <ul>
 <li><p>Create</p>
@@ -244,14 +241,11 @@ Setup</span></em>**</p>
 <p>Via non billable order lines it is on the one hand possible to record services for customers which cannot or should not be invoiced (e.g. service errors) and on the other hand all internal company services.</p>
 <p>By placing a tick in the field <em>Qty. Consolidation</em> those order lines should be marked which are in principle to be calculated with quantity compressed in the combine invoice. Quantity compressed invoice means that similar invoice quantities from various orders and order entries which have occurred for a customer in an invoicing period are brought together as an invoice entry.</p>
 <p>The field can be set to &quot;Yes&quot; in the contract and thus transferred automatically to the order or only set to &quot;Yes&quot; in the order. Each order line to be invoiced can be controlled individually via the field <em>Qty. Consolidation.</em></p>
-<p><img src="../../images/image8.png" alt=""></p>
 <p>In the field <em>On Hold</em> a maximum three digit code can be issued, e.g. the name abbreviation of the responsible case worker. The relevant order line for the invoices is blocked by any entry in this field.</p>
-<p><img src="../../images/image9.png" alt=""></p>
 <p>The field <em>Comment</em> cannot be edited directly. If some comments were assigned via the link</p>
 <p><em><span class="smallcaps">action (Alt + F10) Line
 line Comments</span></em></p>
 <p>or <strong>Ctrl + S</strong> of the line, a tick appears in the field <em>Comment</em>.</p>
-<p><img src="../../images/image10.png" alt=""></p>
 <p>Via the two fields <em>Contract No.</em> and <em>Contract Line No**</em>.** each order from which a contract was created is linked with this original form. These entries cannot be overridden manually by the user.</p>
 </article>
           </div>

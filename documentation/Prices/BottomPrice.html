@@ -95,23 +95,19 @@
 <p><em><span class="smallcaps">Prices</span></em></p>
 <p>tab in <strong><em>Waste Management Setup</em></strong> must be checked.</p>
 </li>
+<li><p>A bottom price must be entered into the <em>Bottom Price</em> field on the <strong><em>service price line</em></strong>.</p>
+</li>
 </ul>
-<p><img src="../../images/image1.png" alt=""></p>
-<ul>
-<li>A bottom price must be entered into the <em>Bottom Price</em> field on the <strong><em>service price line</em></strong>.</li>
-</ul>
-<p><img src="../../images/image2.png" alt=""></p>
 <h3 id="example-of-bottom-price">Example of Bottom Price</h3>
 <p>Users create a new waste management order with the service shown in the screen shot above.</p>
-<p><img src="../../images/image3.png" alt=""></p>
 <p>enwis copies the price saved in the service price table to the order line.</p>
 <p>Users create a second order and enter a price in the order line that is below the bottom price saved in the system.</p>
-<p><img src="../../images/image4.png" alt=""></p>
 <p>When they attempt to post the order, the following error message appears.</p>
-<p><img src="../../images/image5.png" alt=""></p>
 <p>The order line cannot be posted until a price is entered that equals or exceeds the bottom price.</p>
-<p><strong><u>Note:</u></strong></p>
-<p><strong>enwis does not check the bottom price until posting. If users wish, program code can be written to have it checked earlier, e.g. in a release routine.</strong></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>enwis does not check the bottom price until posting. If users wish, program code can be written to have it checked earlier, e.g. in a release routine.</p>
+</div>
 </article>
           </div>
           

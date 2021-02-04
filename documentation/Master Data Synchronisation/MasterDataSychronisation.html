@@ -83,13 +83,11 @@
 <p>The Master Data Synchronisation module (MDS for short) helps you replicate master data from a master company in one or more client companies. In doing so, you can choose to replicate all fields or only selected fields in a table. The tables to be synchronised can be configured as desired.</p>
 <p>The synchronised data can only be edited in the master company. If users attempt to edit the synchronised data in a client company, they will receive an error message. This edit lock only applies to synchronised data. If you only transfer some of the fields in a table, the remaining fields can still be edited.</p>
 <p>The tables to be synchronised are organised into sets. One table can appear in multiple sets. You can use filters to restrict the records of a table to be synchronised within a set. This allows you to update data specific to certain operations while updating the master company.</p>
-<p><img src="../../images/image1.png" alt=""></p>
 <p>Modifications are not immediately synchronised, but rather called by the client companies using the Pull method. The synchronisation interval can be defined in the client company for each set. The data is synchronised using an OData service offered by the master company, which functions beyond the boundaries of databases and servers.</p>
 <h1 id="data-synch-set">Data Synch. Set</h1>
 <p>Modifications are not immediately synchronised, but rather called by the client company using the Pull method. The synchronisation interval can be defined in the client company for each set. The data is synchronised using an OData service offered by the master company, which functions beyond the boundaries of databases and servers.</p>
 <p>You will find the <strong><em>Data Synch. Set List</em></strong> in the main menu under:</p>
 <p>Departments/ Administration/ Application Setup/ Master Data Synchronisation/ Data Synch. Set List</p>
-<p><img src="../../images/image2.png" alt=""></p>
 <table>
 <thead>
 <tr>
@@ -143,7 +141,6 @@ Synch. Fields |
 <p>There is a third option for limiting the records to be synchronised that consists of defining relationships. In this case, the only records that will be synchronised are those with a relationship to an already synchronised record.</p>
 <h3 id="define-table-filter">Define Table Filter</h3>
 <p>To define a table filter, select &quot;Filter&quot; in the <em>Filter Method</em> field. In the <em>Table Filter</em> field then click on the AssistEdit to define the filter.</p>
-<p><img src="../../images/image3.png" alt=""></p>
 <table>
 <thead>
 <tr>
@@ -170,7 +167,6 @@ Field Filter  |
 <p>.</p>
 <h3 id="define-record-selection">Define Record Selection</h3>
 <p>If you choose the &quot;Selected&quot; option in the <em>Filter Method</em> field you can use the AssistEdit in the <em>Table Filters</em> field to select the records to be synchronised.</p>
-<p><img src="../../images/image4.png" alt=""></p>
 <table>
 <thead>
 <tr>
@@ -194,7 +190,6 @@ Field Filter  |
 <p>You can only define a relationship between two tables that have been inserted. The application then changes the Filter Method field to &quot;Relationships&quot;. You cannot edit the content of this field.</p>
 <p>You can insert a table into the set definition by using the INSERT function in the Data Synch. Set window. When you want to cancel an existing relationship, use the REMOVE function. The application then re-sets the Filter Method field to &quot;Filter&quot; and removes defined table relationships.</p>
 <p>You can define table relationships to tables higher in the hierarchy using the Table Filter field's AssistEdit.</p>
-<p><img src="../../images/image5.png" alt=""></p>
 <table>
 <thead>
 <tr>
@@ -221,7 +216,6 @@ Field Filter  |
 </table>
 <h2 id="define-fields">Define Fields</h2>
 <p>Using the <em>Field Synch.</em> field in the <strong><em>Data Synch. Table</em></strong> table, you can define whether all fields should be synchronised or only certain fields. If you choose &quot;Some Fields&quot;, you can use AssistEdit to select the fields to be synchronised.</p>
-<p><img src="../../images/image6.png" alt=""></p>
 <p>Primary key fields are displayed in bold, blue letters in this window. These fields are selected automatically and cannot be de-selected.</p>
 <table>
 <thead>
@@ -235,14 +229,16 @@ Field Filter  |
 </tr>
 </tbody>
 </table>
-<p>Note: When a table appears multiple times within one set, the Field Synch. field needs to have the same setting in all records. The same is true for the field definition.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>When a table appears multiple times within one set, the Field Synch. field needs to have the same setting in all records. The same is true for the field definition.</p>
+</div>
 <h1 id="odata-web-service">OData Web Service</h1>
 <p>To allow client companies to call data, you must set up a Web service for the master company. You can have the application set up a web service using the</p>
 <p><em><span class="smallcaps">Create Web Service</span></em></p>
 <p>function under <strong><em>Data Synch. Setup</em></strong>. The Web service will then be published under the name &quot;ChangeTracking&quot;.</p>
 <p>You can also set up the Web service manually in the <strong><em>Web Services</em></strong> table.</p>
 <p>Departments/ Administration/ IT Administration/ General/ Web Services</p>
-<p><img src="../../images/image7.png" alt=""></p>
 <table>
 <thead>
 <tr>
@@ -278,7 +274,6 @@ Field Filter  |
 <p>You define a data synch. job in the client companies. This creates a connection to a <strong><em>Data Synch. Set</em></strong> in the master company. You can set up multiple data synch. jobs in a client company with a connection to different data synch sets in different master companies.</p>
 <p>The synchronisation takes place, with time controls, using an OData web service that must be offered by the master company. For further information on the OData Web service, see Chapter 3 OData Web Service.</p>
 <p>Departments/ Administration/ Application Setup/ Master Data Synchronisation/ Data Synch. Job List</p>
-<p><img src="../../images/image8.png" alt=""></p>
 <table>
 <thead>
 <tr>
@@ -328,11 +323,13 @@ Field Filter  |
 </tr>
 </tbody>
 </table>
-<p>Note: The synchronisation is executed in connection with the service tier user. Therefore, the service tier user must also be set up as user in the master company.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The synchronisation is executed in connection with the service tier user. Therefore, the service tier user must also be set up as user in the master company.</p>
+</div>
 <h2 id="data-synch-server">Data Synch. Server</h2>
 <p>The data synch. server is where you set up the connection to the OData Web service of a master company. You can also set up the connection to your own NAV client service for your internal messaging system here.</p>
 <p>Departments/ Administration/ Application Setup/ Master Data Synchronisation/ Data Synch. Servers</p>
-<p><img src="../../images/image9.png" alt=""></p>
 <table>
 <thead>
 <tr>
@@ -378,18 +375,15 @@ Field Filter  |
 <h2 id="set-up-job-queue">Set up Job Queue</h2>
 <p>You may use the job queue by Microsoft Business Central for automatic synchronisation. The job queue allows you to plan data synchronisation in detail.</p>
 <p>Departments/ Administration/ Application Setup/ Job queue/ Job Queue Entries</p>
-<p><img src="../../images/image10.png" alt=""></p>
 <p>Set up a new <strong><em>Job Queue Entry</em></strong> for synchronisation. <strong><em>CodeUnit 5228782, Data Synch. via Job Queue</em></strong> must be entered as the object to be executed. If you wish to have the job repeated, tick the <em>Recurring Job</em> box.</p>
 <h2 id="set-up-nas-service">Set up NAS Service</h2>
 <p>You can initiate synchronisation directly using an NAS service. Executing synchronisation via an NAS service allows you to configure the synchronisation in second intervals.</p>
 <p>You configure the NAS service using the Microsoft Business Central snap-in for the Microsoft Management Console (mmc.exe).</p>
-<p><img src="../../images/image11.png" alt=""></p>
 <p>As Startup Codeunit enter the ID &quot;5228780&quot; for <strong><em>Data Synch. Mgt.</em></strong> You must enter &quot;StartSynch&quot; as the <em>Startup Method</em>.</p>
 <h1 id="record-mapping">Record Mapping</h1>
 <p>The records to be synchronised do not necessarily have to have the same primary key in the master or client companies. The module supports configurable links between two records.</p>
 <p>You set up the record links in the client companies in the <strong><em>Data Synch. Record Mapping</em></strong> table.</p>
 <p>Departments/ Administration/ Application Setup/ Master Data Synchronisation/ Data Synch. Record Mappings</p>
-<p><img src="../../images/image12.png" alt=""></p>
 <table>
 <thead>
 <tr>
@@ -417,7 +411,6 @@ Field Filter  |
 <h1 id="messaging-system">Messaging System</h1>
 <p>The module can notify users of the success or failure of data synchronisation using multiple communication channels. You can set up the messaging system in the <strong><em>Data Synch. Setup</em></strong> table.</p>
 <p>Departments/ Administration/ Application Setup/ Master Data Synchronisation/ Data Synch. Setup</p>
-<p><img src="../../images/image13.png" alt=""></p>
 <table>
 <thead>
 <tr>

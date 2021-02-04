@@ -86,10 +86,8 @@
 <p>When this is done, equipment entries will generate waste material entries whose weight is determined using the pile density of the equipment.</p>
 <p>The basis for this automatic conversion includes:</p>
 <ul>
-<li>Capacity of the equipment used (<em>Calc. Volume cubic meters</em>) on the <strong><em>equipment card</em></strong></li>
-</ul>
-<p><img src="../../images/image1.png" alt=""></p>
-<ul>
+<li><p>Capacity of the equipment used (<em>Calc. Volume cubic meters</em>) on the <strong><em>equipment card</em></strong></p>
+</li>
 <li><p>The <em>Specific Gravity</em> or <em>Specific Volume</em> of waste material saved in the <strong><em>conversion table</em></strong> (</p>
 <p><em><span class="smallcaps">enwis
 Services</span></em></p>
@@ -98,25 +96,21 @@ Services</span></em></p>
 <p><em><span class="smallcaps">Conversion Table</span></em></p>
 <p>)</p>
 </li>
+<li><p>The waste material saved in the <em>Allocation Content No.</em> field of the concept allocation line or, if this field is empty, the waste material number in the order line</p>
+</li>
 </ul>
-<p><img src="../../images/image2.png" alt=""></p>
-<ul>
-<li>The waste material saved in the <em>Allocation Content No.</em> field of the concept allocation line or, if this field is empty, the waste material number in the order line</li>
-</ul>
-<p><img src="../../images/image3.png" alt=""></p>
 <p>The following concept allocation has been entered:</p>
-<p><img src="../../images/image4.png" alt=""></p>
 <p>In addition to allocating the service, all of the waste material in one container should be converted according to the pile density.</p>
-<p><strong><u>Note:</u></strong></p>
-<p><strong>If an exception should be made and not all of the waste material should be converted, then the <em>Quantity %</em> field must be set to a value &lt; 100.</strong></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>If an exception should be made and not all of the waste material should be converted, then the <em>Quantity %</em> field must be set to a value &lt; 100.</p>
+</div>
 <p>When the concept allocation is generated in the sales order (</p>
 <p><em><span class="smallcaps">Actions</span></em></p>
 <p><em><span class="smallcaps">Function</span></em></p>
 <p><em><span class="smallcaps">Create
 Concept Allocation)</span></em></p>
 <p>, enwis automatically copies the values stored in the master data for the volumetric capacity (<em>Calc. Volume (cubic meters)</em>) of the equipment and the <em>Specific Gravity</em> and the <em>Specific Volume</em> of the waste material and uses them to determine the pile density allocation.</p>
-<p><img src="../../images/image5.png" alt=""></p>
-<p><img src="../../images/image6.png" alt=""></p>
 <p>enwis has copied the values in the <em>Specific Gravity</em> and the <em>Specific Volume</em> fields of waste material 100101 and the <em>Calc. Volume (cubic meters)</em> field of equipment 2005 to calculate the pile density of 0.0075 tons for the order line to be generated through the concept allocation.</p>
 <p>Equipment can only be automatically allocated to waste material when a value &gt; 0 is set in the <em>Quantity %</em> field of the concept allocation lines.</p>
 <p>The logic available for this can also be very useful for purposes other than strict concepts. The following example illustrates this:</p>

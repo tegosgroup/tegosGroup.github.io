@@ -114,13 +114,11 @@ Workflow/administration/dispatching code</span></em></p>
 <h2 id="dispatching-code---general-set-up">Dispatching code - General set up</h2>
 <p>One significant aspect in the setting up of dispatching codes is that the sequence of the contract lines in the customer task site plan is aligned to the alphanumeric code of the dispatching code. In principle the display of the contract lines in the customer task site plan is sorted according to the dispatching codes. The contract as a bundle of contract lines broken up into its component parts and newly arranged.</p>
 <p>In order to achieve meaningful sorting, the dispatching codes can each be designated an alphanumeric code which ensures that the waste management lines do in principle appear first for example. Any number of dispatching codes can be set up.</p>
-<p><img src="../../images/image1.png" alt=""></p>
 <h2 id="dispatching-code-card">Dispatching code card</h2>
 <h3 id="dispatching-code---general-register">Dispatching code - General register</h3>
 <p>The fields of the register card</p>
 <p><span class="smallcaps">general</span></p>
 <p>individually:</p>
-<p><img src="../../images/image2.png" alt=""></p>
 <p>The field <em>Document Type</em> is used to define which document type the dispatching code refers to. QuickDoc forms which are to be opened from contract lines must have a dispatching code with the document type = <em>Contract</em>. QuickDoc forms which are to be used without reference to a contract must have a dispatching code with the document type = <em>Order.</em></p>
 <p>The option field <em>Dispatching Batch Lines</em> can be used to define a sequence of dispatching codes which determines a sequence of QuickDoc forms which must be processed consecutively by the user.</p>
 <p>If this function is to be used, dispatching codes must be applied first of all which are to be incorporated into a batch. Via the link</p>
@@ -150,42 +148,40 @@ batch lines</span>_</p>
 </tbody>
 </table>
 <p>If the field <em>Start with Service No</em>. is ticked on the dispatching card, then the service number does in principle appear first under the header in the QuickDoc form.</p>
-<p><strong>Note:</strong></p>
-<p><strong>The service number is in principle characterised as a mandatory field by QuickDoc. It is not possible to generate an order in QuickDoc without recording a service.</strong></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The service number is in principle characterised as a mandatory field by QuickDoc. It is not possible to generate an order in QuickDoc without recording a service.</p>
+</div>
 <p>It is possible to stipulate via the field <em>Filter Service No. Lookup by</em> according to which criteria QuickDoc selects the suitable service for data which have already been captured. This function is meaningful when calling up QuickDoc without reference to the contract line, thus when QuickDoc is opened directly from the menu <em>Waste Producer Processes or Waste Disposal Processes</em> from the customer task site plan without branching onto the contract lines and from the standard order form.</p>
 <p>If the customer rings up for example and orders the provision of a certain container, the case worker enters the customer, the equipment type <em>&quot;Submission&quot;</em> and the equipment type in QuickDoc where appropriate and receives a very strong selection of possible invoicing services. The system behaviour for waste management orders for which associated services can be established on the basis of an initially provided waste type is analogous to this.</p>
 <p>Whether work takes place with this function is dependent on the design of the work flow. For dispatching codes with the document type &quot;<em>Contract&quot;</em> it is necessary to view the field <em>Filter Service No. Lookup by</em> and select the option <em>&quot;Blank&quot;</em> as the contract line already brings the service.</p>
 <p>If the service is in principle input first of all when starting Quick Doc without reference to a contract, the option <em>&quot;Blank&quot;</em> should also be selected as the collection of the necessary data is otherwise rather troublesome.</p>
 <p>The option <em>Material, Equipment</em> or <em>Both</em> only makes sense if these data are input first of all and the suitable service is to be established on the basis of this guideline.</p>
-<p><strong>Note:</strong></p>
-<p><strong>These options are however counter-productive if the service is in principle input first of all and further data are only entered afterwards. When validating waste management services, in QuickDoc (unlike in the normal contract and order form) there is in principle no automatic data transfer of the service into the fields <em>Material Code</em> and <em>EWC Code</em>.</strong></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>These options are however counter-productive if the service is in principle input first of all and further data are only entered afterwards. When validating waste management services, in QuickDoc (unlike in the normal contract and order form) there is in principle no automatic data transfer of the service into the fields <em>Material Code</em> and <em>EWC Code</em>.</p>
+</div>
 <p>For the option <em>&quot;Blank&quot;</em>, the user is however guided out of the field Material Code into the waste materials catalog which is attached to the service. When validating this number the linked EWC code is written into the corresponding QuickDoc field automatically.</p>
 <p>If the field <em>Filter Service No. Lookup by</em> was however set to an option other than <em>leer</em>, this guidance of the user through QuickDoc is omitted. The user must then compile all data manually which are actually already connected with the service.</p>
 <p>It is possible to stipulate via the field <em>Show Availability</em> whether a check of the availability of personnel, transport and equipment and the storage capacities takes place in the QuickDoc form at the same time. For this purpose the corresponding capacities of the individual resources in the system must be present.</p>
 <p>The availabilities of transport groups, vehicles, personnel groups and also drivers is shown in the QuickDoc form behind the corresponding fields.</p>
-<p><img src="../../images/image3.png" alt=""></p>
 <p>If several lines are marked in the contract lines overview of the customer base site plan, in order to create an order, the QuickDoc form is opened with e.g. 1/3 pages depending on how many contract lines have been marked. If an external document number is entered on page 1, then this document number is also transferred onto pages 2 and 3 if a corresponding tick has been placed in the field <em>Synchr. External Document No.</em> This applies analogously for the fields <em>Synchr. Ext. Bill. of Del. No., Synchronize Task Date , Synchr. Target Start Time.</em> and <em>Synchr. Finishing Time.</em></p>
 <p>If a tick is placed in the field <em>Post Equipment</em>, the equipment is posted immediately on creation of the order with QuickDoc, meaning that the equipment does no longer have to be posted separately.</p>
 <p>If the field <em>Service No.</em> is validated in the QuickDoc form, in an equipment service (work flow type = Equipment), the value is transferred from the field <em>Default Qty. Equip. Services</em> into the field <em>Quantity</em> of the QuickDoc form.</p>
 <p>The field <em>Workflow Type</em> is important for the dispatching code if QuickDoc is called up from the customer task site plan without reference to a contract.</p>
 <p>Dispatching codes which define suitable QuickDoc forms for this special application must have the document type &quot;<em>Contract&quot;</em> and have a tick in the field <em>Force Workflow</em>. Then the dispatching code forces a QuickDoc form which differs from the contract line.</p>
-<p><img src="../../images/image4.png" alt=""><br>
-For clarification the three different types of dispatching code are characterised once again in brief below:</p>
+<br>
+For clarification the three different types of dispatching code are characterised once again in brief below:
 <h4 id="dispatching-code-document-type--contract">Dispatching Code Document Type = Contract</h4>
 <p>Dispatching codes with the document type <em>Contract</em> which determine the appearance of the QuickDoc form from the contract line. This can be seen as a standard variant of the use of QuickDoc and thus of dispatching codes. The field <em>Workflowart</em> has</p>
 <p><u>no</u></p>
 <p>significance here. QuickDoc is started by the function</p>
 <p><em><span class="smallcaps">Create
 Order.</span></em></p>
-<p><img src="../../images/image5.png" alt=""></p>
-<p><img src="../../images/image6.png" alt=""></p>
 <h4 id="dispatching-code-document-type--order">Dispatching Code Document Type = Order</h4>
 <p>Dispatching codes with the document type <em>Auftrag</em> which are addressed from the customer task site plan without reference to contract lines. Here a dispatching code with a suitable work flow type must be available for each of the various buttons in the header of the customer task site plan.</p>
-<p><img src="../../images/image7.png" alt=""></p>
-<p><img src="../../images/image8.png" alt=""></p>
 <h4 id="dispatching-code-force-workflow">Dispatching code Force Workflow</h4>
 <p>Dispatching codes of the document type <em>Contract</em> with a tick in the field <em>Force Workflow</em>. These dispatching codes can override the dispatching code in the contract line and force the fading in of &quot;its&quot; form in QuickDoc. Here too a unique dispatching code must be present for each variant of the order creation from the contract lines of the customer task site plan. This variant of the order generation and the work flow type must match (equipment order = Equipment Workflow type).</p>
-<p><img src="../../images/image9.png" alt=""></p>
 <p>The work flow type is only the filtering criterion via which the correct dispatching code is assigned to the function button. The field <em>Workflow Type</em> of the dispatching card has the following options which are activated as filter criterion on calling up of the corresponding function:</p>
 <ul>
 <li><p>Defined</p>
@@ -199,7 +195,6 @@ Order.</span></em></p>
 <li><p>Equipment</p>
 </li>
 </ul>
-<p><img src="../../images/image8.png" alt=""></p>
 <p>The way in which the content of this allocation is filled via the dispatching code is down to the user. It definitely makes sense to design content appropriate QuickDoc forms for the buttons</p>
 <p><em><span class="smallcaps">Disposal Order</span></em></p>
 <p>and</p>
@@ -237,16 +232,13 @@ Order.</span></em></p>
 </tbody>
 </table>
 <p>The screen shot below shows a dispatching code which has been developed for the recording of equipment.</p>
-<p><img src="../../images/image10.png" alt=""></p>
 <p>Only the fields <em>Equipment No</em>. and <em>Equipment Entry Type</em> have been declared as mandatory fields as a complete recording of equipment orders does not make sense without recording of these two fields.</p>
 <p>The field <em>Equipment Application</em> was set to the option &quot;<em>Active&quot;</em> because an equipment application is frequently linked with an equipment order but it is not absolutely required. Data can thus be entered here. An order can however be created without an equipment application.</p>
 <p>All other fields - up to the field <em>Service No</em>. - were deactivated.</p>
-<p><strong>Note:</strong></p>
-<p>**A service number must</p>
-<p><u>in principle</u></p>
-<p>be entered in each QuickDoc order. The field Leistungsnr. is always a</p>
-<p><u>mandatory field</u></p>
-<p>.**</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>A service number must in principle be entered in each QuickDoc order. The field Leistungsnr. is always a mandatory field.</p>
+</div>
 <p>Obligatory fields which appear in each QuickDoc form as standard are as follows:</p>
 <ul>
 <li><p>Dispatching code</p>
@@ -265,20 +257,17 @@ Order.</span></em></p>
 <p>Apart from the service number, the fields are not mandatory fields which are checked on the part of the system, meaning checks do not take place to ascertain whether data have been entered in these fields.</p>
 <p>If no fields have been declared as mandatory fields in the dispatching code, enwis only checks whether a customer and a service are present in the QuickDoc form.</p>
 <p>The field <em>Service No.</em> is in any case a mandatory field, for which the register <em>Selection</em> of the dispatching code card only makes the selection between the options <em>Editable</em> and <em>Not Editable</em> available_._</p>
-<p><img src="../../images/image11.png" alt=""></p>
 <p>This means that there is only one possibility for selection here regarding the changeability of data. The option &quot;<em>Not Editable</em>&quot; (cannot be edited) is only meaningful in dispatching codes with the document type <em>Contract</em> in which the order line also has the service number which the user may no longer change where appropriate.</p>
 <p>In dispatching codes with the document type <em>Order</em> by contrast, for the field <em>Service No.</em> it is necessary to select the option <em>Editable</em> as order recording with QuickDoc is otherwise impossible. As this field is empty without contract reference on calling up QuickDoc and an entry needs to be made by the user.</p>
 <p>Another aspect of the fields of the register</p>
 <p><span class="smallcaps">Selection</span></p>
 <p>is that there are partial interactions between the settings of the individual fields. If the field <em>Waste Code</em> is deactivated for example, this results in a few fields on the right hand side only appearing dimmed and they can no longer be controlled.</p>
 <p>The background to this is that for a QuickDoc form in which no internal Waste Code can be captured all additional indications with reference to the internal materials (e.g. EWC code, waste transfer note, storage location) are superfluous and thus no fields should be made available for this in the QuickDoc form.</p>
-<p><img src="../../images/image12.png" alt=""></p>
 <h3 id="dispatching-code---register-display">Dispatching code - Register display</h3>
 <p>In the register</p>
 <p><span class="smallcaps">anzeige</span></p>
 <p>(display) of the dispatching card form IDs can be consigned. The forms specified open in the QuickDoc form on Lookup from the fields Location, Bin, Waste Code and Equipment.</p>
 <p>On consigning a corresponding Lookup-ID it is thus possible not to jump from the field <em>Lagerort</em> of the QuickDoc form into the standard location overview but into the dispatching overview for the individual locations. In this way it would be possible to assign a suitable location depending on the visible capacity of the various locations.</p>
-<p><img src="../../images/image13.png" alt=""></p>
 <p>The register</p>
 <p><span class="smallcaps">transfer</span></p>
 <p>of the dispatching card is linked to the register</p>
@@ -308,7 +297,6 @@ Order.</span></em></p>
 <li><p>Never</p>
 </li>
 </ul>
-<p><img src="../../images/image14.png" alt=""></p>
 <p>These options define which data or which changes from the QuickDoc form are written into the order thus created. Here it is necessary to distinguish between various types of dispatching code.</p>
 <p>Via the fields in the register</p>
 <p><span class="smallcaps">transfer</span></p>
@@ -337,12 +325,10 @@ Order.</span></em></p>
 <p>In the register</p>
 <p><span class="smallcaps">selection</span></p>
 <p>it is specified which fields the user can view or process in the QuickDoc form or in which fields data must be present.</p>
-<p><img src="../../images/image15.png" alt=""></p>
 <h3 id="dispatching-code---register-transfer">Dispatching code - Register Transfer</h3>
 <p>Via the register</p>
 <p><span class="smallcaps">transfer</span></p>
 <p>it must additionally be specified what effect changes or deletions of data on the contract line made by the user may have.</p>
-<p><img src="../../images/image16.png" alt=""></p>
 <p>For the option <em>Never</em> in the fields of the register</p>
 <p><span class="smallcaps">transfet</span></p>
 <p>the user has no possibility of changing predefined data from the contract sustainably. He can change the data in the QuickDoc form where necessary but these changes are not transferred to the order created. Instead enwis persistently goes back to the contract line during the order creation and ignores the changes in the QuickDoc form made by the user.</p>

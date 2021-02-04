@@ -89,7 +89,6 @@
 <p>Lets us assume we post a submission on 09.01 with the invoice method MONAT. Within the invoice method it is stipulated that a rent is to be calculated once per month for a month. This means that the next rental calculation would be possible on 31.01 for the first time. Let us look at the most important fields of both entry tables following posting.</p>
 <h2 id="betriebsmittelposten-equipment-ledger-entry">Betriebsmittelposten (equipment ledger entry)</h2>
 <p>First of all the equipment ledger entries which present the physical inventory:</p>
-<p><img src="../../images/image1.png" alt=""></p>
 <p>Let us look at the most important fields of the open equipment inventories in more detail: (not all fields are displayed in the image).</p>
 <ul>
 <li><p><em>Entry Type:</em> Here a distinction is made between Submission, Pick-up, Exchange and Clearance in the operational area</p>
@@ -105,9 +104,10 @@
 </ul>
 <h2 id="rental-value-entries">Rental value entries</h2>
 <p>Let us now look at the table rental value entries (not all fields are shown in the image).</p>
-<p><img src="../../images/image2.png" alt=""></p>
-<p><strong><u>Note:</u></strong></p>
-<p><strong>Before the decisive fields for calculation of the rental are investigated, here is a short explanation on the terminology. The fields Source Type, Source No. und Source Site Code are also present in the rental value entries table. Logically they have a slightly different meaning adapted to the differing function of both tables:</strong></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Before the decisive fields for calculation of the rental are investigated, here is a short explanation on the terminology. The fields Source Type, Source No. und Source Site Code are also present in the rental value entries table. Logically they have a slightly different meaning adapted to the differing function of both tables:</p>
+</div>
 <ul>
 <li><p><strong><em>Source Type:</em> Is filled analogously to the equipment ledger entry table</strong></p>
 </li>
@@ -133,12 +133,10 @@
 </ul>
 <h2 id="changing-of-a-rental-value-entry-through-the-rental-invoice">Changing of a rental value entry through the rental invoice</h2>
 <p>In order to make the changes clearer we only look at the four fields named above. The starting point was the entered provision of 09.01.2013 and the next possible invoicing date 31.01.2013 (not all fields are shown in the image).</p>
-<p><img src="../../images/image1.png" alt=""></p>
 <p>The rental invoice is started via the link</p>
 <p><em><span class="smallcaps">enwis invoicing combine invoicing rental
 Invoice</span></em></p>
 <p>.</p>
-<p><img src="../../images/image3.png" alt=""></p>
 <p>The fields <em>Invoice Date, Posting Date</em> and <em>Task Date</em> on the register</p>
 <p><span class="smallcaps">Options</span></p>
 <p>of the rental calculation are particularly important for the creation of the rental invoices - both with the value 31.01 in the example.</p>
@@ -162,25 +160,21 @@ Invoice</span></em></p>
 <p>.</p>
 </blockquote>
 <blockquote>
-<p><img src="../../images/image4.png" alt=""></p>
 </blockquote>
 <blockquote>
 <p>The following completed order has been generated:</p>
 </blockquote>
 <blockquote>
-<p><img src="../../images/image5.png" alt=""></p>
 </blockquote>
 <blockquote>
 <p>This order is now processed completely up to the posted invoice.</p>
 </blockquote>
 <blockquote>
-<p><img src="../../images/image6.png" alt=""></p>
 </blockquote>
 <blockquote>
 <p>Following creation of the posted invoice the rental value entry looks as follows.</p>
 </blockquote>
 <blockquote>
-<p><img src="../../images/image7.png" alt=""></p>
 </blockquote>
 <blockquote>
 <p>Three changes in the rental value entries have resulted from the creation of the posted invoice.</p>

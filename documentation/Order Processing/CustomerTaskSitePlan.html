@@ -103,7 +103,6 @@
 <p>Customer base task sites are displayed in bold in the customer task site plan. Customer base task sites are to be applied and used exclusively as a structural element. The operational business should be processed on the &quot;normal&quot; customer task sites.</p>
 <h2 id="application-of-customer-task-sites">Application of customer task sites</h2>
 <p>It is recommended that at least two customer task sites are applied for each customer: a customer base task site and an operational customer task site. Both are identical with the customer. The customer base task site should in principle be blocked for operational processes. Operational customer task sites can be incorporated into the customer task site plan in any amount.</p>
-<p><img src="../../images/image1.png" alt=""></p>
 <p>enwis provides a routine which makes the creation of customer base task sites and operational customer task sites easier. From the customer card there is a possibility via the link</p>
 <p><span class="smallcaps">actions</span></p>
 <p>_<span class="smallcaps">create</span></p>
@@ -113,7 +112,6 @@
 <p>In the register</p>
 <p><span class="smallcaps">Numbering</span></p>
 <p>of the <strong><em>waste management set up</em></strong> the number series for the customer task sites must be consigned first of all. The fields <em>Cust. Task Site Nos., Base Cust. Task Site Nos.</em> are relevant for the customer area and <em>Vend. Task Site Nos.</em> and <em>Base Vend. Task Site Nos.</em> for the vendor area.</p>
-<p><img src="../../images/image2.png" alt=""></p>
 <p>In this context a particular significance is attached to the field <em>Cust./Vend.No. is Base Site.</em> With these fields there are three different systems for the numbering of customer and vendor task sites:</p>
 <ol>
 <li>Customer base task sites and operational customer task sites access the same number series and are therefore numbered consecutively regardless of their different status. If this is desired, the same number series must be consigned in the fields <em>Cust. Task Site Nos.</em> and <em>Base Cust. Task Site Nos.</em> The field <em>Cust./Vend.No. is Base Site</em> must</li>
@@ -126,9 +124,10 @@
 <li><p>In order to emphasise the equality of customer base task site and customer the field <em>Cust./Vend.No. is Base Site</em> can have a tick placed by it. Then each customer base task site receives the number of the associated customer automatically. This is the recommended standard configuration of the customer task site plan.</p>
 </li>
 </ol>
-<blockquote>
-<p><strong>Note: It does however only function if the customer numbers have a maximum of ten digits as the customer task site number may only be ten digit.</strong></p>
-</blockquote>
+<div class="NOTE">
+<h5>Note</h5>
+<p>It does however only function if the customer numbers have a maximum of ten digits as the customer task site number may only be ten digit.</p>
+</div>
 <p>The method of the batch processing and thus also the basic structure of the customer task site plan must be defined in the set up of the menu _enwis</p>
 <p><span class="smallcaps">Dispatching</span></p>
 <p>/</p>
@@ -169,7 +168,10 @@ Setup</span></p>
 <p>The field <em>Base Task Site Mandatory</em> can be used to specify that operational customer task sites for a customer can only be applied if a customer base task site already exists. If the field is ticked it is not possible to apply an operational customer task site for a customer for which there is not yet a customer base task site.</p>
 <p>With the help of this function it is possible to control so that the customer can only be used operationally via the quick order logging if it was cleared by applying of the customer base task site for set up of operational customer task sites.</p>
 <p>With the fields <em>Copy Address to Base Task Site</em> it is possible to specify whether the customer base task site is provided with a postal address.</p>
-<p><strong>Note: As the customer base task sites only represent structural elements for the customer task site plan it is recommended that they are not furnished with an address. The address data would only disrupt a search for addresses.</strong></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>As the customer base task sites only represent structural elements for the customer task site plan it is recommended that they are not furnished with an address. The address data would only disrupt a search for addresses.</p>
+</div>
 <p>The field <em>Block Base Task Site</em> can be used to define blocking modalities. As customer base task sites only represent a purely structural element and are not used operationally, they should in principle be blocked. The following options can be selected:</p>
 <table>
 <thead>
@@ -197,7 +199,6 @@ Setup</span></p>
 <p>In this only customer task sites are in principle applied which are not yet present in the system. If a customer base task site was already allocated to a customer, it does not receive a second one via the batch processing. The first operational customer task sites are only applied for the customers which do not yet have any.</p>
 <p>Following completion of the batch processing, enwis issues a message regarding how many customer base task sites and first operational customer task sites were generated.</p>
 <p>A customer task site plan generated according to the standard process would look as follows:</p>
-<p><img src="../../images/image3.png" alt=""></p>
 <p>The customer task site plan contains all task sites ordered by customers. The base task sites (the customer as it were) are in bold. All associated task sites are slightly indented below.</p>
 <p>Each customer base task site is provided with the number of the corresponding customer here. The customer base task sites do not contain any address data. A first operational customer task site is applied automatically to each customer base task site which refers back to its own number series and also includes the address data of the customer. Additional offices, branches...were not yet shown. This can occur manually via the customer task site plan.</p>
 <p>Such additional customer task site plans can be created via the button</p>
@@ -218,7 +219,6 @@ Setup</span></p>
 <p>Conversely a negative catalog can be compiled which contains exactly the services, waste materials and EWC numbers which may never be provided for this customer task site and which may never be picked up from there. enwis can be set in such a way that an adjustment between orders being carried out and the catalogs consigned occurs automatically. Whether work with a positive or negative catalog is to take place can be decided for each customer task site or storage location on the basis of the method for which the input time is lower. If only a few services are defined for the customer, a positive catalog is provided. If the customer can obtain all services apart from a few, a negative catalog appears to make more sense.</p>
 <p>Corresponding positive and negative catalogs must be consigned to the customer task sites so that this function can be used.</p>
 <p>Whether an adjustment between potential orders and the consigned catalogs is to be initiated automatically and manually is defined on the customer task site card via the three option fields <em>Waste Compare Type, EWC Compare Type</em> and <em>Service Compare Type.</em></p>
-<p><img src="../../images/image4.png" alt=""></p>
 <p>There are four options available for each of the three feature classifications Waste Material, EWC and Service Type:</p>
 <p><em>Blank</em> means: no automatic adjustment occurs even if catalogs were consigned. If an adjustment is desired, this must be started manually from the order.</p>
 <p>Via the two options <em>Positive Cataloge / Negative Cataloge</em> it is specified that an automatic adjustment is to take place first of all if this customer task site is touched upon by the application of contracts, quotes or orders and that secondly the selected catalog is to be used.</p>
@@ -242,7 +242,6 @@ Setup</span></p>
 </li>
 </ul>
 <p>Quote, contract and order lines are presented as so-called customer task site lines. The original context of the document is closed and appears as document lines belonging to the customer task site.</p>
-<p><img src="../../images/image5.png" alt=""></p>
 <p>Quote, contract and order lines of the current customer task site are displayed in red.</p>
 <p>From this line view it is possible to access the underlying document via the link</p>
 <p><span class="smallcaps">show document</span></p>
@@ -250,7 +249,6 @@ Setup</span></p>
 <p>Via the link</p>
 <p><em><span class="smallcaps">Navigate</span></em></p>
 <p>it is possible to view or consign additional information on the customer task site (e.g. service errors and texts preceding and following invoices). This information is identical to that which can be called up via the customer card.</p>
-<p><img src="../../images/image6.png" alt=""></p>
 <p>The essential function of the customer task site plan is however the quick order logging through which a new order can be very easily created in an input screen which can be individually shaped on the basis of the contract lines present.</p>
 <h2 id="dispatching-overview-of-the-contract-lines-of-a-customer-task-site">Dispatching overview of the contract lines of a customer task site</h2>
 <p>All contract lines to the current customer task site can be called up from the customer task site plan via the button</p>
@@ -263,11 +261,9 @@ Setup</span></p>
 <p>If the contract lines for a customer task site are called up via the link</p>
 <p><em><span class="smallcaps">Contract lines</span></em></p>
 <p>in the header of the customer task site plan, these are displayed in their own contract lines overview of the quick order logging. The contract lines of the current customer task site are displayed in red. The other customer task sites of the current customer are presented in normal script.</p>
-<p><img src="../../images/image7.png" alt=""></p>
 <p>Whether the services of all customer task sites in the page shown above are displayed on displaying the form or just the services of the selected customer task site is controlled in the</p>
 <p><span class="smallcaps">dispatching setup</span></p>
 <p>via the field <em>Base Mask Ext. Task Sites.</em></p>
-<p><img src="../../images/image8.png" alt=""></p>
 <p>Even if this field is set to the value &quot;Yes&quot; and it is thus determined that only the services of the current customer task site are to be displayed, the remaining services of the customer can be displayed very easily if all filters are released. _(</p>
 <p><span class="smallcaps">Actions</span></p>
 <p><span class="smallcaps">Page</span></p>

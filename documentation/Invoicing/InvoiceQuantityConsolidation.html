@@ -86,7 +86,6 @@
 <p>Before consolidating invoice quantities, the <em>Allow Qty. Consol.</em> box must be checked in <strong>Invoice Setup</strong> under the</p>
 <p><span class="smallcaps">Combine Invoice</span></p>
 <p>tab.</p>
-<p><img src="../../images/image1.png" alt=""></p>
 <p>When no invoice quantity consolidation should take place at all, do not check this box as it will allow combine invoicing to run more quickly.</p>
 <p>Furthermore, the <em>Qty. Consolidation</em> box in the contract lines and order lines must be checked so that the invoice quantities can be consolidated. By default, the <em>Qty. Consolidation</em> box is not checked, but it can be checked in the contract, which will automatically be copied to the sales order. It is also possible to wait and first check this box in the sales order.</p>
 <p>Each order line to be invoiced can be set individually using the <em>Qty. Consolidation</em> field. For example, individual deliveries whose quantities would normally be consolidated in the invoice can be excepted from quantity consolidation by unchecking the box.</p>
@@ -104,7 +103,6 @@
 </li>
 </ul>
 <h2 id="invoice">Invoice</h2>
-<p><img src="../../images/image2.png" alt=""></p>
 <p>A combine invoice created from the sales order listed above would contain the following four invoice lines:</p>
 <ul>
 <li><p>Order lines 1 and 3</p>
@@ -116,14 +114,14 @@
 <li><p>Order line 6 no quantity consolidation</p>
 </li>
 </ul>
-<p><img src="../../images/image3.png" alt=""></p>
 <p>The logic shown in this example of a single sales order is the same as if the unposted invoice lines from several sales orders were combined.</p>
-<p><strong><u>Note:</u></strong></p>
-<p><strong>No associated text lines from the sales order can be copied to the combine invoice for lines with quantity consolidation.</strong></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>No associated text lines from the sales order can be copied to the combine invoice for lines with quantity consolidation.</p>
+</div>
 <h2 id="other-sorting-functions">Other Sorting Functions</h2>
 <p>Invoice quantity consolidation in enwis also takes sorting codes set for a customer or vendor into account.</p>
 <p>For example, if a customer is invoiced separately by job, then quantity consolidation would also be separated by job, so that individual invoice lines with quantity consolidation would be output for each job. The sorting criteria can be set in the invoice layout.</p>
-<p><img src="../../images/image4.png" alt=""></p>
 <p>A combine invoice created from the sales order listed above would contain the following four invoice lines:</p>
 <ul>
 <li><p>Order lines 1 and 2</p>
@@ -133,7 +131,6 @@
 <li><p>Order lines 5 and 6 same service and same job as in order lines 1 and 2, but different delivery code</p>
 </li>
 </ul>
-<p><img src="../../images/image5.png" alt=""></p>
 <h2 id="quantity-consolidation-entries">Quantity Consolidation Entries</h2>
 <p>In terms of content, every invoice line with quantity consolidation consists of multiple order lines from completed orders. These individual order lines are saved as quantity consolidation entries for each invoice line with quantity consolidation in a combine invoice.</p>
 <p>The quantity consolidation entries can be viewed for the invoice lines individually by going to</p>
@@ -147,16 +144,11 @@
 <p><em><span class="smallcaps">Quantity Consolidation Entries</span></em></p>
 <p>.</p>
 <p>The illustration below shows the quantity consolidation entries for the first invoice line.</p>
-<p><img src="../../images/image6.png" alt=""></p>
 <p>The relationship to the original document is maintained.</p>
-<p><img src="../../images/image7.png" alt=""></p>
 <p>The quantity consolidation entries function in a way that allows combine invoices containing invoice lines with quantity consolidation to also be canceled again, reversed to completed orders, and then recreated.</p>
 <p>Each quantity consolidation entry is still present in the completed orders as an independent order line where it is flagged as invoiced. When a combine invoice is deleted in whole or in part and reversed, then the <em>Invoiced</em> box in each completed order line associated with the invoice lines with quantity consolidation through the quantity consolidation entries will be automatically unchecked.</p>
 <p>In the following example, the second invoice line in the combine invoice with quantity consolidation is deleted.</p>
-<p><img src="../../images/image8.png" alt=""></p>
-<p><img src="../../images/image9.png" alt=""></p>
 <p>In the original document 1335, the <em>Invoiced</em> box in lines 50000 and 60000 is unchecked.</p>
-<p><img src="../../images/image10.png" alt=""></p>
 <p>The completed order lines 50000 and 60000 are now available again for a new invoicing run.</p>
 </article>
           </div>

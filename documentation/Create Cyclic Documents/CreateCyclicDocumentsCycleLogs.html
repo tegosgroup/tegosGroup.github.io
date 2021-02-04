@@ -99,13 +99,11 @@ Processing</em>
 <p><em><span class="smallcaps">Cycle Logs</span></em></p>
 <p>.</p>
 <p>The cycle log list shows all cycles ever run, including their log number, date, time, user ID and type. The <em>Type</em> field indicates whether the cycle was used to create documents or a positive calendar.</p>
-<p><img src="../../images/image1.png" alt=""></p>
 <p>The cycle log entries give a comprehensive overview of all activities execute during the cycle.</p>
 <p>The system documents who initiated what activities, and when the system began and ended them. All sales orders created and all errors causing individual sales orders to not be created are listed clearly and explicitly.</p>
 <p>In addition, the information is saved in a format that can be filtered, e.g. using the <em>Contract No.</em> and <em>Document No.</em> fields. Furthermore, the system generates and saves statistical information regarding the quantity of created documents.</p>
 <p>The various kinds of information can also be filtered by the type of content (statistics, error, beginning or end) using the <em>Status</em> field.</p>
 <p>Users can go directly from the individual log entries to the associated documents.</p>
-<p><img src="../../images/image2.png" alt=""></p>
 <p>The screen shot shows the complete log entry for cycle C00007. The list includes the log history in an easy to read, hierarchical format. It shows, for example, that a preview was created and the users did not change any data in the preview. After that, there is an exact list of which sales orders were created from which contracts and which next cycle date the underlying contract was set to.</p>
 <p>One entry is flagged as an error in the <em>Status</em> field. No documents were created automatically from contract DV00013 because customer 01905899 in this contract has been blocked for new orders in the meanwhile.</p>
 <p>It is now up to the users how they react to this information. Either the customer block is completely correct or the account needs to be unblocked. In either case, the users know the reasons in detail why the document could not be created.</p>
@@ -119,7 +117,6 @@ Processing</em>
 <p><span class="smallcaps">actions</span></p>
 <p><span class="smallcaps">functions</span></p>
 <p>users can call up <em>Print Cycle Plan</em> and <em>Reset Cycle Log</em> functions.</p>
-<p><img src="../../images/image3.png" alt=""></p>
 <p>The</p>
 <p><em><span class="smallcaps">Print Cycle Plan</span></em></p>
 <p>function allows users to print a cycle plan for a current cycle log after the fact. In this case, users must also keep in mind that this list will only be complete as long as the cyclically created documents remain in the system.</p>
@@ -127,13 +124,14 @@ Processing</em>
 <p><em><span class="smallcaps">Cyclic Documents</span></em></p>
 <p>function in batch processing after the fact using the virtual start date.</p>
 <p>Using the <em>Reset Cycle Log</em> function, users can reverse the entire cycle with the touch of a button. All created documents will be deleted and all updated contracts will be reset to their status before the cycle; this will mainly affect the <em>Cycle Log-No.</em>, <em>Last Cycle Date</em>, and <em>Next Cycle Date</em> fields.</p>
-<p><strong><u>Note:</u></strong></p>
-<p><strong>Like the other functions, this function will only affect all of the created document as long as they are still in the system. As long as this is the case, multiple cycles in a row can be reversed.</strong></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Like the other functions, this function will only affect all of the created document as long as they are still in the system. As long as this is the case, multiple cycles in a row can be reversed.</p>
+</div>
 <p>When the result of a cycle is reset, this is flagged in the associated cycle log entry under the <em>Reset</em> field.</p>
 <p>Here users can see whether a contract has been reset, whether only a document was deleted, or whether both occurred. As mentioned above, the</p>
 <p><em><span class="smallcaps">Reset Cycle Log</span></em></p>
 <p>function can also be executed for previous cycle logs. When the cycle log to be reset is not the most current cycle log, however, the system issues a warning to this effect that users must confirm.</p>
-<p><img src="../../images/image4.png" alt=""></p>
 <p>When calling up the <em>Reset Cycle Log</em> function, users have the following options:</p>
 <ul>
 <li><p>Reset Log and Delete Documents</p>
@@ -144,8 +142,10 @@ Processing</em>
 </li>
 </ul>
 <p>Here users can specific whether only documents should be deleted, only the log entries in the contracts should be reset, or both actions should be executed, which is definitely the most practical option.</p>
-<p><strong><u>Note:</u></strong></p>
-<p><strong>If, during the course of batch processing cyclical document creation, ledger entries are posted directly from equipment entries because the setting on the cycle card signaled the system to do so, these cannot automatically be reset or reversed using the reset function.</strong></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>If, during the course of batch processing cyclical document creation, ledger entries are posted directly from equipment entries because the setting on the cycle card signaled the system to do so, these cannot automatically be reset or reversed using the reset function.</p>
+</div>
 </article>
           </div>
           

@@ -92,7 +92,6 @@
 <p>Subsequently the internal waste materials must be defined whereby relationships between internal waste materials and EWC numbers are set up.</p>
 <p>There is an N to N relationship between internal waste materials and EWC numbers via the so-called waste material EWC references. This means that each internal waste material can be linked to any number of EWC numbers and conversely any number of internal waste types can be allocated to each EWC number.</p>
 <p>Both types of linking can be displayed as follows in diagram form:</p>
-<p><img src="../../images/image1.png" alt="Wor3C9"></p>
 <p>The relationships between EWC codes and internal waste materials can also run &quot;crosswise&quot; so that several waste materials are each linked with several EWC numbers and the EWC numbers also with several waste materials.</p>
 <p>It is also possible to link each internal waste material with a single EWC number in a fixed manner;</p>
 <p>then the EWC number is also transferred automatically on validation of the waste material in the order line.</p>
@@ -103,7 +102,6 @@
 <p>Waste materials are however a criterion for price formation unlike EWC numbers. This means that the service price can be differentiated depending on the waste material but not depending on the EWC number.</p>
 <p>It is recommended that the method of transfer of the internal waste material types to the operational area i.e. the order line is taken into consideration during the set up. The relationship of a billable service and the price forming waste material among other things must be designed here in particular.</p>
 <p>In practice the method of setting up an individual service for each internal waste material has been proven. The data flow can look as follows diagrammatically whereby the variants of the relationship of EWC number to internal waste material shown above are taken into account:</p>
-<p><img src="../../images/image2.png" alt="WorDFB1"></p>
 <p>During the recording of orders the service must be entered on the order line, this comes with the waste material and the waste material in turn is linked with several EWC numbers (variant 1) or just with one EWC number (variant 2).</p>
 <p>If only one EWC number was assigned to the waste material, this is transferred automatically onto the line; if several numbers were consigned to the waste material, the user must make a selection from these manually.</p>
 <p>The alternative to this process would be to set up just a single service &quot;waste management&quot; or to set up a manageable number of waste management services and to add to these waste management services with the relevant waste material on the order line.</p>
@@ -112,9 +110,7 @@
 <p>This means that it is for example possible to manage different warehouse and invoice units for services but not for waste materials. It is also only possible for services to consign texts which are automatically accepted into the order automatically or by function. Thus many waste material specific differentiations can only be depicted via services in enwis.</p>
 <p>In terms of evaluations it is also recommended to work with a differentiated service catalog. The service chart of accounts makes it possible to easily make statements concerning which turnover was attained with which waste materials if an individual service is defined for each waste material.</p>
 <p>An account is assigned to each service in the service chart of accounts on which the sales and purchase quantities and the associated proceeds and costs are listed. The more global the definitions of the services, the less differentiated the statements which can be made here.</p>
-<p><img src="../../images/image3.png" alt="WorBB5F"></p>
 <p>Analytical tools similar to the service chart of accounts are available in the field of waste materials in the form of the waste material chart of accounts and the EWC chart of accounts. These plans do however only provide information about the quantity movements and not about the turnovers which were generated with individual waste materials.</p>
-<p><img src="../../images/image4.png" alt="WorA82C"></p>
 <p>Waste materials are the basis for the depiction of flows of quantities in the form of waste entries and waste ledger entries. When posting the waste entry, the same posting routines apply as for the entering of order lines in MS Business Central and in enwis.</p>
 <p>Therefore the general product and VAT posting groups are requested as standard here. This is superfluous where content is concerned as no movements on the accounts of the general ledger are linked with this posting of the material movements. Therefore it is not required from an accounting perspective however it is necessary for technical database reasons to assign those posting groups to the waste materials which only serve to link the operational actions with the general ledger.</p>
 </article>

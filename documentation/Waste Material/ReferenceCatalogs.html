@@ -114,13 +114,11 @@
 <p><em><span class="smallcaps">Positive
 Catalog or Negative Catalog</span></em></p>
 <p>to set up the catalogs.</p>
-<p><img src="../../images/image1.png" alt="134"></p>
 <p>Setting up these reference catalogs enables the system can automatically check , for example, whether the selected waste material is valid for the waste management plant, the task site, and/or the location.</p>
 <p>However, this check is only done if screening criteria have been saved. If not, the positive and negative catalog can still be used as an information system; however, the system cannot check automatically, though this is not always desirable anyway.</p>
 <p>The screening criteria can be defined individually for each customer or vender task site and each location, and for each type of content therein. This can be set up, for example, in the <strong><em>customer task site card</em></strong> under the</p>
 <p><span class="smallcaps">Waste Management</span></p>
 <p>tab using the <em>Waste Comparison Type</em>, <em>Ext. Waste Comparison Type</em>, and <em>Service Comparison Type</em> fields.</p>
-<p><img src="../../images/image2.png" alt="134_2"></p>
 <p>These three separate fields allow users to differentiate how the screening of waste materials, external waste, or services should be done, and it can be differently for each record. The following options are available for all three fields:</p>
 <table>
 <thead>
@@ -189,18 +187,14 @@ Catalog or Negative Catalog</span></em></p>
 <p><em><span class="smallcaps">compare
 catalogs</span></em></p>
 <p>A screen appears that filters the document lines in the current document to be compared. This filter can be modified by users so that multiple documents are screened at the same time.</p>
-<p><img src="../../images/image3.png" alt="137"></p>
 <p>When users initiate the catalog comparison, the information in the document lines is compared to the master data saved in the positive and negative catalogs associated with the customer and vendor task sites and the locations according to the screening criteria specified there.</p>
 <p>The result of the comparison might bring up different conflicts between the transaction information and the reference catalogs. If there are no conflicts, users receive a message telling them so.</p>
-<p><img src="../../images/image4.png" alt="137_2"></p>
 <p>If there are one or more conflicts, however, these will be shown in a <strong><em>catalog comparison ledger entry form</em></strong> with all of the conflicting information. In the course of comparing the catalog(s), the system creates catalog comparison entries for each case where the document settings are not the same as the positive and negative catalogs. These entries record exactly which waste material or which service from which document conflicts with the positive or negative catalog and why.</p>
-<p><img src="../../images/image5.png" alt="137_3"></p>
 <p>Any number of catalog comparisons can be made for each document at different times. The results screen shown only ever contains the results of the current comparison.</p>
 <p>The catalog comparison entries shown as a result of the current comparison are not automatically saved in the database; rather, they serve first and foremost as information for the users.</p>
 <p>The temporary catalog comparison entries generated through an explicit comparison can be saved (in a different context, these would be postings). The scope of users' influence on this is determined by the default setting in the <em>Save Man. Catalog Comparison</em> field under the</p>
 <p><span class="smallcaps">Entries</span></p>
 <p>tab in <strong><em>Waste Management Setup.</em></strong></p>
-<p><img src="../../images/image6.png" alt="138"></p>
 <p>The following options are available for this field:</p>
 <table>
 <thead>
@@ -243,12 +237,10 @@ Comparison Entries</span></em></p>
 <p>The automatic catalog comparison could take place when the status of a sales order changes and/or one is released. The settings for this are defined in the <em>Catalog Comparison on Status</em> and <em>Catalog Comparison on Release</em> fields under the</p>
 <p><span class="smallcaps">Status</span></p>
 <p>tab in <strong><em>Waste Management Setup</em></strong>.</p>
-<p><img src="../../images/image7.png" alt="139"></p>
 <p>In this case, the catalog comparison is executed the same way as described for explicit comparisons. However, the results screen does not appear when the process is completed.</p>
 <p>How the system should handle conflicts found during automatic comparison is defined in the <em>On Catalog Comparison Conflict</em> field under the</p>
 <p><span class="smallcaps">Entries</span></p>
 <p>tab in <strong><em>Waste Management Setup</em></strong>.</p>
-<p><img src="../../images/image8.png" alt="140"></p>
 <p>The following options are available for this field:</p>
 <ul>
 <li><p>Block Activities</p>
@@ -262,7 +254,6 @@ Comparison Entries</span></em></p>
 <h3 id="block-activities-option">Block Activities Option</h3>
 <p>When the <em>On Catalog Comparison Conflict</em> field is set to &quot;Block Activities&quot;, users may not change the status of, nor may they release, sales orders that contain conflicts until the conflicts are resolved.</p>
 <p>If a conflict is discovered upon status change or release, then this activity will not be executed and an error message will appear.</p>
-<p><img src="../../images/image9.png" alt="140_2"></p>
 <p>This conflict must be resolved before users can change the status of the sales order or release it. Users proceed to the sales order and manually execute an explicit comparison to determine what the conflict is and then to resolve it. Until the conflict is resolved, users cannot change the status of this sales order nor can they release it.</p>
 <h3 id="create-entry-option">Create Entry Option</h3>
 <p>When the <em>On Catalog Comparison Conflict</em> field is set to &quot;Create Entry&quot;, the program behaves quite differently.</p>
@@ -276,7 +267,6 @@ Material</span></em></p>
 <p><em><span class="smallcaps">History</span></em></p>
 <p><em><span class="smallcaps">Catalog Comparison Entries</span></em></p>
 <p>.</p>
-<p><img src="../../images/image10.png" alt="141"></p>
 <h3 id="both-option">Both Option</h3>
 <p>When the On Catalog Comparison Conflict field is set to &quot;Both&quot;, then catalog comparison entries will be created and the activities will be blocked.</p>
 <p>In principle, this is merely a convenience function that allows users to localize the conflict without having to initiate an explicit comparison manually. All users have to do is call up the catalog from the document that the system has automatically assigned to it.</p>
@@ -289,7 +279,6 @@ Material</span></em></p>
 <p><em><span class="smallcaps">Change
 Check Status</span></em></p>
 <p>.</p>
-<p><img src="../../images/image11.png" alt="142"></p>
 <p>Access to this option can be granted through the assignment of permissions, so it is easy to limit such access to certain users.</p>
 <p>If the check status of a sales order is set to &quot;No Check&quot;, the sales order can be released in spite of a conflict that would normally prevent this release. When users encounter a conflict that they cannot or do not want to resolve, they could have an administrator or supervisor with the appropriate authority decide whether the sales order may be released in spite of the existing conflict.</p>
 <p>The check status is automatically reverted to &quot;Check Required&quot; after release of the sales order.</p>
@@ -299,7 +288,6 @@ Check Status</span></em></p>
 <p>The <em>Match Stock Posting w. Catalog</em> field under the</p>
 <p><span class="smallcaps">stock</span></p>
 <p>tab in <strong><em>Waste Management Setup</em></strong> sets whether stock postings should be compared with the positive and negative catalogs saved in the locations according to the criteria defined in the location card.</p>
-<p><img src="../../images/image12.png" alt="143"></p>
 <p>The following options are available:</p>
 <ul>
 <li><p>Location</p>
@@ -311,7 +299,6 @@ Check Status</span></em></p>
 </ul>
 <p>When the <em>Match Stock Posting w. Catalog</em> field is set to &quot;Location&quot;, for example, this check will be executed for each individual stock post, i.e. including flushing and transfers that are posted through the ledger or through treatment orders.</p>
 <p>If a catalog comparison conflict is found, the posting is interrupted.</p>
-<p><img src="../../images/image13.png" alt="143_2"></p>
 <p>This error message cannot be overridden.</p>
 <p>However, only posts representing incoming stock (posting types Receive/Ship, Recognition, Transfer) will be checked. The write-off of materials that are located in the wrong place should not be prevented.</p>
 <p>Automatic catalog comparison is also suppressed for reversal and drop shipment posts.</p>

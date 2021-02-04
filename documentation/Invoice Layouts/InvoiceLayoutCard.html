@@ -116,8 +116,6 @@ Selections</span>_</p>
 </li>
 </ul>
 <p>The set up for the creation of invoices which have not been posted could look as follows:</p>
-<p><img src="../../images/image1.png" alt=""></p>
-<p><img src="../../images/image2.png" alt=""></p>
 <p>The fields <em>Customer Posting Group</em> und <em>Vendor Posting Group</em> are standard functions of MSBusiness Central integrated into enwis. The current accounting is shown via these posting groups. This means that the receivables accounts, the cash discount accounts, the billing and compensation accounts, the interest and charge accounts are consigned in a differentiated way for different groups of customers and vendors.</p>
 <p>A posting group must be allocated to each customer or vendor via the customer or vendor card so that invoices and credit memos can be entered correctly.</p>
 <p>A customer and vendor posting group can also be consigned in the invoice layout. The posting groups from the invoice layout established for the customer or vendor override the values consigned in the customer or vendor card.</p>
@@ -152,7 +150,6 @@ Selections</span>_</p>
 </li>
 </ul>
 <p>In total there are more than 20 different functions available in the field <em>Invoice Sorting by</em>.</p>
-<p><img src="../../images/image3.png" alt=""></p>
 <p>In the option fields <em>Break on Sort Change (1) – (6)</em> it is determined how enwis should behave if it meets a new sorting criterion. An example of a change of type would be the change from the Rathausstraße customer task site to the Hauptstraße customer task site if the customer task sites were specified as a criterion for the invoice sorting.</p>
 <p>If the field <em>Info on Sort Change (1) – (6)</em> also has the option &quot;Full Text&quot; selected, the complete address is added to the customer task sites.</p>
 <p>For the option &quot;Full Text&quot; a multi-line information text is issued. This option is not available for all sorting criteria. If it is not available, it is replaced automatically by the option &quot;Info Line&quot;. The option &quot;Full Text&quot; is available for the following sorting criteria and it has the effects described below:</p>
@@ -192,19 +189,22 @@ Selections</span>_</p>
 </table>
 <p>If the field <em>Info on Sort Change (1) – (6)</em> has the option &quot;Info Line&quot; selected, the system inserts an empty line and an information line. The sorting criterion is written into the info line in our example of the code of the customer task site. All associated invoice entries follow under these info lines.</p>
 <p>If the field <em>Break on Sort Change</em> has the option &quot;New Invoice&quot; set, a new invoice or credit memo is applied for each type change.</p>
-<p><strong><u>Note:</u></strong></p>
-<p><strong>The selection of the combination Invoice Sorting by = Document No. and <em>Break on Sort Change</em> = New Invoice can also be created within the combine invoice single invoices or credit memos. In contrast to the direct invoice of individual documents, the rules for automatic insertion of additional information which are consigned in the invoice layout code are however accessed so that the invoice can be formed more transparently, more meaningfully and more flexibly.</strong></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The selection of the combination Invoice Sorting by = Document No. and <em>Break on Sort Change</em> = New Invoice can also be created within the combine invoice single invoices or credit memos. In contrast to the direct invoice of individual documents, the rules for automatic insertion of additional information which are consigned in the invoice layout code are however accessed so that the invoice can be formed more transparently, more meaningfully and more flexibly.</p>
+</div>
 <p>The option &quot;Pagebreak&quot; in the field <em>Break on Sort Change</em> triggers a page break for each change of the sorting criterion. A prerequisite for this option is that a sorting criterion must be determined. This option is only valid if the field <em>Zäsur bei Sortenwechsel</em> does not have the option &quot;New Invoice&quot; as a new document is generated in this case on changing the sorting criterion which implies the start of a new printed page.</p>
-<p><strong><u>Note:</u></strong></p>
-<p><strong>The field <em>Break on Sort Change</em> (1) – (6) makes sorting into six downstream levels possible. This means that after sorting according to e.g. customer task sites has taken place, the service and invoice entries which are thus assigned to a customer task site can then once again be sorted according to all criteria which are available on the first level (e.g: Document No., Contract No., Job No.) etc.</strong></p>
-<p><strong>Via the field <em>Info on Sort Change</em> it is also possible to search for the options Infozeile or Volltext once again, through which the corresponding texts are inserted for a type change of the second or third order... as well. It is however not possible to trigger a new invoice or a page break through the type change on these downstream sorting levels.</strong></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The field <em>Break on Sort Change</em> (1) – (6) makes sorting into six downstream levels possible. This means that after sorting according to e.g. customer task sites has taken place, the service and invoice entries which are thus assigned to a customer task site can then once again be sorted according to all criteria which are available on the first level (e.g: Document No., Contract No., Job No.) etc.
+Via the field <em>Info on Sort Change</em> it is also possible to search for the options Infozeile or Volltext once again, through which the corresponding texts are inserted for a type change of the second or third order... as well. It is however not possible to trigger a new invoice or a page break through the type change on these downstream sorting levels.**</p>
+</div>
 <h2 id="register-rental-invoice">Register Rental Invoice</h2>
 <p>In the register</p>
 <span class="smallcaps">
   <em>rental Invoice</em>
 </span>
 <p>of the invoice layout card it is possible to make settings for the rental invoice by combine invoice:</p>
-<p><img src="../../images/image4.png" alt=""></p>
 <p>In the field <em>Report Type Rental Invoice</em> a special code for the rental invoice can be consigned. This means that a report can be selected via this field which defines the graphic design of the invoice creation for this customer.</p>
 <p>In contrast to the settings in the register</p>
 <p><span class="smallcaps">Combine Invoice</span></p>
@@ -242,7 +242,6 @@ Description</span></em></p>
 <p>as an automatic text component. Here a tick must also be inserted into the field <em>Automatic Ext. Texts</em> if the consigned service description is to appear in invoices and credit memos by combine invoice. In the case of conflict the customer specific service description has priority in front of the general standard text component which is consigned on the service card.</p>
 </li>
 </ul>
-<p><img src="../../images/image5.png" alt=""></p>
 <h2 id="register-display">Register Display</h2>
 <p>In the <em>Feld Grad. Price Splitting</em> the selection exists between the options:</p>
 <ul>
@@ -273,19 +272,17 @@ Description</span></em></p>
 <p>On issue of the subtotals in the report a line with a descriptive text and the corresponding subtotal is generated in the field <em>Quantity and/or Amount.</em></p>
 <p>It is possible that a subtotal for quantities is not printed although this was set by the user. Subtotals for quantities are only meaningful and calculated correctly if sorting occurs according to quantity relevant criteria and the unit code is not changed. Otherwise subtotals with a misleading content would be issued.</p>
 <p>enwis therefore checks whether the main sorting criterion is a service, an article or a waste material and whether all quantities refer to the same unit code. If this is not the case, no subtotal for the quantity is issued.</p>
-<p><strong><u>Note:</u></strong></p>
-<p><strong>As subtotals are established dynamically, this can only occur via reports which support this functionality. In enwis there are the following standard reports:</strong></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>As subtotals are established dynamically, this can only occur via reports which support this functionality. In enwis there are the following standard reports:</p>
 <ul>
-<li><p><strong>5030453 Waste Mgt. - Sales Invoice</strong></p>
-</li>
-<li><p><strong>5030454 Waste Mgt. - Sales Cr. Memo</strong></p>
-</li>
-<li><p><strong>5030475 Proforma Sales Invoice</strong></p>
-</li>
-<li><p><strong>5030476 Proforma Sales Credit Memo</strong></p>
-</li>
+<li>5030453 Waste Mgt. - Sales Invoice</li>
+<li>5030454 Waste Mgt. - Sales Cr. Memo</li>
+<li>5030475 Proforma Sales Invoice</li>
+<li>5030476 Proforma Sales Credit Memo
+Individual reports must be adapted accordingly.</li>
 </ul>
-<p><strong>Individual reports must be adapted accordingly.</strong></p>
+</div>
 <p>In the field <em>Invoice Copies</em> it is possible to specify how many invoice copies are to be created on printing the invoice.</p>
 <p>The <em>Exclude from Tour Multi-Report</em> (do not print multi-tour report) does strictly speaking have nothing to do with the invoice layout. Multi-reports do in principle work on an order lines basis, meaning that documents can be created from the many lines of an order by using them. Here a new page is applied for each line and the customer indicated on the line is entered in the header of each page. The multi-report function enables the information in the order header to be ignored in a targeted way when creating documents and to be replaced by information from the line.</p>
 <p>The tour logic provides the possibility of printing order confirmations, shipment slips and other papers of all associated order lines across different orders. The tour logic made a batch functionality multi-report available: All reports for the whole tour are issued for all associated orders via a print command.</p>

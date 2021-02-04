@@ -86,38 +86,36 @@
 <p>The service card is called up via the menu point</p>
 <p><em><span class="smallcaps">enwis services Lists Rental services</span></em></p>
 <p>:</p>
-<p><img src="../../images/image1.png" alt=""></p>
 <p>Here the complete functions of the service card are available. The services are however filtered exclusively for rental services.</p>
 <p>These are defined via the <em>Service Group Code</em> in the field of the same name. The service group which stands for rental services is consigned in the <strong><em>waste management setup</em></strong> in the field <em>Service Grp. Rentals</em> on the register card</p>
 <p><span class="smallcaps">Processes</span></p>
 <p>. New services can also be applied which are also rental services automatically.</p>
-<p><img src="../../images/image2.png" alt=""></p>
 <p>The rental service requires a time unit. A rental calculation is selected in the above screen shot for example. The unit of the rental service is consigned in the field <em>Base Unit of Measure</em> in the register</p>
 <p><span class="smallcaps">general</span></p>
 <p>and where appropriate differently for customer or vendor business transactions in the fields <em>Sales Rental Invoice UOM</em> and <em>Purch. Rental Invoice UOM</em> in the register</p>
 <p><span class="smallcaps">Invoicing</span></p>
 <p>of the rental service card.</p>
-<p><img src="../../images/image3.png" alt=""></p>
-<p><strong><u>Note:</u></strong></p>
-<p><strong>When applying a new rental service enwis automatically transfers the basic unit into the fields <em>Sales Rental Invoice UOM</em> and <em>Purch. Rental Invoice UOM.</em> Both these fields must be filled in. Otherwise the rental calculation is cancelled with an error message.</strong></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>When applying a new rental service enwis automatically transfers the basic unit into the fields <em>Sales Rental Invoice UOM</em> and <em>Purch. Rental Invoice UOM.</em> Both these fields must be filled in. Otherwise the rental calculation is cancelled with an error message.</p>
+</div>
 <p>Following these settings on the service card it is necessary to change into the <strong><em>Waste Mgt. Units of Measure</em></strong> table of the service in order to determine the type of rounding and precision. In the field <em>Rounding Precision</em> a numerical value can be entered, e.g. &quot;1.00&quot; in order to round to whole numbers.</p>
-<p><strong><u>Note:</u></strong></p>
-<p><strong>When setting up the time unit please ensure that the corresponding time type was also consigned.</strong></p>
-<p><img src="../../images/image4.png" alt=""></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>When setting up the time unit please ensure that the corresponding time type was also consigned.</p>
+</div>
 <p>The precision of 0.10 indicated in the screen shot means a rounding to the first decimal place. In the option field <em>Rundungsart</em> it is possible to select between the options &quot;Nearest&quot;, &quot;Up&quot; and &quot;Down&quot;. With the setting shown as an example in the screen shot, time periods between 28 and 32 days are rounded up to a full month; time periods between 33 and 34 days are however rounded up to 1.1 months.</p>
 <h2 id="extended-rounding-function-in-the-rental-invoice">Extended rounding function in the rental invoice</h2>
 <p>The rounding options which are available for the equipment invoice are extended by a second stage compared with customary methods.</p>
 <p>Type of round and rounding precision are consigned in the conversion. For many users however these possibilities are not sufficient.</p>
 <p>Many users do however in principle wish to calculate in half months only. Every half month which is started either counts or it is rounded commercially so that 1.2 = 1 month and 1.4 = 1.5 months.</p>
 <p>In order to be able to show this, a second rounding is possible after the actual rounding. This occurs via the fields <em>Interval Rounding Precision</em> und <em>Interval Rounding Type</em> in the waste management unit (hidden in the form in standard). In the field <em>Interval Rounding Precision</em> it is possible to indicate the interval at which further rounding should in principle take place following establishment of the temporally correctly rounded value.</p>
-<p><img src="../../images/image5.png" alt=""></p>
 <p>In this example an interval rounding precision of 0.5 is indicated. It is however conceivable for every other precision. Via the interval rounding type it is determined whether rounding up to the next interval is to occur, rounding down to the previous one or commercial rounding is to occur, meaning rounding up or down to the next value.</p>
 <h2 id="extended-texts">Extended Texts</h2>
 <p>The text components of the rental service can inserted automatically in rental calculations.</p>
 <p>This depends on the setting of the field <em>Autom. Leist.-Textbaust. einf.</em> on the register</p>
 <p><span class="smallcaps">Service</span></p>
 <p>of the <strong><em>Invoice Method Card</em></strong>. The following options are available:</p>
-<p><img src="../../images/image6.png" alt=""></p>
 <ul>
 <li><p><em>Never:</em> Automatic text components are in principle not inserted</p>
 </li>
@@ -126,8 +124,10 @@
 <li><p><em>Always:</em> Automatic text components are always inserted if present, even if the field <em>Automatic Ext. Texts</em> is not ticked.</p>
 </li>
 </ul>
-<p><strong><u>Note:</u></strong></p>
-<p><strong>If there is a valid reference catalog for the service, then the text components of the reference catalog are used; in addition the setting in the field <em>Automatic Ext. Texts of</em> the reference catalog applies for the option test. If no valid reference catalog is present, the text components of the service are used and the option test applies for the setting in the field</strong> <strong><em>Automatic Ext. Texts</em></strong> <strong>of the service.</strong></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>If there is a valid reference catalog for the service, then the text components of the reference catalog are used; in addition the setting in the field <em>Automatic Ext. Texts of</em> the reference catalog applies for the option test. If no valid reference catalog is present, the text components of the service are used and the option test applies for the setting in the field <em>Automatic Ext. Texts</em> of the service.</p>
+</div>
 </article>
           </div>
           

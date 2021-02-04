@@ -93,10 +93,7 @@
 <p>in the field <em>Allow Cust./Vend. Changeover</em> on the register</p>
 <p><span class="smallcaps">General</span></p>
 <p>.</p>
-<p><img src="../../images/image1.png" alt=""></p>
 <p>All customers/vendors and their task sites, which are involved in the customer-vendor changeover, must also be assigned to one another via the business partner card and the associated business partner sites.</p>
-<p><img src="../../images/image2.png" alt=""></p>
-<p><img src="../../images/image3.png" alt=""></p>
 <h2 id="automatic-changeover-on-order-clearance">Automatic changeover on order clearance</h2>
 <p>In order to trigger the customer-vendor changeover automatically on order clearance, in the</p>
 <p><em><span class="smallcaps">Waste management
@@ -104,9 +101,7 @@ setup</span></em></p>
 <p>the field <em>Auto-Changeover on Release</em> is ticked on the register</p>
 <p><span class="smallcaps">Status</span></p>
 <p>.</p>
-<p><img src="../../images/image4.png" alt=""></p>
 <p>In the field <em>Auto-Changeover on Status</em> it is possible to make a setting so that the customer-vendor changeover and thus a new setting of price is to occur automatically as soon as a certain order status e.g. final control is reached. Dispatching, follow up entry and final control are available as possible options.</p>
-<p><img src="../../images/image5.png" alt=""></p>
 <h2 id="suppressing-customer-vendor-changeover-automatically">Suppressing customer-vendor changeover automatically.</h2>
 <p>The jumping can also in principle be suppressed depending on the order status. Via the option field <em>Suppress Changeover until</em> on the register</p>
 <p><span class="smallcaps">Status</span></p>
@@ -114,7 +109,6 @@ setup</span></em></p>
 <p><em><span class="smallcaps">Waste
 management setup</span></em></p>
 <p>it is possible to consign that the jumping is suppressed up to a particular status of the order. Dispatching, follow up entry and final control are available as possible options.</p>
-<p><img src="../../images/image6.png" alt=""></p>
 <p>The background: If a customer suddenly becomes a vendor, this could confuse a case worker in the order processing or be disadvantageous for the dispatching. If the field <em>Suppress Changeover until</em> is set up to the option value &quot;Processing&quot; for example, then no jumping is in principle carried out in waste management orders with the status &quot;Creation&quot; or &quot;Dispatching&quot;. The customer remains the customer even if the posting has to be converted to the posting type &quot;Purchase&quot;.</p>
 <p>If both functions:</p>
 <ul>
@@ -129,7 +123,6 @@ processing</span></em></p>
 <p>A customer/vendor changeover does in principle not occur for the order status for the option values &quot;Creation&quot; and &quot;Dispatching&quot;. If the status of the waste management order is set to the status &quot;Processing&quot;, the order for the subsequent work process appears for another case worker for the order follow up entry. Before the order becomes visible there, a new establishment of the price occurs and a few customer processes are already flipped into vendor processes (or the opposite) so that it is immediately possible to continue working with the correct posting type in the subsequent processing of the order.</p>
 <h2 id="suppressing-customer-vendor-changeover-manually">Suppressing customer-vendor changeover manually</h2>
 <p>Customer-vendor changeover can be suppressed for each waste management line individually by ticking the field <em>Business Flow Fixed</em> in the order line.</p>
-<p><img src="../../images/image7.png" alt=""></p>
 <p>Lines in which the field is ticked do not changeover in principle. Through the customer-vendor changeover of a waste management line the field <em>Business Flow Fixed</em> is set automatically to YES in this line.</p>
 <p>Each waste management line can thus only change the posting type once automatically. This is in principle required as otherwise - depending on the design of the service catalog - it is not possible to prevent constant changeover from sales to purchase and the opposite and thus an endless loop is produced.</p>
 <h2 id="customer-vendor-changeover-1">Customer-vendor changeover</h2>
@@ -168,61 +161,52 @@ Purchase</span></em></p>
 <p>It is possible to branch off into the price group matrix of the selected customer in the customer card via the link</p>
 <p><em><span class="smallcaps">Home/Process/ price group matrix</span></em></p>
 <p>. In the price group matrix a new line is applied as can be seen in the next image.</p>
-<p><img src="../../images/image8.png" alt=""></p>
 <p>In the next stage you branch off into the vendor which is consigned to the customer. The price group matrix of the selected vendor is called up from the vendor card via the link</p>
 <p><em><span class="smallcaps">home/Process/Price Group Matrix</span></em></p>
 <p>. In the price group matrix a new line is applied as can be seen in the next image.</p>
-<p><img src="../../images/image9.png" alt=""></p>
 <p>In addition service price lines must be defined with an</p>
 <p><u>empty</u></p>
 <p>posting type.</p>
-<p><img src="../../images/image10.png" alt=""></p>
 <p>In the field <em>Define Posting Type</em> it is possible to post whether a customer price (option value = &quot;Sales&quot; or a vendor price (option value = &quot;Purchase&quot;) is involved.</p>
 <p>If the corresponding service price line is now operated in an order line, enwis compares whether the posting type of the order line matches the posting type of the service order line in the field <em>Define Posting Type</em>.</p>
 <p>If this is not the case, the posting type of the order line is changed and the customer or vendor entered into the field <em>Post-with No.</em> via the business partner card is validated instead of the customer/vendor of the order line.</p>
 <p>The customer/vendor task site can also changeover, meaning that the value in the field Task-at Code is automatically validated.</p>
 <p><strong><u>Example:</u></strong></p>
 <p><strong>A waste management order is created from a contract CONTR000006 with the customer D00340 and the customer task site E00000082 via the service &quot;10-100107110101 A19&quot;. The waste management line is shown in the image below:</strong></p>
-<p><img src="../../images/image11.png" alt=""></p>
 <p><strong>Following completed feedback the order is cleared and it becomes a completed order. The function customer-vendor</strong> changeover <strong>is triggered by the order clearance.</strong></p>
-<p><img src="../../images/image12.png" alt=""></p>
 <p>enwis has compared the posting type of the waste management line (sale) with the same one of the operated service price line and established that these do not match. The posting type of the waste management line is thus switched to the value &quot;Purchase&quot;. Instead of the customer D00340 the vendor K00940 linked via the business partner logic was entered. The customer task site E00000082 of the customer is also switched automatically to the vendor task site B0000078 via business partner logic.</p>
 <h3 id="define-posting-type--changeover-on-neg-price">Define Posting Type = Changeover on neg. Price</h3>
 <p>The function</p>
 <p><em><span class="smallcaps">changeover on neg. price</span></em></p>
 <p>is realised via another logic in order to implement customer-vendor jumping for a negative price. The following settings are required on the service price line:</p>
-<p><img src="../../images/image13.png" alt=""></p>
 <p>If this service price line is found in a customer process in the above example, then the customer/vendor changeover would only be triggered if the price consigned in the price line is negative.</p>
 <p>If the price is positive, changeover does not take place. If the price is negative, then the posting type of the order line is changed from sale to purchase (or the opposite). Nevertheless no pricing is triggered and the price found in the price line is used as an absolute value.</p>
 <p>An advantage of this method is that the price maintenance is clear. An additional advantage is that this method can also be used to flexibly achieve a customer/vendor jump which is via a reference price group in connection with pricing.</p>
 <p><strong>Example:</strong></p>
 <p><strong>A waste management order is created from a contract with the customer D00340 and the customer task site E00000082 via the service &quot;10-100107110101 A19&quot;. The waste management line is shown in the image below:</strong></p>
-<p><img src="../../images/image14.png" alt=""></p>
 <p><strong>Following completed feedback the order is cleared and it becomes a completed order. The function customer-vendor changeover is triggered by the order clearance.</strong></p>
-<p><img src="../../images/image15.png" alt=""></p>
 <p>enwis has operated the corresponding service price line and established that the price consigned is negative and the field <em>Define Posting Type</em> is set to the option value &quot;Changeover neg. Price&quot;. The customer waste management line was thus converted into a vendor waste management line and the price was transferred into the waste management line with its absolute value (+120). If this order is invoiced later on, then enwis creates a corresponding purchase invoice.</p>
 <p>The price is thus established from the same price line which triggers the jumping and then logically has the opposite sign in the opposite posting type.</p>
-<p><strong><u>Note:</u></strong></p>
-<p>**Through the customer-vendor changeover of a waste management line the field <em>Business Flow Fixed</em> is set automatically to JA in this line. Each waste management line can thus only change the</p>
-<p><u>posting type</u></p>
-<p>once automatically. This is in principle required as otherwise - depending on the design of the service catalog - it is not possible to prevent constant jumping from sales to purchase and the opposite and thus an endless loop is produced.**</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Through the customer-vendor changeover of a waste management line the field <em>Business Flow Fixed</em> is set automatically to JA in this line. Each waste management line can thus only change the posting type once automatically. This is in principle required as otherwise - depending on the design of the service catalog - it is not possible to prevent constant jumping from sales to purchase and the opposite and thus an endless loop is produced.</p>
+</div>
 <h3 id="define-posting-type--neg-price--purchasepos-price--sale">Define Posting Type = Neg. Price = Purchase/Pos. Price = sale</h3>
 <p>The functions</p>
 <p><em><span class="smallcaps">Neg. Price = Purchase/Pos. Price
 = Sale</span></em></p>
 <p>or Neg. Price = Sale/Pos. Price = purchase makes the customer-vendor jump possible on the basis of simple logic. In this way the direction of business (customer or vendor) is determined by the sign of the service price.</p>
 <p>The following settings are required on the service price line:</p>
-<p><img src="../../images/image16.png" alt=""></p>
 <p>For the service &quot;10-100107110101 A19&quot; a service price line with a negative service price (-100,- €) is applied. The field <em>Define Posting Type</em> is set to the option value &quot;Neg. Price = Purchase/Pos. Price = Sale&quot;</p>
 <p>If this service price line is operated from a customer order line, then this is validated in a vendor order line (Neg. Price = Purchase).</p>
 <p><strong>Example:</strong></p>
 <p><strong>A waste management order is created from a contract with the customer D00340 and the customer task site E00000082via the service &quot;10-100107110101 A19&quot;. The waste management line is shown in the image below:</strong></p>
-<p><img src="../../images/image17.png" alt=""></p>
 <p><strong>Following completed feedback the order is cleared and it becomes a completed order. The function Customer-Vendor changeover is triggered by the order clearance.</strong></p>
-<p><img src="../../images/image18.png" alt=""></p>
 <p>enwis made a vendor order line from this customer order line and correctly entered the price with its absolute value (100,-€). If this order is invoiced later on, then enwis creates a corresponding purchase invoice.</p>
-<p><strong><u>Note:</u></strong></p>
-<p><strong>In this variant of the customer-vendor jumping, the field <em>Business Flow Fixed</em> is not set to &quot;Yes&quot;. This means that the possibility for repeated changeover remains if this is required for the course of business.</strong></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>In this variant of the customer-vendor jumping, the field <em>Business Flow Fixed</em> is not set to &quot;Yes&quot;. This means that the possibility for repeated changeover remains if this is required for the course of business.</p>
+</div>
 </article>
           </div>
           

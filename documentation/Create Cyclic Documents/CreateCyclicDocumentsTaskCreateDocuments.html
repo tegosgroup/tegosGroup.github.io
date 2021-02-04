@@ -82,21 +82,19 @@
 
 <h2 id="create-documents">Create Documents</h2>
 <p>Creating documents is, in fact, the original purpose of batch processing. Using system logic, new documents are created automatically from contracts and the next cycle date is raised.</p>
-<p><img src="../../images/image1.png" alt=""></p>
 <p>When batch processing is initiated with the Create Documents task, all contracts will be reviewed, the documents to be created will be created, and the cycle date of the contracts will be updated.</p>
-<p><strong><u>Note:</u></strong></p>
-<p><strong>Depending on the number of contracts to be reviewed and documents to be created, this process make take some time. The system issues an ongoing update on the screen showing the contract currently being processed.</strong></p>
-<p><strong>During processing, the tables are blocked for an extremely short time, so that users should not notice any impairment in system performance.</strong></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Depending on the number of contracts to be reviewed and documents to be created, this process make take some time. The system issues an ongoing update on the screen showing the contract currently being processed. During processing, the tables are blocked for an extremely short time, so that users should not notice any impairment in system performance.</p>
+</div>
 <p>The cycle log number will be written onto all documents generated during the current cycle. This number will also be copied onto all contracts whose information was changed during the cycle. Furthermore, all actions will be documented in the form of cycle ledger entries.</p>
 <p>Once all contracts have been processed and all documents created, the system can show a quantitative overview of the batch processing. These statistics can be viewed in the same form under the</p>
 <p><span class="smallcaps">Statistics</span></p>
 <p>tab where the initiator for the batch processing was defined. These statistic can shown the following values, for example:</p>
-<p><img src="../../images/image2.png" alt=""></p>
 <p>On the statistics screen, users can see that the number of the cycle just executed in the <em>Cycle Log-No.</em> field (ZL0000026), the number of sales orders created from the existing contracts (4), and whether some sales orders were not created (x).</p>
 <p>Users can go to</p>
 <p><em><span class="smallcaps">Navigate</span></em></p>
 <p>for immediate access to all data and information associated with this cycle.</p>
-<p><img src="../../images/image3.png" alt=""></p>
 <p>They have the following options:</p>
 <ul>
 <li><p>Print the cycle plan</p>
@@ -108,13 +106,14 @@
 <li><p>Reset the entire cycle (function = Reset Cycle-Log)</p>
 </li>
 </ul>
-<p><strong><u>Note:</u></strong></p>
-<p><strong>In this respect, take note that nothing burdens the performance of a database as much as the deletion or reversal of large-scale actions like resetting a cycle. We strongly recommend taking preliminary steps, such as using the preview function to ensure that the desire information will be created, and taking the time needed to define the filter criteria correctly, rather than running and resetting a cycle back and forth.</strong></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>In this respect, take note that nothing burdens the performance of a database as much as the deletion or reversal of large-scale actions like resetting a cycle. We strongly recommend taking preliminary steps, such as using the preview function to ensure that the desire information will be created, and taking the time needed to define the filter criteria correctly, rather than running and resetting a cycle back and forth.</p>
+</div>
 <p>The cycle log can be viewed in the</p>
 <p><em><span class="smallcaps">Cycle
 Log-Entries</span></em></p>
 <p>menu.</p>
-<p><img src="../../images/image4.png" alt=""></p>
 <p>Users can read the cycle log to see why a document was not and could not be created (e.g. because a customer was blocked for new orders in the interim) and which contract was involved.</p>
 <p>The menu items under</p>
 <p><em><span class="smallcaps">Sales</span></em></p>
@@ -133,10 +132,10 @@ Log-Entries</span></em></p>
 <p>The</p>
 <p><em><span class="smallcaps">Reset Cycle-Log</span></em></p>
 <p>option commands the system to reverse all of the actions taken during the cycle.</p>
-<p><img src="../../images/image5.png" alt=""></p>
-<p><img src="../../images/image6.png" alt=""></p>
-<p><strong><u>Note:</u></strong></p>
-<p><strong>If users intend to reset the entire cycle, this should be done as quickly as possible, because otherwise the documents created thereby might be modified by dispatching, sales order post-processing, invoicing, etc.</strong></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>If users intend to reset the entire cycle, this should be done as quickly as possible, because otherwise the documents created thereby might be modified by dispatching, sales order post-processing, invoicing, etc.</p>
+</div>
 </article>
           </div>
           

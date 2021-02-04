@@ -120,14 +120,15 @@ Activities / create cyclic documents</span></em></p>
 </li>
 </ul>
 <p>The dialogue to the start of the cyclic document creation provides a complete series of possibilities for parametrisation which are presented below.</p>
-<p><strong><u>Note:</u></strong></p>
-<p><strong>The settings on the register Options remain saved by user while the default settings on all other registers are reset for each call up of the batch processing.</strong></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The settings on the register Options remain saved by user while the default settings on all other registers are reset for each call up of the batch processing.</p>
+</div>
 <p>The individual registers and fields are investigated below:</p>
 <h2 id="register-options">Register Options</h2>
 <p>Via the fields <em>Cycle date from</em> and <em>Cycle Date to</em> it is defined which cyclic contract (or contract lines / equipment entries) are in the viewing window of the batch processing.</p>
 <p>Only contracts with an entry in the field <em>Cycle Code</em> and a date in the field <em>Next Cycle Date</em> are taken into account by the batch processing.</p>
 <p>An entry in the field <em>Cycle date from,</em> is absolutely required while the field <em>Cycle date to</em> can be left. Both windows together define the time horizon (the viewing window) of the batch processing.</p>
-<p><img src="../../images/image1.png" alt=""></p>
 <p>In the current example a time window is defined which does not have a start and ends on 07.11.2013. This corresponds to the <em>date filter</em> 07.11.2013_._ All contracts are taken into account if their entry in the field <em>Next Cycle Date</em> is less than or equal to 07.11.2013.</p>
 <p>Instead of an end date in the field <em>Cycle date to</em>, a maximum number of next tasks which are to be created can be indicated in the field <em>Number of Tasks.</em> Then all task data for the number of next tasks are calculated by contract or contract component.</p>
 <p>If both an end date and a number of maximum tasks are indicated, orders are generated or calculated until one of both arguments is reached.</p>
@@ -141,9 +142,7 @@ Activities / create cyclic documents</span></em></p>
 <p><strong><u>Example:</u></strong></p>
 <p><strong>The next cycle date 30.10.20103 is defined in the contract DV00012.</strong></p>
 <p><strong>In the cyclic code the time form Relative (weekly) and the interval 1W are defined. In the characteristic &quot;Next document&quot; a document with the task date 27.03.2013 is created and the next cycle date of the contract is moved up to 06.11.2013.</strong></p>
-<p><img src="../../images/image2.png" alt=""></p>
 <p>If the field <em>Range</em> has the option <em>All Documents</em> selected in the batch processing then all documents up to the end of the time period defined by C_ycle date from_ and <em>Cycle Date to</em> are generated.</p>
-<p><img src="../../images/image3.png" alt=""></p>
 <p>In the above example that would mean: From the order with the next cycle date 30.10.2013 documents are generated consecutively with the entry date 06.11.2013, 13.11.2013, 20.11.2013 and 27.21.2013. Subsequently the field <em>Next Cycle Date</em> goes onto 04.12.2013 in the contract.</p>
 <p>The user uses the options summarised under the point <em>Task</em> to establish what the batch processing is to achieve. The following four options are available:</p>
 <ol>
@@ -162,7 +161,6 @@ Activities / create cyclic documents</span></em></p>
 <p>The value of this field is always pre-allocated by the value of a field of the same name in the</p>
 <p><em><span class="smallcaps">Waste management
 setup/Register contract.</span></em></p>
-<p><img src="../../images/image4.png" alt=""></p>
 <h2 id="register-contract-register">Register Contract register</h2>
 <p>The contracts which are to be taken into account in the cycle sequence have already been restricted via the fields <em>Cycle Date from</em> and <em>Cycle Date to</em> on the register</p>
 <p><span class="smallcaps">Options</span></p>
@@ -190,21 +188,17 @@ setup/Register contract.</span></em></p>
 <li><p>Ext. Contract Line Filter</p>
 </li>
 </ul>
-<p><img src="../../images/image5.png" alt=""></p>
 <p>In the example above only contracts which show the cycle code WEEKLY are taken into account.</p>
 <h2 id="register-defaults">Register Defaults</h2>
 <p>If the Boolean field <em>Keep Cycle Date</em> is ticked and new documents are to be created from contracts then these documents are created on the basis of the next cycle date. The field Next Cycle Date is however not updated in the contract but remains on the original value. For a new cycle sequence documents would be newly created for the same task date.</p>
-<p><img src="../../images/image6.png" alt=""></p>
 <h2 id="register-statistics">Register Statistics</h2>
 <p>If all contracts are processed and all documents are created, a statistic can be displayed which first of all provides a quantitative overview of the batch processing carried out. These statistics can be viewed on the register</p>
 <p><span class="smallcaps">Statistics</span></p>
 <p>of the same form on which the definitions for the start of batch processing are also consigned. These statistics can have the following values for example:</p>
-<p><img src="../../images/image7.png" alt=""></p>
 <p>The information that the cycle sequence just carried out has the cycle log number (ZL0000022), that (5) new orders have been generated from existing contracts and any (x) orders were not created can be taken from the statistics window.</p>
 <p>Via the link</p>
 <p><em><span class="smallcaps">navigate</span></em></p>
 <p>there is immediate access from all data and information which are linked with this cycle sequence:</p>
-<p><img src="../../images/image8.png" alt=""></p>
 <p>The user has the following possibilities:</p>
 <ul>
 <li><p>Printing of the cyclic plan</p>
@@ -216,8 +210,10 @@ setup/Register contract.</span></em></p>
 <li><p>Reset of the complete cycle sequence which was just generated (function = reset cycle log)</p>
 </li>
 </ul>
-<p><strong><u>Note:</u></strong></p>
-<p><strong>In this context it is however pointed out that nothing burdens the performance of a database as much as numerous deletion actions. It is thus recommended that it is ensured, preferably in advance - via the preview if necessary - that the desired data are generated and time is consciously taken for the definition of the filter criteria rather than carrying out the cycle generation and cycle reversal a few times.</strong></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>In this context it is however pointed out that nothing burdens the performance of a database as much as numerous deletion actions. It is thus recommended that it is ensured, preferably in advance - via the preview if necessary - that the desired data are generated and time is consciously taken for the definition of the filter criteria rather than carrying out the cycle generation and cycle reversal a few times.</p>
+</div>
 <h2 id="cyclic-documents-from-contracts">Cyclic documents from contracts</h2>
 <p>It is possible to use the menu point</p>
 <p><em><span class="smallcaps">Create

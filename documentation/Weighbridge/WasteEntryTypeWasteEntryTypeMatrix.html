@@ -137,7 +137,6 @@ adjmt.</span></p>
 <p>In general, a positive quantity transaction should be posted in a sales order with the posting type</p>
 <p><span class="smallcaps">stocking</span></p>
 <p>, since it is usually the result of an external relationship with a business partner.</p>
-<p><img src="../../images/image1.png" alt=""></p>
 <p>When posting a</p>
 <p><span class="smallcaps">stocking</span></p>
 <p>waste entry in the ledger, make sure to also enter the corresponding business partner. In other words, the <em>Posting Type</em>, <em>Post-with No.</em>, and <em>Task-at Code</em> fields should be filled in the same way as though the inventory transaction were created in a sales order.</p>
@@ -152,7 +151,6 @@ adjmt.</span></p>
 <p><u>NOT</u></p>
 <p>fill out the <em>Posting Type</em>, <em>Post-with No.</em>, and <em>Task-at Code</em> fields in the ledger.</p>
 <p>Pos. adjmt. entry types are used to record things like inventory differences, weathering, handling processes, separation processes, etc.</p>
-<p><img src="../../images/image2.png" alt=""><img src="../../images/image3.png" alt=""></p>
 <h3 id="waste-entry-type-disposal">Waste Entry Type: Disposal</h3>
 <p>A Disposal normally represents a negative inventory transaction whereby materials are transferred from the company's own inventory to a third-party waste management company.</p>
 <p>A negative quantity transaction should also be posted in a sales order with the posting type</p>
@@ -181,7 +179,6 @@ adjmt.</span></p>
 <p><span class="smallcaps">Transfer</span></p>
 <p>waste entries are only used to post transactions with internal influence when inventory is transferred between two of the company's own warehouses or storage areas; no external business partners are involved. The transfer ledger is available for these postings.</p>
 <p>Transfers always involve a negative inventory transaction at one warehouse and a positive inventory transaction at another. Therefore, transfers do not change inventory overall.</p>
-<p><img src="../../images/image4.png" alt=""></p>
 <h3 id="waste-entry-type-drop-shipment">Waste Entry Type: Drop Shipment</h3>
 <p>The waste entry type</p>
 <p><span class="smallcaps">Drop Shipment</span></p>
@@ -203,7 +200,6 @@ adjmt.</span></p>
 <li><p>Pos. Adjmt.</p>
 </li>
 </ul>
-<p><img src="../../images/image5.png" alt=""></p>
 <p>Drop shipment posts with the route type</p>
 <p><span class="smallcaps">neg.
 Adjmt.</span></p>
@@ -222,7 +218,6 @@ Adjmt.</span></p>
 <p>route type. This generates a waste entry with a negative quantity.</p>
 <p>The same applies if the Drop Shipment transaction is posted through a ledger. Two lines always have to be posted to depict both sides of the drop shipment transaction.</p>
 <p>Since drop shipments involve parties outside the company, the <em>Posting Type</em>, <em>Post-with No.</em>, and <em>Task-at Code</em> fields in the ledger should always be filled out.</p>
-<p><img src="../../images/image6.png" alt=""></p>
 <h2 id="waste-entry-type-matrix">Waste Entry Type Matrix</h2>
 <p>It is clear from the descriptions above that the right entry type must be selected for each business case to make sure the inventory transaction is correctly posted. To ease some of the burden on users and guarantee that posting is done as accurately as possible, enwis offers the option of a waste entry type matrix where the system can automatically find the correct waste entry type and copy it.</p>
 <p>As already mentioned, in the waste management industry, customer business usually involves positive inventory transactions (meaning the waste entry type</p>
@@ -233,7 +228,6 @@ Adjmt.</span></p>
 <p>There are exceptions, however. For example, vendor business involving recyclables requires a</p>
 <p><span class="smallcaps">stocking</span></p>
 <p>waste entry. These exceptions can be saved in the waste entry type matrix.</p>
-<p><img src="../../images/image7.png" alt=""></p>
 <p>The entry type to be used can be defined in the waste entry type matrix based upon the following criteria:</p>
 <ul>
 <li><p>Site Code</p>
@@ -262,7 +256,6 @@ Adjmt.</span></p>
 <p>The system only refers to the waste entry type matrix when the <em>Waste Entry Type Matrix</em> box is checked under the</p>
 <p><em><span class="smallcaps">stock</span></em></p>
 <p>register in Waste Management Setup.</p>
-<p><img src="../../images/image8.png" alt=""></p>
 <p>If the entry type in the waste entry type matrix is</p>
 <p><span class="smallcaps">Drop Shipment</span></p>
 <p>but no route type has been defined on the waste entry type matrix line, the system looks to the Posting Type by default to determine the route type.</p>
@@ -278,8 +271,10 @@ Adjmt.</span></p>
 <p><span class="smallcaps">Disposal</span></p>
 </li>
 </ul>
-<p><strong><u>Note:</u></strong></p>
-<p><strong>Users require authorization on Table 5030645 Waste Entry Type Matrix before they can edit waste management orders.</strong></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Users require authorization on Table 5030645 Waste Entry Type Matrix before they can edit waste management orders.</p>
+</div>
 </article>
           </div>
           
