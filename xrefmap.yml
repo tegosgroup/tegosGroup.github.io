@@ -154,9 +154,6 @@ references:
 - uid: LumpSumPrices
   name: Lump Sum Prices
   href: documentation/Prices/LumpSumPrices.html
-- uid: MasterDataSychronisation
-  name: Master Data Sychronisation
-  href: documentation/Master%20Data%20Synchronisation/MasterDataSychronisation.html
 - uid: MergingCyclicDocuments
   name: Merging Cyclic Documents
   href: documentation/Create%20Cyclic%20Documents/MergingCyclicDocuments.html
