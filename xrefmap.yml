@@ -118,6 +118,9 @@ references:
 - uid: FundamentalsForWorkingWithQuotesContractsAndOrders
   name: Fundamentals for working with quotes, contracts and orders
   href: documentation/Order%20Processing/FundamentalsForWorkingWithQuotesContractsAndOrders.html
+- uid: GettingStarted
+  name: Getting Started
+  href: documentation/index.html
 - uid: HandlingErrorsInInvoiceTypesAndInvoiceBatches
   name: Handling Errors in Invoice Types and Invoice Batches
   href: documentation/Invoicing/HandlingErrorsInInvoiceTypesAndInvoiceBatches.html
