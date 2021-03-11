@@ -1,0 +1,1332 @@
+{
+  "homepages": [],
+  "source_base_path": "D:/a/1/s/en-US",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      },
+      "is_incremental": false
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "CNAME",
+      "output": {
+        "resource": {
+          "relative_path": "CNAME"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "LICENSE.md",
+      "output": {
+        "resource": {
+          "relative_path": "LICENSE.md"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "README.md",
+      "output": {
+        "resource": {
+          "relative_path": "README.md"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "5Yda/fn37lWMLBjZr4q7Qg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/Basics/BasicsOfEnwis.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/Basics/BasicsOfEnwis.html",
+          "hash": "mW+12/kxX2twPLGQSNNs/Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/Basics/CustomerAndVendorOverview.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/Basics/CustomerAndVendorOverview.html",
+          "hash": "YEOaVH7SF97vsTKkxNHGdw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/Commitments/AutomaticCommitmentApplication.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/Commitments/AutomaticCommitmentApplication.html",
+          "hash": "kemNI0OBnIeJriOKyzRtmg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/Commitments/ChartOfCommitmentsAccounts.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/Commitments/ChartOfCommitmentsAccounts.html",
+          "hash": "qEfSSO/Siy7wr+bJweqyUA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/Commitments/CommitmentsDueDate.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/Commitments/CommitmentsDueDate.html",
+          "hash": "9itsx3cWMCz31RipCuDxvA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/Concepts/AllocationParameters.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/Concepts/AllocationParameters.html",
+          "hash": "sI113jezjKiCaiGj7QCX5g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/Concepts/AllocationQuantityReferenceType.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/Concepts/AllocationQuantityReferenceType.html",
+          "hash": "kb6R+ewelh6oq3WMlR6G8A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/Concepts/ConceptAllocationBalanceAccounts.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/Concepts/ConceptAllocationBalanceAccounts.html",
+          "hash": "MgPjNkKcTkiWq5nN1HHRbg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/Concepts/PileDensityAllocation.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/Concepts/PileDensityAllocation.html",
+          "hash": "Nsbimj9j95cAv2beY4QsaA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/Create Cyclic Documents/CreateCyclicDocumentsCycleLogs.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/Create Cyclic Documents/CreateCyclicDocumentsCycleLogs.html",
+          "hash": "f4Hiyyy8+aSQv+iKhanpDQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/Create Cyclic Documents/CreateCyclicDocumentsTaskCreateCalendar.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/Create Cyclic Documents/CreateCyclicDocumentsTaskCreateCalendar.html",
+          "hash": "8nlyaC8RZpgLj4ekcW3xVA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/Create Cyclic Documents/CreateCyclicDocumentsTaskCreateDocuments.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/Create Cyclic Documents/CreateCyclicDocumentsTaskCreateDocuments.html",
+          "hash": "UktjMR4J8+HSBkby+NZO1Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/Create Cyclic Documents/CreateCyclicDocumentsTaskPreview.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/Create Cyclic Documents/CreateCyclicDocumentsTaskPreview.html",
+          "hash": "kY3LTJYf1j2EOaV9pLF0YQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/Create Cyclic Documents/CreateCyclicDocumentsTaskPrintCyclePlan.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/Create Cyclic Documents/CreateCyclicDocumentsTaskPrintCyclePlan.html",
+          "hash": "tVQR43eJ0CSQ+DzPZhOGig=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/Create Cyclic Documents/CreationOfCyclicDocuments.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/Create Cyclic Documents/CreationOfCyclicDocuments.html",
+          "hash": "LipHlTk04Szllq7JoZ/nYQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/Create Cyclic Documents/CyclicDocumentCreationSetup.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/Create Cyclic Documents/CyclicDocumentCreationSetup.html",
+          "hash": "Abr7ZRhdgyEX4Gj5P40+JQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/Create Cyclic Documents/DefinitionOfCyclicContracts.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/Create Cyclic Documents/DefinitionOfCyclicContracts.html",
+          "hash": "FYMuZc+kz3/lhEcqAzeA9A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/Create Cyclic Documents/MergingCyclicDocuments.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/Create Cyclic Documents/MergingCyclicDocuments.html",
+          "hash": "oSvE7332/JTFuy3B4Xss5Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/Document Templates/Documenttemplates.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/Document Templates/Documenttemplates.html",
+          "hash": "bY3FJH4pLm1w7hjqTmz3Vw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/Equipment Rentals/ChangeStatusOfOpenRentalInvoices.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/Equipment Rentals/ChangeStatusOfOpenRentalInvoices.html",
+          "hash": "6GGVSBV/b3/wnjnQfLGZ8g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/Equipment Rentals/DeterminingAnInvoiceMethod.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/Equipment Rentals/DeterminingAnInvoiceMethod.html",
+          "hash": "QDvJqXN7Aim9JSCdVTn5ug=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/Equipment Rentals/EquipmentCardSetupAssociatedWithInvoicing.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/Equipment Rentals/EquipmentCardSetupAssociatedWithInvoicing.html",
+          "hash": "2YNCfWOaMHe4jGCnMHkpiQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/Equipment Rentals/EquipmentInvoiceReference.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/Equipment Rentals/EquipmentInvoiceReference.html",
+          "hash": "GNDFFhKkVq+Hx4u0DXtwag=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/Equipment Rentals/EquipmentLedgerEntriesAndRentalValueEntries.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/Equipment Rentals/EquipmentLedgerEntriesAndRentalValueEntries.html",
+          "hash": "qwCbxX0LdOYozT2Fy7RL/w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/Equipment Rentals/RentalInvoiceLayout.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/Equipment Rentals/RentalInvoiceLayout.html",
+          "hash": "F8D88znQq7KXA1jAfCg81w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/Equipment Rentals/RentalInvoiceSimulation.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/Equipment Rentals/RentalInvoiceSimulation.html",
+          "hash": "cXnBZ8M8ofms8nTclH1rZg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/Equipment Rentals/RentalInvoicesPotentialSourcesOfErrors.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/Equipment Rentals/RentalInvoicesPotentialSourcesOfErrors.html",
+          "hash": "1lgkoE9+Uq8+kheFbEyP4Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/Equipment Rentals/RentalPriceFixingMatrix.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/Equipment Rentals/RentalPriceFixingMatrix.html",
+          "hash": "tUz6u1XgWTjqRCvQYp4hsw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/Equipment Rentals/ReversingRentals.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/Equipment Rentals/ReversingRentals.html",
+          "hash": "EOw+x4JTjAm50pV13t0mXA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/Equipment Rentals/SettingUpARentalService.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/Equipment Rentals/SettingUpARentalService.html",
+          "hash": "GIeSvM+50oTvhtXWRNvG/w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/Equipment Rentals/SettingUpAnInvoiceMethod.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/Equipment Rentals/SettingUpAnInvoiceMethod.html",
+          "hash": "nCwxsDVx/0a0Go7AmpXYCw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/Equipment Rentals/SetupRentalPrices.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/Equipment Rentals/SetupRentalPrices.html",
+          "hash": "/tWE4nhckNvw0GRSTXtb4Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/Equipment/ApplicationOfAnEquipmentService.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/Equipment/ApplicationOfAnEquipmentService.html",
+          "hash": "Tb0UrceLh+C0aGnMjvJo9g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/Equipment/DispatchingPlan.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/Equipment/DispatchingPlan.html",
+          "hash": "w+6z1NZWQE5yc9JSldzQLQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/Equipment/EquipmentAdministration.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/Equipment/EquipmentAdministration.html",
+          "hash": "sO1kp8K8rQIZENaQPK47Nw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/Equipment/EquipmentCard.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/Equipment/EquipmentCard.html",
+          "hash": "NELFOZDiReg+PtcViPmYNg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/Equipment/EquipmentChartOfAccount.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/Equipment/EquipmentChartOfAccount.html",
+          "hash": "0qSVpkzQAd2hgFEqFCruGg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/Equipment/EquipmentEntries.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/Equipment/EquipmentEntries.html",
+          "hash": "zJcWwlQZepNX1hqwFsIFLg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/Equipment/EquipmentIdsAsSerialNumbers.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/Equipment/EquipmentIdsAsSerialNumbers.html",
+          "hash": "jrdtp3XtAk6mOfkXVRn4Wg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/Equipment/PostingAndCorrectionOfEquipment.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/Equipment/PostingAndCorrectionOfEquipment.html",
+          "hash": "tuom16RNYdzDfPMBLUFFDg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/Invoice Layouts/ExtendedInvoiceTexts.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/Invoice Layouts/ExtendedInvoiceTexts.html",
+          "hash": "2f5m00+FuDU3mMjdzKNzaA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/Invoice Layouts/InvoiceLayoutCard.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/Invoice Layouts/InvoiceLayoutCard.html",
+          "hash": "8gkd17kwWHpWI6lqRBJ3mw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/Invoice Layouts/InvoiceLayoutMatrix.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/Invoice Layouts/InvoiceLayoutMatrix.html",
+          "hash": "bFwWsxwH4uyEgZX9+8YfNQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/Invoicing/CustomerVendorChangeover.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/Invoicing/CustomerVendorChangeover.html",
+          "hash": "3ZcsC/doZE0wONJqwqMs6w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/Invoicing/HandlingErrorsInInvoiceTypesAndInvoiceBatches.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/Invoicing/HandlingErrorsInInvoiceTypesAndInvoiceBatches.html",
+          "hash": "P5hW7b3EblZPRufTcj8nMg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/Invoicing/InvoiceGroups.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/Invoicing/InvoiceGroups.html",
+          "hash": "V05Z7z+LblPDv4m0vlw8KQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/Invoicing/InvoiceLogsAndInvoiceLogLedgerEntry.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/Invoicing/InvoiceLogsAndInvoiceLogLedgerEntry.html",
+          "hash": "0YglpY0Li64DWTnUcOS4gg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/Invoicing/InvoiceQuantityConsolidation.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/Invoicing/InvoiceQuantityConsolidation.html",
+          "hash": "uOPdJfFUR8I5Xq6leFANVg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/Invoicing/InvoiceTypesAndInvoiceBatches.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/Invoicing/InvoiceTypesAndInvoiceBatches.html",
+          "hash": "7JoGOOCew3UL93LcgT4evQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/Invoicing/InvoicingOverview.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/Invoicing/InvoicingOverview.html",
+          "hash": "ilEtC2sVXb8ajaoBZIIUOw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/Invoicing/InvoicingSetup.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/Invoicing/InvoicingSetup.html",
+          "hash": "fCbdc1BXp4YpqZA/A2urzA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/Invoicing/MinimumInvoiceValue.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/Invoicing/MinimumInvoiceValue.html",
+          "hash": "ScCZqWVohPHcEzLMF1DxeQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/Job Queue/Jobqueue.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/Job Queue/Jobqueue.html",
+          "hash": "522omScOT/sFCGP89uPh7w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/Operational Journal/ActionCodesAndResultCodes.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/Operational Journal/ActionCodesAndResultCodes.html",
+          "hash": "0U4/FsYhIKvOXRFyuRIScA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/Operational Journal/OperationalJournalEvents.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/Operational Journal/OperationalJournalEvents.html",
+          "hash": "4Uk1/Rs+YrTkHMjggSTahw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/Operational Journal/PossibilitiesForEvaluation.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/Operational Journal/PossibilitiesForEvaluation.html",
+          "hash": "IMrtJmRAGWwKoLWveXuE0Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/Operational Journal/ServiceErrorsAndRefusals.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/Operational Journal/ServiceErrorsAndRefusals.html",
+          "hash": "MKsl6ihN8K/9WcbUCRrEoA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/Order Processing/CustomerTaskSitePlan.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/Order Processing/CustomerTaskSitePlan.html",
+          "hash": "FDVfmrOnqzNw7jZp+SdN2A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/Order Processing/DispatchingCode.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/Order Processing/DispatchingCode.html",
+          "hash": "+6MNFyhpdUlE0ZDyh1UJ4A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/Order Processing/ExampleForDocumentTemplate.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/Order Processing/ExampleForDocumentTemplate.html",
+          "hash": "nLMHwmA8+tcgne660h73uQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/Order Processing/FundamentalsForWorkingWithQuotesContractsAndOrders.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/Order Processing/FundamentalsForWorkingWithQuotesContractsAndOrders.html",
+          "hash": "DmV8cGpvoeOltEHehBuZ8w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/Order Processing/LineEntries.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/Order Processing/LineEntries.html",
+          "hash": "Ykn3nJ6CPKKf1VOCSH9qBQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/Order Processing/OrderHeader.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/Order Processing/OrderHeader.html",
+          "hash": "A2X7vKKbqvLNqicEb+ms/Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/Order Processing/OrderLine.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/Order Processing/OrderLine.html",
+          "hash": "xhlQw48tNoLoTdccHKtslA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/Order Processing/QuickOrderLoggingQuickdoc.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/Order Processing/QuickOrderLoggingQuickdoc.html",
+          "hash": "xpdA1dldAU0yARJ7Gr30rw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/Package Tracking/Packagetracking.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/Package Tracking/Packagetracking.html",
+          "hash": "0OqpzeHcRshMTEmx/t1HJQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/Prices/BottomPrice.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/Prices/BottomPrice.html",
+          "hash": "Vt+2+nAnAIdE5OOsgILlGg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/Prices/LumpSumPrices.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/Prices/LumpSumPrices.html",
+          "hash": "y5xzxBCMk4eghzTYIycvJg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/Prices/PriceTracking.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/Prices/PriceTracking.html",
+          "hash": "RNz+GNKv4lGwPEWYzuk/ug=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/Prices/ReferencePrice.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/Prices/ReferencePrice.html",
+          "hash": "9P6RSS4N5oalLXwHfwDt9Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/Prices/RestrictionOfPriceCriteria.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/Prices/RestrictionOfPriceCriteria.html",
+          "hash": "3Q0uJoS1Tzi2ZUykz7s3hA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/Prices/ServicePriceWorksheetChangePrices.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/Prices/ServicePriceWorksheetChangePrices.html",
+          "hash": "G66WVgD21fx3G43MgkIYrA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/Prices/StartPriceEditingAdjusted.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/Prices/StartPriceEditingAdjusted.html",
+          "hash": "DI2U/Ia/kZvcvrJX0hgexQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/Production & Separation/ProductionSeparation.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/Production & Separation/ProductionSeparation.html",
+          "hash": "uOijytsqao1EFnVgyVP+xw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/Rapid Start Services/Rapidstartservices.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/Rapid Start Services/Rapidstartservices.html",
+          "hash": "yf/LqZSKWPY1FUxY/cC4Nw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/Role Center/Rolecenter.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/Role Center/Rolecenter.html",
+          "hash": "XVIJxtBdjp8vi/basT32ZA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/Service/ServiceBillOfResourcesAndComponents.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/Service/ServiceBillOfResourcesAndComponents.html",
+          "hash": "W5oL2tCPcb77hEfJqz3sfg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/Service/ServiceCardSetup.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/Service/ServiceCardSetup.html",
+          "hash": "PkpZ2A2IXqzIJzqVLRfomw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/Service/ServiceChartOfAccounts.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/Service/ServiceChartOfAccounts.html",
+          "hash": "Y6nd4prcFiq06JOZr4/k4w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/Service/ServiceProvisionSelection.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/Service/ServiceProvisionSelection.html",
+          "hash": "mxfk5RX4c9+Ss+dbCD2YuQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/Tours & Tour Plans/ToursTourplans.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/Tours & Tour Plans/ToursTourplans.html",
+          "hash": "ZbjHNPZgAyCPWmc58ve7BQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/Transport, Personnel and Tools/TransportPersonnelTools.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/Transport, Personnel and Tools/TransportPersonnelTools.html",
+          "hash": "NGDcPWypadLWwWPBrEU1tg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/Waste Management Setup/WasteManagementSetup.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/Waste Management Setup/WasteManagementSetup.html",
+          "hash": "kZuf3VtiRfmcLri5ovHk4A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/Waste Material/ChartsOfInternalWasteAccountsAndChartsOfExternalWasteAccounts.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/Waste Material/ChartsOfInternalWasteAccountsAndChartsOfExternalWasteAccounts.html",
+          "hash": "zXcyjjlqkKzEUc0K6DJjEw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/Waste Material/ExplicitApplicationOfWasteLedgerEntries.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/Waste Material/ExplicitApplicationOfWasteLedgerEntries.html",
+          "hash": "wN3U3rcT7HzpRsWDRt+5KA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/Waste Material/IntExtCatalogRelations.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/Waste Material/IntExtCatalogRelations.html",
+          "hash": "gXVdWk46zsEDxpsMERq5rw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/Waste Material/ReferenceCatalogs.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/Waste Material/ReferenceCatalogs.html",
+          "hash": "+TaondBoSuqIBnfJGIhxIg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/Waste Material/StockValue.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/Waste Material/StockValue.html",
+          "hash": "8hPYnOBL0TerhvtWYEo3gA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/Waste Material/WasteMaterialCard.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/Waste Material/WasteMaterialCard.html",
+          "hash": "kp1XUMDHhs0tWMG9kHcvXA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/Waste Material/WasteMaterialEWCInstructionsForSetUp.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/Waste Material/WasteMaterialEWCInstructionsForSetUp.html",
+          "hash": "ZkDOHBUYbENuRScGW7kngw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/Weighbridge/DeliveryStatus.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/Weighbridge/DeliveryStatus.html",
+          "hash": "+w8KEsyxo1BoJZXiHqb6Kg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/Weighbridge/MultipleWeighing.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/Weighbridge/MultipleWeighing.html",
+          "hash": "ancRiNHAqi1yPynBGXg9+w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/Weighbridge/ReleaseDispatchesOrders.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/Weighbridge/ReleaseDispatchesOrders.html",
+          "hash": "28rqVqVf6/4UBH8Kj7z3kg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/Weighbridge/WasteEntryTypeWasteEntryTypeMatrix.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/Weighbridge/WasteEntryTypeWasteEntryTypeMatrix.html",
+          "hash": "szK4hLgKvrHuyyzXRx1m+g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/Weighbridge/WeighbridgeTicketsWarnings.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/Weighbridge/WeighbridgeTicketsWarnings.html",
+          "hash": "rpnmZwFtWcueQG0zJsT84g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/index.html",
+          "hash": "6wvwR8ArnfAVwH/kqANN1Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "documentation/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/toc.html",
+          "hash": "VQJMyrih/b88Rq7KJ+cOcw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/logos/logo-tegos-white.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/logos/logo-tegos-white.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/logos/tegos_favicon.ico",
+      "output": {
+        "resource": {
+          "relative_path": "images/logos/tegos_favicon.ico"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "NX72XXcNtKj+hlZmyY0MCw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "robots.txt",
+      "output": {
+        "resource": {
+          "relative_path": "robots.txt"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "8dzsoRwC8W33AEy8PXYR6A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build info is missing.",
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0,
+        "full_build_reason_code": "NoAvailableBuildCache"
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 98,
+          "skipped_file_count": 0
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: should not trace intermediate info.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

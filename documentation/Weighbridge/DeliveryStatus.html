@@ -1,0 +1,156 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Delivery Status | tegos Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Delivery Status | tegos Documentation ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    <meta name="robots" content="noindex">
+    
+    <link rel="shortcut icon" href="../../images/logos/tegos_favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/logos/logo-tegos-white.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DeliveryStatus">
+<h1 id="delivery-status">Delivery Status</h1>
+
+<h2 id="general-information">General Information</h2>
+<p>The special requirements of waste laws and specimen collection regulations make it even more necessary to track waste quantities than ever before.</p>
+<p>Example:</p>
+<p>A waste material passes through the weighbridge in a truck. From this moment onward, it is on the premises of the waste management company and the quantity must be declared even if there is as yet no final determination, as this cannot be done until the empty truck can be weighed as well. If things are not running smoothly, several hours to a full work day might go by between the inbound weighing and the outbound weighing.</p>
+<p>The exact quantity of waste material on the premises must be declared immediately after weighing, even if it has not yet been posted to stock because it still has to be analyzed.</p>
+<p>This is required for the uninterrupted documentation of hazardous materials (those on the fire brigade's list) on the one hand and to be able to adhere to the specimen collection intervals set down by the authorities or contracted with the customer on the other, because there might be additional deliveries of the same waste material from the same customer before the first truck has left the premises.</p>
+<p>Posting the waste material to stock earlier is not the solution to this problem. For one, it creates excessive work to repost; for another, it cannot yet be posted to stock because the outbound weighing has not yet taken place and the exact stock quantity cannot be determined yet.</p>
+<h2 id="options">Options</h2>
+<p>In order to include waste materials already on the premises but not yet posted to stock in quantity balances, a delivery status (in the <em>Status</em> field) is now added to the <strong><em>waste entry</em></strong>. The following options are available for the <em>Status</em> field.</p>
+<ul>
+<li><p><em>Dispatched</em>: The waste material has been dispatched but not yet delivered</p>
+</li>
+<li><p><em>Weighed In</em>: The waste material has already passed the weighbridge and is now on the premises, but the quantity has not yet been finalized and the waste materials are still in Dispatch</p>
+</li>
+<li><p><em>Weighed Out:</em> The truck has left the premises again and the exact waste material quantity has been determined but not yet posted to stock</p>
+</li>
+<li><p><em>Posted:</em> The waste material has already been posted to stock</p>
+</li>
+</ul>
+<h2 id="inventory">Inventory</h2>
+<p>In principle, inventory is taken from two components:</p>
+<ul>
+<li><p>from the posted quantities in the waste ledger entry</p>
+</li>
+<li><p>from the waste entries with the status &quot;Weighed In&quot; or &quot;Weighed Out&quot;</p>
+</li>
+</ul>
+<p>When the quantities need to be differentiated, the waste entries with the status &quot;Weighed In&quot; and &quot;Weighed Out&quot; can be reported separately.</p>
+<p>The &quot;Dispatched&quot; status indicates waste materials that are in transport or for which there is a sales order, but that are not yet on the premises.</p>
+<p>Customers that have to or would like to use this logic must keep in mind that this requires more work, because the status of the waste material (dispatched, weighed in, weighed out) has to be kept up to date. However, the system supports users with a number of automated features.</p>
+<p>When a waste material goes over the weighbridge, the delivery status is automatically set by the weighing.</p>
+<p>As soon as the inbound weighing is complete, the status is set to &quot;Weighed In&quot; and when the weighing process is complete, the status is changed to &quot;Weighed Out&quot;. This classification also works if the manual input option is used in the weighbridge ticket.</p>
+<p>Another two options are available in the sales order.</p>
+<p>The <em>Status</em> field can be set manually in the waste entries.</p>
+<p>The <em>Delivery Status</em> field in the sales order header can be set for all waste entries in the current sales order (newly entered waste entries use the settings in the <em>Delivery Status</em> field in the sales order header by default). Statistical analysis is only conducted on the <em>Delivery Status</em> field in the waste entries.</p>
+<p>The <em>Posted</em> option for a waste entry cannot be set manually or indirectly through the sales order header; rather, it is set automatically by enwis when posting the entry, i.e. when creating a ledger entry.</p>
+<p>Once this is done, the status of this waste entry can no longer be reset (neither in the entry itself for through the <em>Delivery Status</em> field in the sales order header). It can only be done by cancelling the waste ledger entry. This is why the Posted option is not available for the delivery status in the sales order header.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            &copy; <script>document.write(new Date().getFullYear())</script> <a href="https://www.tegos-group.com">tegos-group.com</a> | <a href="https://www.tegos-group.com/en/imprint/">Imprint</a> | <a href="https://www.tegos-group.com/en/privacy-policy/">Privacy Policy</a>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

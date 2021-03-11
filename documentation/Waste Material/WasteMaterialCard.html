@@ -1,0 +1,261 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Waste Material Card | tegos Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Waste Material Card | tegos Documentation ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    <meta name="robots" content="noindex">
+    
+    <link rel="shortcut icon" href="../../images/logos/tegos_favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/logos/logo-tegos-white.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="WasteMaterialCard">
+<h1 id="waste-material-card">Waste material card</h1>
+
+<h2 id="general">General</h2>
+<p>Internal waste materials form the basis for the acquisition of all material amounts, stock rotations and waste balances as shown at the start. Waste ledger entries are formed exclusively on the basis of internal waste materials.</p>
+<h2 id="general-register">General register</h2>
+<p>A numbering series must be allocated to the field <em>Nr</em>. in the waste management set up on the numbering register.</p>
+<p>The internally used designation of the waste material is entered in the field description*.* If this internal waste material is the copy of an EWC number and there is thus a 1:1 relationship between waste material and EWC code, the official denomination of the EWC number can be entered in the field O<em>fficial Description</em>.</p>
+<p>A basic unit can also be given for the waste material in the field B<em>ase Unit of Measure</em>. The basic unit which was deposited for a waste material is activated in the various material journals which are available in enwis.</p>
+<p>The field <em>Account Type</em> refers to the waste material chart of accounts. The quantity movements of the internal waste materials are gathered in the waste material chart of accounts. Headings and sums can be formed. If desired, &quot;superfluous&quot; waste materials must be set up which are not used operationally and which just structure the chart of accounts. The corresponding account types such as &quot;Heading&quot; or &quot;Total&quot; must be assigned to these structural elements of the chart of accounts.</p>
+<p>The waste materials which are to be used for headings, amounts from and to, can be set up in the form of waste material cards or directly in the chart of accounts. An account type must be assigned to them. The functionality here is identical to that for the set up of the general ledger chart of accounts.</p>
+<p>If work is to take place with amounts from and to, it is important to start the function for indentation of the chart of accounts following setting up of the relevant accounts. In this way the accounts are indented automatically in accordance with their hierarchical classification and the waste material accounts which are to be added in the sum accounts are designated automatically in the field <em>Totaling.</em> Sums are only formed if the relevant basic accounts are assigned to the sum accounts in this way.</p>
+<p>Direct entries can only occur for accounts of the &quot;Posting&quot; type; in sum accounts only the sums formed automatically by enwis appear.</p>
+<p>A waste material can be linked in a fixed way with an EWC number via the field <em>EWC-Code</em>. If this fixed wiring of internal waste material and EWC key is made, this results in the corresponding EWC number also being transferred automatically onto the order line on validation of the waste material.</p>
+<p>The waste material can be linked to a storage location. The field <em>location code</em> is used for this purpose.<br>
+If a waste material is as a rule entered for a certain warehouse, it makes sense to allocate this storage location to the waste in a fixed way. Transfer to the order line is automatic on validation of the waste material.</p>
+<p>Here the storage location code which was consigned for an internal waste material is in principle overwritten by one which may have an EWC number. The storage location code of the EWC number always takes precedence over the waste material storage location code.</p>
+<p>The field <em>hazardous material code</em> can be used to assign the waste material to a hazardous material. Hazardous materials can be set up in the menu</p>
+<p><em>enwis Services/waste
+Material/Lists/Hazardous Material Type</em></p>
+<p>.</p>
+<p>Hazardous materials are administered hierarchically by enwis. The hazardous material assigned to a waste material is overwritten by the one which has the waste transfer note facsimile on the order line in the event of conflict.</p>
+<p>In each case there is the possibility of once again manually overwriting the defaults of the waste material or waste transfer note facsimile on the order line.</p>
+<p>The field <em>Automatic Ext. Texts</em> is only functional in certain contexts as texts which are consigned to a waste material can be printed out in reports but are not used anywhere else in enwis. While texts consigned in the field of the service card with the same name are transferred into order lines, such a function is not connected with the field <em>Automatic Ext. Texts.</em> of the waste material card.</p>
+<p>Each waste material can be classified via the option field <em>Material Type</em>. The following options are available:</p>
+<ul>
+<li><p>Waste material</p>
+</li>
+<li><p>Potential Recyclable</p>
+</li>
+<li><p>Alternating</p>
+</li>
+</ul>
+<p>The value set is transferred into the waste ledger entries so that evaluations can be controlled. There are no additional functions connected with the field.</p>
+<p>Control of the rules by which the application of waste ledger entries is undertaken occurs via the option field <em>Costing Method</em> (warehouse outflow method). Warehouse outflow methods can and must be set up by waste material.</p>
+<p>The options of the field have the following meaning:</p>
+<table>
+<thead>
+<tr>
+<th>FIFO</th>
+<th>The application of waste ledger entries is undertaken automatically by enwis in accordance with the rule &quot;first in, first out&quot;.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LIFO</td>
+<td>The application of waste ledger entries is undertaken automatically by enwis in accordance with the<br></td>
+</tr>
+</tbody>
+</table>
+<p>rule &quot;last in, first out&quot;.
+Specific | An application does in principle only occur manually. If an application entry is assigned to a waste ledger entry in the field <em>Applies-to Entry No.</em>, this is applied. If the field <em>Applies-to Entry No.</em> is not filled, the entry takes place without applying ledger entries. An application thus only occurs if a waste ledger entry was explicitly selected for application.
+Application | When entering, a waste ledger entry must be consigned for the application. If<br>
+no applicable waste ledger entry is consigned, it is not in principle possible to make an entry. This logic should as a rule be given additional structure via the settings in the option field <em>Application skipped on.</em></p>
+<p>If the warehouse outflow method Application was selected, it is as a rule necessary to add to the entry logics by setting up the field <em>Application skipped on</em>.</p>
+<p>If an application is always required, then the entry of the first batch to the warehouse would not be possible because the entry routine requires an application but no<br>
+batch to be applied is available.</p>
+<p>Therefore the field <em>Application skipped on</em> provides the possibility of nullifying the compulsorily required indication of a batch to be applied through the warehouse outflow method &quot;Application&quot;. The field can only be used if the warehouse outflow method &quot;Application&quot; has been selected and it is otherwise ignored by enwis.</p>
+<p>The following options are available:</p>
+<table>
+<thead>
+<tr>
+<th><blank></blank></th>
+<th>The explicit indication of an application entry is always required.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Stocking/Pos. Adjmt.</td>
+<td>The explicit indication of an application is only required for the waste entry types &quot;Disposal&quot; and &quot;Neg.Adjmt.&quot; If the field <em>Applies-to Entry No.</em> is not filled for the waste entry types &quot;Stocking&quot; and &quot;Pos. Adjmt.&quot; it is still possible to make an entry.</td>
+</tr>
+<tr>
+<td>Disposal/Neg. Adjmt.</td>
+<td>The explicit indication of an application is only required for the waste entry types &quot;Stocking&quot; and &quot;Pos. Adjmt&quot;. If the field <em>Applies-to Entry No.</em> is not filled for the waste entry types &quot;Disposal&quot; and &quot;Neg. Adjmt&quot; it is still possible to make an entry.</td>
+</tr>
+</tbody>
+</table>
+<p>An additional logic is also implemented for transfer entries. If the field <em>Appl. Mandatory on Transfer</em> is ticked, transfers can only be entered on indication of a specific application.</p>
+<p>The field <em>Exempted from WTN</em> is a pure field of information. A tick placed here can only be noticed on the waste materials card. The information that a material which does not require a transfer note is not used by enwis at any other point.</p>
+<p>The permanently updated balance of all inflows and outflows of each waste material is displayed via the field <em>Stock Qty.</em></p>
+<p>If the field <em>Blocked</em> is ticked, the waste material for the acquisition in quotes, contracts and orders is blocked. enwis refuses access to the waste material and also to services to which the waste material was consigned.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>This blocking does however only apply for direct activation of the waste material or the corresponding service from quotes, contracts or orders.
+If the waste material was already consigned in a contract, a retrospective blockage of the waste material does not take effect. In spite of blocking of the waste material, new orders can be generated and entered from contracts without any difficulty.**</p>
+</div>
+<h2 id="posting-register">Posting register</h2>
+<p>The register Posting
+contains a few MS Business Central standard fields which do however only have a limited function in enwis and also fields for the control of the generation of rental value entries:</p>
+<p>It is possible to consign service costs for waste materials or have them established by the system and to use these service costs as a basis for the inventory valuation via the fields <em>Unit Cost, Unit Cost Calculation, Calculation Function</em> and <em>Without Adjustment.</em></p>
+<p>The &quot;waste material rental&quot; can be depicted automatically via the option field <em>Storage Rental on</em>. Technically speaking the generation of rental value entries of the storage type can be controlled.</p>
+<p>Rental value entries of the &quot;storage&quot; type serve to enable the calculation of rentals for the warehouse put away of waste or other materials.</p>
+<p>The generation of a relevant rental value entry can be brought about by the storage or waste management of waste. If this rental value entry is present in the system, a rental for it can be calculated via the periodic activity of the rental calculation.</p>
+<p>Rental value entries of the &quot;storage&quot; type are generated automatically if the field <em>Story Rental on</em> is set to an option other than &quot;blank&quot; on the waste material card.</p>
+<p>This field has the following options:</p>
+<table>
+<thead>
+<tr>
+<th><blank></blank></th>
+<th>Rental value entries are not generated automatically for this waste material.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Stocking</td>
+<td>Rental value entries are generated automatically for entries with the waste management entry type &quot;Stocking&quot; with this waste material.</td>
+</tr>
+<tr>
+<td>Disposal</td>
+<td>Rental value entries are generated automatically for entries with the waste management entry type &quot;Disposal&quot; (waste management) with this waste material.</td>
+</tr>
+<tr>
+<td>(Both)</td>
+<td>Rental value entries are generated automatically for entries with the waste management entry type &quot;Stocking&quot; or &quot;Disposal&quot; with this waste material.</td>
+</tr>
+</tbody>
+</table>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The creation of rental value entries can not only be defined waste material specifically via the field <em>Story Rental on</em>, e.g. for the waste material &quot;documents&quot; in order to be able to calculate the document put-away but also specifically to storage locations.
+The same field with the same options is available on the Location card. It is for example possible to use this to control rental value entries of the storage type for all waste materials which are entered on the storage location Archiv.</p>
+</div>
+<p>The fields <em>Gen. Prod. Posting Group</em> and <em>Inventory Posting Group</em> were absorbed into the MS Dynamics Standards article card during the development of enwis**.** They have no function within the content in enwis but they are still retrieved when making entries. Therefore it is necessary to consign posting groups in these fields.</p>
+<p>It is insignificant which posting groups are indicated as product posting groups or storage posting groups on the waste material card as postings on financial accounts are not connected with the entering of waste materials or more precisely with the entering of waste entries in any way. It is recommended that a &quot;Dummy&quot; product posting group or &quot;Dummy&quot; storage posting group is applied for the waste materials.</p>
+<p>The field <em>Material Group Code</em> can be used to assign the waste material to a billing method. This is necessary if rents for the put away or storage of waste e.g. documents are to be calculated via rental value entries of the storage type.</p>
+<p>The relevant billing method for the business transaction at hand is established in the rental invoice matrix via the combination of customer criteria and the material group code consigned for the waste material.</p>
+<p>The billing method calculates the rental duration, the rental service to be used as a basis and thus also the rental price for all open rental value entries.</p>
+<p>The field <em>Without Adjustment</em> is functionally linked to the field <em>Cost (adjusted)</em> in the <strong><em>waste ledger entries</em></strong> (it is not present in the waste ledger entries). If the field <em>Without Adjustment</em> is not ticked, a service cost input in the waste entry is transferred into the field <em>Cost (adjusted)</em> of the waste ledger entry when entering. If the field <em>Without Adjustment</em> is ticked, this (temporary) allocation of an inventory value to the waste ledger entry does not occur. In each case an already entered value in the field <em>Cost (adjusted)</em> through the periodic Adjust Cost-Waste Entries is newly calculated and corrected where necessary.</p>
+<p>Values of the dimensions cost object and cost center can be assigned to the waste material in a fixed way via the fields <em>Cost Object</em> and <em>Cost center</em> so that they are transferred into the order line automatically on validation of the waste material.</p>
+<h2 id="treatment-register">Treatment Register</h2>
+<p>Waste materials can be allocated to a treatment process in a fixed way via the register Treatement
+. Treatment processes are set up in the menu Treatment.</p>
+<p>The details of the definition of treatment processes are described in separate documentation which means that we will limit ourselves to the essentials here.</p>
+<p>Treatment orders are created from treatment processes just as orders are generated from contracts.</p>
+<p>If in the field <em>Method No. (Pos. Adjmt.)</em> a treatment process was assigned to a waste material in a fixed way, all warehouse inflows of this waste material are compelled to follow the treatment process.</p>
+<p>Treatment orders are in principle non billable internal orders, the main task of which is to document the &quot;material production&quot; by quantity through mixing and separation.</p>
+<p>Treatment processes are not just able to be consigned for waste materials where they are compulsory for the inflow of the material and treatment processes also apply for the outflow of a material. The outflow of the material does of course require that the basic materials for the treatment process are present in the warehouse.</p>
+<p>The outflow of the basic materials, the inflow of the complete product and the outflow of it are entered in one stage for the outflow of a material via a process.</p>
+<p>The fixed connection of a waste material with a treatment process via the fields <em>Method No. (Pos. Adjmt.)</em> and <em>Method No. (Neg. Adjmt.)</em> is in any case only meaningful if the movements of the relevant material are actually linked as a rule with the running through of this process as enwis undertakes the creation of the corresponding orders and all entries in the background fully automatically.</p>
+<p>The fields <em>Method Grp. Code (Pos. Adjmt.)</em> and <em>Method Grp. Code (Neg. Adjmt.)</em> only have an informative character in this context.</p>
+<p>Several treatment processes can be condensed into meaningful groups in terms of content via method groups. The creation of orders or entries are however not triggered by method groups.</p>
+<h2 id="unit-tracking-register">unit tracking register)</h2>
+<p>It is possible to control the tracking of individual items or batches of a waste material via batch and serial numbers in the unit tracking register of the waste material card. This plays a role in the destruction of documents for example which are put into storage for a certain period of time and need to be destroyed once this period has passed. Both the putting into storage and punctual destruction can be documented by batch and serial numbers. The ear marking number to be documented can also be recorded via this function for the rendering service.</p>
+<p>The unit tracking is controlled via unit tracking codes in enwis. This code determines whether the part of a waste material can be entered with indication of batch number and/or serial number and how these numbers are generated. The batch number is thus the superordinate reference value - several serial numbers can thus be assigned to a batch. Conversely it is not possible to enter several waste entries with an identical serial number; each entered serial number is thus unique.</p>
+<p>Observation texts can be assigned to each batch number and each serial number which describe or explain the batch more closely. It is also possible here to specify that each batch number and/or each serial number must show a comment text via unit tracking codes so that it can be entered.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            &copy; <script>document.write(new Date().getFullYear())</script> <a href="https://www.tegos-group.com">tegos-group.com</a> | <a href="https://www.tegos-group.com/en/imprint/">Imprint</a> | <a href="https://www.tegos-group.com/en/privacy-policy/">Privacy Policy</a>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

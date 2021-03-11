@@ -1,0 +1,183 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Merging Cyclic Documents | tegos Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Merging Cyclic Documents | tegos Documentation ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    <meta name="robots" content="noindex">
+    
+    <link rel="shortcut icon" href="../../images/logos/tegos_favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/logos/logo-tegos-white.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="MergingCyclicDocuments">
+<h1 id="merging-cyclic-documents">Merging Cyclic Documents</h1>
+
+<h2 id="general-information">General Information</h2>
+<p>Cyclic Documents can be merged when they are created. Normally, cyclic document creation generates one sales order per cyclical task date. When the merging function is used, for example, all cyclic documents pertaining to one contract can be merged into a single sales order. This reduces the number of sales orders in the system.</p>
+<p>Users should consider each job carefully before deciding whether to use this function or not. In generally, it is only practical to use this function when it appears to be inevitable.</p>
+<p>This function is not as practical for waste management companies, because they usually want to create a sales order for each task. For companies that mainly act as brokers, and for workflows where sales orders are not created until after execution in the system, merging documents into one can be beneficial, because users need not switch back and forth between sales orders so frequently to process them.</p>
+<p>For invoicing, it does not matter whether the services come from one sales order or are allocated among many.</p>
+<p>For cost accounting, it is clearly better to not merge documents but rather to work with individual sales orders, because this allows users to analyze product costing for each one.</p>
+<p>The following general statements apply to merging cyclic documents:</p>
+<ul>
+<li><p>Only sales orders can be merged, not completed orders, invoices, etc.</p>
+</li>
+<li><p>Only documents created using the cycle code in the contract header or the contract lines can be merged, and these are generally done separately. In other words, sales orders created from contract lines cannot be merged with sales orders created from the contract headers.</p>
+</li>
+<li><p>The services in a merged sales order document are sorted by task date.</p>
+</li>
+</ul>
+<h2 id="setup">Setup</h2>
+<p>The</p>
+<p><em>Create Cyclic Documents</em></p>
+<p>function under the Default Register for batch processing defines whether cyclic document creation will work with document merging or not.</p>
+<p>The settings in the <em>Merge Cycle Orders by</em> and the <em>Cycle Merging Active for</em> fields are material here.</p>
+<p>The following four options are available for the <em>Merge Cycle Orders by</em> field:</p>
+<table>
+<thead>
+<tr>
+<th><blank></blank></th>
+<th>Cyclic Documents will not be merged. When this option is selected, the <em>Cycle Merging Active for</em> field cannot be edited.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Contract No.</td>
+<td>All cyclical orders generated for the same contract will be merged into one sales order.</td>
+</tr>
+<tr>
+<td>Business Partner</td>
+<td>All cyclical orders created for the same business partner (customer or vendor) will be merged into one sales order.</td>
+</tr>
+<tr>
+<td>Business Partner Site</td>
+<td>All cyclical orders created for the same business partner site (= customer task site or vendor task site) will be merged into one sales order.</td>
+</tr>
+</tbody>
+</table>
+<p>The <em>Cycle Merging Active for</em> field can be used to restrict the applicability of the merging function. The following options are available:</p>
+<table>
+<thead>
+<tr>
+<th>Contract Header</th>
+<th>Only documents created using the cycle code in the contract header will be merged.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Contract Lines</td>
+<td>Only documents created using the cycle code in the contract lines will be merged.</td>
+</tr>
+<tr>
+<td>Both</td>
+<td>Documents using the cycle code in the contract header and the cycle code in the contract line will be merged. However, two separate sales orders will be created, one for each.</td>
+</tr>
+</tbody>
+</table>
+<p>When users call up the cyclic document creation function, the system normally copies the settings from the <em>Merge Cycle Orders by</em> and <em>Cycle Merging Active for</em> fields under the Contract register in <strong><em>Waste Management Setup</em></strong> to the eponymous fields in cyclic document creation.</p>
+<p>Users can see in the cycle log that several sales orders have been merged.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            &copy; <script>document.write(new Date().getFullYear())</script> <a href="https://www.tegos-group.com">tegos-group.com</a> | <a href="https://www.tegos-group.com/en/imprint/">Imprint</a> | <a href="https://www.tegos-group.com/en/privacy-policy/">Privacy Policy</a>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

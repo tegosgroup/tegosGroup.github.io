@@ -1,0 +1,187 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Order Header | tegos Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Order Header | tegos Documentation ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    <meta name="robots" content="noindex">
+    
+    <link rel="shortcut icon" href="../../images/logos/tegos_favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/logos/logo-tegos-white.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="OrderHeader">
+<h1 id="order-header">Order header</h1>
+
+<h2 id="general">General</h2>
+<p>As contracts and orders are largely structured analogously, i.e. they have the same fields with a largely identical function, the structure of order headers is presented in detail below. In everyday business, orders are the instrument used most frequently by enwis and they do as a rule have the greatest information content.</p>
+<h2 id="general-register">General register</h2>
+<p>New orders are in principle applied with <strong>Ctrl + N.</strong> On the register General
+the obligatory fields to fill in are the fields <em>Nr</em>. and <em>Geschäft mit Nr.</em> All other fields in the order header are optional. The field <em>Geschäft mit Nr.</em> is filled semi-manually by the selection of a customer, the field <em>Nr</em>. by contrast is filled automatically by enwis.</p>
+<p>The field <em>No</em>. is filled automatically with a number from the number series consigned for this following activation of the return key.</p>
+<p>The customer for whom the order is created is stipulated via the field <em>Business-with No.</em> If the function</p>
+<p><em>orders</em></p>
+<p>is called up in the menu</p>
+<p><em>Waste Producer Processes</em></p>
+<p>, enwis branches off automatically into the list of customers. The application of a vendor order is not possible from this position.</p>
+<p>In principle the trigger or customer for this order should be named via <em>Business with No**</em>.<em>* It is possible to combine various vendor and customer components in an order via the various order lines but each order line also carries the identified customer via the field</em> Post-with No.*</p>
+<p>In the field <em>Business-with Contact No.</em> the customer's contact person responsible for this order can be selected. This contact must be applied in the menu</p>
+<p><em>sales &amp; Marketing</em></p>
+<p>beforehand.</p>
+<p>The fields <em>Business-with Name</em> to <em>Business-with Contact</em> are filled automatically by enwis by the previously input numbers and on the basis of the data consigned there. The entries made by enwis can in principle also be overwritten manually. The correction of the master data is however as a rule more sensible at least when long term data changes such as e.g. changes of address for the customer are involved.</p>
+<p>The field <em>Order Date</em> is filled automatically by enwis with the work date. The content of the field refers to the date of application of the order. If necessary the setting made by enwis can be overwritten manually.</p>
+<p>The field <em>Task Date</em> refers to the intended date for completing the order.</p>
+<p>The field <em>Task Date</em> is primarily important as input assistance for the entries belonging to the line. The current work date is input by the system as standard here. Any other date can however also be entered manually here. The dispatching date is transferred from the line to the entries belonging to the line. The dispatching date of e.g. waste entries becomes the posting date of waste ledger entries and is thus decisive for the time determination of the stock inflow.</p>
+<p>The field <em>Order Code</em> provides the possibility of setting up internal sorting or filtering criteria via which batch processing e.g. the combine invoices can be controlled. Orders can be classified and invoiced jointly via order types. In this way it is for example possible to capture all rental orders in an invoice run via an order type code &quot;Rental&quot;.</p>
+<h2 id="task-site-register">Task site register</h2>
+<p>The fields of this register also serve the definition of default values for the order lines which can be changed once again manually as required.</p>
+<p>The relevant task site is found via the field <em>Task-at Code</em>. The following fields are filled with the name and address data consigned in the task site.</p>
+<p>In principle any number of task sites and reference points of different vendors and customers can be combined in one order. If there are a variety of customers and vendors in the order lines, no pre-settings should be made in the order header.</p>
+<h2 id="transport-register">Transport register</h2>
+<p>The two fields <em>Distance</em> and <em>Driving Time</em> are of subordinate significance and can only be used meaningfully if all order lines refer to the same task site.</p>
+<p>The fields are filled from the fields of the same name of the customer or the task site on application of the order. If the distance and travelling time to a particular customer task site are consigned then this is also transferred into the order.</p>
+<h2 id="posting-register">Posting register</h2>
+<p>The fields <em>Currency Code</em> and <em>Language Code</em> are Business Central standard functions. Foreign currencies and foreign languages are input here where appropriate. For customers for whom invoicing takes place in € and with whom communication occurs in German, these fields remain empty.</p>
+<p>The field <em>Posting Date</em> can be filled automatically by enwis or manually by the user.</p>
+<p>In the</p>
+<p><em>Waste Management setup/Register
+contract/
+Posting Date of contr
+. Orders</em></p>
+<p>it is possible to pre-set which date should be entered here. There are four options for selection:</p>
+<ul>
+<li><p>the order date, meaning the date on which the order was applied and which is again the work date as standard</p>
+</li>
+<li><p>the dispatching date, meaning the date on which the order is to be carried out</p>
+</li>
+<li><p>the posting date if one is specified by the contract</p>
+</li>
+<li><p>the work date which is meaningful if the order date and work date differ</p>
+</li>
+</ul>
+<p>The posting date of the order can thus either be placed on the posting date of the contract or on the order date or dispatching date of the current order.</p>
+<p>The posting date of the order header is only relevant for the invoicing if invoicing occurs directly from the order. Otherwise a new posting date is set in the course of the combine invoices.</p>
+<p>The field <em>Delivery Status</em> serves to meet legal regulations. The particular requirements of the waste directives and sampling directives make a precise tracking of hazardous materials necessary. For further information see documentation on the topic &quot;<em>Delivery Status</em>&quot;.</p>
+<p>The field <em>Status</em> can be used for work flow control or for monitoring of the stati of the individual orders. It specifies the option values:</p>
+<ul>
+<li><p>Creation</p>
+</li>
+<li><p>Dispatching)</p>
+</li>
+<li><p>Processing</p>
+</li>
+<li><p>Completion</p>
+</li>
+</ul>
+<p>These options do however only have conditional functionality. The register Status
+of the waste management set up can above all be used to set certain actions such as entry creation, automatic counter entry or customer-vendor jumping which are triggered by a change in status.</p>
+<p>The way of otherwise filling in the various stati can however be freely defined by the user in terms of content and it must where appropriate be integrated into the work flow via corresponding individual programmes which are called on a particular change of status.</p>
+<p>In the field <em>Job No</em>. the order can be assigned to certain projects. Waste management projects are an important, price forming criterion in enwis. The allocation of contracts to projects is what primarily makes sense. It is also possible to apply each order automatically as a project so that valid prices can only be defined for this contract.</p>
+<p>In the field <em>External Document No.</em> default purchase order or order numbers or similar can be consigned by the customer. This is particularly useful if these have to appear on the invoices. The consignment does as a rule occur at the contract stage and it is copied into the relevant orders.</p>
+<p>In the two fields <em>External Contract No.</em> and <em>External Call No.</em> it is possible to enter contract, purchase order and order numbers of the customer. This information is as a rule compulsory for large companies and business with public facilities in particular so that the later invoicing can refer to it. These fields are only present in the order header and</p>
+<p><u>not</u></p>
+<p>in the contract header.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            &copy; <script>document.write(new Date().getFullYear())</script> <a href="https://www.tegos-group.com">tegos-group.com</a> | <a href="https://www.tegos-group.com/en/imprint/">Imprint</a> | <a href="https://www.tegos-group.com/en/privacy-policy/">Privacy Policy</a>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

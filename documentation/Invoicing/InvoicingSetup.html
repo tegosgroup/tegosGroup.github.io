@@ -1,0 +1,450 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Invoicing Setup | tegos Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Invoicing Setup | tegos Documentation ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    <meta name="robots" content="noindex">
+    
+    <link rel="shortcut icon" href="../../images/logos/tegos_favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/logos/logo-tegos-white.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="InvoicingSetup">
+<h1 id="invoice-setup">Invoice setup</h1>
+
+<h2 id="general-tab">General tab</h2>
+<p>Click on the General
+tab to adjust the following settings:</p>
+<ul>
+<li>Discount posting</li>
+</ul>
+<p>Here you can establish what type of discount enwis should offer. The following options are available:</p>
+<ul>
+<li><p>No discount</p>
+</li>
+<li><p>Invoice discounts</p>
+</li>
+<li><p>Line discounts</p>
+</li>
+<li><p>All discounts</p>
+</li>
+</ul>
+<!--  -->
+<ul>
+<li>Invoice rounding</li>
+</ul>
+<p>Here you can establish whether an amount should be rounded according to the rounding precision rules or not.</p>
+<ul>
+<li>Ext. Doc. No. required</li>
+</ul>
+<p>When this box is checked, an external document number must be entered for each procedure.</p>
+<ul>
+<li>Ext. Doc. No. from Vend. Doc.</li>
+</ul>
+<p>The document number from the unposted document will be used as the external document number. This option can be used, for example, for posting credit memos.</p>
+<ul>
+<li>Calculate surcharge/deduction</li>
+</ul>
+<p>You can use process codes for support in calculating surcharges and deductions. In this field you can establish when the surcharges and/or deductions should be calculated. The following options are available:</p>
+<ul>
+<li><p>Never</p>
+</li>
+<li><p>Manual</p>
+</li>
+<li><p>One Find-Price</p>
+</li>
+<li><p>Always</p>
+</li>
+</ul>
+<!--  -->
+<ul>
+<li>Calculate Inv. Disc.</li>
+</ul>
+<p>When this box is checked, the invoice discount is automatically calculated when the document is posted.</p>
+<ul>
+<li>Allow Minimum Invoice Values</li>
+</ul>
+<p>When this box is checked, minimum invoice values may be stored in the system. The minimum invoice values are stored in the invoice layout.</p>
+<ul>
+<li>Skip Inv. to G/L Entry Rel.</li>
+</ul>
+<p>This field can prohibit the system from logging which G/L entry is related to which invoice entry in the <strong><em>Waste Mgmt. Reference Entry</em></strong> table.</p>
+<ul>
+<li>Job No./Salesperson Code/Purchaser Code/Person Responsible required</li>
+</ul>
+<p>When these boxes are checked, the corresponding fields become mandatory when entering orders or posting documents.</p>
+<ul>
+<li>Check Global Dimensions</li>
+</ul>
+<p>When this box is checked, the system will check whether the two global dimensions have been entered into the document lines.</p>
+<ul>
+<li>Use Ext. Address on Printing</li>
+</ul>
+<p>When this box is checked, an explicit address may be entered into the invoice layout for printing the invoice.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>It will not be used for standard reports.</p>
+</div>
+<ul>
+<li>Delete Comp. Orders on Posting</li>
+</ul>
+<p>When this box is checked, the complete order will be deleted once all of the lines in the completed order have been designated &quot;Posted&quot; or &quot;Not Billable&quot;.</p>
+<ul>
+<li>Reason Code for Empty Doc./Standard Text for Empty Doc.</li>
+</ul>
+<p>When a fault has caused a document not to be posted, a number is reserved for the posted document. If the unposted document is deleted, creating a gap in the posted document numbers, a dummy document is stored in the system with this reason code and standard text.</p>
+<h2 id="numbering-tab">Numbering tab</h2>
+<p>Click on the Numbering
+tab to adjust the following settings:</p>
+<ul>
+<li>Cycle Log-Nos.</li>
+</ul>
+<p>Here you can store a number series for creating cyclic documents.</p>
+<ul>
+<li>Invoice Log-Nos.</li>
+</ul>
+<p>Here you can store a number series for invoice logs. A number will be assigned to the posted document(s) from the invoice log when (compound) entries are made.</p>
+<ul>
+<li>Generate Combine Invoice Log</li>
+</ul>
+<p>When this box is checked, the invoice log is created along with the combine invoice and remains when the documents are posted.</p>
+<h2 id="combine-invoice-tab">Combine invoice tab</h2>
+<p>Click on the Combine invoice
+tab to adjust the following settings:</p>
+<ul>
+<li>Separate by transaction flow</li>
+</ul>
+<p>This field serves as a default value for the field with the same name in the combine invoice. The transaction flow will separate, for example, customer processes that were originally vendor processes (cust./vend. changeover).</p>
+<ul>
+<li>Def. Doc. Date on Comb. Inv.</li>
+</ul>
+<p>In this field you can establish which date will be proposed as the document date for combine invoices. The following options are available:</p>
+<ul>
+<li><p>Work Date</p>
+</li>
+<li><p>Actual Date</p>
+</li>
+</ul>
+<!--  -->
+<ul>
+<li>Site Code on Combine Invoicing</li>
+</ul>
+<p>The following options are available for this field:</p>
+<ul>
+<li>User: When differing site codes are stored in one order, these are replaced by the site of the user in the unposted documents.</li>
+</ul>
+<!--  -->
+<ul>
+<li>Doc. If consistent: The site codes in the order lines will be transferred to the unposted and posted document.</li>
+</ul>
+<!--  -->
+<ul>
+<li>Allow Qty. Consol.</li>
+</ul>
+<p>When this box is checked, it is possible to generate invoices with quantity consolidation.</p>
+<ul>
+<li>Comb. Inv. No. is Posting No.</li>
+</ul>
+<p>When this box is checked, the unposted document number becomes the posted document number.</p>
+<ul>
+<li>Pers. Resp. on Correction</li>
+</ul>
+<p>Here you can establish which person responsible should be entered on the correction document. The following options are available:</p>
+<ul>
+<li><p>Copy from posted document</p>
+</li>
+<li><p>Current employee</p>
+</li>
+<li><p>Leave empty</p>
+</li>
+</ul>
+<!--  -->
+<ul>
+<li>Break on Batch Invoice Error:</li>
+</ul>
+<p>When this box is checked, documents are not skipped when there is an error in the combine invoice; instead, the process is interrupted.</p>
+<ul>
+<li>Posting Date/Document Date on System Batch</li>
+</ul>
+<p>Here you can establish which posting date or document date should be used when processing a batch of invoices. The following options are available:</p>
+<ul>
+<li><p>Standard</p>
+</li>
+<li><p>Work Date</p>
+</li>
+<li><p>Calendar Date</p>
+</li>
+</ul>
+<h2 id="rental-invoice-tab">Rental invoice tab</h2>
+<p>Click on the Rental invoice
+tab to adjust the following settings:</p>
+<ul>
+<li>Equipment Rental Service</li>
+</ul>
+<p>Here you can store a standard service for the rental invoice which can be drawn on if no rental service has been stored in the invoice method.</p>
+<ul>
+<li>Bal. Acc. on Rental Invoice:</li>
+</ul>
+<p>When this box is checked, another waste management line can be generated based on the balance account number of the rental value entry.</p>
+<ul>
+<li>Rental Inv. Bal. Acc. Transfer</li>
+</ul>
+<p>The following options are available:</p>
+<ul>
+<li><p>No transfer: An entry in the <em>Balance Account No.</em> field has no impact</p>
+</li>
+<li><p>Transfer balance account: The balance account number of the rental value entry will be temporarily transferred to all other rental value entries and then balance account lines will be generated.</p>
+</li>
+<li><p>Create balance account line: The system will generate a balance account line for the rental value entry and give it a balance account number.</p>
+</li>
+</ul>
+<h2 id="invoice-layout-tab">Invoice layout tab</h2>
+<p>Click on the Invoice layout
+tab to adjust the following settings:</p>
+<ul>
+<li>Inv. Layout New Customer</li>
+</ul>
+<p>The following options are available for this field:</p>
+<ul>
+<li><p>Matrix:</p>
+<ul>
+<li><p>There are no automatic invoice layout settings when entering a</p>
+<blockquote>
+<p>customer. The customer is assigned an invoice layout using the logic of the current invoice layout matrix if common criteria have been stored in the system for this invoice layout code (e.g. Posting Type - Sales, but no information on a concrete customer).</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+<!--  -->
+<ul>
+<li><p>Set matrix to customer</p>
+<ul>
+<li><p>A new invoice layout matrix line is inserted. The system will</p>
+<blockquote>
+<p>initially determine the invoice layout code drawn on for the new customer based on the current setup of the invoice layout matrix (i.e., a matrix line with cross-account criteria must be stored in the system).</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>The criteria for this general matrix line are then defined as follows:</p>
+</blockquote>
+<ul>
+<li><p>Posting Type = Sales</p>
+</li>
+<li><p>Invoice Layout Code = STANDARD (e.g.)</p>
+</li>
+</ul>
+<blockquote>
+<p>This matrix line will then be copied, added, and inserted as a direct reference to the new customer. The criteria in the new, additional matrix line is then defined as follows:</p>
+</blockquote>
+<ul>
+<li><p>Posting Type = Sales</p>
+</li>
+<li><p>Inv. with No. = <em>[no. of new customer]</em></p>
+</li>
+<li><p>Invoice Layout Code = STANDARD</p>
+</li>
+</ul>
+<blockquote>
+<p>The effect up to this point is no different than when selecting the</p>
+</blockquote>
+<blockquote>
+<p>Matrix
+option – in both cases, the customer is assigned the same invoice layout. The assignment is done more directly in the &quot;Set Matrix to Customer&quot; option, however. It may be easier to trace at a later stage and easier to change. In addition, the assigned matrix from the customer card can be pre-filtered and viewed directly by clicking on the</p>
+</blockquote>
+<blockquote>
+<p>Associated
+Information</p>
+</blockquote>
+<blockquote>
+<p>Sales Invoice Layout</p>
+</blockquote>
+<blockquote>
+<p>Invoice Layout Matrix
+link, which is not the case when assigned indirectly using general criteria.</p>
+</blockquote>
+<ul>
+<li><p>Copy matrix to customer:</p>
+<ul>
+<li><p>This will create a new invoice layout and insert a new invoice</p>
+<blockquote>
+<p>layout matrix line.</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>The logic used for inserting a new invoice layout matrix line is constructed exactly the same as for the</p>
+</blockquote>
+<blockquote>
+<p>Set
+Matrix to Customer
+option. However, the new line is not simply assigned to the invoice layout code created (in our STANDARD example). Instead, the system copies the invoice layout and inserts it as a new invoice layout with the</p>
+</blockquote>
+<blockquote>
+<p>number
+of the new account as the</p>
+</blockquote>
+<blockquote>
+<p>code
+and assigns it to the new matrix line. Example: A new customer is generated with the</p>
+</blockquote>
+<blockquote>
+<p>No.
+4711. The criteria in the general matrix line are defined as follows:</p>
+</blockquote>
+<ul>
+<li><p>Posting Type = Sales</p>
+</li>
+<li><p>Invoice Layout Code = STANDARD (e.g.)</p>
+</li>
+</ul>
+<blockquote>
+<p>The criteria in the newly entered matrix line are defined as follows:</p>
+</blockquote>
+<ul>
+<li><p>Posting Type = Sales</p>
+</li>
+<li><p>Inv. with No. = 4711</p>
+</li>
+<li><p>Invoice Layout Code = 4711</p>
+</li>
+</ul>
+<blockquote>
+<p>In addition, the system generates a new invoice layout with the</p>
+</blockquote>
+<blockquote>
+<p>Code 4711.</p>
+</blockquote>
+<blockquote>
+<p>The <em>Code</em> field (i.e., the primary key) of the new invoice layout can also be influenced by the <em>Inv. Layout Cust. Prefix</em> field.</p>
+</blockquote>
+<ul>
+<li>Inv. Layout Cust. Prefix:</li>
+</ul>
+<p>See details regarding the field <em>Inv. Layout New Customer</em></p>
+<ul>
+<li>Inv. Layout New Vendor:</li>
+</ul>
+<p>See details regarding the field <em>Inv. Layout New Customer</em></p>
+<ul>
+<li>Inv. Layout Vend. Prefix:</li>
+</ul>
+<p>See details regarding the field <em>Inv. Layout New Customer</em></p>
+<ul>
+<li>Inv. Layout Field Ref. 1:</li>
+</ul>
+<p>You can store an additional, variable criterion in this field for determining the actual invoice layout.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>This is a fictional field that is ONLY determined by the programming.</p>
+</div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            &copy; <script>document.write(new Date().getFullYear())</script> <a href="https://www.tegos-group.com">tegos-group.com</a> | <a href="https://www.tegos-group.com/en/imprint/">Imprint</a> | <a href="https://www.tegos-group.com/en/privacy-policy/">Privacy Policy</a>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

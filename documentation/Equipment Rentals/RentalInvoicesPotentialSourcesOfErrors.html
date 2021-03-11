@@ -1,0 +1,165 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Rental Invoices - Potential Sources of Errors | tegos Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Rental Invoices - Potential Sources of Errors | tegos Documentation ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    <meta name="robots" content="noindex">
+    
+    <link rel="shortcut icon" href="../../images/logos/tegos_favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/logos/logo-tegos-white.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="RentalInvoicesPotentialSourcesOfErrors">
+<h1 id="rental-invoices--potential-sources-of-errors">Rental Invoices – Potential Sources of Errors</h1>
+
+<h2 id="general-information">General Information</h2>
+<p>Certain phenomena and related FAQs appear regularly in practice and they
+are related to typical user errors and settings that are not correct for
+the desired results. We will take a short look at these below.</p>
+<ul>
+<li><p>No rent is being calculated.</p>
+<ul>
+<li><p>The user has forgotten to check the <em>Billable</em> box in the
+<strong><em>Invoice Method</em></strong>, so the equipment ledger entries are never
+released for invoicing.</p>
+</li>
+<li><p>The Rental Value Entries <em>Next Invoice from</em> field in the
+Invoice Method is set to create the next invoice as of 30/06 but
+the <em>Calculate Rent</em> field under the <span class="smallcaps">Options tab is set to a date before
+30/06.<p>
+</span></li>
+<li><p>The rent calculation has already been executed and was never
+undone.</p>
+</li>
+</ul>
+</li>
+<li><p>Although the rent for May was calculated, no rent can be calculated</p>
+<blockquote>
+<p>for June. A new rent calculation cannot be initiated until the
+rental document for May has been completely invoiced.</p>
+</blockquote>
+</li>
+<li><p>enwis is calculating rent beyond the end of the month. The date of</p>
+<blockquote>
+<p>rent calculation entered under the <span class="smallcaps">Options tab is probably not the end of
+the month to be invoiced but rather a day at the beginning of the
+following month. The consequence of such an error is that, if the
+system uses an invoicing interval of one month, the next possible
+invoice date will also be pushed back.<p>
+</span></blockquote>
+</li>
+</ul>
+<blockquote>
+<p><strong>Example:</strong></p>
+<p><strong>In the rental value entry, 30/06 is the date set in the <em>Next
+Invoice from</em> field. The rental invoice is executed with the posting
+date of 03/07. This creates a rental period from 01/06 to 04/07, which
+ignores the maximum invoice period. Because the invoicing interval is
+set to one month, enwis calculates the next invoice date to be 04/08.
+Consequently, the periods continue to be delayed.</strong></p>
+</blockquote>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            &copy; <script>document.write(new Date().getFullYear())</script> <a href="https://www.tegos-group.com">tegos-group.com</a> | <a href="https://www.tegos-group.com/en/imprint/">Imprint</a> | <a href="https://www.tegos-group.com/en/privacy-policy/">Privacy Policy</a>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

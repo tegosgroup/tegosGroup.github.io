@@ -1,0 +1,251 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Extended Invoice Texts | tegos Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Extended Invoice Texts | tegos Documentation ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    <meta name="robots" content="noindex">
+    
+    <link rel="shortcut icon" href="../../images/logos/tegos_favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/logos/logo-tegos-white.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ExtendedInvoiceTexts">
+<h1 id="extended-invoice-texts">Extended Invoice Texts</h1>
+
+<h2 id="invoice-pre-text-and-post-text">Invoice Pre-Text and Post-Text</h2>
+<p>The</p>
+<p><em>Invoice Pre-Text</em></p>
+<p>and</p>
+<p><em>Invoice Post-Text</em></p>
+<p>functions are options for including information. The two functions can be found under the following link:</p>
+<p><em>Navigate Sales</em></p>
+<p><em>Invoice Layout</em></p>
+<p><em>Invoice Pre-Text and Invoice Post-Text</em>.
+These functions allow users to insert invoice text automatically into the invoices they create before and after other elements. This text then automatically appears in the unposted invoice before or after all other lines; the pre-text goes before the column headings and the post-text after the invoice total. In addition to storing invoice pre-text and post-text in the invoice layout, it can also be stored in the customers/vendors, task sites, order addresses, contracts, and jobs.</p>
+<p>Invoice pre-text and post-text can contain as many lines as desired and be labeled with a starting date. The system will only call on the invoice text closest to the current posting date.</p>
+<h2 id="sorting-info">Sorting Info</h2>
+<p>The pre-text, intermediate text, and post-text can be defined individually and/or generally in the <em>Invoice Setup</em> under the link</p>
+<p><em>Navigate</em></p>
+<p><em>Texts</em></p>
+<p><em>Sorting Info
+Combine Invoicing or Sorting Info Rental Invoices</em></p>
+<p>. The <em>Use Default Sorting Info</em> field under the General
+tab on the invoice layout card will determine whether the individual invoice layout definitions or the general ones will be used. If this box is checked, then the general texts under Invoice Setup will be used.</p>
+<p>In the invoice layout, the pre-text, intermediate text, and post-text for the combine invoicing and the rental invoicing is defined under the link</p>
+<p><em>Navigate</em></p>
+<p><em>Texts</em></p>
+<p><em>Sorting Info
+Combine Invoicing and Sorting Info Rental Invoicing</em></p>
+<p>.</p>
+<p>Different text can be stored for each sorting type per language code and site code</p>
+<p>The <em>Infotext</em> option gives you the possibility to insert a line of information (an 'info line') as a header in the combine invoice document for each grouped sorting criterion. Go to Invoice Layout to design the look of this info line.</p>
+<p>This info line adheres to the following syntax (though the context may exclude certain elements):</p>
+<p>Pre-text – Description 1 – Intermediate Text– Description 2 – Post-text</p>
+<p>Description 1 will be filled by the content of the sorting criterion (e.g. 4711 if that is the service number). In the example above, the following info line text would be generated:</p>
+<p><em>- Service 4711 :</em></p>
+<p>The <em>Intermediate Text</em> and <em>Description 2</em> would only be used for the sorting criteria composites <em>Service/Quality</em> and <em>Waste Material/Quality</em>.</p>
+<p>The value in the <em>Service No</em>. or <em>Waste Material No.</em> field is generated as Description 1 and the value of the <em>Quality Code field as Description 2.</em></p>
+<p><strong><u>Example:</u></strong></p>
+<p><strong>This would produce the following info line:</strong></p>
+<ul>
+<li><strong>Service 4711 Quality 1A:</strong></li>
+</ul>
+<p><strong><u>Note</u></strong></p>
+<p><strong>An info line cannot contain more than 50 characters. If the pre-text, post-text, and intermediate text creates a line above this limit, it will automatically be truncated to 50 characters. Therefore, the pre-text, post-text, and intermediate text should be kept as short as possible.</strong></p>
+<h2 id="additional-texts">Additional Texts</h2>
+<p>One of the most important aspects of combine invoicing is the option to flexibly apply additional texts with the services rendered. The type and content of these additional texts can be individually defined by the users for each invoice layout.</p>
+<p>The invoices from a waste disposal company require that a lot of additional information about the services rendered normally be included (e.g. weighbridge ticket no., movement form no., etc.). The variety and variability of this additional information means that it is often impossible to display it in the form of individual columns, as we would other invoice information like the quantity, unit, price and amount. This would require that the invoice be generated in the impractical landscape format and the information content would still be too little.</p>
+<p>This is why enwis offers the option to insert this additional information for combine invoices as text lines attached to service lines, i.e. as a kind of extended service description.</p>
+<p>Basically, all additional texts for a service line are inserted as automatically generated invoice lines of the <em>Text</em> type and linked to the associated service line via the <em>Attached to Line No.</em> field. By doing so, if the service line is deleted on the combine invoice document, the associated additional texts are automatically deleted, as well.</p>
+<p>Go to</p>
+<p><em>Navigate</em></p>
+<p><em>Texts</em></p>
+<p><em>Additional
+Texts Combine Invoice</em></p>
+<p>from the invoice layout card to define the additional texts to be generated; they are a central element of the invoice layout specifications. Additional texts can also be defined for rental invoices and quantity consolidation.</p>
+<p>A line of additional information is always associated with a certain service line. First go to the <em>Position</em> field to define where the additional information about the service line should appear on the invoice. The following options are available:</p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Before invoice line text</td>
+<td>The additional text will be inserted before the invoice line and before the info lines already associated with the service line using the <em>Attached to Line No.</em> field and will have its own line number which is lower than that of the service line. These are usually lines that have been assigned to the service line using the <em>Assign Text Before</em> function.</td>
+</tr>
+<tr>
+<td>Before invoice line</td>
+<td>The additional text will be inserted before the invoice line but after the info lines which have already been given a line number lower than the service line using the <em>Attach to Line No**</em>.** field.</td>
+</tr>
+<tr>
+<td>After invoice line text</td>
+<td>The additional text will be inserted after the invoice line and also after the info lines that have been associated with the service line using the <em>Attach to Line No.</em> field and have been given a line number higher than the service line. This option is the default setting.</td>
+</tr>
+<tr>
+<td>After invoice line text</td>
+<td>The additional text will be inserted after the invoice line and also after the info lines that have been associated with the service line using the <em>Attach to Line No.</em> field and have been given a line number higher than the service line. This option is the default setting.</td>
+</tr>
+<tr>
+<td>After invoice line</td>
+<td>The additional text will be inserted after the invoice line but before the info lines that have been associated with the service line using the <em>Attach to Line No.</em> field and have been given a line number higher than the service line. These are usually lines that have been assigned to the service line as automatic text components using the <em>Assign Text After</em> function.</td>
+</tr>
+</tbody>
+</table>
+<p>The options above basically apply individually to each invoice layout specification line. In other words, the placement of each additional text line controlled by a specification line can be defined individually.</p>
+<p>Certain texts can be inserted before the invoice line and others after. This provides flexibility in designing invoices.</p>
+<p>Basically, all specification lines in the invoice layout are processed in the order shown. First, the definitions of the first line (normally line no. 10,000) are processed and inserted, then the second line, etc.</p>
+<p>For the sake of clarity, we recommend setting up the specification lines in the order they will be processed:</p>
+<ul>
+<li><p>Before invoice line text</p>
+</li>
+<li><p>Before invoice line</p>
+</li>
+<li><p>After invoice line text</p>
+</li>
+<li><p>After invoice line</p>
+</li>
+</ul>
+<p>Additional information on the fields, dimensions, and material catalogs, as well as direct info lines, can be stored in the invoice layout specifications. In addition, several lines can be associated with the same field and the various information can be inserted at different places in the invoice.</p>
+<p>Use the <em>Type, Field No.</em> and <em>Dimension Code</em> fields to define the association between the specification line and the generated additional text lines.</p>
+<p>The following options are available for the Type field:</p>
+<table>
+<thead>
+<tr>
+<th><strong>Option</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Field</td>
+<td>The additional text is associated with a field in the waste management line defined in the <em>Field No.</em> field. Use Lookup to show all of the available fields. The name of the selected field is automatically shown in the <em>Name</em> field.</td>
+</tr>
+<tr>
+<td>Field</td>
+<td>The additional text is associated with a field in the waste management line defined in the <em>Field No.</em> field. Use Lookup to show all of the available fields. The name of the selected field is automatically shown in the <em>Name</em> field.</td>
+</tr>
+<tr>
+<td>Dimension</td>
+<td>The additional text is associated with a dimension connected with the waste management line. The dimension code of the document line to be used is defined in the <em>Dimension Code</em> field. The name of that dimension will be transferred to the <em>Name</em> field in the invoice layout specification line.</td>
+</tr>
+<tr>
+<td>Material catalog</td>
+<td>The additional text is associated with a material catalog connected to the waste management line. The material catalog of the document line to be used is defined in the <em>Dimension Code</em> field. The name of that material catalog will be transferred to the <em>Name</em> field in the invoice layout specification line.</td>
+</tr>
+<tr>
+<td>Text</td>
+<td>A complete line of stored text will be inserted. To assign the info line to the specification line, go to Link</td>
+</tr>
+</tbody>
+</table>
+<p>Action
+Text
+. Separate texts can be stored for different languages and sites.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            &copy; <script>document.write(new Date().getFullYear())</script> <a href="https://www.tegos-group.com">tegos-group.com</a> | <a href="https://www.tegos-group.com/en/imprint/">Imprint</a> | <a href="https://www.tegos-group.com/en/privacy-policy/">Privacy Policy</a>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>
