@@ -289,3 +289,9 @@ references:
 - uid: WeighbridgeTicketsWarnings
   name: Weighbridge Tickets Warnings
   href: documentation/Weighbridge/WeighbridgeTicketsWarnings.html
+- uid: what3words
+  name: what3words
+  href: documentation/what3words/what3words.html
+- uid: what3words-core
+  name: what3words Core
+  href: documentation/what3words/what3words-core.html
