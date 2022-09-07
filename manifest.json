@@ -1215,7 +1215,19 @@
       "output": {
         ".html": {
           "relative_path": "documentation/toc.html",
-          "hash": "scld6UUXucqY0JFNgYD7JYJ5qhLqjwfJlO8LYrPMU+w="
+          "hash": "WsSO/1wvMejb318g7oXemZaEi+FVrTFenVVm6nYDeF4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/what3words/tegossuite-what3words.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/what3words/tegossuite-what3words.html",
+          "hash": "R9cqqKMLlGfrDWAIxL+PviadcQDoIJnqYlFVI43kmBo="
         }
       },
       "is_incremental": false,
@@ -1228,18 +1240,6 @@
         ".html": {
           "relative_path": "documentation/what3words/what3words-core.html",
           "hash": "9EhcJTcle+dmdI4kqvcS4P3D2AJ79fcawHjmpQa781E="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "documentation/what3words/what3words.md",
-      "output": {
-        ".html": {
-          "relative_path": "documentation/what3words/what3words.html",
-          "hash": "J2c42pQzAyg+cQ0gk8AmIb3v3hLsb+AnTXFAw87W2Pw="
         }
       },
       "is_incremental": false,
