@@ -286,6 +286,21 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "documentation/Driver App Operations Worksheet/tegossuite-Driverapp.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/Driver App Operations Worksheet/tegossuite-Driverapp.html",
+          "hash": "HF4MSfS2EXOnN0lasgrE8gVj0N01yUePt8JI0TE7oFM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "documentation/Equipment Rentals/ChangeStatusOfOpenRentalInvoices.md",
       "output": {
@@ -1215,7 +1230,7 @@
       "output": {
         ".html": {
           "relative_path": "documentation/toc.html",
-          "hash": "Iuy/BccYfktxcC+YON3t+I0ZlNg9WnN3KbRehvieItQ="
+          "hash": "O7weonraWnEg42sdBAop05tLWZTjPoFuns6/A/4Y4/w="
         }
       },
       "is_incremental": false,
@@ -1427,7 +1442,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 100,
+          "total_file_count": 101,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
