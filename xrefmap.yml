@@ -85,6 +85,9 @@ references:
 - uid: Documenttemplates
   name: Document Templates
   href: documentation/Document%20Templates/Documenttemplates.html
+- uid: Driver Operations Worksheet
+  name: tegos Driver Operations Worksheet Userguide
+  href: documentation/Driver%20App%20Operations%20Worksheet/tegossuite-Driverapp.html
 - uid: EquipmentAdministration
   name: Equipment administration
   href: documentation/Equipment/EquipmentAdministration.html
@@ -291,7 +294,7 @@ references:
   href: documentation/Weighbridge/WeighbridgeTicketsWarnings.html
 - uid: what3words
   name: tegossuite what3words
-  href: documentation/Driver%20App%20Operations%20Worksheet/tegossuite-Driverapp.html
+  href: documentation/what3words/tegossuite-what3words.html
 - uid: what3words-core
   name: what3words Core
   href: documentation/what3words/what3words-core.html
