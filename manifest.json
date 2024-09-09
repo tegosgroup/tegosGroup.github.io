@@ -1227,13 +1227,17 @@
       "output": {
         ".html": {
           "relative_path": "documentation/toc.html",
-          "hash": "bSXhPtf2Ebf6dTkdqvMqyhQ2SeDmBnnznDaZgzebNz0="
+          "hash": "/tlDj898XZ0zd5le/slYRWcNIP5S9PV/24qGiRSfxPU="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids",
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "documentation/what3words/tegossuite-what3words.md",
       "output": {
@@ -1251,7 +1255,7 @@
       "output": {
         ".html": {
           "relative_path": "documentation/what3words/what3words-core.html",
-          "hash": "ez3GfGKe2PuRYxZGMAnxRY4yA4c6eRb9XBon4fa0pv0="
+          "hash": "Q2lE1brFXuz2nf5d1XzihjC0nwRIXxuIrwFtbs3DjAo="
         }
       },
       "is_incremental": false,
@@ -1325,10 +1329,54 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "images/what3words/Picture2.jpg",
+      "source_relative_path": "images/what3words/Picture10.png",
       "output": {
         "resource": {
-          "relative_path": "images/what3words/Picture2.jpg"
+          "relative_path": "images/what3words/Picture10.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/what3words/Picture11.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/what3words/Picture11.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/what3words/Picture12.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/what3words/Picture12.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/what3words/Picture2.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/what3words/Picture2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/what3words/Picture2Edit.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/what3words/Picture2Edit.png"
         }
       },
       "is_incremental": false,
@@ -1380,10 +1428,32 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "images/what3words/Picture7.jpg",
+      "source_relative_path": "images/what3words/Picture7.png",
       "output": {
         "resource": {
-          "relative_path": "images/what3words/Picture7.jpg"
+          "relative_path": "images/what3words/Picture7.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/what3words/Picture8.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/what3words/Picture8.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/what3words/Picture9.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/what3words/Picture9.png"
         }
       },
       "is_incremental": false,

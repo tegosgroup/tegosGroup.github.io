@@ -295,6 +295,3 @@ references:
 - uid: what3words
   name: tegossuite what3words
   href: documentation/what3words/tegossuite-what3words.html
-- uid: what3words-core
-  name: what3words Core
-  href: documentation/what3words/what3words-core.html
